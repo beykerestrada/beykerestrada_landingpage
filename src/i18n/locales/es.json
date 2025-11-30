@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "caseStudies": "Casos de Estudio",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Construyo sistemas de Notion y automatizaciones n8n para que tu equipo trabaje con claridad y menos fricción.",
+    "subtitle": "Convierto el trabajo disperso en un sistema operativo único, un lugar donde las decisiones, tareas, dashboards y flujos de trabajo automatizados se mantienen organizados y fáciles de mantener.",
+    "cta": {
+      "primary": "Comenzar con una Auditoría de Sistemas",
+      "secondary": "Agendar una Llamada"
+    }
+  },
+  "valuePillars": {
+    "operatingSystems": {
+      "title": "Sistemas Operativos",
+      "description": "Marcos empresariales completos que conectan estrategia, flujos de trabajo y ejecución."
+    },
+    "notionArchitecture": {
+      "title": "Arquitectura Notion",
+      "description": "Espacios de trabajo personalizados que sirven como la única fuente de verdad de tu equipo."
+    },
+    "automationDesign": {
+      "title": "Diseño de Automatización",
+      "description": "Flujos de trabajo inteligentes usando n8n, Zapier y Make para eliminar el trabajo manual."
+    }
+  },
+  "process": {
+    "title": "Cómo Funciona",
+    "subtitle": "Un proceso claro y estructurado desde la auditoría inicial hasta la implementación completa.",
+    "step1": {
+      "title": "Diagnóstico operacional",
+      "description": "Mapeamos tus procesos actuales; herramientas y problemas recurrentes. El objetivo es ver cómo fluye realmente el trabajo hoy; no cómo se supone que funciona en papel."
+    },
+    "step2": {
+      "title": "Arquitectura de sistemas",
+      "description": "Diseñamos cómo debe funcionar tu negocio como un sistema; dónde vive la información; cómo se mueven las tareas; qué se automatiza y qué necesita ver el liderazgo cada día."
+    },
+    "step3": {
+      "title": "Construcción y automatización",
+      "description": "Convertimos la arquitectura en espacios de trabajo reales de Notion y flujos de trabajo n8n; entregados en pequeñas porciones que puedes probar con trabajo real; no datos de demostración."
+    },
+    "step4": {
+      "title": "Lanzamiento y soporte",
+      "description": "Implementamos el sistema con tu equipo; refinamos lo que no se siente natural y permanecemos cerca durante las primeras semanas para que la adopción sea fluida y el sistema permanezca."
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Desde proyectos únicos hasta asociaciones continuas, elige el servicio que se adapte a tus necesidades.",
+    "learnMore": "Saber más",
+    "viewAll": "Ver Todos los Servicios",
+    "businessOS": {
+      "title": "Diseño e Implementación de Sistema Operativo Empresarial",
+      "description": "Diseño completo del sistema operativo desde la estrategia hasta los flujos de trabajo de ejecución."
+    },
+    "automation": {
+      "title": "Proyectos de Automatización",
+      "description": "Flujos de trabajo de automatización personalizados con n8n, Zapier y Make."
+    },
+    "notionRetainer": {
+      "title": "Arquitecto Notion en Retainer",
+      "description": "Diseño y optimización continua del sistema Notion."
+    },
+    "automationRetainer": {
+      "title": "Socio de Operaciones de Automatización",
+      "description": "Mantenimiento y optimización mensual de automatización en retainer."
+    }
+  },
+  "caseStudies": {
+    "title": "Casos de Estudio",
+    "subtitle": "Resultados reales de equipos que transformaron sus operaciones.",
+    "readCaseStudy": "Leer caso de estudio",
+    "viewAll": "Ver Todos los Casos de Estudio",
+    "marketingAgency": {
+      "client": "Agencia de Marketing",
+      "title": "Operaciones Escaladas con Sistema Operativo Empresarial Personalizado",
+      "result": "40% de reducción en tiempo administrativo"
+    },
+    "saasStartup": {
+      "client": "Startup SaaS",
+      "title": "Pipeline de Onboarding de Clientes Automatizado",
+      "result": "Tiempo de onboarding reducido de 2 semanas a 2 días"
+    },
+    "consultingFirm": {
+      "client": "Firma Consultora",
+      "title": "Espacio de Trabajo Notion Unificado para Equipo Remoto",
+      "result": "Fuente única de verdad para más de 25 consultores"
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "viewAll": "Ver Todas las Preguntas",
+    "question1": {
+      "q": "¿Cuál es la diferencia entre un proyecto único y un retainer?",
+      "a": "Los proyectos únicos tienen un alcance y fecha de finalización definidos. Los retainers proporcionan soporte continuo, iteración y optimización de tus sistemas."
+    },
+    "question2": {
+      "q": "¿Trabajas con n8n, Zapier o Make?",
+      "a": "Sí, con los tres. Elijo la mejor plataforma según tus necesidades, requisitos técnicos y presupuesto."
+    },
+    "question3": {
+      "q": "¿Cuánto tiempo toma la implementación?",
+      "a": "Los plazos varían según el alcance. Un Sistema Operativo Empresarial típicamente toma de 6 a 8 semanas. Los proyectos de automatización más pequeños se pueden completar en 2-3 semanas."
+    }
+  },
+  "cta": {
+    "title": "¿Listo para Transformar tus Operaciones?",
+    "subtitle": "Comienza con una auditoría de sistemas o agenda una llamada para discutir tus necesidades específicas.",
+    "primaryButton": "Obtener una Auditoría de Sistemas",
+    "secondaryButton": "Agendar una Llamada"
+  },
+  "footer": {
+    "description": "Diseñando Sistemas Operativos Empresariales, espacios de trabajo Notion y soluciones de automatización para equipos y agencias.",
+    "servicesTitle": "Servicios",
+    "companyTitle": "Empresa",
+    "businessOS": "Diseño de Sistema Operativo Empresarial",
+    "automation": "Proyectos de Automatización",
+    "notionArchitect": "Arquitecto Notion",
+    "automationOps": "Socio de Operaciones de Automatización",
+    "caseStudies": "Casos de Estudio",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "caseStudies": "Case Studies",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "I build Notion systems and n8n automations so your team can work with clarity and less friction.",
+    "subtitle": "I turn scattered work into a single operating system, a place where decisions, tasks, dashboards and automated workflows stay organized and easy to maintain.",
+    "cta": {
+      "primary": "Start with a Systems Audit",
+      "secondary": "Book a Call"
+    }
+  },
+  "valuePillars": {
+    "operatingSystems": {
+      "title": "Operating Systems",
+      "description": "Complete business frameworks that connect strategy, workflows, and execution."
+    },
+    "notionArchitecture": {
+      "title": "Notion Architecture",
+      "description": "Custom-built workspaces that serve as your team's single source of truth."
+    },
+    "automationDesign": {
+      "title": "Automation Design",
+      "description": "Smart workflows using n8n, Zapier, and Make to eliminate manual work."
+    }
+  },
+  "process": {
+    "title": "How It Works",
+    "subtitle": "A clear, structured process from initial audit to full implementation.",
+    "step1": {
+      "title": "Operational diagnosis",
+      "description": "We map your current processes; tools and recurring problems. The goal is to see how work really flows today; not how it is supposed to work on paper."
+    },
+    "step2": {
+      "title": "System architecture",
+      "description": "We design how your business should run as a system; where information lives; how tasks move; what gets automated and what leadership needs to see every day."
+    },
+    "step3": {
+      "title": "Build and automation",
+      "description": "We turn the architecture into real Notion workspaces and n8n workflows; shipped in small slices you can test with real work; not demo data."
+    },
+    "step4": {
+      "title": "Rollout and support",
+      "description": "We roll out the system with your team; refine what does not feel natural and stay close during the first weeks so adoption is smooth and the system sticks."
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "From one-time projects to ongoing partnerships, choose the service that fits your needs.",
+    "learnMore": "Learn more",
+    "viewAll": "View All Services",
+    "businessOS": {
+      "title": "Business OS Design & Implementation",
+      "description": "Full operating system design from strategy to execution workflows."
+    },
+    "automation": {
+      "title": "Automation Projects",
+      "description": "Custom automation workflows with n8n, Zapier, and Make."
+    },
+    "notionRetainer": {
+      "title": "Notion Architect Retainer",
+      "description": "Ongoing Notion system design and optimization."
+    },
+    "automationRetainer": {
+      "title": "Automation Ops Partner",
+      "description": "Monthly automation maintenance and optimization retainer."
+    }
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "subtitle": "Real results from teams that transformed their operations.",
+    "readCaseStudy": "Read case study",
+    "viewAll": "View All Case Studies",
+    "marketingAgency": {
+      "client": "Marketing Agency",
+      "title": "Scaled Operations with Custom Business OS",
+      "result": "40% reduction in admin time"
+    },
+    "saasStartup": {
+      "client": "SaaS Startup",
+      "title": "Automated Customer Onboarding Pipeline",
+      "result": "Onboarding time cut from 2 weeks to 2 days"
+    },
+    "consultingFirm": {
+      "client": "Consulting Firm",
+      "title": "Unified Notion Workspace for Remote Team",
+      "result": "Single source of truth for 25+ consultants"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "viewAll": "View All FAQs",
+    "question1": {
+      "q": "What's the difference between a one-time project and a retainer?",
+      "a": "One-time projects have a defined scope and end date. Retainers provide ongoing support, iteration, and optimization of your systems."
+    },
+    "question2": {
+      "q": "Do you work with n8n, Zapier, or Make?",
+      "a": "Yes, all three. I choose the best platform based on your needs, technical requirements, and budget."
+    },
+    "question3": {
+      "q": "How long does implementation take?",
+      "a": "Timelines vary by scope. A Business OS typically takes 6-8 weeks. Smaller automation projects can be completed in 2-3 weeks."
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Operations?",
+    "subtitle": "Start with a systems audit or book a call to discuss your specific needs.",
+    "primaryButton": "Get a Systems Audit",
+    "secondaryButton": "Book a Call"
+  },
+  "footer": {
+    "description": "Designing Business Operating Systems, Notion workspaces, and automation solutions for teams and agencies.",
+    "servicesTitle": "Services",
+    "companyTitle": "Company",
+    "businessOS": "Business OS Design",
+    "automation": "Automation Projects",
+    "notionArchitect": "Notion Architect",
+    "automationOps": "Automation Ops Partner",
+    "caseStudies": "Case Studies",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  }
+}
