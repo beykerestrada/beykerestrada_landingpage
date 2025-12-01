@@ -32,7 +32,7 @@ const FaqPreview = () => {
     <section className="w-full py-24 bg-muted/30">
       <div className="mx-auto max-w-content px-6 lg:px-8">
         <motion.div
-          className="mb-12"
+          className="mb-12 text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}

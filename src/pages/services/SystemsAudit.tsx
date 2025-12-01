@@ -6,8 +6,19 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const SystemsAudit = () => {
+  const { t } = useTranslation();
+
+  const whoThisIsFor = t("serviceDetail.systemsAudit.whoThisIsFor", { returnObjects: true }) as string[];
+  const included = t("serviceDetail.systemsAudit.included", { returnObjects: true }) as Record<string, { title: string; description: string }>;
+  const process = t("serviceDetail.systemsAudit.process", { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const whatYouReceive = t("serviceDetail.systemsAudit.whatYouReceive", { returnObjects: true }) as string[];
+  const outcomes = t("serviceDetail.systemsAudit.outcomes", { returnObjects: true }) as string[];
+  const pricing = t("serviceDetail.systemsAudit.pricing", { returnObjects: true }) as { amount: string; details: string[] };
+  const whatHappensNext = t("serviceDetail.systemsAudit.whatHappensNext", { returnObjects: true }) as { title: string; description: string };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -22,11 +33,11 @@ const SystemsAudit = () => {
               className="mb-16 text-center"
             >
               <div className="mb-4 inline-block rounded-full bg-accent/20 px-4 py-2 text-sm font-medium text-accent">
-                Start Here
+                {t("serviceDetail.systemsAudit.badge")}
               </div>
-              <h1 className="mb-6">Systems Audit</h1>
+              <h1 className="mb-6">{t("serviceDetail.systemsAudit.title")}</h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                A comprehensive assessment of your operations, systems, and automation opportunities with actionable recommendations.
+                {t("serviceDetail.systemsAudit.subtitle")}
               </p>
             </motion.div>
           </div>
@@ -37,25 +48,19 @@ const SystemsAudit = () => {
             <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
               <div className="lg:col-span-2 space-y-16">
                 <div>
-                  <h2 className="mb-6">Who This Is For</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.whoThisIsFor")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Teams unsure where to start with systems or automation</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Businesses wanting an expert assessment before investing</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Organizations with systems in place that aren't working well</span>
-                    </li>
+                    {whoThisIsFor.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">What's Included</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.whatsIncluded")}</h2>
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -63,112 +68,55 @@ const SystemsAudit = () => {
                     variants={staggerContainer}
                     className="grid grid-cols-1 md:grid-cols-2 gap-4"
                   >
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Operations Review</h3>
-                        <p className="text-sm text-muted-foreground">Current state assessment of workflows</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Systems Evaluation</h3>
-                        <p className="text-sm text-muted-foreground">Notion and tool stack analysis</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Automation Mapping</h3>
-                        <p className="text-sm text-muted-foreground">Identify automation opportunities</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Recommendations Report</h3>
-                        <p className="text-sm text-muted-foreground">Prioritized action plan</p>
-                      </Card>
-                    </motion.div>
+                    {Object.values(included).map((item, index) => (
+                      <motion.div key={index} variants={fadeInUp}>
+                        <Card className="p-6">
+                          <h3 className="mb-2 text-lg">{item.title}</h3>
+                          <p className="text-sm text-muted-foreground">{item.description}</p>
+                        </Card>
+                      </motion.div>
+                    ))}
                   </motion.div>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">The Process</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.theProcess")}</h2>
                   <div className="space-y-6">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0 text-3xl font-bold text-primary/20">01</div>
-                      <div>
-                        <h3 className="mb-2 text-lg font-semibold">Kick-off Interview</h3>
-                        <p className="text-muted-foreground">Understand your business, team structure, and pain points.</p>
+                    {process.map((step, index) => (
+                      <div key={index} className="flex gap-4">
+                        <div className="flex-shrink-0 text-3xl font-bold text-primary/20">
+                          {String(index + 1).padStart(2, "0")}
+                        </div>
+                        <div>
+                          <h3 className="mb-2 text-lg font-semibold">{step.title}</h3>
+                          <p className="text-muted-foreground">{step.description}</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0 text-3xl font-bold text-primary/20">02</div>
-                      <div>
-                        <h3 className="mb-2 text-lg font-semibold">Deep Dive</h3>
-                        <p className="text-muted-foreground">Review existing systems, workflows, and tools.</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0 text-3xl font-bold text-primary/20">03</div>
-                      <div>
-                        <h3 className="mb-2 text-lg font-semibold">Analysis</h3>
-                        <p className="text-muted-foreground">Identify gaps, opportunities, and quick wins.</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0 text-3xl font-bold text-primary/20">04</div>
-                      <div>
-                        <h3 className="mb-2 text-lg font-semibold">Report Delivery</h3>
-                        <p className="text-muted-foreground">Receive a detailed report with prioritized recommendations.</p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
 
                 <div>
                   <h2 className="mb-6">What You'll Receive</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Current state analysis of your operations</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Notion workspace assessment with improvement recommendations</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>List of automation opportunities with ROI estimates</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Prioritized roadmap for implementation</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Quick wins you can implement immediately</span>
-                    </li>
+                    {whatYouReceive.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">Expected Outcomes</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.expectedOutcomes")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Clear understanding of what's working and what isn't</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Confidence in next steps for improvement</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Prioritized action plan you can implement yourself or with support</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Time and cost estimates for recommended improvements</span>
-                    </li>
+                    {outcomes.map((outcome, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{outcome}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -182,33 +130,32 @@ const SystemsAudit = () => {
                     variants={scaleIn}
                   >
                     <Card className="p-8 border-accent/50 bg-accent/5">
-                      <h3 className="mb-6 text-xl font-semibold">Pricing</h3>
+                      <h3 className="mb-6 text-xl font-semibold">{t("serviceDetail.common.pricing")}</h3>
                       <div className="mb-6">
-                        <div className="text-3xl font-bold mb-2">$1,500</div>
-                        <p className="text-sm text-muted-foreground">Fixed price</p>
+                        <div className="text-3xl font-bold mb-2">{pricing.amount}</div>
+                        <p className="text-sm text-muted-foreground">{t("serviceDetail.common.fixedPrice")}</p>
                       </div>
                       <div className="mb-8 space-y-2 text-sm text-muted-foreground">
-                        <p>• 1-2 week turnaround</p>
-                        <p>• Comprehensive report</p>
-                        <p>• Prioritized roadmap</p>
-                        <p>• Follow-up call included</p>
+                        {pricing.details.map((detail, index) => (
+                          <p key={index}>• {detail}</p>
+                        ))}
                       </div>
                       <Button asChild className="w-full mb-3" size="lg">
                         <Link to="/contact">
-                          Get Your Audit
+                          {t("serviceDetail.systemsAudit.cta.primary")}
                           <ArrowRight className="ml-2 h-5 w-5" />
                         </Link>
                       </Button>
                       <p className="text-xs text-center text-muted-foreground">
-                        Audit fee credited toward future projects
+                        {t("serviceDetail.systemsAudit.note")}
                       </p>
                     </Card>
                   </motion.div>
 
                   <Card className="p-6 mt-6">
-                    <h4 className="mb-3 font-semibold">What Happens Next?</h4>
+                    <h4 className="mb-3 font-semibold">{whatHappensNext.title}</h4>
                     <p className="text-sm text-muted-foreground">
-                      After the audit, you can implement recommendations yourself, work with your team, or engage me for implementation support.
+                      {whatHappensNext.description}
                     </p>
                   </Card>
                 </div>

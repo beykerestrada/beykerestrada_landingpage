@@ -6,8 +6,20 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const AutomationRetainer = () => {
+  const { t } = useTranslation();
+
+  const whoThisIsFor = t("serviceDetail.automationRetainer.whoThisIsFor", { returnObjects: true }) as string[];
+  const problems = t("serviceDetail.automationRetainer.problems", { returnObjects: true }) as string[];
+  const included = t("serviceDetail.automationRetainer.included", { returnObjects: true }) as Record<string, { title: string; description: string }>;
+  const monthlyActivities = t("serviceDetail.automationRetainer.monthlyActivities", { returnObjects: true }) as string[];
+  const howItWorks = t("serviceDetail.automationRetainer.howItWorks", { returnObjects: true }) as { paragraph1: string; paragraph2: string };
+  const outcomes = t("serviceDetail.automationRetainer.outcomes", { returnObjects: true }) as string[];
+  const pricing = t("serviceDetail.automationRetainer.pricing", { returnObjects: true }) as { amount: string; perMonth: string; details: string[] };
+  const dontHaveAutomations = t("serviceDetail.automationRetainer.dontHaveAutomations", { returnObjects: true }) as { title: string; description: string; button: string };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -21,56 +33,40 @@ const AutomationRetainer = () => {
               variants={fadeInUp}
               className="mb-16"
             >
-              <h1 className="mb-6">Automation Ops Partner</h1>
+              <h1 className="mb-6">{t("serviceDetail.automationRetainer.title")}</h1>
               <p className="text-xl text-muted-foreground max-w-3xl">
-                Monthly automation maintenance, monitoring, and optimization to ensure your workflows run reliably.
+                {t("serviceDetail.automationRetainer.subtitle")}
               </p>
             </motion.div>
 
             <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
               <div className="lg:col-span-2 space-y-16">
                 <div>
-                  <h2 className="mb-6">Who This Is For</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.whoThisIsFor")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Teams relying on critical automations for daily operations</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Businesses without in-house automation expertise</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Companies wanting to expand automation coverage</span>
-                    </li>
+                    {whoThisIsFor.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">Problems This Solves</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.problemsSolves")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Broken automations causing operational delays</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>No visibility into automation performance</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Inability to modify or expand existing automations</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>API changes breaking existing workflows</span>
-                    </li>
+                    {problems.map((problem, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{problem}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">What's Included</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.whatsIncluded")}</h2>
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -78,88 +74,48 @@ const AutomationRetainer = () => {
                     variants={staggerContainer}
                     className="grid grid-cols-1 md:grid-cols-2 gap-4"
                   >
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Proactive Monitoring</h3>
-                        <p className="text-sm text-muted-foreground">Daily checks and error alerts</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Maintenance & Fixes</h3>
-                        <p className="text-sm text-muted-foreground">Rapid response to issues</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Optimization</h3>
-                        <p className="text-sm text-muted-foreground">Performance improvements</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">New Workflows</h3>
-                        <p className="text-sm text-muted-foreground">Monthly automation hours included</p>
-                      </Card>
-                    </motion.div>
+                    {Object.values(included).map((item, index) => (
+                      <motion.div key={index} variants={fadeInUp}>
+                        <Card className="p-6">
+                          <h3 className="mb-2 text-lg">{item.title}</h3>
+                          <p className="text-sm text-muted-foreground">{item.description}</p>
+                        </Card>
+                      </motion.div>
+                    ))}
                   </motion.div>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">Monthly Activities</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.monthlyActivities")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Monitor all automation performance and error rates</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Fix broken workflows within 24 hours</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Update automations when APIs change</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Build new workflows as business needs evolve</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Monthly performance reports</span>
-                    </li>
+                    {monthlyActivities.map((activity, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{activity}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
                   <h2 className="mb-6">How It Works</h2>
                   <p className="text-muted-foreground mb-6">
-                    I become your automation operations partner. You get proactive monitoring, rapid issue resolution, and a monthly allocation of hours for new automation projects or improvements.
+                    {howItWorks.paragraph1}
                   </p>
                   <p className="text-muted-foreground">
-                    Communication via Slack or email. Emergency fixes handled within 24 hours. Monthly check-ins to review performance and plan upcoming work.
+                    {howItWorks.paragraph2}
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">Expected Outcomes</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.expectedOutcomes")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Reliable automation infrastructure</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Fast resolution when issues arise</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Continuous improvement and expansion</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Peace of mind that automations are monitored</span>
-                    </li>
+                    {outcomes.map((outcome, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{outcome}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -173,20 +129,19 @@ const AutomationRetainer = () => {
                     variants={scaleIn}
                   >
                     <Card className="p-8">
-                      <h3 className="mb-6 text-xl font-semibold">Pricing</h3>
+                      <h3 className="mb-6 text-xl font-semibold">{t("serviceDetail.common.pricing")}</h3>
                       <div className="mb-6">
-                        <div className="text-3xl font-bold mb-2">$1,200 - $2,500</div>
-                        <p className="text-sm text-muted-foreground">Per month</p>
+                        <div className="text-3xl font-bold mb-2">{pricing.amount}</div>
+                        <p className="text-sm text-muted-foreground">{pricing.perMonth}</p>
                       </div>
                       <div className="mb-8 space-y-2 text-sm text-muted-foreground">
-                        <p>• Proactive monitoring</p>
-                        <p>• 24-hour fix response time</p>
-                        <p>• 8-15 hours for new workflows</p>
-                        <p>• Monthly reporting</p>
+                        {pricing.details.map((detail, index) => (
+                          <p key={index}>• {detail}</p>
+                        ))}
                       </div>
                       <Button asChild className="w-full mb-3" size="lg">
                         <Link to="/contact">
-                          Get Started
+                          {t("serviceDetail.automationRetainer.cta.primary")}
                           <ArrowRight className="ml-2 h-5 w-5" />
                         </Link>
                       </Button>
@@ -194,12 +149,12 @@ const AutomationRetainer = () => {
                   </motion.div>
 
                   <Card className="p-6 mt-6">
-                    <h4 className="mb-3 font-semibold">Don't have automations yet?</h4>
+                    <h4 className="mb-3 font-semibold">{dontHaveAutomations.title}</h4>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Start with a one-time automation project.
+                      {dontHaveAutomations.description}
                     </p>
                     <Button asChild variant="outline" className="w-full">
-                      <Link to="/services/automation">View Automation Projects</Link>
+                      <Link to="/services/automation">{dontHaveAutomations.button}</Link>
                     </Button>
                   </Card>
                 </div>

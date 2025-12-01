@@ -125,5 +125,584 @@
     "faq": "FAQ",
     "contact": "Contact",
     "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "returnHome": "Return to Home"
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Whether you're ready to start a project or exploring options, I'm here to help.",
+    "email": {
+      "title": "Email",
+      "description": "Send me a message about your project. I respond to all inquiries within 24 hours.",
+      "address": "hello@example.com"
+    },
+    "call": {
+      "title": "Book a Call",
+      "description": "Schedule a 30-minute call to discuss your needs and explore how I can help.",
+      "link": "View Available Times"
+    },
+    "expectations": {
+      "title": "What to Expect",
+      "initialResponse": {
+        "title": "Initial Response",
+        "description": "I respond to all inquiries within 24 hours (usually same day). I'll ask clarifying questions to understand your needs."
+      },
+      "discoveryCall": {
+        "title": "Discovery Call",
+        "description": "We'll schedule a 30-minute call to discuss your operations, pain points, and goals. No obligation, just exploration."
+      },
+      "proposal": {
+        "title": "Proposal",
+        "description": "If it's a good fit, I'll send a detailed proposal with scope, timeline, and pricing. Most proposals are delivered within 48 hours."
+      },
+      "projectStart": {
+        "title": "Project Start",
+        "description": "Once you approve the proposal, we schedule kickoff and begin work. Most projects start within 1-2 weeks."
+      }
+    },
+    "notSure": {
+      "title": "Not Sure Where to Start?",
+      "description": "If you're exploring options and not ready to commit to a project, consider starting with a Systems Audit. It's a low-commitment way to get expert assessment and recommendations.",
+      "link": "Learn About Systems Audit →"
+    }
+  },
+  "servicesPage": {
+    "title": "Services",
+    "subtitle": "From one-time implementations to ongoing partnerships, choose the service model that fits your needs. Every project starts with understanding your operations and ends with a system you can maintain.",
+    "learnMore": "Learn more",
+    "services": [
+      {
+        "title": "Business OS Design & Implementation",
+        "description": "Complete operating system design connecting strategy, operations, and execution.",
+        "link": "/services/business-os"
+      },
+      {
+        "title": "Automation Projects",
+        "description": "Custom workflow automation using n8n, Zapier, and Make to eliminate repetitive tasks.",
+        "link": "/services/automation"
+      },
+      {
+        "title": "Notion Architect Retainer",
+        "description": "Ongoing Notion system design, optimization, and team training.",
+        "link": "/services/notion-retainer"
+      },
+      {
+        "title": "Automation Ops Partner",
+        "description": "Monthly automation maintenance, monitoring, and optimization retainer.",
+        "link": "/services/automation-retainer"
+      },
+      {
+        "title": "Systems Audit",
+        "description": "Comprehensive assessment of your operations with actionable recommendations.",
+        "link": "/services/systems-audit",
+        "badge": "Start Here"
+      },
+      {
+        "title": "White-Label Systems for Agencies",
+        "description": "Deliver systems and automation services to your clients under your brand.",
+        "link": "/services/white-label",
+        "badge": "For Agencies"
+      }
+    ],
+    "notSure": {
+      "title": "Not sure which service fits your needs?",
+      "description": "Book a call to discuss your operations and get a recommendation.",
+      "cta": "Book a Call"
+    }
+  },
+  "caseStudiesPage": {
+    "title": "Case Studies",
+    "subtitle": "Real results from teams and agencies that transformed their operations with custom systems and automation.",
+    "readFullCaseStudy": "Read full case study",
+    "caseStudies": [
+      {
+        "id": "marketing-agency",
+        "client": "Marketing Agency",
+        "industry": "Marketing Services",
+        "title": "Scaled Operations with Custom Business OS",
+        "description": "Built a complete Business Operating System in Notion to centralize client management, project workflows, and team collaboration.",
+        "result": "40% reduction in admin time",
+        "metrics": ["15 → 30 clients managed", "No new operations hires", "2-day onboarding vs 2 weeks"]
+      },
+      {
+        "id": "saas-startup",
+        "client": "SaaS Startup",
+        "industry": "Software",
+        "title": "Automated Customer Onboarding Pipeline",
+        "description": "Designed end-to-end automation connecting CRM, documentation tools, and project management for seamless customer onboarding.",
+        "result": "Onboarding time cut from 2 weeks to 2 days",
+        "metrics": ["14 → 2 day onboarding", "90% manual work eliminated", "Zero customer complaints"]
+      },
+      {
+        "id": "consulting-firm",
+        "client": "Consulting Firm",
+        "industry": "Professional Services",
+        "title": "Unified Notion Workspace for Remote Team",
+        "description": "Created a centralized knowledge base and project management system for a distributed team of 25+ consultants.",
+        "result": "Single source of truth for 25+ consultants",
+        "metrics": ["3 → 1 tool", "80% faster information access", "Team-wide adoption"]
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Your Operations?",
+      "description": "Start with a systems audit or book a call to discuss your specific needs.",
+      "primary": "Get a Systems Audit",
+      "secondary": "Book a Call"
+    }
+  },
+  "faqPage": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about working together, from process to pricing.",
+    "sections": [
+      {
+        "category": "General",
+        "questions": [
+          {
+            "question": "What types of businesses do you work with?",
+            "answer": "I work with growing teams, agencies, and startups across industries. Most clients are between 5-50 people and need systems to scale operations without proportional headcount growth."
+          },
+          {
+            "question": "Do you work with clients remotely?",
+            "answer": "Yes, all projects are conducted remotely. Most clients are in the US and Europe, but I've worked with teams worldwide."
+          },
+          {
+            "question": "How do I get started?",
+            "answer": "The best starting point is either a Systems Audit (if you're exploring options) or booking a call to discuss your specific needs. Both options help us determine the right approach."
+          }
+        ]
+      },
+      {
+        "category": "Notion Systems",
+        "questions": [
+          {
+            "question": "Do you only work in Notion?",
+            "answer": "Notion is my primary platform for Business Operating Systems, but I work with other tools when they're the right fit. The goal is choosing the best solution for your needs, not forcing everything into Notion."
+          },
+          {
+            "question": "Can you migrate data from our current system into Notion?",
+            "answer": "Yes, data migration is typically included in Business OS projects. We assess your current data, clean it up, and migrate what's relevant to the new system."
+          },
+          {
+            "question": "What if our team doesn't know how to use Notion?",
+            "answer": "Team training is included in all Notion projects. Most teams become comfortable within a week of daily use. Documentation and training videos are also provided."
+          }
+        ]
+      },
+      {
+        "category": "Automation",
+        "questions": [
+          {
+            "question": "Which automation platform should I use: n8n, Zapier, or Make?",
+            "answer": "It depends on your technical capabilities, budget, and specific needs. n8n offers the most flexibility but requires some technical setup. Zapier is user-friendly with extensive integrations. Make is powerful and cost-effective for complex workflows. I help choose the right platform during scoping."
+          },
+          {
+            "question": "Do I need technical skills to maintain automations?",
+            "answer": "No. All automations include documentation and are designed to be maintainable by non-technical users. Error notifications are set up so you know when something breaks."
+          },
+          {
+            "question": "What happens if an automation breaks?",
+            "answer": "For one-time projects, basic support is included for 2-4 weeks post-launch. For ongoing needs, the Automation Ops Partner retainer provides monitoring and rapid fixes."
+          }
+        ]
+      },
+      {
+        "category": "Pricing & Process",
+        "questions": [
+          {
+            "question": "What's the difference between a one-time project and a retainer?",
+            "answer": "One-time projects have a defined scope and deliverable. Retainers provide ongoing support, optimization, and new feature development. Retainers make sense when your systems need to evolve regularly."
+          },
+          {
+            "question": "How long does implementation take?",
+            "answer": "Systems Audits: 1-2 weeks. Automation projects: 2-4 weeks. Business OS: 6-8 weeks. Timelines depend on project scope and your team's availability for feedback."
+          },
+          {
+            "question": "Do you offer payment plans?",
+            "answer": "Yes, projects over $5,000 can be split into milestone-based payments. Retainers are billed monthly."
+          },
+          {
+            "question": "What's included in post-launch support?",
+            "answer": "All projects include 2-4 weeks of post-launch support for bug fixes and minor adjustments. This ensures the system works as expected before handover."
+          }
+        ]
+      },
+      {
+        "category": "Agencies & Partners",
+        "questions": [
+          {
+            "question": "How does white-label work?",
+            "answer": "You sell services to your clients under your brand. I handle delivery behind the scenes. You maintain the client relationship and set your own pricing. I provide wholesale pricing with predictable costs."
+          },
+          {
+            "question": "What's the minimum commitment for white-label partnerships?",
+            "answer": "Minimum 2 projects per quarter to maintain the partnership. This ensures we build familiarity with your brand and delivery standards."
+          },
+          {
+            "question": "Can you help with sales and scoping?",
+            "answer": "Yes, I provide sales support including scoping assistance, proposal templates, and pricing guidance to help you close deals."
+          }
+        ]
+      },
+      {
+        "category": "Implementation & Handover",
+        "questions": [
+          {
+            "question": "Will our team be able to maintain the system after you're done?",
+            "answer": "Yes. All projects include training and documentation designed for non-technical users. Systems are built to be maintained by your team, not dependent on me."
+          },
+          {
+            "question": "What if we need changes after the project is complete?",
+            "answer": "Minor changes are covered during the support period. For ongoing needs, you can book ad-hoc hours or establish a retainer. Many clients start with a one-time project and move to a retainer as needs evolve."
+          },
+          {
+            "question": "Do you provide ongoing support after handover?",
+            "answer": "Ongoing support is available through retainer agreements (Notion Architect or Automation Ops Partner). Ad-hoc support can also be purchased as needed."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Still Have Questions?",
+      "description": "Book a call to discuss your specific situation and get personalized answers.",
+      "button": "Book a Call"
+    }
+  },
+  "serviceDetail": {
+    "common": {
+      "whoThisIsFor": "Who This Is For",
+      "problemsSolves": "Problems This Solves",
+      "whatsIncluded": "What's Included",
+      "theProcess": "The Process",
+      "expectedOutcomes": "Expected Outcomes",
+      "pricing": "Pricing",
+      "getStarted": "Get Started",
+      "relatedCaseStudies": "Related Case Studies",
+      "commonProjects": "Common Automation Projects",
+      "monthlyActivities": "Monthly Activities",
+      "oneTimeProjectFee": "One-time project fee",
+      "perAutomationProject": "Per automation project",
+      "monthlyRetainer": "Monthly retainer",
+      "fixedPrice": "Fixed price",
+      "backToServices": "Back to Services"
+    },
+    "businessOS": {
+      "title": "Business OS Design & Implementation",
+      "subtitle": "A complete operating system that connects your strategy, team workflows, and execution in one unified Notion workspace.",
+      "whoThisIsFor": [
+        "Growing teams with fragmented tools and unclear workflows",
+        "Agencies managing multiple clients without a central system",
+        "Founders who need to systematize before scaling"
+      ],
+      "problems": [
+        "Information scattered across multiple tools",
+        "No single source of truth for team operations",
+        "Unclear workflows and handoffs between departments",
+        "Difficulty onboarding new team members"
+      ],
+      "included": {
+        "audit": {"title": "Operations Audit", "description": "Complete review of current systems and workflows"},
+        "architecture": {"title": "System Architecture", "description": "Custom-designed Notion workspace structure"},
+        "workflow": {"title": "Workflow Design", "description": "End-to-end process documentation"},
+        "training": {"title": "Team Training", "description": "Onboarding sessions and documentation"}
+      },
+      "process": [
+        {"title": "Discovery & Audit", "description": "Map current operations, identify gaps, and define requirements."},
+        {"title": "Architecture Design", "description": "Design the system structure and workflow connections."},
+        {"title": "Implementation", "description": "Build the Notion workspace with all databases and views."},
+        {"title": "Training & Handover", "description": "Team training, documentation, and ongoing support setup."}
+      ],
+      "outcomes": [
+        "Single source of truth for all team operations",
+        "Clear, documented workflows for every department",
+        "Faster onboarding for new team members",
+        "Scalable system that grows with your business"
+      ],
+      "pricing": {
+        "amount": "$8,000 - $15,000",
+        "details": ["6-8 week timeline", "Includes full implementation", "Team training included", "30-day post-launch support"]
+      },
+      "cta": {
+        "primary": "Get Started",
+        "secondary": "Start with an Audit"
+      },
+      "relatedCaseStudies": [
+        {"title": "Marketing Agency Business OS", "link": "/case-studies/marketing-agency"},
+        {"title": "Consulting Firm Workspace", "link": "/case-studies/consulting-firm"}
+      ]
+    },
+    "automation": {
+      "title": "Automation Projects",
+      "subtitle": "Custom workflow automation using n8n, Zapier, and Make to eliminate repetitive tasks and connect your tools.",
+      "whoThisIsFor": [
+        "Teams spending hours on manual data entry and transfers",
+        "Businesses with disconnected tools that need to talk to each other",
+        "Operations teams looking to scale without adding headcount"
+      ],
+      "commonProjects": {
+        "title": "Common Automation Projects",
+        "items": {
+          "leadRouting": {"title": "Lead Routing", "description": "Automatic distribution and enrichment of inbound leads"},
+          "clientOnboarding": {"title": "Client Onboarding", "description": "End-to-end automation from contract to kickoff"},
+          "dataSync": {"title": "Data Sync", "description": "Keep multiple systems in sync automatically"},
+          "reporting": {"title": "Reporting", "description": "Automated data aggregation and report generation"}
+        }
+      },
+      "included": [
+        "Workflow mapping and requirements documentation",
+        "Platform selection (n8n, Zapier, or Make)",
+        "Complete automation build and testing",
+        "Error handling and monitoring setup",
+        "Documentation and team handover"
+      ],
+      "process": [
+        {"title": "Workflow Audit", "description": "Map current manual processes and identify automation opportunities."},
+        {"title": "Design", "description": "Design the automation flow and select the right platform."},
+        {"title": "Build & Test", "description": "Implement the automation with thorough testing."},
+        {"title": "Deploy & Monitor", "description": "Launch with monitoring and support for any adjustments."}
+      ],
+      "outcomes": [
+        "Significant time savings on repetitive tasks",
+        "Reduced human error in data transfers",
+        "Better data consistency across systems",
+        "Ability to scale operations without proportional headcount growth"
+      ],
+      "pricing": {
+        "amount": "$2,500 - $8,000",
+        "details": ["2-4 week timeline", "Includes implementation", "Testing and QA included", "2 weeks post-launch support"]
+      },
+      "cta": {
+        "primary": "Get Started",
+        "secondary": "Ongoing Support"
+      },
+      "relatedCaseStudy": {
+        "title": "SaaS Customer Onboarding Automation",
+        "link": "/case-studies/saas-startup"
+      }
+    },
+    "systemsAudit": {
+      "title": "Systems Audit",
+      "subtitle": "A comprehensive assessment of your operations, systems, and automation opportunities with actionable recommendations.",
+      "badge": "Start Here",
+      "whoThisIsFor": [
+        "Teams unsure where to start with systems or automation",
+        "Businesses wanting an expert assessment before investing",
+        "Organizations with systems in place that aren't working well"
+      ],
+      "included": {
+        "operationsReview": {"title": "Operations Review", "description": "Current state assessment of workflows"},
+        "systemsEvaluation": {"title": "Systems Evaluation", "description": "Notion and tool stack analysis"},
+        "automationMapping": {"title": "Automation Mapping", "description": "Identify automation opportunities"},
+        "recommendationsReport": {"title": "Recommendations Report", "description": "Prioritized action plan"}
+      },
+      "process": [
+        {"title": "Kick-off Interview", "description": "Understand your business, team structure, and pain points."},
+        {"title": "Deep Dive", "description": "Review existing systems, workflows, and tools."},
+        {"title": "Analysis", "description": "Identify gaps, opportunities, and quick wins."},
+        {"title": "Report Delivery", "description": "Receive a detailed report with prioritized recommendations."}
+      ],
+      "whatYouReceive": [
+        "Current state analysis of your operations",
+        "Notion workspace assessment with improvement recommendations",
+        "List of automation opportunities with ROI estimates",
+        "Prioritized roadmap for implementation",
+        "Quick wins you can implement immediately"
+      ],
+      "outcomes": [
+        "Clear understanding of what's working and what isn't",
+        "Confidence in next steps for improvement",
+        "Prioritized action plan you can implement yourself or with support",
+        "Time and cost estimates for recommended improvements"
+      ],
+      "pricing": {
+        "amount": "$1,500",
+        "details": ["1-2 week turnaround", "Comprehensive report", "Prioritized roadmap", "Follow-up call included"]
+      },
+      "cta": {
+        "primary": "Get Your Audit"
+      },
+      "note": "Audit fee credited toward future projects",
+      "whatHappensNext": {
+        "title": "What Happens Next?",
+        "description": "After the audit, you can implement recommendations yourself, work with your team, or engage me for implementation support."
+      }
+    },
+    "notionRetainer": {
+      "title": "Notion Architect Retainer",
+      "subtitle": "Ongoing Notion system design, optimization, and team support to keep your workspace running smoothly.",
+      "whoThisIsFor": [
+        "Teams with evolving workflows that need regular system updates",
+        "Growing companies that need expert support as they scale",
+        "Organizations wanting to maximize their Notion investment"
+      ],
+      "included": {
+        "monthlyDesignHours": {"title": "Monthly Design Hours", "description": "Dedicated time for workspace improvements"},
+        "templateCreation": {"title": "Template Creation", "description": "Custom templates for common workflows"},
+        "teamSupport": {"title": "Team Support", "description": "Answer questions and solve issues"},
+        "systemOptimization": {"title": "System Optimization", "description": "Performance improvements and cleanup"}
+      },
+      "monthlyActivities": [
+        "New database and view creation as needs evolve",
+        "Formula and automation updates",
+        "Team training on new features",
+        "Regular system health checks",
+        "Documentation updates"
+      ],
+      "howItWorks": {
+        "paragraph1": "You get a dedicated monthly allocation of design hours. Use them for new features, optimizations, training, or troubleshooting. Unused hours don't roll over, ensuring you maximize value each month.",
+        "paragraph2": "We meet monthly to review priorities and plan upcoming work. Communication happens async via Slack or your preferred tool."
+      },
+      "outcomes": [
+        "Notion workspace that evolves with your business",
+        "Fast resolution of system issues",
+        "Team confidence using the system",
+        "Ongoing optimization and improvements"
+      ],
+      "pricing": {
+        "amount": "$1,500 - $3,500",
+        "perMonth": "Per month",
+        "details": ["10-20 hours per month", "Priority support", "Flexible scope", "3-month minimum commitment"]
+      },
+      "cta": {
+        "primary": "Get Started"
+      },
+      "notSure": {
+        "title": "Not sure if this fits?",
+        "description": "Book a call to discuss your needs.",
+        "button": "Schedule Call"
+      }
+    },
+    "automationRetainer": {
+      "title": "Automation Ops Partner",
+      "subtitle": "Monthly automation maintenance, monitoring, and optimization to ensure your workflows run reliably.",
+      "whoThisIsFor": [
+        "Teams relying on critical automations for daily operations",
+        "Businesses without in-house automation expertise",
+        "Companies wanting to expand automation coverage"
+      ],
+      "problems": [
+        "Broken automations causing operational delays",
+        "No visibility into automation performance",
+        "Inability to modify or expand existing automations",
+        "API changes breaking existing workflows"
+      ],
+      "included": {
+        "proactiveMonitoring": {"title": "Proactive Monitoring", "description": "Daily checks and error alerts"},
+        "maintenanceFixes": {"title": "Maintenance & Fixes", "description": "Rapid response to issues"},
+        "optimization": {"title": "Optimization", "description": "Performance improvements"},
+        "newWorkflows": {"title": "New Workflows", "description": "Monthly automation hours included"}
+      },
+      "monthlyActivities": [
+        "Monitor all automation performance and error rates",
+        "Fix broken workflows within 24 hours",
+        "Update automations when APIs change",
+        "Build new workflows as business needs evolve",
+        "Monthly performance reports"
+      ],
+      "howItWorks": {
+        "paragraph1": "I become your automation operations partner. You get proactive monitoring, rapid issue resolution, and a monthly allocation of hours for new automation projects or improvements.",
+        "paragraph2": "Communication via Slack or email. Emergency fixes handled within 24 hours. Monthly check-ins to review performance and plan upcoming work."
+      },
+      "outcomes": [
+        "Reliable automation infrastructure",
+        "Fast resolution when issues arise",
+        "Continuous improvement and expansion",
+        "Peace of mind that automations are monitored"
+      ],
+      "pricing": {
+        "amount": "$1,200 - $2,500",
+        "perMonth": "Per month",
+        "details": ["Proactive monitoring", "24-hour fix response time", "8-15 hours for new workflows", "Monthly reporting"]
+      },
+      "cta": {
+        "primary": "Get Started"
+      },
+      "dontHaveAutomations": {
+        "title": "Don't have automations yet?",
+        "description": "Start with a one-time automation project.",
+        "button": "View Automation Projects"
+      }
+    },
+    "whiteLabel": {
+      "title": "White-Label Systems for Agencies",
+      "subtitle": "Scale your agency by offering systems and automation services under your brand. I handle delivery while you own the client relationship.",
+      "badge": "For Agencies",
+      "whoThisIsFor": [
+        "Marketing and creative agencies wanting to add systems services",
+        "Consultancies looking to productize operations expertise",
+        "Tech agencies expanding into automation and Notion"
+      ],
+      "howItWorks": {
+        "paragraph1": "You sell systems and automation services to your clients under your agency brand. I become your delivery partner, working behind the scenes to implement while you maintain the client relationship.",
+        "paragraph2": "You set your own pricing and margins. I provide fixed-price delivery with predictable costs, allowing you to build a profitable service line."
+      },
+      "included": {
+        "whiteLabelDelivery": {"title": "White-Label Delivery", "description": "All work delivered under your brand"},
+        "fixedPricing": {"title": "Fixed Pricing", "description": "Predictable costs for margin planning"},
+        "salesSupport": {"title": "Sales Support", "description": "Help with scoping and proposals"},
+        "clientTraining": {"title": "Client Training", "description": "Branded training and documentation"}
+      },
+      "servicesAvailable": [
+        "Business Operating Systems in Notion",
+        "Workflow automation (n8n, Zapier, Make)",
+        "Custom Notion workspace design",
+        "Operations audits and assessments"
+      ],
+      "pricingStructure": {
+        "intro": "White-label services are priced at wholesale rates, typically 30-40% below retail pricing. This allows you to mark up services while remaining competitive.",
+        "items": {
+          "businessOS": {
+            "title": "Business OS",
+            "wholesale": "$5,000 - $10,000 wholesale",
+            "retail": "Typical retail: $8,000 - $15,000"
+          },
+          "automationProject": {
+            "title": "Automation Project",
+            "wholesale": "$1,500 - $5,000 wholesale",
+            "retail": "Typical retail: $2,500 - $8,000"
+          }
+        }
+      },
+      "process": [
+        {"title": "Partnership Setup", "description": "Establish white-label agreement and communication protocols."},
+        {"title": "Project Scoping", "description": "You bring the client opportunity, we scope together."},
+        {"title": "Delivery", "description": "I handle all implementation under your brand."},
+        {"title": "Handover", "description": "Client training and documentation in your brand."}
+      ],
+      "outcomes": [
+        "New revenue stream with healthy margins",
+        "Expanded service offering without hiring specialists",
+        "Predictable delivery costs and timelines",
+        "Higher client lifetime value through additional services"
+      ],
+      "getStarted": {
+        "description": "Book a call to discuss partnership terms and how we can work together.",
+        "button": "Schedule Partnership Call"
+      },
+      "minimumCommitment": {
+        "title": "Minimum Commitment",
+        "description": "White-label partnerships require a minimum of 2 projects per quarter to maintain the relationship."
+      }
+    }
+  },
+  "caseStudyDetail": {
+    "common": {
+      "backToCaseStudies": "Back to Case Studies",
+      "keyMetrics": "Key Metrics",
+      "clientContext": "Client Context",
+      "theProblem": "The Problem",
+      "scopeOfWork": "Scope of Work",
+      "deliverables": "Deliverables",
+      "systemsAutomations": "Systems & Automations Delivered",
+      "beforeAfter": "Before / After",
+      "before": "Before",
+      "after": "After",
+      "outcomesImpact": "Outcomes & Impact",
+      "clientTestimonial": "Client Testimonial",
+      "readyToTransform": "Ready to Transform Your Operations?",
+      "readySubtitle": "Start with a systems audit or book a call to discuss your specific needs."
+    }
   }
 }

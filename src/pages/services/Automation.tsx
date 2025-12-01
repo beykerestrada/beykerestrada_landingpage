@@ -6,8 +6,19 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Automation = () => {
+  const { t } = useTranslation();
+
+  const whoThisIsFor = t("serviceDetail.automation.whoThisIsFor", { returnObjects: true }) as string[];
+  const commonProjects = t("serviceDetail.automation.commonProjects.items", { returnObjects: true }) as Record<string, { title: string; description: string }>;
+  const included = t("serviceDetail.automation.included", { returnObjects: true }) as string[];
+  const process = t("serviceDetail.automation.process", { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const outcomes = t("serviceDetail.automation.outcomes", { returnObjects: true }) as string[];
+  const pricing = t("serviceDetail.automation.pricing", { returnObjects: true }) as { amount: string; details: string[] };
+  const relatedCaseStudy = t("serviceDetail.automation.relatedCaseStudy", { returnObjects: true }) as { title: string; link: string };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -21,34 +32,28 @@ const Automation = () => {
               variants={fadeInUp}
               className="mb-16"
             >
-              <h1 className="mb-6">Automation Projects</h1>
+              <h1 className="mb-6">{t("serviceDetail.automation.title")}</h1>
               <p className="text-xl text-muted-foreground max-w-3xl">
-                Custom workflow automation using n8n, Zapier, and Make to eliminate repetitive tasks and connect your tools.
+                {t("serviceDetail.automation.subtitle")}
               </p>
             </motion.div>
 
             <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
               <div className="lg:col-span-2 space-y-16">
                 <div>
-                  <h2 className="mb-6">Who This Is For</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.whoThisIsFor")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Teams spending hours on manual data entry and transfers</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Businesses with disconnected tools that need to talk to each other</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Operations teams looking to scale without adding headcount</span>
-                    </li>
+                    {whoThisIsFor.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">Common Automation Projects</h2>
+                  <h2 className="mb-6">{t("serviceDetail.automation.commonProjects.title")}</h2>
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -56,112 +61,55 @@ const Automation = () => {
                     variants={staggerContainer}
                     className="grid grid-cols-1 md:grid-cols-2 gap-4"
                   >
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Lead Routing</h3>
-                        <p className="text-sm text-muted-foreground">Automatic distribution and enrichment of inbound leads</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Client Onboarding</h3>
-                        <p className="text-sm text-muted-foreground">End-to-end automation from contract to kickoff</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Data Sync</h3>
-                        <p className="text-sm text-muted-foreground">Keep multiple systems in sync automatically</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Reporting</h3>
-                        <p className="text-sm text-muted-foreground">Automated data aggregation and report generation</p>
-                      </Card>
-                    </motion.div>
+                    {Object.values(commonProjects).map((project, index) => (
+                      <motion.div key={index} variants={fadeInUp}>
+                        <Card className="p-6">
+                          <h3 className="mb-2 text-lg">{project.title}</h3>
+                          <p className="text-sm text-muted-foreground">{project.description}</p>
+                        </Card>
+                      </motion.div>
+                    ))}
                   </motion.div>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">What's Included</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.whatsIncluded")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Workflow mapping and requirements documentation</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Platform selection (n8n, Zapier, or Make)</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Complete automation build and testing</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Error handling and monitoring setup</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Documentation and team handover</span>
-                    </li>
+                    {included.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">The Process</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.theProcess")}</h2>
                   <div className="space-y-6">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0 text-3xl font-bold text-primary/20">01</div>
-                      <div>
-                        <h3 className="mb-2 text-lg font-semibold">Workflow Audit</h3>
-                        <p className="text-muted-foreground">Map current manual processes and identify automation opportunities.</p>
+                    {process.map((step, index) => (
+                      <div key={index} className="flex gap-4">
+                        <div className="flex-shrink-0 text-3xl font-bold text-primary/20">
+                          {String(index + 1).padStart(2, "0")}
+                        </div>
+                        <div>
+                          <h3 className="mb-2 text-lg font-semibold">{step.title}</h3>
+                          <p className="text-muted-foreground">{step.description}</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0 text-3xl font-bold text-primary/20">02</div>
-                      <div>
-                        <h3 className="mb-2 text-lg font-semibold">Design</h3>
-                        <p className="text-muted-foreground">Design the automation flow and select the right platform.</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0 text-3xl font-bold text-primary/20">03</div>
-                      <div>
-                        <h3 className="mb-2 text-lg font-semibold">Build & Test</h3>
-                        <p className="text-muted-foreground">Implement the automation with thorough testing.</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0 text-3xl font-bold text-primary/20">04</div>
-                      <div>
-                        <h3 className="mb-2 text-lg font-semibold">Deploy & Monitor</h3>
-                        <p className="text-muted-foreground">Launch with monitoring and support for any adjustments.</p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">Expected Outcomes</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.expectedOutcomes")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Significant time savings on repetitive tasks</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Reduced human error in data transfers</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Better data consistency across systems</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Ability to scale operations without proportional headcount growth</span>
-                    </li>
+                    {outcomes.map((outcome, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{outcome}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -175,33 +123,32 @@ const Automation = () => {
                     variants={scaleIn}
                   >
                     <Card className="p-8">
-                      <h3 className="mb-6 text-xl font-semibold">Pricing</h3>
+                      <h3 className="mb-6 text-xl font-semibold">{t("serviceDetail.common.pricing")}</h3>
                       <div className="mb-6">
-                        <div className="text-3xl font-bold mb-2">$2,500 - $8,000</div>
-                        <p className="text-sm text-muted-foreground">Per automation project</p>
+                        <div className="text-3xl font-bold mb-2">{pricing.amount}</div>
+                        <p className="text-sm text-muted-foreground">{t("serviceDetail.common.perAutomationProject")}</p>
                       </div>
                       <div className="mb-8 space-y-2 text-sm text-muted-foreground">
-                        <p>• 2-4 week timeline</p>
-                        <p>• Includes implementation</p>
-                        <p>• Testing and QA included</p>
-                        <p>• 2 weeks post-launch support</p>
+                        {pricing.details.map((detail, index) => (
+                          <p key={index}>• {detail}</p>
+                        ))}
                       </div>
                       <Button asChild className="w-full mb-3" size="lg">
                         <Link to="/contact">
-                          Get Started
+                          {t("serviceDetail.automation.cta.primary")}
                           <ArrowRight className="ml-2 h-5 w-5" />
                         </Link>
                       </Button>
                       <Button asChild variant="outline" className="w-full" size="lg">
-                        <Link to="/services/automation-retainer">Ongoing Support</Link>
+                        <Link to="/services/automation-retainer">{t("serviceDetail.automation.cta.secondary")}</Link>
                       </Button>
                     </Card>
                   </motion.div>
 
                   <Card className="p-6 mt-6">
-                    <h4 className="mb-3 font-semibold">Related Case Study</h4>
-                    <Link to="/case-studies/saas-startup" className="block text-sm text-accent hover:underline">
-                      SaaS Customer Onboarding Automation
+                    <h4 className="mb-3 font-semibold">{t("serviceDetail.common.relatedCaseStudies")}</h4>
+                    <Link to={relatedCaseStudy.link} className="block text-sm text-accent hover:underline">
+                      {relatedCaseStudy.title}
                     </Link>
                   </Card>
                 </div>

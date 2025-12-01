@@ -6,8 +6,19 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const NotionRetainer = () => {
+  const { t } = useTranslation();
+
+  const whoThisIsFor = t("serviceDetail.notionRetainer.whoThisIsFor", { returnObjects: true }) as string[];
+  const included = t("serviceDetail.notionRetainer.included", { returnObjects: true }) as Record<string, { title: string; description: string }>;
+  const monthlyActivities = t("serviceDetail.notionRetainer.monthlyActivities", { returnObjects: true }) as string[];
+  const howItWorks = t("serviceDetail.notionRetainer.howItWorks", { returnObjects: true }) as { paragraph1: string; paragraph2: string };
+  const outcomes = t("serviceDetail.notionRetainer.outcomes", { returnObjects: true }) as string[];
+  const pricing = t("serviceDetail.notionRetainer.pricing", { returnObjects: true }) as { amount: string; perMonth: string; details: string[] };
+  const notSure = t("serviceDetail.notionRetainer.notSure", { returnObjects: true }) as { title: string; description: string; button: string };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -21,34 +32,28 @@ const NotionRetainer = () => {
               variants={fadeInUp}
               className="mb-16"
             >
-              <h1 className="mb-6">Notion Architect Retainer</h1>
+              <h1 className="mb-6">{t("serviceDetail.notionRetainer.title")}</h1>
               <p className="text-xl text-muted-foreground max-w-3xl">
-                Ongoing Notion system design, optimization, and team support to keep your workspace running smoothly.
+                {t("serviceDetail.notionRetainer.subtitle")}
               </p>
             </motion.div>
 
             <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
               <div className="lg:col-span-2 space-y-16">
                 <div>
-                  <h2 className="mb-6">Who This Is For</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.whoThisIsFor")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Teams with evolving workflows that need regular system updates</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Growing companies that need expert support as they scale</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Organizations wanting to maximize their Notion investment</span>
-                    </li>
+                    {whoThisIsFor.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">What's Included</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.whatsIncluded")}</h2>
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -56,88 +61,48 @@ const NotionRetainer = () => {
                     variants={staggerContainer}
                     className="grid grid-cols-1 md:grid-cols-2 gap-4"
                   >
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Monthly Design Hours</h3>
-                        <p className="text-sm text-muted-foreground">Dedicated time for workspace improvements</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Template Creation</h3>
-                        <p className="text-sm text-muted-foreground">Custom templates for common workflows</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">Team Support</h3>
-                        <p className="text-sm text-muted-foreground">Answer questions and solve issues</p>
-                      </Card>
-                    </motion.div>
-                    <motion.div variants={fadeInUp}>
-                      <Card className="p-6">
-                        <h3 className="mb-2 text-lg">System Optimization</h3>
-                        <p className="text-sm text-muted-foreground">Performance improvements and cleanup</p>
-                      </Card>
-                    </motion.div>
+                    {Object.values(included).map((item, index) => (
+                      <motion.div key={index} variants={fadeInUp}>
+                        <Card className="p-6">
+                          <h3 className="mb-2 text-lg">{item.title}</h3>
+                          <p className="text-sm text-muted-foreground">{item.description}</p>
+                        </Card>
+                      </motion.div>
+                    ))}
                   </motion.div>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">Monthly Activities</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.monthlyActivities")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>New database and view creation as needs evolve</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Formula and automation updates</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Team training on new features</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Regular system health checks</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Documentation updates</span>
-                    </li>
+                    {monthlyActivities.map((activity, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{activity}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
                   <h2 className="mb-6">How It Works</h2>
                   <p className="text-muted-foreground mb-6">
-                    You get a dedicated monthly allocation of design hours. Use them for new features, optimizations, training, or troubleshooting. Unused hours don't roll over, ensuring you maximize value each month.
+                    {howItWorks.paragraph1}
                   </p>
                   <p className="text-muted-foreground">
-                    We meet monthly to review priorities and plan upcoming work. Communication happens async via Slack or your preferred tool.
+                    {howItWorks.paragraph2}
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="mb-6">Expected Outcomes</h2>
+                  <h2 className="mb-6">{t("serviceDetail.common.expectedOutcomes")}</h2>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Notion workspace that evolves with your business</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Fast resolution of system issues</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Team confidence using the system</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                      <span>Ongoing optimization and improvements</span>
-                    </li>
+                    {outcomes.map((outcome, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle2 className="mr-3 h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
+                        <span>{outcome}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -151,20 +116,19 @@ const NotionRetainer = () => {
                     variants={scaleIn}
                   >
                     <Card className="p-8">
-                      <h3 className="mb-6 text-xl font-semibold">Pricing</h3>
+                      <h3 className="mb-6 text-xl font-semibold">{t("serviceDetail.common.pricing")}</h3>
                       <div className="mb-6">
-                        <div className="text-3xl font-bold mb-2">$1,500 - $3,500</div>
-                        <p className="text-sm text-muted-foreground">Per month</p>
+                        <div className="text-3xl font-bold mb-2">{pricing.amount}</div>
+                        <p className="text-sm text-muted-foreground">{pricing.perMonth}</p>
                       </div>
                       <div className="mb-8 space-y-2 text-sm text-muted-foreground">
-                        <p>• 10-20 hours per month</p>
-                        <p>• Priority support</p>
-                        <p>• Flexible scope</p>
-                        <p>• 3-month minimum commitment</p>
+                        {pricing.details.map((detail, index) => (
+                          <p key={index}>• {detail}</p>
+                        ))}
                       </div>
                       <Button asChild className="w-full mb-3" size="lg">
                         <Link to="/contact">
-                          Get Started
+                          {t("serviceDetail.notionRetainer.cta.primary")}
                           <ArrowRight className="ml-2 h-5 w-5" />
                         </Link>
                       </Button>
@@ -172,12 +136,12 @@ const NotionRetainer = () => {
                   </motion.div>
 
                   <Card className="p-6 mt-6">
-                    <h4 className="mb-3 font-semibold">Not sure if this fits?</h4>
+                    <h4 className="mb-3 font-semibold">{notSure.title}</h4>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Book a call to discuss your needs.
+                      {notSure.description}
                     </p>
                     <Button asChild variant="outline" className="w-full">
-                      <Link to="/contact">Schedule Call</Link>
+                      <Link to="/contact">{notSure.button}</Link>
                     </Button>
                   </Card>
                 </div>

@@ -125,5 +125,584 @@
     "faq": "Preguntas Frecuentes",
     "contact": "Contacto",
     "rights": "Todos los derechos reservados."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "¡Ups! Página no encontrada",
+    "returnHome": "Volver al Inicio"
+  },
+  "contact": {
+    "title": "Trabajemos Juntos",
+    "subtitle": "Ya sea que estés listo para comenzar un proyecto o explorando opciones, estoy aquí para ayudarte.",
+    "email": {
+      "title": "Correo Electrónico",
+      "description": "Envíame un mensaje sobre tu proyecto. Respondo a todas las consultas dentro de 24 horas.",
+      "address": "hello@example.com"
+    },
+    "call": {
+      "title": "Agendar una Llamada",
+      "description": "Agenda una llamada de 30 minutos para discutir tus necesidades y explorar cómo puedo ayudarte.",
+      "link": "Ver Horarios Disponibles"
+    },
+    "expectations": {
+      "title": "Qué Esperar",
+      "initialResponse": {
+        "title": "Respuesta Inicial",
+        "description": "Respondo a todas las consultas dentro de 24 horas (generalmente el mismo día). Haré preguntas aclaratorias para entender tus necesidades."
+      },
+      "discoveryCall": {
+        "title": "Llamada de Descubrimiento",
+        "description": "Agendaremos una llamada de 30 minutos para discutir tus operaciones, puntos de dolor y objetivos. Sin obligación, solo exploración."
+      },
+      "proposal": {
+        "title": "Propuesta",
+        "description": "Si es un buen ajuste, enviaré una propuesta detallada con alcance, cronograma y precios. La mayoría de las propuestas se entregan dentro de 48 horas."
+      },
+      "projectStart": {
+        "title": "Inicio del Proyecto",
+        "description": "Una vez que apruebes la propuesta, programamos el inicio y comenzamos el trabajo. La mayoría de los proyectos comienzan dentro de 1-2 semanas."
+      }
+    },
+    "notSure": {
+      "title": "¿No Estás Seguro por Dónde Empezar?",
+      "description": "Si estás explorando opciones y no estás listo para comprometerte con un proyecto, considera comenzar con una Auditoría de Sistemas. Es una forma de bajo compromiso para obtener una evaluación experta y recomendaciones.",
+      "link": "Conoce la Auditoría de Sistemas →"
+    }
+  },
+  "servicesPage": {
+    "title": "Servicios",
+    "subtitle": "Desde implementaciones únicas hasta asociaciones continuas, elige el modelo de servicio que se adapte a tus necesidades. Cada proyecto comienza entendiendo tus operaciones y termina con un sistema que puedes mantener.",
+    "learnMore": "Saber más",
+    "services": [
+      {
+        "title": "Diseño e Implementación de Sistema Operativo Empresarial",
+        "description": "Diseño completo del sistema operativo que conecta estrategia, operaciones y ejecución.",
+        "link": "/services/business-os"
+      },
+      {
+        "title": "Proyectos de Automatización",
+        "description": "Automatización de flujos de trabajo personalizados usando n8n, Zapier y Make para eliminar tareas repetitivas.",
+        "link": "/services/automation"
+      },
+      {
+        "title": "Arquitecto Notion en Retainer",
+        "description": "Diseño continuo del sistema Notion, optimización y capacitación del equipo.",
+        "link": "/services/notion-retainer"
+      },
+      {
+        "title": "Socio de Operaciones de Automatización",
+        "description": "Mantenimiento mensual de automatización, monitoreo y optimización en retainer.",
+        "link": "/services/automation-retainer"
+      },
+      {
+        "title": "Auditoría de Sistemas",
+        "description": "Evaluación integral de tus operaciones con recomendaciones accionables.",
+        "link": "/services/systems-audit",
+        "badge": "Empieza Aquí"
+      },
+      {
+        "title": "Sistemas White-Label para Agencias",
+        "description": "Entrega servicios de sistemas y automatización a tus clientes bajo tu marca.",
+        "link": "/services/white-label",
+        "badge": "Para Agencias"
+      }
+    ],
+    "notSure": {
+      "title": "¿No estás seguro de qué servicio se adapta a tus necesidades?",
+      "description": "Agenda una llamada para discutir tus operaciones y obtener una recomendación.",
+      "cta": "Agendar una Llamada"
+    }
+  },
+  "caseStudiesPage": {
+    "title": "Casos de Estudio",
+    "subtitle": "Resultados reales de equipos y agencias que transformaron sus operaciones con sistemas y automatización personalizados.",
+    "readFullCaseStudy": "Leer caso de estudio completo",
+    "caseStudies": [
+      {
+        "id": "marketing-agency",
+        "client": "Agencia de Marketing",
+        "industry": "Servicios de Marketing",
+        "title": "Operaciones Escaladas con Sistema Operativo Empresarial Personalizado",
+        "description": "Construimos un Sistema Operativo Empresarial completo en Notion para centralizar la gestión de clientes, flujos de trabajo de proyectos y colaboración del equipo.",
+        "result": "40% de reducción en tiempo administrativo",
+        "metrics": ["15 → 30 clientes gestionados", "Sin nuevas contrataciones operativas", "Onboarding de 2 días vs 2 semanas"]
+      },
+      {
+        "id": "saas-startup",
+        "client": "Startup SaaS",
+        "industry": "Software",
+        "title": "Pipeline de Onboarding de Clientes Automatizado",
+        "description": "Diseñamos automatización de extremo a extremo conectando CRM, herramientas de documentación y gestión de proyectos para un onboarding de clientes fluido.",
+        "result": "Tiempo de onboarding reducido de 2 semanas a 2 días",
+        "metrics": ["14 → 2 días de onboarding", "90% de trabajo manual eliminado", "Cero quejas de clientes"]
+      },
+      {
+        "id": "consulting-firm",
+        "client": "Firma Consultora",
+        "industry": "Servicios Profesionales",
+        "title": "Espacio de Trabajo Notion Unificado para Equipo Remoto",
+        "description": "Creamos una base de conocimiento centralizada y sistema de gestión de proyectos para un equipo distribuido de más de 25 consultores.",
+        "result": "Fuente única de verdad para más de 25 consultores",
+        "metrics": ["3 → 1 herramienta", "80% más rápido acceso a información", "Adopción en todo el equipo"]
+      }
+    ],
+    "cta": {
+      "title": "¿Listo para Transformar tus Operaciones?",
+      "description": "Comienza con una auditoría de sistemas o agenda una llamada para discutir tus necesidades específicas.",
+      "primary": "Obtener una Auditoría de Sistemas",
+      "secondary": "Agendar una Llamada"
+    }
+  },
+  "faqPage": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre trabajar juntos, desde el proceso hasta los precios.",
+    "sections": [
+      {
+        "category": "General",
+        "questions": [
+          {
+            "question": "¿Con qué tipos de negocios trabajas?",
+            "answer": "Trabajo con equipos en crecimiento, agencias y startups de diversas industrias. La mayoría de los clientes tienen entre 5-50 personas y necesitan sistemas para escalar operaciones sin un crecimiento proporcional de personal."
+          },
+          {
+            "question": "¿Trabajas con clientes de forma remota?",
+            "answer": "Sí, todos los proyectos se realizan de forma remota. La mayoría de los clientes están en Estados Unidos y Europa, pero he trabajado con equipos de todo el mundo."
+          },
+          {
+            "question": "¿Cómo empiezo?",
+            "answer": "El mejor punto de partida es una Auditoría de Sistemas (si estás explorando opciones) o agendar una llamada para discutir tus necesidades específicas. Ambas opciones nos ayudan a determinar el enfoque correcto."
+          }
+        ]
+      },
+      {
+        "category": "Sistemas Notion",
+        "questions": [
+          {
+            "question": "¿Solo trabajas en Notion?",
+            "answer": "Notion es mi plataforma principal para Sistemas Operativos Empresariales, pero trabajo con otras herramientas cuando son la mejor opción. El objetivo es elegir la mejor solución para tus necesidades, no forzar todo en Notion."
+          },
+          {
+            "question": "¿Puedes migrar datos de nuestro sistema actual a Notion?",
+            "answer": "Sí, la migración de datos generalmente está incluida en los proyectos de Sistema Operativo Empresarial. Evaluamos tus datos actuales, los limpiamos y migramos lo que es relevante al nuevo sistema."
+          },
+          {
+            "question": "¿Qué pasa si nuestro equipo no sabe usar Notion?",
+            "answer": "La capacitación del equipo está incluida en todos los proyectos de Notion. La mayoría de los equipos se sienten cómodos dentro de una semana de uso diario. También se proporciona documentación y videos de capacitación."
+          }
+        ]
+      },
+      {
+        "category": "Automatización",
+        "questions": [
+          {
+            "question": "¿Qué plataforma de automatización debo usar: n8n, Zapier o Make?",
+            "answer": "Depende de tus capacidades técnicas, presupuesto y necesidades específicas. n8n ofrece la mayor flexibilidad pero requiere alguna configuración técnica. Zapier es fácil de usar con integraciones extensas. Make es potente y rentable para flujos de trabajo complejos. Ayudo a elegir la plataforma correcta durante la planificación."
+          },
+          {
+            "question": "¿Necesito habilidades técnicas para mantener las automatizaciones?",
+            "answer": "No. Todas las automatizaciones incluyen documentación y están diseñadas para ser mantenibles por usuarios no técnicos. Se configuran notificaciones de error para que sepas cuando algo falla."
+          },
+          {
+            "question": "¿Qué pasa si una automatización falla?",
+            "answer": "Para proyectos únicos, el soporte básico está incluido durante 2-4 semanas después del lanzamiento. Para necesidades continuas, el retainer de Socio de Operaciones de Automatización proporciona monitoreo y correcciones rápidas."
+          }
+        ]
+      },
+      {
+        "category": "Precios y Proceso",
+        "questions": [
+          {
+            "question": "¿Cuál es la diferencia entre un proyecto único y un retainer?",
+            "answer": "Los proyectos únicos tienen un alcance y entregable definidos. Los retainers proporcionan soporte continuo, optimización y desarrollo de nuevas características. Los retainers tienen sentido cuando tus sistemas necesitan evolucionar regularmente."
+          },
+          {
+            "question": "¿Cuánto tiempo toma la implementación?",
+            "answer": "Auditorías de Sistemas: 1-2 semanas. Proyectos de automatización: 2-4 semanas. Sistema Operativo Empresarial: 6-8 semanas. Los plazos dependen del alcance del proyecto y la disponibilidad de tu equipo para feedback."
+          },
+          {
+            "question": "¿Ofreces planes de pago?",
+            "answer": "Sí, los proyectos de más de $5,000 se pueden dividir en pagos basados en hitos. Los retainers se facturan mensualmente."
+          },
+          {
+            "question": "¿Qué está incluido en el soporte post-lanzamiento?",
+            "answer": "Todos los proyectos incluyen 2-4 semanas de soporte post-lanzamiento para corrección de errores y ajustes menores. Esto asegura que el sistema funcione como se espera antes de la entrega."
+          }
+        ]
+      },
+      {
+        "category": "Agencias y Socios",
+        "questions": [
+          {
+            "question": "¿Cómo funciona el white-label?",
+            "answer": "Vendes servicios a tus clientes bajo tu marca. Yo manejo la entrega detrás de escena. Tú mantienes la relación con el cliente y estableces tus propios precios. Yo proporciono precios al por mayor con costos predecibles."
+          },
+          {
+            "question": "¿Cuál es el compromiso mínimo para asociaciones white-label?",
+            "answer": "Mínimo 2 proyectos por trimestre para mantener la asociación. Esto asegura que construyamos familiaridad con tu marca y estándares de entrega."
+          },
+          {
+            "question": "¿Puedes ayudar con ventas y planificación?",
+            "answer": "Sí, proporciono soporte de ventas incluyendo asistencia en planificación, plantillas de propuestas y orientación de precios para ayudarte a cerrar acuerdos."
+          }
+        ]
+      },
+      {
+        "category": "Implementación y Entrega",
+        "questions": [
+          {
+            "question": "¿Nuestro equipo podrá mantener el sistema después de que termines?",
+            "answer": "Sí. Todos los proyectos incluyen capacitación y documentación diseñadas para usuarios no técnicos. Los sistemas están construidos para ser mantenidos por tu equipo, no dependientes de mí."
+          },
+          {
+            "question": "¿Qué pasa si necesitamos cambios después de que el proyecto esté completo?",
+            "answer": "Los cambios menores están cubiertos durante el período de soporte. Para necesidades continuas, puedes reservar horas ad-hoc o establecer un retainer. Muchos clientes comienzan con un proyecto único y pasan a un retainer a medida que las necesidades evolucionan."
+          },
+          {
+            "question": "¿Proporcionas soporte continuo después de la entrega?",
+            "answer": "El soporte continuo está disponible a través de acuerdos de retainer (Arquitecto Notion o Socio de Operaciones de Automatización). También se puede comprar soporte ad-hoc según sea necesario."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "¿Todavía Tienes Preguntas?",
+      "description": "Agenda una llamada para discutir tu situación específica y obtener respuestas personalizadas.",
+      "button": "Agendar una Llamada"
+    }
+  },
+  "serviceDetail": {
+    "common": {
+      "whoThisIsFor": "Para Quién Es Esto",
+      "problemsSolves": "Problemas Que Resuelve",
+      "whatsIncluded": "Qué Está Incluido",
+      "theProcess": "El Proceso",
+      "expectedOutcomes": "Resultados Esperados",
+      "pricing": "Precios",
+      "getStarted": "Comenzar",
+      "relatedCaseStudies": "Casos de Estudio Relacionados",
+      "commonProjects": "Proyectos de Automatización Comunes",
+      "monthlyActivities": "Actividades Mensuales",
+      "oneTimeProjectFee": "Tarifa de proyecto único",
+      "perAutomationProject": "Por proyecto de automatización",
+      "monthlyRetainer": "Retainer mensual",
+      "fixedPrice": "Precio fijo",
+      "backToServices": "Volver a Servicios"
+    },
+    "businessOS": {
+      "title": "Diseño e Implementación de Sistema Operativo Empresarial",
+      "subtitle": "Un sistema operativo completo que conecta tu estrategia, flujos de trabajo del equipo y ejecución en un espacio de trabajo Notion unificado.",
+      "whoThisIsFor": [
+        "Equipos en crecimiento con herramientas fragmentadas y flujos de trabajo poco claros",
+        "Agencias que gestionan múltiples clientes sin un sistema central",
+        "Fundadores que necesitan sistematizar antes de escalar"
+      ],
+      "problems": [
+        "Información dispersa en múltiples herramientas",
+        "Sin fuente única de verdad para las operaciones del equipo",
+        "Flujos de trabajo y transferencias poco claros entre departamentos",
+        "Dificultad para incorporar nuevos miembros del equipo"
+      ],
+      "included": {
+        "audit": {"title": "Auditoría de Operaciones", "description": "Revisión completa de sistemas y flujos de trabajo actuales"},
+        "architecture": {"title": "Arquitectura del Sistema", "description": "Estructura de espacio de trabajo Notion diseñada a medida"},
+        "workflow": {"title": "Diseño de Flujo de Trabajo", "description": "Documentación de procesos de extremo a extremo"},
+        "training": {"title": "Capacitación del Equipo", "description": "Sesiones de onboarding y documentación"}
+      },
+      "process": [
+        {"title": "Descubrimiento y Auditoría", "description": "Mapear operaciones actuales, identificar brechas y definir requisitos."},
+        {"title": "Diseño de Arquitectura", "description": "Diseñar la estructura del sistema y conexiones de flujo de trabajo."},
+        {"title": "Implementación", "description": "Construir el espacio de trabajo Notion con todas las bases de datos y vistas."},
+        {"title": "Capacitación y Entrega", "description": "Capacitación del equipo, documentación y configuración de soporte continuo."}
+      ],
+      "outcomes": [
+        "Fuente única de verdad para todas las operaciones del equipo",
+        "Flujos de trabajo claros y documentados para cada departamento",
+        "Onboarding más rápido para nuevos miembros del equipo",
+        "Sistema escalable que crece con tu negocio"
+      ],
+      "pricing": {
+        "amount": "$8,000 - $15,000",
+        "details": ["Cronograma de 6-8 semanas", "Incluye implementación completa", "Capacitación del equipo incluida", "Soporte post-lanzamiento de 30 días"]
+      },
+      "cta": {
+        "primary": "Comenzar",
+        "secondary": "Comenzar con una Auditoría"
+      },
+      "relatedCaseStudies": [
+        {"title": "Sistema Operativo Empresarial de Agencia de Marketing", "link": "/case-studies/marketing-agency"},
+        {"title": "Espacio de Trabajo de Firma Consultora", "link": "/case-studies/consulting-firm"}
+      ]
+    },
+    "automation": {
+      "title": "Proyectos de Automatización",
+      "subtitle": "Automatización de flujos de trabajo personalizada usando n8n, Zapier y Make para eliminar tareas repetitivas y conectar tus herramientas.",
+      "whoThisIsFor": [
+        "Equipos que pasan horas en entrada y transferencias manuales de datos",
+        "Negocios con herramientas desconectadas que necesitan comunicarse entre sí",
+        "Equipos de operaciones que buscan escalar sin agregar personal"
+      ],
+      "commonProjects": {
+        "title": "Proyectos de Automatización Comunes",
+        "items": {
+          "leadRouting": {"title": "Enrutamiento de Leads", "description": "Distribución automática y enriquecimiento de leads entrantes"},
+          "clientOnboarding": {"title": "Onboarding de Clientes", "description": "Automatización de extremo a extremo desde contrato hasta kickoff"},
+          "dataSync": {"title": "Sincronización de Datos", "description": "Mantén múltiples sistemas sincronizados automáticamente"},
+          "reporting": {"title": "Reportes", "description": "Agregación automática de datos y generación de reportes"}
+        }
+      },
+      "included": [
+        "Mapeo de flujo de trabajo y documentación de requisitos",
+        "Selección de plataforma (n8n, Zapier o Make)",
+        "Construcción y prueba completa de automatización",
+        "Configuración de manejo de errores y monitoreo",
+        "Documentación y entrega al equipo"
+      ],
+      "process": [
+        {"title": "Auditoría de Flujo de Trabajo", "description": "Mapear procesos manuales actuales e identificar oportunidades de automatización."},
+        {"title": "Diseño", "description": "Diseñar el flujo de automatización y seleccionar la plataforma correcta."},
+        {"title": "Construcción y Prueba", "description": "Implementar la automatización con pruebas exhaustivas."},
+        {"title": "Despliegue y Monitoreo", "description": "Lanzar con monitoreo y soporte para cualquier ajuste."}
+      ],
+      "outcomes": [
+        "Ahorro significativo de tiempo en tareas repetitivas",
+        "Reducción de errores humanos en transferencias de datos",
+        "Mejor consistencia de datos en todos los sistemas",
+        "Capacidad de escalar operaciones sin crecimiento proporcional de personal"
+      ],
+      "pricing": {
+        "amount": "$2,500 - $8,000",
+        "details": ["Cronograma de 2-4 semanas", "Incluye implementación", "Pruebas y QA incluidas", "Soporte post-lanzamiento de 2 semanas"]
+      },
+      "cta": {
+        "primary": "Comenzar",
+        "secondary": "Soporte Continuo"
+      },
+      "relatedCaseStudy": {
+        "title": "Automatización de Onboarding de Clientes SaaS",
+        "link": "/case-studies/saas-startup"
+      }
+    },
+    "systemsAudit": {
+      "title": "Auditoría de Sistemas",
+      "subtitle": "Una evaluación completa de tus operaciones, sistemas y oportunidades de automatización con recomendaciones accionables.",
+      "badge": "Comienza Aquí",
+      "whoThisIsFor": [
+        "Equipos que no están seguros por dónde comenzar con sistemas o automatización",
+        "Negocios que quieren una evaluación experta antes de invertir",
+        "Organizaciones con sistemas implementados que no funcionan bien"
+      ],
+      "included": {
+        "operationsReview": {"title": "Revisión de Operaciones", "description": "Evaluación del estado actual de los flujos de trabajo"},
+        "systemsEvaluation": {"title": "Evaluación de Sistemas", "description": "Análisis de Notion y stack de herramientas"},
+        "automationMapping": {"title": "Mapeo de Automatización", "description": "Identificar oportunidades de automatización"},
+        "recommendationsReport": {"title": "Reporte de Recomendaciones", "description": "Plan de acción priorizado"}
+      },
+      "process": [
+        {"title": "Entrevista de Inicio", "description": "Comprender tu negocio, estructura del equipo y puntos de dolor."},
+        {"title": "Análisis Profundo", "description": "Revisar sistemas, flujos de trabajo y herramientas existentes."},
+        {"title": "Análisis", "description": "Identificar brechas, oportunidades y victorias rápidas."},
+        {"title": "Entrega de Reporte", "description": "Recibir un reporte detallado con recomendaciones priorizadas."}
+      ],
+      "whatYouReceive": [
+        "Análisis del estado actual de tus operaciones",
+        "Evaluación del espacio de trabajo Notion con recomendaciones de mejora",
+        "Lista de oportunidades de automatización con estimaciones de ROI",
+        "Hoja de ruta priorizada para implementación",
+        "Victorias rápidas que puedes implementar inmediatamente"
+      ],
+      "outcomes": [
+        "Comprensión clara de qué está funcionando y qué no",
+        "Confianza en los próximos pasos para mejorar",
+        "Plan de acción priorizado que puedes implementar tú mismo o con soporte",
+        "Estimaciones de tiempo y costo para mejoras recomendadas"
+      ],
+      "pricing": {
+        "amount": "$1,500",
+        "details": ["Entrega en 1-2 semanas", "Reporte completo", "Hoja de ruta priorizada", "Llamada de seguimiento incluida"]
+      },
+      "cta": {
+        "primary": "Obtén tu Auditoría"
+      },
+      "note": "Tarifa de auditoría acreditada hacia proyectos futuros",
+      "whatHappensNext": {
+        "title": "¿Qué Sucede Después?",
+        "description": "Después de la auditoría, puedes implementar las recomendaciones tú mismo, trabajar con tu equipo, o contratarme para soporte de implementación."
+      }
+    },
+    "notionRetainer": {
+      "title": "Retainer de Arquitecto Notion",
+      "subtitle": "Diseño continuo de sistema Notion, optimización y soporte de equipo para mantener tu espacio de trabajo funcionando sin problemas.",
+      "whoThisIsFor": [
+        "Equipos con flujos de trabajo en evolución que necesitan actualizaciones regulares del sistema",
+        "Empresas en crecimiento que necesitan soporte experto a medida que escalan",
+        "Organizaciones que quieren maximizar su inversión en Notion"
+      ],
+      "included": {
+        "monthlyDesignHours": {"title": "Horas de Diseño Mensuales", "description": "Tiempo dedicado para mejoras del espacio de trabajo"},
+        "templateCreation": {"title": "Creación de Templates", "description": "Templates personalizados para flujos de trabajo comunes"},
+        "teamSupport": {"title": "Soporte del Equipo", "description": "Responder preguntas y resolver problemas"},
+        "systemOptimization": {"title": "Optimización del Sistema", "description": "Mejoras de rendimiento y limpieza"}
+      },
+      "monthlyActivities": [
+        "Creación de nuevas bases de datos y vistas a medida que evolucionan las necesidades",
+        "Actualizaciones de fórmulas y automatización",
+        "Capacitación del equipo en nuevas funciones",
+        "Revisiones regulares de salud del sistema",
+        "Actualizaciones de documentación"
+      ],
+      "howItWorks": {
+        "paragraph1": "Obtienes una asignación mensual dedicada de horas de diseño. Úsalas para nuevas funciones, optimizaciones, capacitación o solución de problemas. Las horas no utilizadas no se transfieren, asegurando que maximices el valor cada mes.",
+        "paragraph2": "Nos reunimos mensualmente para revisar prioridades y planificar el trabajo próximo. La comunicación ocurre de forma asincrónica vía Slack o tu herramienta preferida."
+      },
+      "outcomes": [
+        "Espacio de trabajo Notion que evoluciona con tu negocio",
+        "Resolución rápida de problemas del sistema",
+        "Confianza del equipo usando el sistema",
+        "Optimización y mejoras continuas"
+      ],
+      "pricing": {
+        "amount": "$1,500 - $3,500",
+        "perMonth": "Por mes",
+        "details": ["10-20 horas por mes", "Soporte prioritario", "Alcance flexible", "Compromiso mínimo de 3 meses"]
+      },
+      "cta": {
+        "primary": "Comenzar"
+      },
+      "notSure": {
+        "title": "¿No estás seguro si esto se ajusta?",
+        "description": "Agenda una llamada para discutir tus necesidades.",
+        "button": "Programar Llamada"
+      }
+    },
+    "automationRetainer": {
+      "title": "Socio de Operaciones de Automatización",
+      "subtitle": "Mantenimiento mensual de automatización, monitoreo y optimización para asegurar que tus flujos de trabajo funcionen de manera confiable.",
+      "whoThisIsFor": [
+        "Equipos que dependen de automatizaciones críticas para operaciones diarias",
+        "Negocios sin experiencia interna en automatización",
+        "Empresas que quieren expandir la cobertura de automatización"
+      ],
+      "problems": [
+        "Automatizaciones rotas causando retrasos operacionales",
+        "Sin visibilidad del rendimiento de las automatizaciones",
+        "Incapacidad de modificar o expandir automatizaciones existentes",
+        "Cambios de API rompiendo flujos de trabajo existentes"
+      ],
+      "included": {
+        "proactiveMonitoring": {"title": "Monitoreo Proactivo", "description": "Revisiones diarias y alertas de errores"},
+        "maintenanceFixes": {"title": "Mantenimiento y Correcciones", "description": "Respuesta rápida a problemas"},
+        "optimization": {"title": "Optimización", "description": "Mejoras de rendimiento"},
+        "newWorkflows": {"title": "Nuevos Flujos de Trabajo", "description": "Horas mensuales de automatización incluidas"}
+      },
+      "monthlyActivities": [
+        "Monitorear todo el rendimiento de automatización y tasas de error",
+        "Corregir flujos de trabajo rotos en 24 horas",
+        "Actualizar automatizaciones cuando cambian las APIs",
+        "Construir nuevos flujos de trabajo a medida que evolucionan las necesidades del negocio",
+        "Reportes de rendimiento mensuales"
+      ],
+      "howItWorks": {
+        "paragraph1": "Me convierto en tu socio de operaciones de automatización. Obtienes monitoreo proactivo, resolución rápida de problemas y una asignación mensual de horas para nuevos proyectos de automatización o mejoras.",
+        "paragraph2": "Comunicación vía Slack o email. Correcciones de emergencia manejadas en 24 horas. Reuniones mensuales para revisar rendimiento y planificar trabajo próximo."
+      },
+      "outcomes": [
+        "Infraestructura de automatización confiable",
+        "Resolución rápida cuando surgen problemas",
+        "Mejora y expansión continua",
+        "Tranquilidad de que las automatizaciones están monitoreadas"
+      ],
+      "pricing": {
+        "amount": "$1,200 - $2,500",
+        "perMonth": "Por mes",
+        "details": ["Monitoreo proactivo", "Tiempo de respuesta de corrección de 24 horas", "8-15 horas para nuevos flujos de trabajo", "Reportes mensuales"]
+      },
+      "cta": {
+        "primary": "Comenzar"
+      },
+      "dontHaveAutomations": {
+        "title": "¿Aún no tienes automatizaciones?",
+        "description": "Comienza con un proyecto de automatización único.",
+        "button": "Ver Proyectos de Automatización"
+      }
+    },
+    "whiteLabel": {
+      "title": "Sistemas White-Label para Agencias",
+      "subtitle": "Escala tu agencia ofreciendo servicios de sistemas y automatización bajo tu marca. Yo manejo la entrega mientras tú eres dueño de la relación con el cliente.",
+      "badge": "Para Agencias",
+      "whoThisIsFor": [
+        "Agencias de marketing y creativas que quieren agregar servicios de sistemas",
+        "Consultorías que buscan productizar su experiencia en operaciones",
+        "Agencias tecnológicas expandiéndose hacia automatización y Notion"
+      ],
+      "howItWorks": {
+        "paragraph1": "Vendes servicios de sistemas y automatización a tus clientes bajo la marca de tu agencia. Me convierto en tu socio de entrega, trabajando detrás de escena para implementar mientras tú mantienes la relación con el cliente.",
+        "paragraph2": "Tú estableces tus propios precios y márgenes. Yo proporciono entrega a precio fijo con costos predecibles, permitiéndote construir una línea de servicios rentable."
+      },
+      "included": {
+        "whiteLabelDelivery": {"title": "Entrega White-Label", "description": "Todo el trabajo entregado bajo tu marca"},
+        "fixedPricing": {"title": "Precios Fijos", "description": "Costos predecibles para planificación de márgenes"},
+        "salesSupport": {"title": "Soporte de Ventas", "description": "Ayuda con alcance y propuestas"},
+        "clientTraining": {"title": "Capacitación del Cliente", "description": "Capacitación y documentación con tu marca"}
+      },
+      "servicesAvailable": [
+        "Sistemas Operativos Empresariales en Notion",
+        "Automatización de flujos de trabajo (n8n, Zapier, Make)",
+        "Diseño de espacio de trabajo Notion personalizado",
+        "Auditorías y evaluaciones de operaciones"
+      ],
+      "pricingStructure": {
+        "intro": "Los servicios white-label tienen precios mayoristas, típicamente 30-40% por debajo del precio minorista. Esto te permite marcar servicios mientras te mantienes competitivo.",
+        "items": {
+          "businessOS": {
+            "title": "Sistema Operativo Empresarial",
+            "wholesale": "$5,000 - $10,000 mayorista",
+            "retail": "Minorista típico: $8,000 - $15,000"
+          },
+          "automationProject": {
+            "title": "Proyecto de Automatización",
+            "wholesale": "$1,500 - $5,000 mayorista",
+            "retail": "Minorista típico: $2,500 - $8,000"
+          }
+        }
+      },
+      "process": [
+        {"title": "Configuración de Asociación", "description": "Establecer acuerdo white-label y protocolos de comunicación."},
+        {"title": "Alcance del Proyecto", "description": "Tú traes la oportunidad del cliente, definimos el alcance juntos."},
+        {"title": "Entrega", "description": "Yo manejo toda la implementación bajo tu marca."},
+        {"title": "Traspaso", "description": "Capacitación del cliente y documentación con tu marca."}
+      ],
+      "outcomes": [
+        "Nuevo flujo de ingresos con márgenes saludables",
+        "Oferta de servicios expandida sin contratar especialistas",
+        "Costos de entrega y cronogramas predecibles",
+        "Mayor valor de vida del cliente a través de servicios adicionales"
+      ],
+      "getStarted": {
+        "description": "Agenda una llamada para discutir términos de asociación y cómo podemos trabajar juntos.",
+        "button": "Programar Llamada de Asociación"
+      },
+      "minimumCommitment": {
+        "title": "Compromiso Mínimo",
+        "description": "Las asociaciones white-label requieren un mínimo de 2 proyectos por trimestre para mantener la relación."
+      }
+    }
+  },
+  "caseStudyDetail": {
+    "common": {
+      "backToCaseStudies": "Volver a Casos de Estudio",
+      "keyMetrics": "Métricas Clave",
+      "clientContext": "Contexto del Cliente",
+      "theProblem": "El Problema",
+      "scopeOfWork": "Alcance del Trabajo",
+      "deliverables": "Entregables",
+      "systemsAutomations": "Sistemas y Automatizaciones Entregados",
+      "beforeAfter": "Antes / Después",
+      "before": "Antes",
+      "after": "Después",
+      "outcomesImpact": "Resultados e Impacto",
+      "clientTestimonial": "Testimonio del Cliente",
+      "readyToTransform": "¿Listo para Transformar tus Operaciones?",
+      "readySubtitle": "Comienza con una auditoría de sistemas o agenda una llamada para discutir tus necesidades específicas."
+    }
   }
 }

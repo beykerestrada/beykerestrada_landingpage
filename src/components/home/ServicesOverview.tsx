@@ -36,14 +36,14 @@ const ServicesOverview = () => {
     <section className="w-full py-24">
       <div className="mx-auto max-w-content px-6 lg:px-8">
         <motion.div
-          className="mb-12"
+          className="mb-12 text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUp}
         >
           <h2 className="mb-4">{t('services.title')}</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             {t('services.subtitle')}
           </p>
         </motion.div>

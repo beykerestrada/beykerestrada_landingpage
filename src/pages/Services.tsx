@@ -6,49 +6,18 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, scaleIn } from "@/lib/animations";
-
-const services = [
-  {
-    title: "Business OS Design & Implementation",
-    description: "Complete operating system design connecting strategy, operations, and execution.",
-    link: "/services/business-os",
-    highlight: false,
-  },
-  {
-    title: "Automation Projects",
-    description: "Custom workflow automation using n8n, Zapier, and Make to eliminate repetitive tasks.",
-    link: "/services/automation",
-    highlight: false,
-  },
-  {
-    title: "Notion Architect Retainer",
-    description: "Ongoing Notion system design, optimization, and team training.",
-    link: "/services/notion-retainer",
-    highlight: false,
-  },
-  {
-    title: "Automation Ops Partner",
-    description: "Monthly automation maintenance, monitoring, and optimization retainer.",
-    link: "/services/automation-retainer",
-    highlight: false,
-  },
-  {
-    title: "Systems Audit",
-    description: "Comprehensive assessment of your operations with actionable recommendations.",
-    link: "/services/systems-audit",
-    highlight: true,
-    badge: "Start Here",
-  },
-  {
-    title: "White-Label Systems for Agencies",
-    description: "Deliver systems and automation services to your clients under your brand.",
-    link: "/services/white-label",
-    highlight: true,
-    badge: "For Agencies",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+
+  const services = t("servicesPage.services", { returnObjects: true }) as Array<{
+    title: string;
+    description: string;
+    link: string;
+    badge?: string;
+  }>;
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -62,9 +31,9 @@ const Services = () => {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
             >
-              <h1 className="mb-6">Services</h1>
+              <h1 className="mb-6">{t("servicesPage.title")}</h1>
               <p className="text-xl text-muted-foreground max-w-3xl">
-                From one-time implementations to ongoing partnerships, choose the service model that fits your needs. Every project starts with understanding your operations and ends with a system you can maintain.
+                {t("servicesPage.subtitle")}
               </p>
             </motion.div>
 
@@ -79,7 +48,7 @@ const Services = () => {
                 <motion.div key={service.title} variants={fadeInUp}>
                   <Card
                     className={`p-8 hover:shadow-md transition-shadow h-full ${
-                      service.highlight ? "border-accent/50 bg-accent/5" : ""
+                      service.badge ? "border-accent/50 bg-accent/5" : ""
                     }`}
                   >
                     {service.badge && (
@@ -89,9 +58,9 @@ const Services = () => {
                     )}
                     <h2 className="mb-4 text-2xl">{service.title}</h2>
                     <p className="mb-6 text-muted-foreground">{service.description}</p>
-                    <Button asChild variant={service.highlight ? "default" : "ghost"} className={!service.highlight ? "px-0" : ""}>
+                    <Button asChild variant={service.badge ? "default" : "ghost"} className={!service.badge ? "px-0" : ""}>
                       <Link to={service.link}>
-                        Learn more
+                        {t("servicesPage.learnMore")}
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
@@ -107,12 +76,12 @@ const Services = () => {
               viewport={{ once: true, margin: "-100px" }}
               variants={scaleIn}
             >
-              <h2 className="mb-4">Not sure which service fits your needs?</h2>
+              <h2 className="mb-4">{t("servicesPage.notSure.title")}</h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Book a call to discuss your operations and get a recommendation.
+                {t("servicesPage.notSure.description")}
               </p>
               <Button asChild size="lg">
-                <Link to="/contact">Book a Call</Link>
+                <Link to="/contact">{t("servicesPage.notSure.cta")}</Link>
               </Button>
             </motion.div>
           </div>
