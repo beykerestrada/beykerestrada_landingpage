@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -61,7 +63,7 @@ const ServicesOverview = () => {
                 <h3 className="mb-3 text-xl">{service.title}</h3>
                 <p className="mb-4 text-muted-foreground">{service.description}</p>
                 <Button asChild variant="ghost" size="sm" className="px-0">
-                  <Link to={service.link}>
+                  <Link href={service.link}>
                     {t('services.learnMore')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -79,7 +81,7 @@ const ServicesOverview = () => {
           variants={fadeInUp}
         >
           <Button asChild variant="outline">
-            <Link to="/services">{t('services.viewAll')}</Link>
+            <Link href="/services">{t('services.viewAll')}</Link>
           </Button>
         </motion.div>
       </div>

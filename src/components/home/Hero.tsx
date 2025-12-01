@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -31,13 +33,13 @@ const Hero = () => {
             variants={fadeInUp}
           >
             <Button asChild size="lg" className="text-base">
-              <Link to="/services/systems-audit">
+              <Link href="/services/systems-audit">
                 {t('hero.cta.primary')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-base">
-              <Link to="/contact">
+              <Link href="/contact">
                 {t('hero.cta.secondary')}
               </Link>
             </Button>

@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -60,7 +62,7 @@ const CaseStudyPreview = () => {
                 <h3 className="mb-3 text-lg">{study.title}</h3>
                 <p className="mb-4 text-muted-foreground font-medium">{study.result}</p>
                 <Button asChild variant="ghost" size="sm" className="px-0">
-                  <Link to={study.link}>
+                  <Link href={study.link}>
                     {t('caseStudies.readCaseStudy')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -78,7 +80,7 @@ const CaseStudyPreview = () => {
           variants={fadeInUp}
         >
           <Button asChild variant="outline">
-            <Link to="/case-studies">{t('caseStudies.viewAll')}</Link>
+            <Link href="/case-studies">{t('caseStudies.viewAll')}</Link>
           </Button>
         </motion.div>
       </div>

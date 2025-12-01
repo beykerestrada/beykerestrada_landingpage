@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -33,7 +35,7 @@ const PromotionalBanners = () => {
               <li>• Automation opportunity mapping</li>
             </ul>
             <Button asChild size="lg">
-              <Link to="/services/systems-audit">
+              <Link href="/services/systems-audit">
                 Get Your Audit
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -60,7 +62,7 @@ const PromotionalBanners = () => {
               <li>• Ongoing support included</li>
             </ul>
             <Button asChild variant="outline" size="lg">
-              <Link to="/services/white-label">
+              <Link href="/services/white-label">
                 Learn About White-Label
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

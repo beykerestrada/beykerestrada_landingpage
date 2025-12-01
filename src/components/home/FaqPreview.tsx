@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -68,7 +70,7 @@ const FaqPreview = () => {
             variants={fadeInUp}
           >
             <Button asChild variant="outline">
-              <Link to="/faq">{t('faq.viewAll')}</Link>
+              <Link href="/faq">{t('faq.viewAll')}</Link>
             </Button>
           </motion.div>
         </div>

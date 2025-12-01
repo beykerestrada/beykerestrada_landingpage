@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -24,13 +26,13 @@ const FinalCta = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link to="/services/systems-audit">
+              <Link href="/services/systems-audit">
                 {t('cta.primaryButton')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link to="/contact">
+              <Link href="/contact">
                 {t('cta.secondaryButton')}
               </Link>
             </Button>

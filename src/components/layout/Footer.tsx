@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -19,22 +21,22 @@ const Footer = () => {
             <h4 className="text-sm font-semibold mb-3">{t('footer.servicesTitle')}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link to="/services/business-os" className="hover:text-foreground transition-colors">
+                <Link href="/services/business-os" className="hover:text-foreground transition-colors">
                   {t('footer.businessOS')}
                 </Link>
               </li>
               <li>
-                <Link to="/services/automation" className="hover:text-foreground transition-colors">
+                <Link href="/services/automation" className="hover:text-foreground transition-colors">
                   {t('footer.automation')}
                 </Link>
               </li>
               <li>
-                <Link to="/services/notion-retainer" className="hover:text-foreground transition-colors">
+                <Link href="/services/notion-retainer" className="hover:text-foreground transition-colors">
                   {t('footer.notionArchitect')}
                 </Link>
               </li>
               <li>
-                <Link to="/services/automation-retainer" className="hover:text-foreground transition-colors">
+                <Link href="/services/automation-retainer" className="hover:text-foreground transition-colors">
                   {t('footer.automationOps')}
                 </Link>
               </li>
@@ -45,17 +47,17 @@ const Footer = () => {
             <h4 className="text-sm font-semibold mb-3">{t('footer.companyTitle')}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link to="/case-studies" className="hover:text-foreground transition-colors">
+                <Link href="/case-studies" className="hover:text-foreground transition-colors">
                   {t('footer.caseStudies')}
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="hover:text-foreground transition-colors">
+                <Link href="/faq" className="hover:text-foreground transition-colors">
                   {t('footer.faq')}
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-foreground transition-colors">
+                <Link href="/contact" className="hover:text-foreground transition-colors">
                   {t('footer.contact')}
                 </Link>
               </li>

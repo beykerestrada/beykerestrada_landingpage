@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
@@ -12,22 +14,22 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="mx-auto flex max-w-content items-center justify-between px-6 py-4 lg:px-8">
-        <Link to="/" className="text-xl font-semibold tracking-tight text-foreground">
+        <Link href="/" className="text-xl font-semibold tracking-tight text-foreground">
           Beyker Estrada
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:gap-x-8">
-          <Link to="/services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.services')}
           </Link>
-          <Link to="/case-studies" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/case-studies" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.caseStudies')}
           </Link>
-          <Link to="/faq" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/faq" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.faq')}
           </Link>
-          <Link to="/contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.contact')}
           </Link>
         </div>
@@ -35,7 +37,7 @@ const Header = () => {
         <div className="hidden md:flex md:items-center md:gap-x-2">
           <LanguageSwitcher />
           <Button asChild variant="default" size="sm">
-            <Link to="/contact">{t('hero.cta.primary')}</Link>
+            <Link href="/contact">{t('hero.cta.primary')}</Link>
           </Button>
         </div>
 
@@ -57,28 +59,28 @@ const Header = () => {
         <div className="md:hidden border-t border-border bg-background">
           <div className="space-y-1 px-6 py-4">
             <Link
-              to="/services"
+              href="/services"
               className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.services')}
             </Link>
             <Link
-              to="/case-studies"
+              href="/case-studies"
               className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.caseStudies')}
             </Link>
             <Link
-              to="/faq"
+              href="/faq"
               className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.faq')}
             </Link>
             <Link
-              to="/contact"
+              href="/contact"
               className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -86,7 +88,7 @@ const Header = () => {
             </Link>
             <div className="pt-4">
               <Button asChild className="w-full" size="sm">
-                <Link to="/contact">{t('hero.cta.primary')}</Link>
+                <Link href="/contact">{t('hero.cta.primary')}</Link>
               </Button>
             </div>
           </div>

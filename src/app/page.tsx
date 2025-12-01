@@ -1,5 +1,5 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+"use client";
+
 import Hero from "@/components/home/Hero";
 import ValuePillars from "@/components/home/ValuePillars";
 import ServicesOverview from "@/components/home/ServicesOverview";
@@ -9,23 +9,17 @@ import CaseStudyPreview from "@/components/home/CaseStudyPreview";
 import FaqPreview from "@/components/home/FaqPreview";
 import FinalCta from "@/components/home/FinalCta";
 
-const Index = () => {
+export default function HomePage() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <ValuePillars />
-        <ProcessOverview />
-        <ServicesOverview />
-        <PromotionalBanners />
-        <CaseStudyPreview />
-        <FaqPreview />
-        <FinalCta />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <Hero />
+      <ValuePillars />
+      <ProcessOverview />
+      <ServicesOverview />
+      <PromotionalBanners />
+      <CaseStudyPreview />
+      <FaqPreview />
+      <FinalCta />
+    </>
   );
-};
-
-export default Index;
+}
