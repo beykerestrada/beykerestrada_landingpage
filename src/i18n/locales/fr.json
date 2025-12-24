@@ -69,26 +69,64 @@
   },
   "caseStudies": {
     "title": "Études de Cas",
-    "case1": {
-      "client": "Buda.com",
-      "clientType": "Startup d'échange de cryptomonnaies",
-      "challenge": "L'équipe opérationnelle avait besoin de visibilité sur les points de douleur des clients pour orienter les décisions produit",
-      "solution": "Construction d'un bot de support client avec système de marquage automatisé (Intercom + Zapier + Notion comme base de données)",
-      "result": "L'équipe produit a obtenu des insights en temps réel sur les problèmes des utilisateurs, a orienté les priorités de roadmap basées sur la taxonomie des données"
+    "subtitle": "Résultats réels d'équipes qui ont transformé leurs opérations.",
+    "readCaseStudy": "Lire l'étude de cas",
+    "viewAll": "Voir Toutes les Études de Cas",
+    "williamPittSothebys": {
+      "client": "William Pitt Sotheby's International Realty",
+      "title": "Système d'Exploitation d'Entreprise Unifié pour Équipes Interfonctionnelles",
+      "result": "Opérations centralisées sur plusieurs sites avec automatisation alimentée par l'IA"
     },
-    "case2": {
-      "client": "Front",
-      "clientType": "Plateforme de support client",
-      "challenge": "L'équipe de support avait besoin d'une migration de Slab + Asana vers un système unifié Notion",
-      "solution": "Direction de la conception et de l'implémentation complète de l'espace d'équipe pour les équipes Support et Support Ops",
-      "result": "Transition fluide avec adoption rapide sur plus de 50 membres d'équipe"
+    "ingeYang": {
+      "client": "Inge Yang",
+      "title": "Système Simplifié de CRM et Gestion de Sessions pour Cabinet de Coaching",
+      "result": "Transformation du suivi manuel en un système d'exploitation commercial automatisé et adapté au TDAH"
     },
-    "case3": {
-      "client": "Première Consultation Réussie",
-      "clientType": "Agence marketing",
-      "challenge": "Flux de travail fragmentés sur plusieurs outils, goulots d'étranglement de saisie manuelle de données",
-      "solution": "Audit Notion de 60 minutes a identifié des opportunités d'automatisation et des améliorations de structure de base de données",
-      "result": "Consultation conclue à 1K$, a conduit à un engagement d'implémentation continue"
+    "consultingFirm": {
+      "client": "Cabinet de Conseil",
+      "title": "Espace de Travail Notion Unifié pour Équipe Distante",
+      "result": "Source unique de vérité pour plus de 25 consultants"
+    }
+  },
+  "clients": {
+    "title": "Approuvé par des Équipes Leaders",
+    "subtitle": "Organisations qui ont transformé leurs opérations avec des systèmes personnalisés et l'automatisation.",
+    "list": [
+      {
+        "name": "William Pitt Sotheby's International Realty",
+        "logo": "/clients/wpsir-logo.svg"
+      },
+      {
+        "name": "Inge Yang",
+        "logo": "/clients/inge-yang-logo.svg"
+      },
+      {
+        "name": "Tu Naranja Digital",
+        "logo": "/clients/tnd-logo.png"
+      }
+    ],
+    "testimonials": {
+      "title": "Ce Que Disent les Clients",
+      "items": [
+        {
+          "quote": "Beyker était excellent à travailler avec. Il a effectué un examen approfondi de notre configuration Notion et de nos modèles de base de données, fournissant des informations claires et des recommandations pratiques. Sa communication était professionnelle et réactive tout au long de l'engagement, et il a respecté tous les jalons du projet à temps. Son expertise en Notion et en systèmes no-code était évidente dans la qualité de son travail. Il a abordé la mission avec attention aux détails et une compréhension authentique de nos besoins organisationnels. Hautement recommandé.",
+          "author": "Vincent Socci",
+          "role": "Co-Président et COO",
+          "company": "William Pitt Sotheby's International Realty"
+        },
+        {
+          "quote": "Je ne peux pas exprimer le soulagement que le système de Beyker m'a apporté. Avant, je jonglais avec tout manuellement : suivi des clients, des séances et des paiements dans des carnets. C'était accablant. Beyker a conçu un espace de travail Notion qui a simplifié tout sans perdre de fonctionnalité. L'interface épurée, les visualisations de données et la façon dont l'information est organisée ont apporté une valeur énorme à la gestion de ma pratique de coaching. Maintenant, je peux facilement voir ma charge de travail, suivre mon entonnoir de conversion et comprendre mes métriques commerciales d'un coup d'œil. Ce système a vraiment changé ma façon de travailler. Je suis tellement ravie d'avoir enfin quelque chose qui m'aide à rester organisée et efficace.",
+          "author": "Inge Yang",
+          "role": "Coach de Vie et Carrière",
+          "company": ""
+        },
+        {
+          "quote": "C'est toujours un plaisir de rencontrer des passionnés de technologie qui possèdent les outils pour améliorer le flux de travail au sein d'une organisation et qui comprennent les besoins du marché actuel. Chez Tu Naranja Digital, nous sommes engagés dans l'innovation et l'amélioration continue. Quand nous avons commencé à travailler avec Beyker, nous avons réalisé que nous partagions ces valeurs. Nous sommes très satisfaits de notre relation. Il est un partenaire précieux qui nous aide à atteindre nos objectifs. Je recommanderais vivement Beyker à toute entreprise cherchant à améliorer sa technologie et ses processus.",
+          "author": "Alvaro Diaz",
+          "role": "PDG",
+          "company": "Tu Naranja Digital"
+        }
+      ]
     }
   },
   "whyMe": {
