@@ -5,8 +5,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
+import { useTranslation } from "react-i18next";
 
 const PromotionalBanners = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="w-full py-24">
       <motion.div
@@ -23,20 +26,20 @@ const PromotionalBanners = () => {
         >
           <div className="max-w-3xl">
             <div className="mb-3 inline-block rounded-full bg-accent/10 px-4 py-1 text-sm font-medium text-accent">
-              Start Here
+              {t('promotionalBanners.systemsAudit.badge')}
             </div>
-            <h2 className="mb-4">Systems Audit</h2>
+            <h2 className="mb-4">{t('promotionalBanners.systemsAudit.title')}</h2>
             <p className="mb-6 text-lg text-muted-foreground">
-              Not sure where to begin? Start with a comprehensive audit of your current operations, systems, and automation opportunities.
+              {t('promotionalBanners.systemsAudit.description')}
             </p>
             <ul className="mb-6 space-y-2 text-muted-foreground">
-              <li>• Complete operations assessment</li>
-              <li>• Notion workspace review</li>
-              <li>• Automation opportunity mapping</li>
+              <li>• {t('promotionalBanners.systemsAudit.bullet1')}</li>
+              <li>• {t('promotionalBanners.systemsAudit.bullet2')}</li>
+              <li>• {t('promotionalBanners.systemsAudit.bullet3')}</li>
             </ul>
             <Button asChild size="lg">
               <Link href="/services/systems-audit">
-                Get Your Audit
+                {t('promotionalBanners.systemsAudit.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -50,20 +53,20 @@ const PromotionalBanners = () => {
         >
           <div className="max-w-3xl">
             <div className="mb-3 inline-block rounded-full bg-accent/20 px-4 py-1 text-sm font-medium text-accent">
-              For Agencies
+              {t('promotionalBanners.whiteLabel.badge')}
             </div>
-            <h2 className="mb-4">White-Label Systems</h2>
+            <h2 className="mb-4">{t('promotionalBanners.whiteLabel.title')}</h2>
             <p className="mb-6 text-lg text-muted-foreground">
-              Scale your agency by offering systems and automation services under your brand. I handle delivery while you own the client relationship.
+              {t('promotionalBanners.whiteLabel.description')}
             </p>
             <ul className="mb-6 space-y-2 text-muted-foreground">
-              <li>• Deliver under your brand</li>
-              <li>• Fixed pricing for predictable margins</li>
-              <li>• Ongoing support included</li>
+              <li>• {t('promotionalBanners.whiteLabel.bullet1')}</li>
+              <li>• {t('promotionalBanners.whiteLabel.bullet2')}</li>
+              <li>• {t('promotionalBanners.whiteLabel.bullet3')}</li>
             </ul>
             <Button asChild variant="outline" size="lg">
               <Link href="/services/white-label">
-                Learn About White-Label
+                {t('promotionalBanners.whiteLabel.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

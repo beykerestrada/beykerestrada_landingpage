@@ -139,7 +139,7 @@ const SystemsAudit = () => {
                       ))}
                     </div>
                     <Button asChild className="w-full mb-3" size="lg">
-                      <Link href="/contact">
+                      <Link href="https://www.upwork.com/services/product/development-it-beyker-1803170150932070386?ref=project_share" target="_blank">
                         {t("serviceDetail.systemsAudit.cta.primary")}
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Link>

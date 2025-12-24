@@ -421,7 +421,7 @@
         "Sistema escalable que crece con tu negocio"
       ],
       "pricing": {
-        "amount": "$8,000 - $15,000",
+        "amount": "desde $1,250",
         "details": ["Cronograma de 6-8 semanas", "Incluye implementación completa", "Capacitación del equipo incluida", "Soporte post-lanzamiento de 30 días"]
       },
       "cta": {
@@ -470,7 +470,7 @@
         "Capacidad de escalar operaciones sin crecimiento proporcional de personal"
       ],
       "pricing": {
-        "amount": "$2,500 - $8,000",
+        "amount": "desde $500",
         "details": ["Cronograma de 2-4 semanas", "Incluye implementación", "Pruebas y QA incluidas", "Soporte post-lanzamiento de 2 semanas"]
       },
       "cta": {
@@ -506,7 +506,6 @@
       "whatYouReceive": [
         "Análisis del estado actual de tus operaciones",
         "Evaluación del espacio de trabajo Notion con recomendaciones de mejora",
-        "Lista de oportunidades de automatización con estimaciones de ROI",
         "Hoja de ruta priorizada para implementación",
         "Victorias rápidas que puedes implementar inmediatamente"
       ],
@@ -517,13 +516,13 @@
         "Estimaciones de tiempo y costo para mejoras recomendadas"
       ],
       "pricing": {
-        "amount": "$1,500",
-        "details": ["Entrega en 1-2 semanas", "Reporte completo", "Hoja de ruta priorizada", "Llamada de seguimiento incluida"]
+        "amount": "$90",
+        "details": ["Entrega en 3-5 días hábiles", "Reporte completo", "Hoja de ruta priorizada", "Llamada de seguimiento incluida"]
       },
       "cta": {
         "primary": "Obtén tu Auditoría"
       },
-      "note": "Tarifa de auditoría acreditada hacia proyectos futuros",
+      "note": "",
       "whatHappensNext": {
         "title": "¿Qué Sucede Después?",
         "description": "Después de la auditoría, puedes implementar las recomendaciones tú mismo, trabajar con tu equipo, o contratarme para soporte de implementación."
@@ -561,7 +560,7 @@
         "Optimización y mejoras continuas"
       ],
       "pricing": {
-        "amount": "$1,500 - $3,500",
+        "amount": "desde $950",
         "perMonth": "Por mes",
         "details": ["10-20 horas por mes", "Soporte prioritario", "Alcance flexible", "Compromiso mínimo de 3 meses"]
       },
@@ -612,7 +611,7 @@
         "Tranquilidad de que las automatizaciones están monitoreadas"
       ],
       "pricing": {
-        "amount": "$1,200 - $2,500",
+        "amount": "desde $1,200",
         "perMonth": "Por mes",
         "details": ["Monitoreo proactivo", "Tiempo de respuesta de corrección de 24 horas", "8-15 horas para nuevos flujos de trabajo", "Reportes mensuales"]
       },
@@ -703,6 +702,26 @@
       "clientTestimonial": "Testimonio del Cliente",
       "readyToTransform": "¿Listo para Transformar tus Operaciones?",
       "readySubtitle": "Comienza con una auditoría de sistemas o agenda una llamada para discutir tus necesidades específicas."
+    }
+  },
+  "promotionalBanners": {
+    "systemsAudit": {
+      "badge": "Empieza Aquí",
+      "title": "Auditoría de Sistemas",
+      "description": "¿No estás seguro por dónde empezar? Comienza con una auditoría integral de tus operaciones, sistemas y oportunidades de automatización actuales.",
+      "bullet1": "Evaluación completa de operaciones",
+      "bullet2": "Revisión del espacio de trabajo Notion",
+      "bullet3": "Mapeo de oportunidades de automatización",
+      "cta": "Obtén tu Auditoría"
+    },
+    "whiteLabel": {
+      "badge": "Para Agencias",
+      "title": "Sistemas White-Label",
+      "description": "Escala tu agencia ofreciendo servicios de sistemas y automatización bajo tu marca. Yo manejo la entrega mientras tú conservas la relación con el cliente.",
+      "bullet1": "Entrega bajo tu marca",
+      "bullet2": "Precios fijos para márgenes predecibles",
+      "bullet3": "Soporte continuo incluido",
+      "cta": "Conoce White-Label"
     }
   }
 }

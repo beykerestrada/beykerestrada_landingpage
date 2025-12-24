@@ -37,7 +37,7 @@ const Header = () => {
         <div className="hidden md:flex md:items-center md:gap-x-2">
           <LanguageSwitcher />
           <Button asChild variant="default" size="sm">
-            <Link href="/contact">{t('hero.cta.primary')}</Link>
+            <Link href="https://www.upwork.com/services/product/development-it-beyker-1803170150932070386?ref=project_share" target="_blank">{t('hero.cta.primary')}</Link>
           </Button>
         </div>
 

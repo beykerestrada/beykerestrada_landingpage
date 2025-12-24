@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "whoIWorkWith": "Avec Qui Je Travaille",
+    "whatIBuild": "Ce Que Je Construis",
+    "howIWork": "Comment Je Travaille",
+    "caseStudies": "Études de Cas",
+    "whyMe": "Pourquoi Moi",
+    "notionAudit": "Audit Notion",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Je construis des systèmes opérationnels qui connectent vos outils, automatisent les flux de travail et intègrent l'IA—pour que votre équipe se concentre sur la croissance, pas sur les tâches répétitives.",
+    "subheadline": "Architecture d'espaces de travail Notion + automatisations de niveau production (n8n, Make, Zapier) + intégration IA. Pas seulement \"si ceci, alors cela\"—systèmes fiables et documentés avec gestion des erreurs, journalisation et évolutivité intégrées.",
+    "primaryCta": "Réserver un Audit Notion",
+    "secondaryCta": "Voir les Études de Cas"
+  },
+  "whoIWorkWith": {
+    "title": "Avec Qui Je Travaille",
+    "body": "Startups et agences (10-50 personnes) qui ont besoin de:",
+    "bullet1": "Systèmes opérationnels unifiés (CRM + gestion de projet + données clients)",
+    "bullet2": "Flux de travail automatisés qui fonctionnent réellement en production",
+    "bullet3": "Classification, extraction et rapports alimentés par l'IA",
+    "bullet4": "Documentation pour que les équipes puissent maintenir et évoluer"
+  },
+  "whatIBuild": {
+    "title": "Ce Que Je Construis",
+    "service1": {
+      "title": "Architecture d'Espace de Travail Notion",
+      "description": "Systèmes de bases de données avec relations, rollups, formules. Flux de travail d'équipe (pipelines, approbations, SLA, tableaux de bord). Source unique de vérité pour les opérations."
+    },
+    "service2": {
+      "title": "Automatisations de Niveau Production",
+      "description": "Capture de leads → scoring → synchronisation CRM → alertes d'équipe. Triage de tickets (priorité, routage, suivi SLA). Pipelines de contenu/ops (réception → révision → publication). Qualité des données: journalisation, tentatives, alertes d'échecs."
+    },
+    "service3": {
+      "title": "Intégration IA",
+      "description": "API OpenAI/Claude pour la classification et l'extraction. Rapports automatisés et enrichissement des données. Flux de travail IA personnalisés adaptés à votre processus."
+    },
+    "service4": {
+      "title": "Connexions d'Outils",
+      "description": "HubSpot, Pipedrive, Front, Intercom, Slack. Google Sheets, Airtable, webhooks, APIs personnalisées. Tout ce dont votre stack a besoin pour communiquer."
+    }
+  },
+  "howIWork": {
+    "title": "Comment Je Travaille",
+    "callout": "Tout documenté. Rien de boîte noire.",
+    "step1": {
+      "title": "Découverte",
+      "duration": "20-30 min",
+      "description": "État actuel, objectifs, gains rapides"
+    },
+    "step2": {
+      "title": "Conception",
+      "description": "Diagramme de processus + portée + métriques de succès"
+    },
+    "step3": {
+      "title": "Construction",
+      "description": "Livraison itérative avec données de test et boucles de feedback"
+    },
+    "step4": {
+      "title": "Renforcement",
+      "description": "Gestion des erreurs, journalisation, alertes"
+    },
+    "step5": {
+      "title": "Livraison",
+      "description": "Documentation complète dans Notion + formation"
+    }
+  },
+  "caseStudies": {
+    "title": "Études de Cas",
+    "case1": {
+      "client": "Buda.com",
+      "clientType": "Startup d'échange de cryptomonnaies",
+      "challenge": "L'équipe opérationnelle avait besoin de visibilité sur les points de douleur des clients pour orienter les décisions produit",
+      "solution": "Construction d'un bot de support client avec système de marquage automatisé (Intercom + Zapier + Notion comme base de données)",
+      "result": "L'équipe produit a obtenu des insights en temps réel sur les problèmes des utilisateurs, a orienté les priorités de roadmap basées sur la taxonomie des données"
+    },
+    "case2": {
+      "client": "Front",
+      "clientType": "Plateforme de support client",
+      "challenge": "L'équipe de support avait besoin d'une migration de Slab + Asana vers un système unifié Notion",
+      "solution": "Direction de la conception et de l'implémentation complète de l'espace d'équipe pour les équipes Support et Support Ops",
+      "result": "Transition fluide avec adoption rapide sur plus de 50 membres d'équipe"
+    },
+    "case3": {
+      "client": "Première Consultation Réussie",
+      "clientType": "Agence marketing",
+      "challenge": "Flux de travail fragmentés sur plusieurs outils, goulots d'étranglement de saisie manuelle de données",
+      "solution": "Audit Notion de 60 minutes a identifié des opportunités d'automatisation et des améliorations de structure de base de données",
+      "result": "Consultation conclue à 1K$, a conduit à un engagement d'implémentation continue"
+    }
+  },
+  "whyMe": {
+    "title": "Pourquoi les Clients Me Choisissent",
+    "diff1": {
+      "title": "Documentation d'abord",
+      "description": "Votre équipe peut maintenir et faire évoluer ce que je construis"
+    },
+    "diff2": {
+      "title": "Niveau production",
+      "description": "Gestion des erreurs et journalisation dès le premier jour"
+    },
+    "diff3": {
+      "title": "Expérience en CX",
+      "description": "Je comprends les contraintes opérationnelles réelles (SLA, transferts, cas limites)"
+    },
+    "diff4": {
+      "title": "Multilingue",
+      "description": "EN / ES / PT / FR"
+    }
+  },
+  "notionAudit": {
+    "badge": "Service en Vedette",
+    "title": "Audit d'Espace de Travail Notion",
+    "headline": "Obtenez de la clarté sur ce qui est cassé dans votre espace de travail Notion—et un plan concret pour le réparer.",
+    "description": "En 60 minutes, nous diagnostiquerons les inefficacités de votre configuration actuelle et identifierons les gains rapides qui font vraiment bouger l'aiguille:",
+    "benefit1": "Diagnostic de l'espace de travail — J'audite votre structure de base de données, relations et formules pour trouver ce qui vous ralentit",
+    "benefit2": "Révision des modèles — Je repère les lacunes dans vos flux de travail et recommande les connexions de base de données manquantes",
+    "benefit3": "Opportunités d'automatisation — J'identifie le travail manuel répétitif qui devrait fonctionner en pilote automatique",
+    "benefit4": "Lacunes d'intégration — Je cartographie quels outils devraient se connecter à Notion (et comment)",
+    "whatYouGetTitle": "Vous repartirez avec:",
+    "whatYouGet1": "Résultats d'audit écrits dans Notion (pas un PDF que vous n'ouvrirez jamais)",
+    "whatYouGet2": "Plan d'action priorisé: corrections rapides vs. améliorations à long terme",
+    "whatYouGet3": "Prochaines étapes recommandées basées sur la taille et la complexité de votre équipe",
+    "qualification": "Idéal pour: Équipes utilisant Notion mais sachant qu'il pourrait mieux travailler pour elles.",
+    "cta": "Planifier un Audit"
+  },
+  "finalCta": {
+    "title": "Prêt à Éliminer les Frictions Opérationnelles?",
+    "body": "Partagez 2-3 résultats spécifiques que vous recherchez (par ex., \"centraliser les demandes\", \"automatiser le routage des leads\", \"tableaux de bord en temps réel\") et je proposerai un plan clair.",
+    "primaryButton": "Réserver un Audit",
+    "secondaryButton": "Envoyer un Email"
+  },
+  "footer": {
+    "email": "beyker.chirino.estrada@gmail.com",
+    "linkedin": "linkedin.com/in/beykerestrada",
+    "upwork": "https://www.upwork.com/freelancers/~01577deb572030ada8",
+    "credentials": "Ambassadeur Notion (Certification Avancée) | 5+ ans en CX/Opérations",
+    "navLabel": "Navigation",
+    "servicesLink": "Services",
+    "caseStudiesLink": "Études de Cas",
+    "processLink": "Processus",
+    "contactLink": "Contact",
+    "copyright": "Tous droits réservés."
+  }
+}
