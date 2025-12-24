@@ -41,7 +41,7 @@ export default function ContactPage() {
               <p className="text-muted-foreground mb-4">
                 {t("contact.email.description")}
               </p>
-              <a href="mailto:hello@example.com" className="text-accent hover:underline font-medium">
+              <a href="mailto:hello@beykerestrada.com" className="text-accent hover:underline font-medium">
                 {t("contact.email.address")}
               </a>
             </Card>
@@ -56,7 +56,7 @@ export default function ContactPage() {
               <p className="text-muted-foreground mb-4">
                 {t("contact.call.description")}
               </p>
-              <a href="https://calendly.com/example" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">
+              <a href="https://cal.com/beykerestrada-consulting/discovery" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">
                 {t("contact.call.link")}
               </a>
             </Card>

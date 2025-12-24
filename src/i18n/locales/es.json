@@ -137,11 +137,11 @@
     "email": {
       "title": "Correo Electrónico",
       "description": "Envíame un mensaje sobre tu proyecto. Respondo a todas las consultas dentro de 24 horas.",
-      "address": "hello@example.com"
+      "address": "Enviar Correo"
     },
     "call": {
       "title": "Agendar una Llamada",
-      "description": "Agenda una llamada de 30 minutos para discutir tus necesidades y explorar cómo puedo ayudarte.",
+      "description": "Agenda una llamada de 15 minutos para discutir tus necesidades y explorar cómo puedo ayudarte.",
       "link": "Ver Horarios Disponibles"
     },
     "expectations": {
