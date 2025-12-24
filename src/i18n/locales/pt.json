@@ -69,26 +69,64 @@
   },
   "caseStudies": {
     "title": "Casos de Estudo",
-    "case1": {
-      "client": "Buda.com",
-      "clientType": "Startup de exchange de criptomoedas",
-      "challenge": "Equipe de operações precisava de visibilidade sobre pontos de dor dos clientes para orientar decisões de produto",
-      "solution": "Construí bot de suporte ao cliente com sistema de marcação automatizado (Intercom + Zapier + Notion como banco de dados)",
-      "result": "Equipe de produto ganhou insights em tempo real sobre problemas dos usuários, orientou prioridades de roadmap baseadas em taxonomia de dados"
+    "subtitle": "Resultados reais de equipes que transformaram suas operações.",
+    "readCaseStudy": "Ler caso de estudo",
+    "viewAll": "Ver Todos os Casos de Estudo",
+    "williamPittSothebys": {
+      "client": "William Pitt Sotheby's International Realty",
+      "title": "Sistema Operacional Empresarial Unificado para Equipes Multifuncionais",
+      "result": "Operações centralizadas em múltiplas localizações com automação impulsionada por IA"
     },
-    "case2": {
-      "client": "Front",
-      "clientType": "Plataforma de suporte ao cliente",
-      "challenge": "Equipe de suporte precisava migração do Slab + Asana para sistema unificado Notion",
-      "solution": "Liderei design e implementação completa do espaço de equipe para equipes de Suporte e Ops de Suporte",
-      "result": "Transição suave com adoção rápida em mais de 50 membros da equipe"
+    "ingeYang": {
+      "client": "Inge Yang",
+      "title": "Sistema Simplificado de CRM e Gestão de Sessões para Consultório de Coaching",
+      "result": "Transformou o rastreamento manual em um sistema operacional de negócios automatizado e amigável para TDAH"
     },
-    "case3": {
-      "client": "Primeira Consulta Bem-Sucedida",
-      "clientType": "Agência de marketing",
-      "challenge": "Fluxos de trabalho fragmentados em múltiplas ferramentas, gargalos de entrada manual de dados",
-      "solution": "Auditoria Notion de 60 minutos identificou oportunidades de automação e melhorias na estrutura do banco de dados",
-      "result": "Consulta fechada em $1K, levou a engajamento de implementação contínua"
+    "consultingFirm": {
+      "client": "Empresa de Consultoria",
+      "title": "Espaço de Trabalho Notion Unificado para Equipe Remota",
+      "result": "Fonte única de verdade para mais de 25 consultores"
+    }
+  },
+  "clients": {
+    "title": "Confiado por Equipes Líderes",
+    "subtitle": "Organizações que transformaram suas operações com sistemas personalizados e automação.",
+    "list": [
+      {
+        "name": "William Pitt Sotheby's International Realty",
+        "logo": "/clients/wpsir-logo.svg"
+      },
+      {
+        "name": "Inge Yang",
+        "logo": "/clients/inge-yang-logo.svg"
+      },
+      {
+        "name": "Tu Naranja Digital",
+        "logo": "/clients/tnd-logo.png"
+      }
+    ],
+    "testimonials": {
+      "title": "O Que os Clientes Dizem",
+      "items": [
+        {
+          "quote": "Beyker foi excelente para trabalhar. Ele completou uma revisão completa de nossa configuração do Notion e modelos de banco de dados, fornecendo insights claros e recomendações práticas. Sua comunicação foi profissional e responsiva durante todo o engajamento, e ele cumpriu todos os marcos do projeto no prazo. Sua expertise em Notion e sistemas no-code foi evidente na qualidade de seu trabalho. Ele abordou a tarefa com atenção aos detalhes e uma compreensão genuína de nossas necessidades organizacionais. Altamente recomendado.",
+          "author": "Vincent Socci",
+          "role": "Co-Presidente e COO",
+          "company": "William Pitt Sotheby's International Realty"
+        },
+        {
+          "quote": "Não consigo expressar o alívio que o sistema do Beyker me trouxe. Antes, eu fazia malabarismos com tudo manualmente: rastreando clientes, sessões e pagamentos em cadernos. Era esmagador. Beyker projetou um espaço de trabalho no Notion que simplificou tudo sem perder funcionalidade. A interface limpa, as visualizações de dados e a forma como a informação é organizada agregaram um valor tremendo à forma como conduzo minha prática de coaching. Agora posso ver facilmente minha carga de trabalho, rastrear meu funil de conversão e entender minhas métricas de negócio num relance. Este sistema genuinamente mudou a forma como trabalho. Estou tão empolgada por finalmente ter algo que me ajuda a manter-me organizada e eficiente.",
+          "author": "Inge Yang",
+          "role": "Coach de Vida e Carreira",
+          "company": ""
+        },
+        {
+          "quote": "É sempre um prazer conhecer colegas entusiastas da tecnologia que possuem as ferramentas para ajudar a melhorar o fluxo de trabalho dentro de uma organização e que entendem as necessidades do mercado atual. Na Tu Naranja Digital, estamos comprometidos com a inovação e a melhoria contínua. Quando começamos a trabalhar com Beyker, percebemos que compartilhávamos esses valores. Estamos muito satisfeitos com o relacionamento que temos. Ele é um parceiro valioso que nos ajuda a alcançar nossos objetivos. Eu recomendaria fortemente Beyker a qualquer empresa que procura melhorar sua tecnologia e processos.",
+          "author": "Alvaro Diaz",
+          "role": "CEO",
+          "company": "Tu Naranja Digital"
+        }
+      ]
     }
   },
   "whyMe": {

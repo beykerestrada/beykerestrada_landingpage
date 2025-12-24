@@ -75,20 +75,61 @@
     "subtitle": "Real results from teams that transformed their operations.",
     "readCaseStudy": "Read case study",
     "viewAll": "View All Case Studies",
-    "marketingAgency": {
-      "client": "Marketing Agency",
-      "title": "Scaled Operations with Custom Business OS",
-      "result": "40% reduction in admin time"
+    "williamPittSothebys": {
+      "client": "William Pitt Sotheby's International Realty",
+      "title": "Unified Business Operating System for Cross-Functional Teams",
+      "result": "Centralized operations across multiple locations with AI-powered automation"
     },
-    "saasStartup": {
-      "client": "SaaS Startup",
-      "title": "Automated Customer Onboarding Pipeline",
-      "result": "Onboarding time cut from 2 weeks to 2 days"
+    "ingeYang": {
+      "client": "Inge Yang",
+      "title": "Simplified CRM & Session Management System for Coaching Practice",
+      "result": "Transformed manual notebook tracking into an automated, ADHD-friendly business operating system"
     },
     "consultingFirm": {
       "client": "Consulting Firm",
       "title": "Unified Notion Workspace for Remote Team",
       "result": "Single source of truth for 25+ consultants"
+    }
+  },
+  "clients": {
+    "title": "Trusted by Leading Teams",
+    "subtitle": "Organizations that transformed their operations with custom systems and automation.",
+    "list": [
+      {
+        "name": "William Pitt Sotheby's International Realty",
+        "logo": "/clients/wpsir-logo.svg"
+      },
+      {
+        "name": "Inge Yang",
+        "logo": "/clients/inge-yang-logo.svg"
+      },
+      {
+        "name": "Tu Naranja Digital",
+        "logo": "/clients/tnd-logo.png"
+      }
+    ],
+    "testimonials": {
+      "title": "What Clients Say",
+      "items": [
+        {
+          "quote": "Beyker was excellent to work with. He completed a thorough review of our Notion setup and database templates, delivering clear insights and practical recommendations. His communication was professional and responsive throughout the engagement, and he met all project milestones on time. His expertise in Notion and no-code systems was evident in the quality of his work. He approached the assignment with attention to detail and a genuine understanding of our organizational needs. Highly recommended.",
+          "author": "Vincent Socci",
+          "role": "Co-President & COO",
+          "company": "William Pitt Sotheby's International Realty"
+        },
+        {
+          "quote": "I can't express how much relief Beyker's system has brought me. Before, I was juggling everything manually—tracking clients, sessions, and payments in notebooks. It was overwhelming. Beyker designed a Notion workspace that simplified everything without losing functionality. The clean interface, the data visualizations, and the way information is organized have added tremendous value to how I run my coaching practice. Now I can easily see my workload, track my conversion funnel, and understand my business metrics at a glance. This system has genuinely changed the way I work. I'm so excited to finally have something that helps me stay organized and efficient.",
+          "author": "Inge Yang",
+          "role": "Life & Career Coach",
+          "company": ""
+        },
+        {
+          "quote": "It is always a pleasure to meet with fellow technology enthusiasts who have the tools to help improve workflow within an organization and who understand the needs of today's market. At Tu Naranja Digital, we are committed to innovation and continuous improvement. When we began working with Beyker, we realized that we shared these values. We are very happy with the relationship we have. He is a valuable partner who helps us achieve our goals. I would highly recommend Beyker to any company looking to improve its technology and processes.",
+          "author": "Alvaro Diaz",
+          "role": "CEO",
+          "company": "Tu Naranja Digital"
+        }
+      ]
     }
   },
   "faq": {
@@ -219,31 +260,22 @@
     "readFullCaseStudy": "Read full case study",
     "caseStudies": [
       {
-        "id": "marketing-agency",
-        "client": "Marketing Agency",
-        "industry": "Marketing Services",
-        "title": "Scaled Operations with Custom Business OS",
-        "description": "Built a complete Business Operating System in Notion to centralize client management, project workflows, and team collaboration.",
-        "result": "40% reduction in admin time",
-        "metrics": ["15 → 30 clients managed", "No new operations hires", "2-day onboarding vs 2 weeks"]
+        "id": "william-pitt-sothebys",
+        "client": "William Pitt Sotheby's International Realty",
+        "industry": "Real Estate",
+        "title": "Unified Business Operating System for Cross-Functional Teams",
+        "description": "Designed a centralized Business Operating System in Notion to unify cross-functional teams across multiple locations with AI-powered automation for project management and reporting.",
+        "result": "Centralized operations across multiple locations with AI-powered automation",
+        "metrics": ["Multiple tools → 1 unified platform", "Manual reports → AI-automated summaries", "Real-time visibility for all teams", "Executive dashboard for strategic decisions"]
       },
       {
-        "id": "saas-startup",
-        "client": "SaaS Startup",
-        "industry": "Software",
-        "title": "Automated Customer Onboarding Pipeline",
-        "description": "Designed end-to-end automation connecting CRM, documentation tools, and project management for seamless customer onboarding.",
-        "result": "Onboarding time cut from 2 weeks to 2 days",
-        "metrics": ["14 → 2 day onboarding", "90% manual work eliminated", "Zero customer complaints"]
-      },
-      {
-        "id": "consulting-firm",
-        "client": "Consulting Firm",
-        "industry": "Professional Services",
-        "title": "Unified Notion Workspace for Remote Team",
-        "description": "Created a centralized knowledge base and project management system for a distributed team of 25+ consultants.",
-        "result": "Single source of truth for 25+ consultants",
-        "metrics": ["3 → 1 tool", "80% faster information access", "Team-wide adoption"]
+        "id": "inge-yang",
+        "client": "Inge Yang",
+        "industry": "Coaching & Professional Services",
+        "title": "Simplified CRM & Session Management System for Coaching Practice",
+        "description": "Built a custom Notion CRM and session management system that transformed manual notebook tracking into an automated, ADHD-friendly business operating system for a life and career coach.",
+        "result": "Transformed manual notebook tracking into an automated, ADHD-friendly business operating system",
+        "metrics": ["Manual → Automated CRM", "30-60 min/week saved", "Real-time business dashboard", "ADHD-friendly design"]
       }
     ],
     "cta": {
@@ -251,6 +283,28 @@
       "description": "Start with a systems audit or book a call to discuss your specific needs.",
       "primary": "Get a Systems Audit",
       "secondary": "Book a Call"
+    }
+  },
+  "caseStudyDetail": {
+    "backToCaseStudies": "Back to Case Studies",
+    "keyMetrics": "Key Metrics",
+    "clientContext": "Client Context",
+    "theProblem": "The Problem",
+    "scopeOfWork": "Scope of Work",
+    "deliverables": "Deliverables",
+    "systemsDelivered": "Systems & Automations Delivered",
+    "beforeAfter": "Before / After",
+    "before": "Before",
+    "after": "After",
+    "outcomesImpact": "Outcomes & Impact",
+    "clientTestimonial": "Client Testimonial",
+    "cta": {
+      "title": "Ready to Transform Your Operations?",
+      "description": "Start with a systems audit or book a call to discuss your specific needs.",
+      "primary": "Get a Systems Audit",
+      "primaryLink": "/services/systems-audit",
+      "secondary": "Book a Call",
+      "secondaryLink": "/contact"
     }
   },
   "faqPage": {

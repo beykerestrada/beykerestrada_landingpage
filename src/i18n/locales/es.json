@@ -75,20 +75,61 @@
     "subtitle": "Resultados reales de equipos que transformaron sus operaciones.",
     "readCaseStudy": "Leer caso de estudio",
     "viewAll": "Ver Todos los Casos de Estudio",
-    "marketingAgency": {
-      "client": "Agencia de Marketing",
-      "title": "Operaciones Escaladas con Sistema Operativo Empresarial Personalizado",
-      "result": "40% de reducción en tiempo administrativo"
+    "williamPittSothebys": {
+      "client": "William Pitt Sotheby's International Realty",
+      "title": "Sistema Operativo Empresarial Unificado para Equipos Multifuncionales",
+      "result": "Operaciones centralizadas en múltiples ubicaciones con automatización impulsada por IA"
     },
-    "saasStartup": {
-      "client": "Startup SaaS",
-      "title": "Pipeline de Onboarding de Clientes Automatizado",
-      "result": "Tiempo de onboarding reducido de 2 semanas a 2 días"
+    "ingeYang": {
+      "client": "Inge Yang",
+      "title": "Sistema Simplificado de CRM y Gestión de Sesiones para Práctica de Coaching",
+      "result": "Transformó el seguimiento manual en un sistema operativo empresarial automatizado y amigable con TDAH"
     },
     "consultingFirm": {
       "client": "Firma Consultora",
       "title": "Espacio de Trabajo Notion Unificado para Equipo Remoto",
       "result": "Fuente única de verdad para más de 25 consultores"
+    }
+  },
+  "clients": {
+    "title": "Confiado por Equipos Líderes",
+    "subtitle": "Organizaciones que transformaron sus operaciones con sistemas personalizados y automatización.",
+    "list": [
+      {
+        "name": "William Pitt Sotheby's International Realty",
+        "logo": "/clients/wpsir-logo.svg"
+      },
+      {
+        "name": "Inge Yang",
+        "logo": "/clients/inge-yang-logo.svg"
+      },
+      {
+        "name": "Tu Naranja Digital",
+        "logo": "/clients/tnd-logo.png"
+      }
+    ],
+    "testimonials": {
+      "title": "Lo Que Dicen mis Clientes",
+      "items": [
+        {
+          "quote": "Beyker fue excelente para trabajar. Completó una revisión exhaustiva de nuestra configuración de Notion y plantillas de base de datos, entregando información clara y recomendaciones prácticas. Su comunicación fue profesional y receptiva durante todo el compromiso, y cumplió con todos los hitos del proyecto a tiempo. Su experiencia en Notion y sistemas no-code fue evidente en la calidad de su trabajo. Abordó la tarea con atención al detalle y una comprensión genuina de nuestras necesidades organizacionales. Altamente recomendado.",
+          "author": "Vincent Socci",
+          "role": "Copresidente y COO",
+          "company": "William Pitt Sotheby's International Realty"
+        },
+        {
+          "quote": "No puedo expresar el alivio que el sistema de Beyker me ha traído. Antes, hacía malabares con todo manualmente: rastreando clientes, sesiones y pagos en cuadernos. Era abrumador. Beyker diseñó un espacio de trabajo en Notion que simplificó todo sin perder funcionalidad. La interfaz limpia, las visualizaciones de datos y la forma en que se organiza la información han agregado un valor tremendo a cómo dirijo mi práctica de coaching. Ahora puedo ver fácilmente mi carga de trabajo, rastrear mi embudo de conversión y entender las métricas de mi negocio de un vistazo. Este sistema ha cambiado genuinamente la forma en que trabajo. Estoy muy emocionada de finalmente tener algo que me ayuda a mantenerme organizada y eficiente.",
+          "author": "Inge Yang",
+          "role": "Coach de Vida y Carrera",
+          "company": ""
+        },
+        {
+          "quote": "Siempre es un placer conocer a compañeros entusiastas de la tecnología que tienen las herramientas para ayudar a mejorar el flujo de trabajo dentro de una organización y que comprenden las necesidades del mercado actual. En Tu Naranja Digital, estamos comprometidos con la innovación y la mejora continua. Cuando comenzamos a trabajar con Beyker, nos dimos cuenta de que compartíamos estos valores. Estamos muy contentos con la relación que tenemos. Él es un socio valioso que nos ayuda a alcanzar nuestros objetivos. Recomendaría ampliamente a Beyker a cualquier empresa que busque mejorar su tecnología y procesos.",
+          "author": "Alvaro Diaz",
+          "role": "CEO",
+          "company": "Tu Naranja Digital"
+        }
+      ]
     }
   },
   "faq": {
@@ -219,31 +260,22 @@
     "readFullCaseStudy": "Leer caso de estudio completo",
     "caseStudies": [
       {
-        "id": "marketing-agency",
-        "client": "Agencia de Marketing",
-        "industry": "Servicios de Marketing",
-        "title": "Operaciones Escaladas con Sistema Operativo Empresarial Personalizado",
-        "description": "Construimos un Sistema Operativo Empresarial completo en Notion para centralizar la gestión de clientes, flujos de trabajo de proyectos y colaboración del equipo.",
-        "result": "40% de reducción en tiempo administrativo",
-        "metrics": ["15 → 30 clientes gestionados", "Sin nuevas contrataciones operativas", "Onboarding de 2 días vs 2 semanas"]
+        "id": "william-pitt-sothebys",
+        "client": "William Pitt Sotheby's International Realty",
+        "industry": "Bienes Raíces",
+        "title": "Sistema Operativo Empresarial Unificado para Equipos Multifuncionales",
+        "description": "Diseñamos un Sistema Operativo Empresarial centralizado en Notion para unificar equipos multifuncionales en múltiples ubicaciones con automatización impulsada por IA para la gestión de proyectos y reportes.",
+        "result": "Operaciones centralizadas en múltiples ubicaciones con automatización impulsada por IA",
+        "metrics": ["Múltiples herramientas → 1 plataforma unificada", "Reportes manuales → Resúmenes automatizados con IA", "Visibilidad en tiempo real para todos los equipos", "Dashboard ejecutivo para decisiones estratégicas"]
       },
       {
-        "id": "saas-startup",
-        "client": "Startup SaaS",
-        "industry": "Software",
-        "title": "Pipeline de Onboarding de Clientes Automatizado",
-        "description": "Diseñamos automatización de extremo a extremo conectando CRM, herramientas de documentación y gestión de proyectos para un onboarding de clientes fluido.",
-        "result": "Tiempo de onboarding reducido de 2 semanas a 2 días",
-        "metrics": ["14 → 2 días de onboarding", "90% de trabajo manual eliminado", "Cero quejas de clientes"]
-      },
-      {
-        "id": "consulting-firm",
-        "client": "Firma Consultora",
-        "industry": "Servicios Profesionales",
-        "title": "Espacio de Trabajo Notion Unificado para Equipo Remoto",
-        "description": "Creamos una base de conocimiento centralizada y sistema de gestión de proyectos para un equipo distribuido de más de 25 consultores.",
-        "result": "Fuente única de verdad para más de 25 consultores",
-        "metrics": ["3 → 1 herramienta", "80% más rápido acceso a información", "Adopción en todo el equipo"]
+        "id": "inge-yang",
+        "client": "Inge Yang",
+        "industry": "Coaching y Servicios Profesionales",
+        "title": "Sistema Simplificado de CRM y Gestión de Sesiones para Práctica de Coaching",
+        "description": "Construimos un CRM personalizado en Notion y sistema de gestión de sesiones que transformó el seguimiento manual en un sistema operativo empresarial automatizado y amigable con TDAH para una coach de vida y carrera.",
+        "result": "Transformó el seguimiento manual en un sistema operativo empresarial automatizado y amigable con TDAH",
+        "metrics": ["Manual → CRM Automatizado", "30-60 min/semana ahorrados", "Dashboard empresarial en tiempo real", "Diseño amigable con TDAH"]
       }
     ],
     "cta": {
@@ -251,6 +283,28 @@
       "description": "Comienza con una auditoría de sistemas o agenda una llamada para discutir tus necesidades específicas.",
       "primary": "Obtener una Auditoría de Sistemas",
       "secondary": "Agendar una Llamada"
+    }
+  },
+  "caseStudyDetail": {
+    "backToCaseStudies": "Volver a Casos de Estudio",
+    "keyMetrics": "Métricas Clave",
+    "clientContext": "Contexto del Cliente",
+    "theProblem": "El Problema",
+    "scopeOfWork": "Alcance del Trabajo",
+    "deliverables": "Entregables",
+    "systemsDelivered": "Sistemas y Automatizaciones Entregadas",
+    "beforeAfter": "Antes / Después",
+    "before": "Antes",
+    "after": "Después",
+    "outcomesImpact": "Resultados e Impacto",
+    "clientTestimonial": "Testimonio del Cliente",
+    "cta": {
+      "title": "¿Listo para Transformar tus Operaciones?",
+      "description": "Comienza con una auditoría de sistemas o agenda una llamada para discutir tus necesidades específicas.",
+      "primary": "Obtener una Auditoría de Sistemas",
+      "primaryLink": "/services/systems-audit",
+      "secondary": "Agendar una Llamada",
+      "secondaryLink": "/contact"
     }
   },
   "faqPage": {

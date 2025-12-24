@@ -13,22 +13,16 @@ const CaseStudyPreview = () => {
 
   const caseStudies = [
     {
-      client: t('caseStudies.marketingAgency.client'),
-      title: t('caseStudies.marketingAgency.title'),
-      result: t('caseStudies.marketingAgency.result'),
-      link: "/case-studies/marketing-agency",
+      client: t('caseStudies.williamPittSothebys.client'),
+      title: t('caseStudies.williamPittSothebys.title'),
+      result: t('caseStudies.williamPittSothebys.result'),
+      link: "/case-studies/william-pitt-sothebys",
     },
     {
-      client: t('caseStudies.saasStartup.client'),
-      title: t('caseStudies.saasStartup.title'),
-      result: t('caseStudies.saasStartup.result'),
-      link: "/case-studies/saas-startup",
-    },
-    {
-      client: t('caseStudies.consultingFirm.client'),
-      title: t('caseStudies.consultingFirm.title'),
-      result: t('caseStudies.consultingFirm.result'),
-      link: "/case-studies/consulting-firm",
+      client: t('caseStudies.ingeYang.client'),
+      title: t('caseStudies.ingeYang.title'),
+      result: t('caseStudies.ingeYang.result'),
+      link: "/case-studies/inge-yang",
     },
   ];
 
@@ -49,7 +43,7 @@ const CaseStudyPreview = () => {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 gap-6 md:grid-cols-3"
+          className="grid grid-cols-1 gap-6 md:grid-cols-2"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
