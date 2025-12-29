@@ -11,6 +11,10 @@ import { useTranslation } from "react-i18next";
 const WilliamPittSothebys = () => {
   const { t } = useTranslation();
 
+  const content = t('caseStudyContent.williamPittSothebys', { returnObjects: true }) as any;
+  const metrics = content.metrics;
+  const systems = content.systems;
+
   return (
     <section className="w-full py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
@@ -29,13 +33,13 @@ const WilliamPittSothebys = () => {
           variants={fadeInUp}
         >
           <div className="mb-4 flex items-center gap-3">
-            <span className="text-sm font-medium text-accent">William Pitt Sotheby's International Realty</span>
+            <span className="text-sm font-medium text-accent">{content.client}</span>
             <span className="text-sm text-muted-foreground">·</span>
-            <span className="text-sm text-muted-foreground">Real Estate</span>
+            <span className="text-sm text-muted-foreground">{content.industry}</span>
           </div>
-          <h1 className="mb-6">Unified Business Operating System for Cross-Functional Teams</h1>
+          <h1 className="mb-6">{content.title}</h1>
           <div className="text-xl font-semibold text-accent">
-            Centralized operations across multiple locations with AI-powered automation
+            {content.result}
           </div>
         </motion.div>
 
@@ -50,20 +54,20 @@ const WilliamPittSothebys = () => {
               <h2 className="mb-4 text-xl">{t('caseStudyDetail.keyMetrics')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <div className="text-3xl font-bold mb-2">1</div>
-                  <div className="text-sm text-muted-foreground">Unified platform replacing multiple tools</div>
+                  <div className="text-3xl font-bold mb-2">{metrics.metric1.value}</div>
+                  <div className="text-sm text-muted-foreground">{metrics.metric1.description}</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold mb-2">AI-Powered</div>
-                  <div className="text-sm text-muted-foreground">Automated summaries and weekly reports</div>
+                  <div className="text-3xl font-bold mb-2">{metrics.metric2.value}</div>
+                  <div className="text-sm text-muted-foreground">{metrics.metric2.description}</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold mb-2">Real-time</div>
-                  <div className="text-sm text-muted-foreground">Visibility for all teams across locations</div>
+                  <div className="text-3xl font-bold mb-2">{metrics.metric3.value}</div>
+                  <div className="text-sm text-muted-foreground">{metrics.metric3.description}</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold mb-2">Executive</div>
-                  <div className="text-sm text-muted-foreground">Dashboard for strategic decisions</div>
+                  <div className="text-3xl font-bold mb-2">{metrics.metric4.value}</div>
+                  <div className="text-sm text-muted-foreground">{metrics.metric4.description}</div>
                 </div>
               </div>
             </Card>
@@ -77,7 +81,7 @@ const WilliamPittSothebys = () => {
           >
             <h2 className="mb-4">{t('caseStudyDetail.clientContext')}</h2>
             <p className="text-muted-foreground leading-relaxed">
-              A cross-functional team at William Pitt Sotheby's International Realty spanning multiple locations and departments needed to centralize their fragmented workflows. Teams were tracking projects, tasks, and time worked across different tools with inconsistent formats, creating significant collaboration barriers and visibility gaps.
+              {content.clientContext}
             </p>
           </motion.div>
 
@@ -89,12 +93,9 @@ const WilliamPittSothebys = () => {
           >
             <h2 className="mb-4">{t('caseStudyDetail.theProblem')}</h2>
             <ul className="space-y-3 text-muted-foreground">
-              <li>• Information scattered across disconnected tools</li>
-              <li>• Difficult collaboration between locations and teams</li>
-              <li>• No visibility into project status across departments</li>
-              <li>• Time and energy wasted searching for information</li>
-              <li>• Management lacked clear metrics for strategic decisions</li>
-              <li>• Manual weekly reporting process consuming hours</li>
+              {content.problems.map((problem: string, index: number) => (
+                <li key={index}>• {problem}</li>
+              ))}
             </ul>
           </motion.div>
 
@@ -106,18 +107,13 @@ const WilliamPittSothebys = () => {
           >
             <h2 className="mb-4">{t('caseStudyDetail.scopeOfWork')}</h2>
             <p className="text-muted-foreground mb-4">
-              Comprehensive engagement to design and implement a centralized Business Operating System in Notion with AI-powered automation.
+              {content.scopeDescription}
             </p>
             <h3 className="mb-3 text-lg font-semibold">{t('caseStudyDetail.deliverables')}</h3>
             <ul className="space-y-3 text-muted-foreground">
-              <li>• Centralized Notion workspace with integrated databases</li>
-              <li>• Custom database architecture with relations and rollups</li>
-              <li>• Collaborative project workspaces</li>
-              <li>• Automated task management workflows</li>
-              <li>• Real-time project status tracking</li>
-              <li>• Executive dashboard with strategic metrics</li>
-              <li>• AI layer for automatic summaries and reporting</li>
-              <li>• Team training and documentation</li>
+              {content.deliverables.map((item: string, index: number) => (
+                <li key={index}>• {item}</li>
+              ))}
             </ul>
           </motion.div>
 
@@ -130,27 +126,27 @@ const WilliamPittSothebys = () => {
             <h2 className="mb-4">{t('caseStudyDetail.systemsDelivered')}</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="mb-2 text-lg font-semibold">Centralized Dashboard</h3>
+                <h3 className="mb-2 text-lg font-semibold">{systems.dashboard.title}</h3>
                 <p className="text-muted-foreground">
-                  Custom database architecture with relations and rollups providing a unified view of all projects, tasks, and team activities across multiple locations.
+                  {systems.dashboard.description}
                 </p>
               </div>
               <div>
-                <h3 className="mb-2 text-lg font-semibold">Collaborative Workspaces</h3>
+                <h3 className="mb-2 text-lg font-semibold">{systems.automation.title}</h3>
                 <p className="text-muted-foreground">
-                  Dedicated spaces for each team to collaborate on projects with real-time visibility into project status, pending tasks, and completed work.
+                  {systems.automation.description}
                 </p>
               </div>
               <div>
-                <h3 className="mb-2 text-lg font-semibold">Executive Dashboard</h3>
+                <h3 className="mb-2 text-lg font-semibold">{systems.projects.title}</h3>
                 <p className="text-muted-foreground">
-                  Strategic metrics dashboard providing leadership with clear insights for data-driven decisions across all departments and locations.
+                  {systems.projects.description}
                 </p>
               </div>
               <div>
-                <h3 className="mb-2 text-lg font-semibold">AI-Powered Automation</h3>
+                <h3 className="mb-2 text-lg font-semibold">{systems.metrics.title}</h3>
                 <p className="text-muted-foreground">
-                  Automated project summaries, status updates, and weekly reports generated by AI, eliminating manual reporting overhead and ensuring consistent communication.
+                  {systems.metrics.description}
                 </p>
               </div>
             </div>
@@ -167,21 +163,17 @@ const WilliamPittSothebys = () => {
               <Card className="p-6">
                 <h3 className="mb-3 text-lg font-semibold">{t('caseStudyDetail.before')}</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Multiple disconnected tools</li>
-                  <li>• Fragmented visibility across locations</li>
-                  <li>• Manual weekly reporting</li>
-                  <li>• Time wasted searching for information</li>
-                  <li>• Difficult cross-team collaboration</li>
+                  {content.before.map((item: string, index: number) => (
+                    <li key={index}>• {item}</li>
+                  ))}
                 </ul>
               </Card>
               <Card className="p-6">
                 <h3 className="mb-3 text-lg font-semibold">{t('caseStudyDetail.after')}</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• One unified platform</li>
-                  <li>• Real-time visibility for all teams</li>
-                  <li>• AI-automated summaries and reports</li>
-                  <li>• Instant access to project information</li>
-                  <li>• Seamless cross-location collaboration</li>
+                  {content.after.map((item: string, index: number) => (
+                    <li key={index}>• {item}</li>
+                  ))}
                 </ul>
               </Card>
             </div>
@@ -195,12 +187,9 @@ const WilliamPittSothebys = () => {
           >
             <h2 className="mb-4">{t('caseStudyDetail.outcomesImpact')}</h2>
             <ul className="space-y-3 text-muted-foreground">
-              <li>• Single source of truth for all team operations across locations</li>
-              <li>• Real-time visibility on project status and task completion</li>
-              <li>• Automated weekly reports with AI-generated summaries</li>
-              <li>• Executive dashboard enabling data-driven strategic decisions</li>
-              <li>• Improved collaboration between teams and departments</li>
-              <li>• Significant time savings on manual reporting and information search</li>
+              {content.outcomes.map((outcome: string, index: number) => (
+                <li key={index}>• {outcome}</li>
+              ))}
             </ul>
           </motion.div>
 
@@ -213,10 +202,10 @@ const WilliamPittSothebys = () => {
             <h2 className="mb-4">{t('caseStudyDetail.clientTestimonial')}</h2>
             <Card className="p-8 border-accent/50 bg-accent/5">
               <p className="text-lg italic mb-4">
-                "Beyker was excellent to work with. He completed a thorough review of our Notion setup and database templates, delivering clear insights and practical recommendations. His communication was professional and responsive throughout the engagement, and he met all project milestones on time. His expertise in Notion and no-code systems was evident in the quality of his work. He approached the assignment with attention to detail and a genuine understanding of our organizational needs. Highly recommended."
+                "{content.testimonial.text}"
               </p>
               <div className="text-sm text-muted-foreground">
-                — Vincent Socci, Co-President & COO
+                — {content.testimonial.author}
               </div>
             </Card>
           </motion.div>

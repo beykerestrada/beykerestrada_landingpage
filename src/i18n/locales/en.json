@@ -307,6 +307,180 @@
       "secondaryLink": "/contact"
     }
   },
+  "caseStudyContent": {
+    "williamPittSothebys": {
+      "client": "William Pitt Sotheby's International Realty",
+      "industry": "Real Estate",
+      "title": "Unified Business Operating System for Cross-Functional Teams",
+      "result": "Centralized operations across multiple locations with AI-powered automation",
+      "metrics": {
+        "metric1": {
+          "value": "1",
+          "description": "Unified platform replacing multiple tools"
+        },
+        "metric2": {
+          "value": "Real-time",
+          "description": "Visibility across all locations"
+        },
+        "metric3": {
+          "value": "AI-powered",
+          "description": "Automated weekly reporting"
+        },
+        "metric4": {
+          "value": "Executive",
+          "description": "Dashboard for strategic decisions"
+        }
+      },
+      "clientContext": "A cross-functional team at William Pitt Sotheby's International Realty spanning multiple locations and departments needed to centralize their fragmented workflows. Teams were tracking projects, tasks, and time worked across different tools with inconsistent formats, creating significant collaboration barriers and visibility gaps.",
+      "problems": [
+        "Information scattered across disconnected tools",
+        "Difficult collaboration between locations and teams",
+        "No visibility into project status across departments",
+        "Manual weekly reporting consuming hours of management time",
+        "Inconsistent data formats hindering analysis"
+      ],
+      "scopeDescription": "Comprehensive engagement to design and implement a centralized Business Operating System in Notion with AI-powered automation.",
+      "deliverables": [
+        "Centralized Notion workspace with integrated databases",
+        "Custom database architecture with relations and rollups",
+        "Collaborative project workspaces",
+        "AI-powered automated weekly reports",
+        "Executive dashboard with real-time metrics",
+        "Training and documentation for cross-functional teams"
+      ],
+      "systems": {
+        "dashboard": {
+          "title": "Centralized Dashboard",
+          "description": "Single hub providing real-time visibility into all projects, tasks, and time tracking across locations. Executive leadership can see status at a glance without requesting updates."
+        },
+        "automation": {
+          "title": "AI-Powered Reporting",
+          "description": "Automated weekly reports generated using AI to summarize project progress, time allocation, and key metrics. What took hours of manual compilation now happens automatically."
+        },
+        "projects": {
+          "title": "Project Workspaces",
+          "description": "Standardized project structure enabling teams across locations to collaborate seamlessly with consistent workflows and data formats."
+        },
+        "metrics": {
+          "title": "Executive Metrics Dashboard",
+          "description": "High-level view aggregating data from all departments for strategic decision-making, with real-time insights into resource allocation and project health."
+        }
+      },
+      "before": [
+        "Multiple disconnected tools",
+        "Fragmented visibility across locations",
+        "Manual weekly reporting",
+        "Time wasted searching for information",
+        "Difficult cross-team collaboration"
+      ],
+      "after": [
+        "One unified platform",
+        "Real-time visibility for all teams",
+        "AI-automated summaries and reports",
+        "Instant access to project information",
+        "Seamless collaboration across locations"
+      ],
+      "outcomes": [
+        "Single source of truth for all team operations across locations",
+        "Real-time visibility on project status and task completion",
+        "Automated weekly reports with AI-generated summaries",
+        "Executive dashboard enabling data-driven strategic decisions",
+        "Improved collaboration and reduced communication overhead",
+        "Standardized workflows across all departments"
+      ],
+      "testimonial": {
+        "text": "Beyker was excellent to work with. He completed a thorough review of our Notion setup and database templates, delivering clear insights and practical recommendations. His communication was professional and responsive throughout the engagement, and he met all project milestones on time. His expertise in Notion and no-code systems was evident in the quality of his work. He approached the assignment with attention to detail and a genuine understanding of our organizational needs. Highly recommended.",
+        "author": "Vincent Socci, William Pitt Sotheby's International Realty"
+      }
+    },
+    "ingeYang": {
+      "client": "Inge Yang",
+      "industry": "Coaching & Professional Services",
+      "title": "Simplified CRM & Session Management System for Coaching Practice",
+      "result": "Transformed manual notebook tracking into an automated, ADHD-friendly business operating system",
+      "metrics": {
+        "metric1": {
+          "value": "Manual → Automated",
+          "description": "From notebook tracking to automated CRM"
+        },
+        "metric2": {
+          "value": "30-60 min/week",
+          "description": "Saved on administrative tasks"
+        },
+        "metric3": {
+          "value": "Real-time",
+          "description": "Dashboard visibility into business metrics"
+        },
+        "metric4": {
+          "value": "ADHD-Friendly",
+          "description": "Designed to reduce cognitive load"
+        }
+      },
+      "clientContext": "A life and career coach managing a growing coaching practice needed a better way to track client information, session notes, and business operations. Manual notebook tracking was becoming unsustainable and made it difficult to maintain a clear overview of her business while managing ADHD.",
+      "problems": [
+        "Manual tracking in physical notebooks was time-consuming and disorganized",
+        "Client information scattered across multiple locations",
+        "Difficult to track client progress and session history",
+        "No centralized view of business operations",
+        "Administrative tasks taking valuable time away from client work",
+        "System needed to accommodate ADHD-friendly workflows"
+      ],
+      "scopeDescription": "Comprehensive engagement to design and implement a custom CRM and session management system in Notion tailored for a coaching practice.",
+      "deliverables": [
+        "Custom client database with comprehensive client profiles",
+        "Session tracking system with automated templates",
+        "Business dashboard with key metrics",
+        "Automated scheduling reminders and follow-ups",
+        "ADHD-friendly interface design",
+        "Session note templates for consistency",
+        "Training and documentation for system usage"
+      ],
+      "systems": {
+        "clientDatabase": {
+          "title": "Client Database",
+          "description": "Centralized database containing all client information, contact details, coaching goals, session history, and progress notes. Every detail accessible in one place."
+        },
+        "sessionTracker": {
+          "title": "Session Tracker",
+          "description": "Automated session tracking system with pre-built templates for session notes, making it easy to document each session and track client progress over time."
+        },
+        "businessDashboard": {
+          "title": "Business Dashboard",
+          "description": "Real-time dashboard providing visibility into key business metrics: active clients, upcoming sessions, revenue tracking, and client progress at a glance."
+        },
+        "adhdFriendly": {
+          "title": "ADHD-Friendly Design",
+          "description": "Interface specifically designed to reduce cognitive load with clear visual hierarchy, minimal distractions, and intuitive workflows that support ADHD-friendly work patterns."
+        }
+      },
+      "before": [
+        "Manual notebook tracking",
+        "Scattered client information",
+        "Time-consuming admin work",
+        "Hard to track client progress",
+        "No business overview"
+      ],
+      "after": [
+        "Automated CRM system",
+        "Centralized client database",
+        "Streamlined administrative tasks",
+        "Easy progress tracking",
+        "Real-time business dashboard"
+      ],
+      "outcomes": [
+        "All client information centralized in one accessible location",
+        "Automated session tracking and reminders saving 30-60 minutes weekly",
+        "Improved client experience through better session preparation",
+        "Clear visibility into business metrics and client progress",
+        "Reduced cognitive load with ADHD-friendly design",
+        "More time available for actual coaching and client work"
+      ],
+      "testimonial": {
+        "text": "Beyker completely transformed how I manage my coaching practice. The custom Notion system he built is exactly what I needed - simple, ADHD-friendly, and saves me hours every week. I can finally focus on my clients instead of drowning in admin work.",
+        "author": "Inge Yang, Life and Career Coach"
+      }
+    }
+  },
   "faqPage": {
     "title": "Frequently Asked Questions",
     "subtitle": "Everything you need to know about working together, from process to pricing.",
@@ -440,7 +614,11 @@
       "perAutomationProject": "Per automation project",
       "monthlyRetainer": "Monthly retainer",
       "fixedPrice": "Fixed price",
-      "backToServices": "Back to Services"
+      "backToServices": "Back to Services",
+      "whatYouReceiveTitle": "What You'll Receive",
+      "howItWorksTitle": "How It Works",
+      "servicesAvailableTitle": "Services Available",
+      "pricingStructureTitle": "Pricing Structure"
     },
     "businessOS": {
       "title": "Business OS Design & Implementation",
@@ -738,24 +916,6 @@
         "title": "Minimum Commitment",
         "description": "White-label partnerships require a minimum of 2 projects per quarter to maintain the relationship."
       }
-    }
-  },
-  "caseStudyDetail": {
-    "common": {
-      "backToCaseStudies": "Back to Case Studies",
-      "keyMetrics": "Key Metrics",
-      "clientContext": "Client Context",
-      "theProblem": "The Problem",
-      "scopeOfWork": "Scope of Work",
-      "deliverables": "Deliverables",
-      "systemsAutomations": "Systems & Automations Delivered",
-      "beforeAfter": "Before / After",
-      "before": "Before",
-      "after": "After",
-      "outcomesImpact": "Outcomes & Impact",
-      "clientTestimonial": "Client Testimonial",
-      "readyToTransform": "Ready to Transform Your Operations?",
-      "readySubtitle": "Start with a systems audit or book a call to discuss your specific needs."
     }
   },
   "promotionalBanners": {

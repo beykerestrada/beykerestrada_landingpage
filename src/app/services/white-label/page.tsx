@@ -60,7 +60,7 @@ const WhiteLabel = () => {
               </div>
 
               <div>
-                <h2 className="mb-6">How It Works</h2>
+                <h2 className="mb-6">{t('serviceDetail.common.howItWorksTitle')}</h2>
                 <p className="text-muted-foreground mb-6">
                   {howItWorks.paragraph1}
                 </p>
@@ -90,7 +90,7 @@ const WhiteLabel = () => {
               </div>
 
               <div>
-                <h2 className="mb-6">Services Available</h2>
+                <h2 className="mb-6">{t('serviceDetail.common.servicesAvailableTitle')}</h2>
                 <ul className="space-y-3 text-muted-foreground">
                   {servicesAvailable.map((service, index) => (
                     <li key={index} className="flex items-start">
@@ -102,7 +102,7 @@ const WhiteLabel = () => {
               </div>
 
               <div>
-                <h2 className="mb-6">Pricing Structure</h2>
+                <h2 className="mb-6">{t('serviceDetail.common.pricingStructureTitle')}</h2>
                 <p className="text-muted-foreground mb-6">
                   {pricingStructure.intro}
                 </p>

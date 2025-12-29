@@ -11,6 +11,10 @@ import { useTranslation } from "react-i18next";
 const IngeYang = () => {
   const { t } = useTranslation();
 
+  const content = t('caseStudyContent.ingeYang', { returnObjects: true }) as any;
+  const metrics = content.metrics;
+  const systems = content.systems;
+
   return (
     <section className="w-full py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
@@ -29,13 +33,13 @@ const IngeYang = () => {
           variants={fadeInUp}
         >
           <div className="mb-4 flex items-center gap-3">
-            <span className="text-sm font-medium text-accent">Inge Yang</span>
+            <span className="text-sm font-medium text-accent">{content.client}</span>
             <span className="text-sm text-muted-foreground">·</span>
-            <span className="text-sm text-muted-foreground">Coaching & Professional Services</span>
+            <span className="text-sm text-muted-foreground">{content.industry}</span>
           </div>
-          <h1 className="mb-6">Simplified CRM & Session Management System for Coaching Practice</h1>
+          <h1 className="mb-6">{content.title}</h1>
           <div className="text-xl font-semibold text-accent">
-            Transformed manual notebook tracking into an automated, ADHD-friendly business operating system
+            {content.result}
           </div>
         </motion.div>
 
@@ -50,20 +54,20 @@ const IngeYang = () => {
               <h2 className="mb-4 text-xl">{t('caseStudyDetail.keyMetrics')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <div className="text-3xl font-bold mb-2">Manual → Automated</div>
-                  <div className="text-sm text-muted-foreground">From notebook tracking to automated CRM</div>
+                  <div className="text-3xl font-bold mb-2">{metrics.metric1.value}</div>
+                  <div className="text-sm text-muted-foreground">{metrics.metric1.description}</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold mb-2">30-60 min/week</div>
-                  <div className="text-sm text-muted-foreground">Saved on administrative tasks</div>
+                  <div className="text-3xl font-bold mb-2">{metrics.metric2.value}</div>
+                  <div className="text-sm text-muted-foreground">{metrics.metric2.description}</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold mb-2">Real-time</div>
-                  <div className="text-sm text-muted-foreground">Dashboard visibility into business metrics</div>
+                  <div className="text-3xl font-bold mb-2">{metrics.metric3.value}</div>
+                  <div className="text-sm text-muted-foreground">{metrics.metric3.description}</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold mb-2">ADHD-Friendly</div>
-                  <div className="text-sm text-muted-foreground">Designed to reduce cognitive load</div>
+                  <div className="text-3xl font-bold mb-2">{metrics.metric4.value}</div>
+                  <div className="text-sm text-muted-foreground">{metrics.metric4.description}</div>
                 </div>
               </div>
             </Card>
@@ -77,7 +81,7 @@ const IngeYang = () => {
           >
             <h2 className="mb-4">{t('caseStudyDetail.clientContext')}</h2>
             <p className="text-muted-foreground leading-relaxed">
-              A life and career coach managing a growing coaching practice needed a better way to track client information, session notes, and business operations. Manual notebook tracking was becoming unsustainable and made it difficult to maintain a clear overview of her business while managing ADHD.
+              {content.clientContext}
             </p>
           </motion.div>
 
@@ -89,12 +93,9 @@ const IngeYang = () => {
           >
             <h2 className="mb-4">{t('caseStudyDetail.theProblem')}</h2>
             <ul className="space-y-3 text-muted-foreground">
-              <li>• Manual tracking in physical notebooks was time-consuming and disorganized</li>
-              <li>• Client information scattered across multiple locations</li>
-              <li>• Difficult to track client progress and session history</li>
-              <li>• No centralized view of business operations</li>
-              <li>• Administrative tasks taking valuable time away from client work</li>
-              <li>• System needed to accommodate ADHD-friendly workflows</li>
+              {content.problems.map((problem: string, index: number) => (
+                <li key={index}>• {problem}</li>
+              ))}
             </ul>
           </motion.div>
 
@@ -106,17 +107,13 @@ const IngeYang = () => {
           >
             <h2 className="mb-4">{t('caseStudyDetail.scopeOfWork')}</h2>
             <p className="text-muted-foreground mb-4">
-              Comprehensive engagement to design and implement a custom CRM and session management system in Notion tailored for a coaching practice.
+              {content.scopeDescription}
             </p>
             <h3 className="mb-3 text-lg font-semibold">{t('caseStudyDetail.deliverables')}</h3>
             <ul className="space-y-3 text-muted-foreground">
-              <li>• Custom client database with comprehensive client profiles</li>
-              <li>• Session tracking system with automated templates</li>
-              <li>• Business dashboard with key metrics</li>
-              <li>• Automated scheduling reminders and follow-ups</li>
-              <li>• ADHD-friendly interface design</li>
-              <li>• Session note templates for consistency</li>
-              <li>• Training and documentation for system usage</li>
+              {content.deliverables.map((item: string, index: number) => (
+                <li key={index}>• {item}</li>
+              ))}
             </ul>
           </motion.div>
 
@@ -129,27 +126,27 @@ const IngeYang = () => {
             <h2 className="mb-4">{t('caseStudyDetail.systemsDelivered')}</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="mb-2 text-lg font-semibold">Client Database</h3>
+                <h3 className="mb-2 text-lg font-semibold">{systems.clientDatabase.title}</h3>
                 <p className="text-muted-foreground">
-                  Centralized database containing all client information, contact details, coaching goals, session history, and progress notes. Every detail accessible in one place.
+                  {systems.clientDatabase.description}
                 </p>
               </div>
               <div>
-                <h3 className="mb-2 text-lg font-semibold">Session Tracker</h3>
+                <h3 className="mb-2 text-lg font-semibold">{systems.sessionTracker.title}</h3>
                 <p className="text-muted-foreground">
-                  Automated session tracking system with pre-built templates for session notes, making it easy to document each session and track client progress over time.
+                  {systems.sessionTracker.description}
                 </p>
               </div>
               <div>
-                <h3 className="mb-2 text-lg font-semibold">Business Dashboard</h3>
+                <h3 className="mb-2 text-lg font-semibold">{systems.businessDashboard.title}</h3>
                 <p className="text-muted-foreground">
-                  Real-time dashboard providing visibility into key business metrics: active clients, upcoming sessions, revenue tracking, and client progress at a glance.
+                  {systems.businessDashboard.description}
                 </p>
               </div>
               <div>
-                <h3 className="mb-2 text-lg font-semibold">ADHD-Friendly Design</h3>
+                <h3 className="mb-2 text-lg font-semibold">{systems.adhdFriendly.title}</h3>
                 <p className="text-muted-foreground">
-                  Interface specifically designed to reduce cognitive load with clear visual hierarchy, minimal distractions, and intuitive workflows that support ADHD-friendly work patterns.
+                  {systems.adhdFriendly.description}
                 </p>
               </div>
             </div>
@@ -166,21 +163,17 @@ const IngeYang = () => {
               <Card className="p-6">
                 <h3 className="mb-3 text-lg font-semibold">{t('caseStudyDetail.before')}</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Manual notebook tracking</li>
-                  <li>• Scattered client information</li>
-                  <li>• Time-consuming admin work</li>
-                  <li>• Hard to track client progress</li>
-                  <li>• No business overview</li>
+                  {content.before.map((item: string, index: number) => (
+                    <li key={index}>• {item}</li>
+                  ))}
                 </ul>
               </Card>
               <Card className="p-6">
                 <h3 className="mb-3 text-lg font-semibold">{t('caseStudyDetail.after')}</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Automated CRM system</li>
-                  <li>• Centralized client database</li>
-                  <li>• Streamlined administrative tasks</li>
-                  <li>• Easy progress tracking</li>
-                  <li>• Real-time business dashboard</li>
+                  {content.after.map((item: string, index: number) => (
+                    <li key={index}>• {item}</li>
+                  ))}
                 </ul>
               </Card>
             </div>
@@ -194,12 +187,9 @@ const IngeYang = () => {
           >
             <h2 className="mb-4">{t('caseStudyDetail.outcomesImpact')}</h2>
             <ul className="space-y-3 text-muted-foreground">
-              <li>• All client information centralized in one accessible location</li>
-              <li>• Automated session tracking and reminders saving 30-60 minutes weekly</li>
-              <li>• Improved client experience through better session preparation</li>
-              <li>• Clear visibility into business metrics and client progress</li>
-              <li>• Reduced cognitive load with ADHD-friendly design</li>
-              <li>• More time available for actual coaching and client work</li>
+              {content.outcomes.map((outcome: string, index: number) => (
+                <li key={index}>• {outcome}</li>
+              ))}
             </ul>
           </motion.div>
 
@@ -212,10 +202,10 @@ const IngeYang = () => {
             <h2 className="mb-4">{t('caseStudyDetail.clientTestimonial')}</h2>
             <Card className="p-8 border-accent/50 bg-accent/5">
               <p className="text-lg italic mb-4">
-                "Beyker completely transformed how I manage my coaching practice. The custom Notion system he built is exactly what I needed - simple, ADHD-friendly, and saves me hours every week. I can finally focus on my clients instead of drowning in admin work."
+                "{content.testimonial.text}"
               </p>
               <div className="text-sm text-muted-foreground">
-                — Inge Yang, Life and Career Coach
+                — {content.testimonial.author}
               </div>
             </Card>
           </motion.div>
