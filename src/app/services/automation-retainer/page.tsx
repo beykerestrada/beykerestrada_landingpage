@@ -95,7 +95,7 @@ const AutomationRetainer = () => {
             </div>
 
             <div>
-              <h2 className="mb-6">How It Works</h2>
+              <h2 className="mb-6">{t('serviceDetail.common.howItWorksTitle')}</h2>
               <p className="text-muted-foreground mb-6">
                 {howItWorks.paragraph1}
               </p>

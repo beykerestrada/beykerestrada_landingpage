@@ -95,7 +95,7 @@ const SystemsAudit = () => {
               </div>
 
               <div>
-                <h2 className="mb-6">What You'll Receive</h2>
+                <h2 className="mb-6">{t('serviceDetail.common.whatYouReceiveTitle')}</h2>
                 <ul className="space-y-3 text-muted-foreground">
                   {whatYouReceive.map((item, index) => (
                     <li key={index} className="flex items-start">

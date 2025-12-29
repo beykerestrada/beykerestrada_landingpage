@@ -307,6 +307,180 @@
       "secondaryLink": "/contact"
     }
   },
+  "caseStudyContent": {
+    "williamPittSothebys": {
+      "client": "William Pitt Sotheby's International Realty",
+      "industry": "Bienes Raíces",
+      "title": "Sistema Operativo Empresarial Unificado para Equipos Multifuncionales",
+      "result": "Operaciones centralizadas en múltiples ubicaciones con automatización impulsada por IA",
+      "metrics": {
+        "metric1": {
+          "value": "1",
+          "description": "Plataforma unificada reemplazando múltiples herramientas"
+        },
+        "metric2": {
+          "value": "Tiempo real",
+          "description": "Visibilidad en todas las ubicaciones"
+        },
+        "metric3": {
+          "value": "Impulsado por IA",
+          "description": "Reportes semanales automatizados"
+        },
+        "metric4": {
+          "value": "Ejecutivo",
+          "description": "Dashboard para decisiones estratégicas"
+        }
+      },
+      "clientContext": "Un equipo multifuncional en William Pitt Sotheby's International Realty que abarca múltiples ubicaciones y departamentos necesitaba centralizar sus flujos de trabajo fragmentados. Los equipos rastreaban proyectos, tareas y tiempo trabajado en diferentes herramientas con formatos inconsistentes, creando importantes barreras de colaboración y brechas de visibilidad.",
+      "problems": [
+        "Información dispersa en herramientas desconectadas",
+        "Colaboración difícil entre ubicaciones y equipos",
+        "Sin visibilidad del estado de proyectos entre departamentos",
+        "Reportes semanales manuales consumiendo horas de tiempo de gestión",
+        "Formatos de datos inconsistentes obstaculizando el análisis"
+      ],
+      "scopeDescription": "Compromiso integral para diseñar e implementar un Sistema Operativo Empresarial centralizado en Notion con automatización impulsada por IA.",
+      "deliverables": [
+        "Espacio de trabajo Notion centralizado con bases de datos integradas",
+        "Arquitectura de base de datos personalizada con relaciones y rollups",
+        "Espacios de trabajo colaborativos para proyectos",
+        "Reportes semanales automatizados impulsados por IA",
+        "Dashboard ejecutivo con métricas en tiempo real",
+        "Capacitación y documentación para equipos multifuncionales"
+      ],
+      "systems": {
+        "dashboard": {
+          "title": "Dashboard Centralizado",
+          "description": "Centro único que proporciona visibilidad en tiempo real de todos los proyectos, tareas y seguimiento de tiempo en todas las ubicaciones. El liderazgo ejecutivo puede ver el estado de un vistazo sin solicitar actualizaciones."
+        },
+        "automation": {
+          "title": "Reportes Impulsados por IA",
+          "description": "Reportes semanales automatizados generados usando IA para resumir el progreso de proyectos, asignación de tiempo y métricas clave. Lo que tomaba horas de compilación manual ahora sucede automáticamente."
+        },
+        "projects": {
+          "title": "Espacios de Trabajo de Proyectos",
+          "description": "Estructura de proyecto estandarizada que permite a los equipos en diferentes ubicaciones colaborar sin problemas con flujos de trabajo y formatos de datos consistentes."
+        },
+        "metrics": {
+          "title": "Dashboard de Métricas Ejecutivas",
+          "description": "Vista de alto nivel que agrega datos de todos los departamentos para la toma de decisiones estratégicas, con información en tiempo real sobre asignación de recursos y salud del proyecto."
+        }
+      },
+      "before": [
+        "Múltiples herramientas desconectadas",
+        "Visibilidad fragmentada entre ubicaciones",
+        "Reportes semanales manuales",
+        "Tiempo perdido buscando información",
+        "Colaboración difícil entre equipos"
+      ],
+      "after": [
+        "Una plataforma unificada",
+        "Visibilidad en tiempo real para todos los equipos",
+        "Resúmenes y reportes automatizados con IA",
+        "Acceso instantáneo a información de proyectos",
+        "Colaboración fluida entre ubicaciones"
+      ],
+      "outcomes": [
+        "Fuente única de verdad para todas las operaciones del equipo en todas las ubicaciones",
+        "Visibilidad en tiempo real del estado de proyectos y finalización de tareas",
+        "Reportes semanales automatizados con resúmenes generados por IA",
+        "Dashboard ejecutivo que permite decisiones estratégicas basadas en datos",
+        "Mejora en la colaboración y reducción de la carga de comunicación",
+        "Flujos de trabajo estandarizados en todos los departamentos"
+      ],
+      "testimonial": {
+        "text": "Beyker fue excelente para trabajar. Completó una revisión exhaustiva de nuestra configuración de Notion y plantillas de base de datos, entregando información clara y recomendaciones prácticas. Su comunicación fue profesional y receptiva durante todo el compromiso, y cumplió con todos los hitos del proyecto a tiempo. Su experiencia en Notion y sistemas sin código fue evidente en la calidad de su trabajo. Abordó la asignación con atención al detalle y una comprensión genuina de nuestras necesidades organizacionales. Altamente recomendado.",
+        "author": "Vincent Socci, William Pitt Sotheby's International Realty"
+      }
+    },
+    "ingeYang": {
+      "client": "Inge Yang",
+      "industry": "Coaching y Servicios Profesionales",
+      "title": "Sistema Simplificado de CRM y Gestión de Sesiones para Práctica de Coaching",
+      "result": "Transformó el seguimiento manual en un sistema operativo empresarial automatizado y amigable con TDAH",
+      "metrics": {
+        "metric1": {
+          "value": "Manual → Automatizado",
+          "description": "De seguimiento en cuaderno a CRM automatizado"
+        },
+        "metric2": {
+          "value": "30-60 min/semana",
+          "description": "Ahorrados en tareas administrativas"
+        },
+        "metric3": {
+          "value": "Tiempo real",
+          "description": "Visibilidad del dashboard en métricas empresariales"
+        },
+        "metric4": {
+          "value": "Amigable con TDAH",
+          "description": "Diseñado para reducir la carga cognitiva"
+        }
+      },
+      "clientContext": "Una coach de vida y carrera que gestiona una práctica de coaching en crecimiento necesitaba una mejor manera de rastrear información de clientes, notas de sesiones y operaciones empresariales. El seguimiento manual en cuadernos se estaba volviendo insostenible y dificultaba mantener una visión clara de su negocio mientras manejaba TDAH.",
+      "problems": [
+        "El seguimiento manual en cuadernos físicos era consumía tiempo y estaba desorganizado",
+        "Información de clientes dispersa en múltiples ubicaciones",
+        "Difícil rastrear el progreso del cliente y el historial de sesiones",
+        "Sin vista centralizada de operaciones empresariales",
+        "Tareas administrativas quitando tiempo valioso del trabajo con clientes",
+        "El sistema necesitaba adaptarse a flujos de trabajo amigables con TDAH"
+      ],
+      "scopeDescription": "Compromiso integral para diseñar e implementar un sistema CRM personalizado y gestión de sesiones en Notion adaptado para una práctica de coaching.",
+      "deliverables": [
+        "Base de datos de clientes personalizada con perfiles completos de clientes",
+        "Sistema de seguimiento de sesiones con plantillas automatizadas",
+        "Dashboard empresarial con métricas clave",
+        "Recordatorios de programación automatizados y seguimientos",
+        "Diseño de interfaz amigable con TDAH",
+        "Plantillas de notas de sesión para consistencia",
+        "Capacitación y documentación para el uso del sistema"
+      ],
+      "systems": {
+        "clientDatabase": {
+          "title": "Base de Datos de Clientes",
+          "description": "Base de datos centralizada que contiene toda la información del cliente, detalles de contacto, objetivos de coaching, historial de sesiones y notas de progreso. Cada detalle accesible en un solo lugar."
+        },
+        "sessionTracker": {
+          "title": "Rastreador de Sesiones",
+          "description": "Sistema de seguimiento de sesiones automatizado con plantillas pre-construidas para notas de sesión, facilitando documentar cada sesión y rastrear el progreso del cliente a lo largo del tiempo."
+        },
+        "businessDashboard": {
+          "title": "Dashboard Empresarial",
+          "description": "Dashboard en tiempo real que proporciona visibilidad de métricas empresariales clave: clientes activos, sesiones próximas, seguimiento de ingresos y progreso del cliente de un vistazo."
+        },
+        "adhdFriendly": {
+          "title": "Diseño Amigable con TDAH",
+          "description": "Interfaz específicamente diseñada para reducir la carga cognitiva con jerarquía visual clara, distracciones mínimas y flujos de trabajo intuitivos que soportan patrones de trabajo amigables con TDAH."
+        }
+      },
+      "before": [
+        "Seguimiento manual en cuadernos",
+        "Información de clientes dispersa",
+        "Trabajo administrativo que consume tiempo",
+        "Difícil rastrear el progreso del cliente",
+        "Sin vista general del negocio"
+      ],
+      "after": [
+        "Sistema CRM automatizado",
+        "Base de datos de clientes centralizada",
+        "Tareas administrativas simplificadas",
+        "Seguimiento fácil del progreso",
+        "Dashboard empresarial en tiempo real"
+      ],
+      "outcomes": [
+        "Toda la información del cliente centralizada en una ubicación accesible",
+        "Seguimiento automatizado de sesiones y recordatorios ahorrando 30-60 minutos semanalmente",
+        "Experiencia mejorada del cliente a través de mejor preparación de sesiones",
+        "Visibilidad clara de métricas empresariales y progreso del cliente",
+        "Carga cognitiva reducida con diseño amigable con TDAH",
+        "Más tiempo disponible para coaching real y trabajo con clientes"
+      ],
+      "testimonial": {
+        "text": "Beyker transformó completamente cómo gestiono mi práctica de coaching. El sistema Notion personalizado que construyó es exactamente lo que necesitaba - simple, amigable con TDAH y me ahorra horas cada semana. Finalmente puedo enfocarme en mis clientes en lugar de ahogarme en trabajo administrativo.",
+        "author": "Inge Yang, Coach de Vida y Carrera"
+      }
+    }
+  },
   "faqPage": {
     "title": "Preguntas Frecuentes",
     "subtitle": "Todo lo que necesitas saber sobre trabajar juntos, desde el proceso hasta los precios.",
@@ -440,7 +614,11 @@
       "perAutomationProject": "Por proyecto de automatización",
       "monthlyRetainer": "Retainer mensual",
       "fixedPrice": "Precio fijo",
-      "backToServices": "Volver a Servicios"
+      "backToServices": "Volver a Servicios",
+      "whatYouReceiveTitle": "Qué Recibirás",
+      "howItWorksTitle": "Cómo Funciona",
+      "servicesAvailableTitle": "Servicios Disponibles",
+      "pricingStructureTitle": "Estructura de Precios"
     },
     "businessOS": {
       "title": "Diseño e Implementación de Sistema Operativo Empresarial",
@@ -738,24 +916,6 @@
         "title": "Compromiso Mínimo",
         "description": "Las asociaciones white-label requieren un mínimo de 2 proyectos por trimestre para mantener la relación."
       }
-    }
-  },
-  "caseStudyDetail": {
-    "common": {
-      "backToCaseStudies": "Volver a Casos de Estudio",
-      "keyMetrics": "Métricas Clave",
-      "clientContext": "Contexto del Cliente",
-      "theProblem": "El Problema",
-      "scopeOfWork": "Alcance del Trabajo",
-      "deliverables": "Entregables",
-      "systemsAutomations": "Sistemas y Automatizaciones Entregados",
-      "beforeAfter": "Antes / Después",
-      "before": "Antes",
-      "after": "Después",
-      "outcomesImpact": "Resultados e Impacto",
-      "clientTestimonial": "Testimonio del Cliente",
-      "readyToTransform": "¿Listo para Transformar tus Operaciones?",
-      "readySubtitle": "Comienza con una auditoría de sistemas o agenda una llamada para discutir tus necesidades específicas."
     }
   },
   "promotionalBanners": {
