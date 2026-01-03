@@ -20,7 +20,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:gap-x-8">
-          <Link href="/services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.services')}
           </Link>
           <Link href="/case-studies" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
@@ -35,15 +35,17 @@ const Header = () => {
         </div>
 
         <div className="hidden md:flex md:items-center md:gap-x-2">
-          <LanguageSwitcher />
+
           <Button asChild variant="default" size="sm">
-            <Link href="https://www.upwork.com/services/product/development-it-beyker-1803170150932070386?ref=project_share" target="_blank">{t('hero.cta.primary')}</Link>
+            <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+              {t('nav.bookAudit')}
+            </Link>
           </Button>
         </div>
 
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center gap-2">
-          <LanguageSwitcher />
+
           <button
             type="button"
             className="rounded-md p-2 text-foreground"
@@ -59,7 +61,7 @@ const Header = () => {
         <div className="md:hidden border-t border-border bg-background">
           <div className="space-y-1 px-6 py-4">
             <Link
-              href="/services"
+              href="/#how-it-works"
               className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -88,7 +90,9 @@ const Header = () => {
             </Link>
             <div className="pt-4">
               <Button asChild className="w-full" size="sm">
-                <Link href="/contact">{t('hero.cta.primary')}</Link>
+                <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+                  {t('nav.bookAudit')}
+                </Link>
               </Button>
             </div>
           </div>

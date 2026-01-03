@@ -4,14 +4,124 @@
     "services": "Services",
     "caseStudies": "Case Studies",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Contact",
+    "bookAudit": "Book Audit"
+  },
+  "stickyCta": {
+    "headline": "Ready to fix your systems?",
+    "subheadline": "$150 Systems Audit • 1-week turnaround",
+    "cta": "Book Your Audit"
   },
   "hero": {
-    "title": "I build Notion systems and n8n automations so your team can work with clarity and less friction.",
-    "subtitle": "I turn scattered work into a single operating system, a place where decisions, tasks, dashboards and automated workflows stay organized and easy to maintain.",
+    "headline": "Build Operating Systems That Scale",
+    "subheadline": "In Notion. Powered by Automation.",
+    "valueProposition": "I architect production-grade Notion workspaces integrated with n8n, Zapier, and Make for startups and agencies that need more than templates—you need infrastructure that works when you're not watching.",
     "cta": {
-      "primary": "Start with a Systems Audit",
-      "secondary": "Book a Call"
+      "primary": "Book a Systems Audit"
+    },
+    "credibility": {
+      "certified": "Notion Certified Admin",
+      "systems": "50+ Systems Deployed",
+      "experience": "5+ Years Operations Experience"
+    }
+  },
+  "problemSolution": {
+    "headline": "The Real Cost of Broken Systems",
+    "subheadline": "Your team is talented. Your tools are holding them back.",
+    "problemLabel": "Problem",
+    "solutionLabel": "Solution",
+    "fragmentation": {
+      "problem": "Information scattered across 6+ tools. Nothing talks to each other. Team spends hours searching for context.",
+      "solution": "One workspace. All your data connected. Everything your team needs in a single source of truth."
+    },
+    "manual": {
+      "problem": "Manual data entry. Copy-pasting between systems. Repetitive tasks eating 10+ hours per week.",
+      "solution": "Automated workflows that move data for you. Your team focuses on decisions, not busywork."
+    },
+    "scaling": {
+      "problem": "Growing means hiring more people to do the same repetitive work. Revenue up, margins flat.",
+      "solution": "Systems that scale without headcount. Growth doesn't require proportional hiring."
+    }
+  },
+  "socialProof": {
+    "headline": "Real Results from Real Teams",
+    "subheadline": "These organizations stopped firefighting and started scaling."
+  },
+  "whyMe": {
+    "headline": "Why Work With Me?",
+    "subheadline": "I don't sell templates. I build production-grade infrastructure that runs when you're not watching.",
+    "infrastructure": {
+      "title": "Infrastructure, Not Templates",
+      "description": "You don't need another Notion template. You need databases that connect, formulas that calculate correctly, and automations that don't break. I build systems with the rigor of software engineering."
+    },
+    "production": {
+      "title": "Production-Grade Systems",
+      "description": "Every workspace is built to handle edge cases, scale with growth, and survive team turnover. Documentation included. Error handling built-in. Training provided."
+    },
+    "handoff": {
+      "title": "Built for Handoff",
+      "description": "You own the system, not me. Everything is documented, maintainable by your team, and designed to evolve without my involvement. No vendor lock-in."
+    },
+    "credibility": {
+      "systems": {
+        "value": "50+",
+        "label": "Systems Deployed"
+      },
+      "experience": {
+        "value": "5+",
+        "label": "Years in Operations"
+      },
+      "certified": {
+        "value": "Certified",
+        "label": "Notion Admin"
+      }
+    }
+  },
+  "howItWorks": {
+    "headline": "Services",
+    "subheadline": "From audit to full implementation. Choose what fits your needs.",
+    "systemsAudit": {
+      "title": "Systems Audit",
+      "price": "$150",
+      "description": "Not sure what you need? Start here.",
+      "features": [
+        "60-minute deep-dive consultation",
+        "Complete workspace audit",
+        "Complete report with: What's broken (and costing you time/money), Prioritized recommendations, Implementation roadmap",
+        "Custom quote for build (if you want it)"
+      ],
+      "cta": "Book Your Audit",
+      "note": "💡 50% of audit clients move to implementation."
+    },
+    "businessOS": {
+      "badge": "MOST POPULAR",
+      "title": "Business Operating System",
+      "price": "from $2,500",
+      "description": "Core workspace setup for your team.",
+      "features": [
+        "Notion workspace architecture",
+        "2-3 essential automations",
+        "Team training (2 sessions)",
+        "30-day support",
+        "Operations manual"
+      ],
+      "cta": "Get Started",
+      "note": "Systems audit included"
+    },
+    "ultimateOS": {
+      "title": "Ultimate Business OS",
+      "price": "from $4,500",
+      "description": "Full system with advanced automation.",
+      "features": [
+        "Everything in Business OS",
+        "Advanced automation suite (5+ workflows)",
+        "Custom dashboards & reporting",
+        "Extended training (3 sessions)",
+        "60-day support with check-ins",
+        "Full documentation"
+      ],
+      "cta": "Get Started",
+      "note": "Systems audit included"
     }
   },
   "valuePillars": {
@@ -118,7 +228,7 @@
           "company": "William Pitt Sotheby's International Realty"
         },
         {
-          "quote": "I can't express how much relief Beyker's system has brought me. Before, I was juggling everything manually—tracking clients, sessions, and payments in notebooks. It was overwhelming. Beyker designed a Notion workspace that simplified everything without losing functionality. The clean interface, the data visualizations, and the way information is organized have added tremendous value to how I run my coaching practice. Now I can easily see my workload, track my conversion funnel, and understand my business metrics at a glance. This system has genuinely changed the way I work. I'm so excited to finally have something that helps me stay organized and efficient.",
+          "quote": "I worked with Beyker on the creation and improvement of a Notion dashboard to manage my work as a coach. We started with an initial version and then evolved it into a much clearer, more functional 2.0, fully aligned with the way I work. I especially value his ability to understand real needs, propose practical improvements, and turn complex processes into simple, usable systems. Thanks to his work, I achieved greater organization, focus, and efficiency in my day-to-day work. I fully recommend him to anyone looking for well-thought-out, personalized Notion solutions.",
           "author": "Inge Yang",
           "role": "Life & Career Coach",
           "company": ""
@@ -130,6 +240,27 @@
           "company": "Tu Naranja Digital"
         }
       ]
+    }
+  },
+  "faqPreview": {
+    "headline": "Common Questions",
+    "subheadline": "Everything you need to know before booking your audit.",
+    "viewAll": "View All FAQs",
+    "question1": {
+      "q": "What's included in the $150 Systems Audit?",
+      "a": "A 60-minute deep-dive call where we map your current systems and pain points, a complete workspace audit, and a detailed report showing what's broken, what to fix first, and exactly how much it would cost to build. 50% of audit clients move to implementation."
+    },
+    "question2": {
+      "q": "How long does implementation take?",
+      "a": "Systems Audit: 1 week. Business Operating System: 6-8 weeks. Ultimate Business OS: 8-10 weeks. All timelines include team training and documentation. You'll see progress in weekly increments, not at the end."
+    },
+    "question3": {
+      "q": "Will my team actually use this, or will it collect dust?",
+      "a": "Every system is built around your team's actual workflows, not generic templates. Training is included. Documentation is clear. Most teams are fully onboarded within 2 weeks because the system is designed for them, not against them."
+    },
+    "question4": {
+      "q": "What if we need changes after the project is done?",
+      "a": "All projects include 2-4 weeks of post-launch support for adjustments. After that, you can handle most changes yourself (everything is documented), or you can book ad-hoc hours or establish a retainer for ongoing work."
     }
   },
   "faq": {
@@ -154,14 +285,25 @@
     "primaryButton": "Get a Systems Audit",
     "secondaryButton": "Book a Call"
   },
+  "finalCta": {
+    "headline": "Ready to Build a System That Actually Works?",
+    "subheadline": "Stop wasting time on tools that don't talk to each other. Start with a $150 Systems Audit and see exactly what's broken—and how to fix it.",
+    "cta": "Book Your Systems Audit",
+    "trustSignals": {
+      "turnaround": "1-week turnaround",
+      "payment": "Secure payment",
+      "guarantee": "Money-back guarantee"
+    },
+    "quote": "\"I don't sell templates. I build infrastructure that works when you're not watching.\""
+  },
   "footer": {
     "description": "Designing Business Operating Systems, Notion workspaces, and automation solutions for teams and agencies.",
     "servicesTitle": "Services",
     "companyTitle": "Company",
-    "businessOS": "Business OS Design",
-    "automation": "Automation Projects",
-    "notionArchitect": "Notion Architect",
-    "automationOps": "Automation Ops Partner",
+    "connectTitle": "Connect",
+    "systemsAudit": "Systems Audit",
+    "businessOS": "Business Operating System",
+    "ultimateBusinessOS": "Ultimate Business OS",
     "caseStudies": "Case Studies",
     "faq": "FAQ",
     "contact": "Contact",
@@ -212,46 +354,62 @@
   },
   "servicesPage": {
     "title": "Services",
-    "subtitle": "From one-time implementations to ongoing partnerships, choose the service model that fits your needs. Every project starts with understanding your operations and ends with a system you can maintain.",
-    "learnMore": "Learn more",
+    "subtitle": "From audit to full implementation. Choose what fits your needs.",
+    "bookNow": "Book Now",
+    "contactUs": "Contact Us",
     "services": [
       {
-        "title": "Business OS Design & Implementation",
-        "description": "Complete operating system design connecting strategy, operations, and execution.",
-        "link": "/services/business-os"
-      },
-      {
-        "title": "Automation Projects",
-        "description": "Custom workflow automation using n8n, Zapier, and Make to eliminate repetitive tasks.",
-        "link": "/services/automation"
-      },
-      {
-        "title": "Notion Architect Retainer",
-        "description": "Ongoing Notion system design, optimization, and team training.",
-        "link": "/services/notion-retainer"
-      },
-      {
-        "title": "Automation Ops Partner",
-        "description": "Monthly automation maintenance, monitoring, and optimization retainer.",
-        "link": "/services/automation-retainer"
-      },
-      {
         "title": "Systems Audit",
-        "description": "Comprehensive assessment of your operations with actionable recommendations.",
-        "link": "/services/systems-audit",
-        "badge": "Start Here"
+        "price": "$150",
+        "description": "Not sure what you need? Start here with a 60-minute deep-dive consultation and complete workspace audit.",
+        "features": [
+          "Complete workspace audit",
+          "Detailed report with prioritized recommendations",
+          "Implementation roadmap",
+          "Custom quote for build (if you want it)"
+        ],
+        "note": "💡 50% of audit clients move to implementation.",
+        "link": "https://cal.com/beykerestrada-consulting/systems-audit",
+        "badge": "Start Here",
+        "isExternal": true
       },
       {
-        "title": "White-Label Systems for Agencies",
-        "description": "Deliver systems and automation services to your clients under your brand.",
-        "link": "/services/white-label",
-        "badge": "For Agencies"
+        "title": "Business Operating System",
+        "price": "from $2,500",
+        "description": "Core workspace setup for your team with essential automations and training.",
+        "features": [
+          "Notion workspace architecture",
+          "2-3 essential automations",
+          "Team training (2 sessions)",
+          "30-day support",
+          "Operations manual"
+        ],
+        "note": "Systems audit included",
+        "link": "/contact",
+        "badge": "Most Popular",
+        "isExternal": false
+      },
+      {
+        "title": "Ultimate Business OS",
+        "price": "from $4,500",
+        "description": "Full system with advanced automation suite and extended support.",
+        "features": [
+          "Everything in Business OS",
+          "Advanced automation suite (5+ workflows)",
+          "Custom dashboards & reporting",
+          "Extended training (3 sessions)",
+          "60-day support with check-ins",
+          "Full documentation"
+        ],
+        "note": "Systems audit included",
+        "link": "/contact",
+        "isExternal": false
       }
     ],
     "notSure": {
       "title": "Not sure which service fits your needs?",
-      "description": "Book a call to discuss your operations and get a recommendation.",
-      "cta": "Book a Call"
+      "description": "Start with a $150 Systems Audit to get a clear roadmap and expert recommendations.",
+      "cta": "Book Your Systems Audit"
     }
   },
   "caseStudiesPage": {
@@ -280,9 +438,8 @@
     ],
     "cta": {
       "title": "Ready to Transform Your Operations?",
-      "description": "Start with a systems audit or book a call to discuss your specific needs.",
-      "primary": "Get a Systems Audit",
-      "secondary": "Book a Call"
+      "description": "Start with a $150 Systems Audit and see exactly what's broken—and how to fix it.",
+      "primary": "Book Your Systems Audit"
     }
   },
   "caseStudyDetail": {
@@ -300,11 +457,9 @@
     "clientTestimonial": "Client Testimonial",
     "cta": {
       "title": "Ready to Transform Your Operations?",
-      "description": "Start with a systems audit or book a call to discuss your specific needs.",
-      "primary": "Get a Systems Audit",
-      "primaryLink": "/services/systems-audit",
-      "secondary": "Book a Call",
-      "secondaryLink": "/contact"
+      "description": "Start with a $150 Systems Audit and see exactly what's broken—and how to fix it.",
+      "primary": "Book Your Systems Audit",
+      "primaryLink": "https://cal.com/beykerestrada-consulting/systems-audit"
     }
   },
   "caseStudyContent": {
@@ -476,7 +631,7 @@
         "More time available for actual coaching and client work"
       ],
       "testimonial": {
-        "text": "Beyker completely transformed how I manage my coaching practice. The custom Notion system he built is exactly what I needed - simple, ADHD-friendly, and saves me hours every week. I can finally focus on my clients instead of drowning in admin work.",
+        "text": "I worked with Beyker on the creation and improvement of a Notion dashboard to manage my work as a coach. We started with an initial version and then evolved it into a much clearer, more functional 2.0, fully aligned with the way I work. I especially value his ability to understand real needs, propose practical improvements, and turn complex processes into simple, usable systems. Thanks to his work, I achieved greater organization, focus, and efficiency in my day-to-day work. I fully recommend him to anyone looking for well-thought-out, personalized Notion solutions.",
         "author": "Inge Yang, Life and Career Coach"
       }
     }
@@ -532,7 +687,7 @@
           },
           {
             "question": "What happens if an automation breaks?",
-            "answer": "For one-time projects, basic support is included for 2-4 weeks post-launch. For ongoing needs, the Automation Ops Partner retainer provides monitoring and rapid fixes."
+            "answer": "All projects include 30-60 days of post-launch support for bug fixes and adjustments. This ensures automations work reliably before handover."
           }
         ]
       },
@@ -540,37 +695,20 @@
         "category": "Pricing & Process",
         "questions": [
           {
-            "question": "What's the difference between a one-time project and a retainer?",
-            "answer": "One-time projects have a defined scope and deliverable. Retainers provide ongoing support, optimization, and new feature development. Retainers make sense when your systems need to evolve regularly."
-          },
-          {
             "question": "How long does implementation take?",
-            "answer": "Systems Audits: 1-2 weeks. Automation projects: 2-4 weeks. Business OS: 6-8 weeks. Timelines depend on project scope and your team's availability for feedback."
+            "answer": "Systems Audits: 1-2 weeks. Business Operating System: 6-8 weeks. Ultimate Business OS: 8-12 weeks. Timelines depend on project scope and your team's availability for feedback."
           },
           {
             "question": "Do you offer payment plans?",
-            "answer": "Yes, projects over $5,000 can be split into milestone-based payments. Retainers are billed monthly."
+            "answer": "Yes, projects over $2,500 can be split into milestone-based payments."
           },
           {
             "question": "What's included in post-launch support?",
-            "answer": "All projects include 2-4 weeks of post-launch support for bug fixes and minor adjustments. This ensures the system works as expected before handover."
-          }
-        ]
-      },
-      {
-        "category": "Agencies & Partners",
-        "questions": [
-          {
-            "question": "How does white-label work?",
-            "answer": "You sell services to your clients under your brand. I handle delivery behind the scenes. You maintain the client relationship and set your own pricing. I provide wholesale pricing with predictable costs."
+            "answer": "All projects include 30-60 days of post-launch support for bug fixes and minor adjustments. This ensures the system works as expected before handover."
           },
           {
-            "question": "What's the minimum commitment for white-label partnerships?",
-            "answer": "Minimum 2 projects per quarter to maintain the partnership. This ensures we build familiarity with your brand and delivery standards."
-          },
-          {
-            "question": "Can you help with sales and scoping?",
-            "answer": "Yes, I provide sales support including scoping assistance, proposal templates, and pricing guidance to help you close deals."
+            "question": "What's your refund policy?",
+            "answer": "Systems Audits come with a money-back guarantee if you're not satisfied. For implementation projects, we work in phases with milestone approvals to ensure alignment throughout the process."
           }
         ]
       },
@@ -583,19 +721,19 @@
           },
           {
             "question": "What if we need changes after the project is complete?",
-            "answer": "Minor changes are covered during the support period. For ongoing needs, you can book ad-hoc hours or establish a retainer. Many clients start with a one-time project and move to a retainer as needs evolve."
+            "answer": "Minor changes are covered during the support period (30-60 days). After that, you can book ad-hoc hours as needed for adjustments or new features."
           },
           {
-            "question": "Do you provide ongoing support after handover?",
-            "answer": "Ongoing support is available through retainer agreements (Notion Architect or Automation Ops Partner). Ad-hoc support can also be purchased as needed."
+            "question": "Do you provide training for our team?",
+            "answer": "Yes. Training sessions are included in all Business OS projects. The Ultimate Business OS includes extended training (3 sessions) to ensure your team is fully comfortable with the system."
           }
         ]
       }
     ],
     "cta": {
       "title": "Still Have Questions?",
-      "description": "Book a call to discuss your specific situation and get personalized answers.",
-      "button": "Book a Call"
+      "description": "Start with a $150 Systems Audit to get clear answers and a roadmap tailored to your needs.",
+      "button": "Book Your Systems Audit"
     }
   },
   "serviceDetail": {
