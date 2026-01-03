@@ -21,7 +21,7 @@
     },
     "credibility": {
       "certified": "Notion Certified Admin",
-      "systems": "50+ Systems Deployed",
+      "systems": "20+ Systems Deployed",
       "experience": "5+ Years Operations Experience"
     }
   },
@@ -64,7 +64,7 @@
     },
     "credibility": {
       "systems": {
-        "value": "50+",
+        "value": "20+",
         "label": "Systems Deployed"
       },
       "experience": {
@@ -91,7 +91,7 @@
         "Custom quote for build (if you want it)"
       ],
       "cta": "Book Your Audit",
-      "note": "💡 50% of audit clients move to implementation."
+      "note": "💰 Credited toward implementation cost."
     },
     "businessOS": {
       "badge": "MOST POPULAR",
@@ -106,7 +106,7 @@
         "Operations manual"
       ],
       "cta": "Get Started",
-      "note": "Systems audit included"
+      "note": "💡 Systems audit included"
     },
     "ultimateOS": {
       "title": "Ultimate Business OS",
@@ -121,7 +121,7 @@
         "Full documentation"
       ],
       "cta": "Get Started",
-      "note": "Systems audit included"
+      "note": "💡 Systems audit included"
     }
   },
   "valuePillars": {
