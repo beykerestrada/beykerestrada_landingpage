@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <footer className="w-full border-t border-border bg-background">
       <div className="mx-auto max-w-content px-6 py-12 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div className="md:col-span-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div>
             <h3 className="text-lg font-semibold mb-3">Beyker Estrada</h3>
             <p className="text-sm text-muted-foreground max-w-md">
               {t('footer.description')}
@@ -21,23 +21,18 @@ const Footer = () => {
             <h4 className="text-sm font-semibold mb-3">{t('footer.servicesTitle')}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link href="/services/business-os" className="hover:text-foreground transition-colors">
+                <Link href="/#how-it-works" className="hover:text-foreground transition-colors">
+                  {t('footer.systemsAudit')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/#how-it-works" className="hover:text-foreground transition-colors">
                   {t('footer.businessOS')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/automation" className="hover:text-foreground transition-colors">
-                  {t('footer.automation')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/notion-retainer" className="hover:text-foreground transition-colors">
-                  {t('footer.notionArchitect')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/automation-retainer" className="hover:text-foreground transition-colors">
-                  {t('footer.automationOps')}
+                <Link href="/#how-it-works" className="hover:text-foreground transition-colors">
+                  {t('footer.ultimateBusinessOS')}
                 </Link>
               </li>
             </ul>
@@ -59,6 +54,48 @@ const Footer = () => {
               <li>
                 <Link href="/contact" className="hover:text-foreground transition-colors">
                   {t('footer.contact')}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold mb-3">{t('footer.connectTitle')}</h4>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li>
+                <Link
+                  href="https://www.linkedin.com/in/beykerestrada/"
+                  target="_blank"
+                  className="hover:text-foreground transition-colors"
+                >
+                  LinkedIn
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.youtube.com/@Devstrada"
+                  target="_blank"
+                  className="hover:text-foreground transition-colors"
+                >
+                  YouTube
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.notion.com/@beykerestrada"
+                  target="_blank"
+                  className="hover:text-foreground transition-colors"
+                >
+                  Notion
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.upwork.com/freelancers/beyker"
+                  target="_blank"
+                  className="hover:text-foreground transition-colors"
+                >
+                  Upwork
                 </Link>
               </li>
             </ul>

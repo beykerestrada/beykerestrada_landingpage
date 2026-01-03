@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, scaleIn } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
@@ -76,7 +77,10 @@ const Faq = () => {
             {t("faqPage.cta.description")}
           </p>
           <Button asChild size="lg">
-            <Link href="/contact">{t("faqPage.cta.button")}</Link>
+            <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+              {t("faqPage.cta.button")}
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </Button>
         </motion.div>
       </div>

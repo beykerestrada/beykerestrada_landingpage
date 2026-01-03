@@ -108,15 +108,7 @@ export default function ContactPage() {
           viewport={{ once: true, margin: "-100px" }}
           variants={scaleIn}
         >
-          <Card className="p-8 bg-muted/30">
-            <h3 className="mb-4 text-lg font-semibold">{t("contact.notSure.title")}</h3>
-            <p className="text-muted-foreground mb-4">
-              {t("contact.notSure.description")}
-            </p>
-            <a href="/services/systems-audit" className="text-accent hover:underline font-medium">
-              {t("contact.notSure.link")}
-            </a>
-          </Card>
+
         </motion.div>
       </div>
     </section>

@@ -90,14 +90,12 @@ export default function CaseStudiesPage() {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             {t("caseStudiesPage.cta.description")}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg">
-              <Link href="/services/systems-audit">{t("caseStudiesPage.cta.primary")}</Link>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href="/contact">{t("caseStudiesPage.cta.secondary")}</Link>
-            </Button>
-          </div>
+          <Button asChild size="lg">
+            <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+              {t("caseStudiesPage.cta.primary")}
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
         </motion.div>
       </div>
     </section>

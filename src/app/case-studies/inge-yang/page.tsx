@@ -222,17 +222,12 @@ const IngeYang = () => {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             {t('caseStudyDetail.cta.description')}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg">
-              <Link href={t('caseStudyDetail.cta.primaryLink')}>
-                {t('caseStudyDetail.cta.primary')}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href={t('caseStudyDetail.cta.secondaryLink')}>{t('caseStudyDetail.cta.secondary')}</Link>
-            </Button>
-          </div>
+          <Button asChild size="lg">
+            <Link href={t('caseStudyDetail.cta.primaryLink')} target="_blank">
+              {t('caseStudyDetail.cta.primary')}
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
         </motion.div>
       </div>
     </section>
