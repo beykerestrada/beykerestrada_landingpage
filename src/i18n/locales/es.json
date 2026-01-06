@@ -4,14 +4,124 @@
     "services": "Servicios",
     "caseStudies": "Casos de Estudio",
     "faq": "Preguntas Frecuentes",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "bookAudit": "Reservar Auditoría"
+  },
+  "stickyCta": {
+    "headline": "¿Listo para arreglar tus sistemas?",
+    "subheadline": "Auditoría de Sistemas $150 • Entrega en 1 semana",
+    "cta": "Reserva tu Auditoría"
   },
   "hero": {
-    "title": "Construyo sistemas de Notion y automatizaciones n8n para que tu equipo trabaje con claridad y menos fricción.",
-    "subtitle": "Convierto el trabajo disperso en un sistema operativo único, un lugar donde las decisiones, tareas, dashboards y flujos de trabajo automatizados se mantienen organizados y fáciles de mantener.",
+    "headline": "Construye Sistemas Operativos que Escalan",
+    "subheadline": "En Notion. Impulsados por Automatización.",
+    "valueProposition": "Diseño espacios de trabajo Notion de nivel profesional integrados con n8n, Zapier y Make para startups y agencias que necesitan más que plantillas—necesitas infraestructura que funcione cuando no estés mirando.",
     "cta": {
-      "primary": "Comenzar con una Auditoría de Sistemas",
-      "secondary": "Agendar una Llamada"
+      "primary": "Reservar una Auditoría de Sistemas"
+    },
+    "credibility": {
+      "certified": "Administrador Certificado de Notion",
+      "systems": "Más de 20 Sistemas Implementados",
+      "experience": "Más de 5 Años de Experiencia en Operaciones"
+    }
+  },
+  "problemSolution": {
+    "headline": "El Costo Real de Sistemas Rotos",
+    "subheadline": "Tu equipo es talentoso. Tus herramientas los están frenando.",
+    "problemLabel": "Problema",
+    "solutionLabel": "Solución",
+    "fragmentation": {
+      "problem": "Información dispersa en más de 6 herramientas. Nada se comunica entre sí. El equipo pasa horas buscando contexto.",
+      "solution": "Un solo espacio de trabajo. Todos tus datos conectados. Todo lo que tu equipo necesita en una única fuente de verdad."
+    },
+    "manual": {
+      "problem": "Entrada manual de datos. Copiar y pegar entre sistemas. Tareas repetitivas consumiendo más de 10 horas por semana.",
+      "solution": "Flujos de trabajo automatizados que mueven datos por ti. Tu equipo se enfoca en decisiones, no en trabajo tedioso."
+    },
+    "scaling": {
+      "problem": "Crecer significa contratar más personas para hacer el mismo trabajo repetitivo. Ingresos suben, márgenes planos.",
+      "solution": "Sistemas que escalan sin aumentar personal. El crecimiento no requiere contratación proporcional."
+    }
+  },
+  "socialProof": {
+    "headline": "Resultados Reales de Equipos Reales",
+    "subheadline": "Estas organizaciones dejaron de apagar incendios y comenzaron a escalar."
+  },
+  "whyMe": {
+    "headline": "¿Por Qué Trabajar Conmigo?",
+    "subheadline": "No vendo plantillas. Construyo infraestructura de nivel profesional que funciona cuando no estás mirando.",
+    "infrastructure": {
+      "title": "Infraestructura, No Plantillas",
+      "description": "No necesitas otra plantilla de Notion. Necesitas bases de datos que se conecten, fórmulas que calculen correctamente y automatizaciones que no se rompan. Construyo sistemas con el rigor de la ingeniería de software."
+    },
+    "production": {
+      "title": "Sistemas de Nivel Profesional",
+      "description": "Cada espacio de trabajo está construido para manejar casos extremos, escalar con el crecimiento y sobrevivir la rotación del equipo. Documentación incluida. Manejo de errores incorporado. Capacitación proporcionada."
+    },
+    "handoff": {
+      "title": "Construido para Transferencia",
+      "description": "Tú eres dueño del sistema, no yo. Todo está documentado, es mantenible por tu equipo y diseñado para evolucionar sin mi participación. Sin dependencia del proveedor."
+    },
+    "credibility": {
+      "systems": {
+        "value": "20+",
+        "label": "Sistemas Implementados"
+      },
+      "experience": {
+        "value": "5+",
+        "label": "Años en Operaciones"
+      },
+      "certified": {
+        "value": "Certificado",
+        "label": "Administrador de Notion"
+      }
+    }
+  },
+  "howItWorks": {
+    "headline": "Servicios",
+    "subheadline": "Desde la auditoría hasta la implementación completa. Elige lo que se ajuste a tus necesidades.",
+    "systemsAudit": {
+      "title": "Auditoría de Sistemas",
+      "price": "$150",
+      "description": "¿No estás seguro de lo que necesitas? Comienza aquí.",
+      "features": [
+        "Consulta profunda de 60 minutos",
+        "Auditoría completa del espacio de trabajo",
+        "Reporte completo con: Qué está roto (y costándote tiempo/dinero), Recomendaciones priorizadas, Hoja de ruta de implementación",
+        "Cotización personalizada para la construcción (si la deseas)"
+      ],
+      "cta": "Reserva tu Auditoría",
+      "note": "💰 Acreditado al costo de implementación."
+    },
+    "businessOS": {
+      "badge": "MÁS POPULAR",
+      "title": "Sistema Operativo Empresarial",
+      "price": "desde $2,500",
+      "description": "Configuración básica del espacio de trabajo para tu equipo.",
+      "features": [
+        "Arquitectura de espacio de trabajo Notion",
+        "2-3 automatizaciones esenciales",
+        "Capacitación del equipo (2 sesiones)",
+        "Soporte de 30 días",
+        "Manual de operaciones"
+      ],
+      "cta": "Comenzar",
+      "note": "💡 Auditoría de sistemas incluida"
+    },
+    "ultimateOS": {
+      "title": "Sistema Operativo Empresarial Ultimate",
+      "price": "desde $4,500",
+      "description": "Sistema completo con automatización avanzada.",
+      "features": [
+        "Todo en Sistema Operativo Empresarial",
+        "Suite de automatización avanzada (más de 5 flujos de trabajo)",
+        "Dashboards personalizados y reportes",
+        "Capacitación extendida (3 sesiones)",
+        "Soporte de 60 días con seguimientos",
+        "Documentación completa"
+      ],
+      "cta": "Comenzar",
+      "note": "💡 Auditoría de sistemas incluida"
     }
   },
   "valuePillars": {
@@ -33,19 +143,19 @@
     "subtitle": "Un proceso claro y estructurado desde la auditoría inicial hasta la implementación completa.",
     "step1": {
       "title": "Diagnóstico operacional",
-      "description": "Mapeamos tus procesos actuales; herramientas y problemas recurrentes. El objetivo es ver cómo fluye realmente el trabajo hoy; no cómo se supone que funciona en papel."
+      "description": "Mapeamos tus procesos actuales, herramientas y problemas recurrentes. El objetivo es ver cómo fluye realmente el trabajo hoy, no cómo se supone que funciona en papel."
     },
     "step2": {
       "title": "Arquitectura de sistemas",
-      "description": "Diseñamos cómo debe funcionar tu negocio como un sistema; dónde vive la información; cómo se mueven las tareas; qué se automatiza y qué necesita ver el liderazgo cada día."
+      "description": "Diseñamos cómo debe funcionar tu negocio como un sistema: dónde vive la información, cómo se mueven las tareas, qué se automatiza y qué necesita ver el liderazgo cada día."
     },
     "step3": {
       "title": "Construcción y automatización",
-      "description": "Convertimos la arquitectura en espacios de trabajo reales de Notion y flujos de trabajo n8n; entregados en pequeñas porciones que puedes probar con trabajo real; no datos de demostración."
+      "description": "Convertimos la arquitectura en espacios de trabajo reales de Notion y flujos de trabajo n8n, entregados en porciones pequeñas que puedes probar con trabajo real, no datos de demostración."
     },
     "step4": {
       "title": "Lanzamiento y soporte",
-      "description": "Implementamos el sistema con tu equipo; refinamos lo que no se siente natural y permanecemos cerca durante las primeras semanas para que la adopción sea fluida y el sistema permanezca."
+      "description": "Implementamos el sistema con tu equipo, refinamos lo que no se siente natural y permanecemos cerca durante las primeras semanas para que la adopción sea fluida y el sistema permanezca."
     }
   },
   "services": {
@@ -78,12 +188,22 @@
     "williamPittSothebys": {
       "client": "William Pitt Sotheby's International Realty",
       "title": "Sistema Operativo Empresarial Unificado para Equipos Multifuncionales",
-      "result": "Operaciones centralizadas en múltiples ubicaciones con automatización impulsada por IA"
+      "result": "Operaciones centralizadas en múltiples ubicaciones con automatización impulsada por IA",
+      "metrics": [
+        "Múltiples herramientas → 1 plataforma unificada",
+        "Reportes manuales → Automatizados con IA",
+        "Visibilidad en tiempo real entre equipos"
+      ]
     },
     "ingeYang": {
       "client": "Inge Yang",
       "title": "Sistema Simplificado de CRM y Gestión de Sesiones para Práctica de Coaching",
-      "result": "Transformó el seguimiento manual en un sistema operativo empresarial automatizado y amigable con TDAH"
+      "result": "Transformó el seguimiento manual en cuadernos en un sistema operativo empresarial automatizado y amigable con TDAH",
+      "metrics": [
+        "Manual → CRM Automatizado",
+        "30-60 min/semana ahorrados",
+        "Dashboard empresarial en tiempo real"
+      ]
     },
     "consultingFirm": {
       "client": "Firma Consultora",
@@ -92,7 +212,7 @@
     }
   },
   "clients": {
-    "title": "Confiado por Equipos Líderes",
+    "title": "Confiado por Líderes de la Industria y Emprendedores",
     "subtitle": "Organizaciones que transformaron sus operaciones con sistemas personalizados y automatización.",
     "list": [
       {
@@ -109,16 +229,16 @@
       }
     ],
     "testimonials": {
-      "title": "Lo Que Dicen mis Clientes",
+      "title": "Mira lo Que Dicen mis Clientes",
       "items": [
         {
-          "quote": "Beyker fue excelente para trabajar. Completó una revisión exhaustiva de nuestra configuración de Notion y plantillas de base de datos, entregando información clara y recomendaciones prácticas. Su comunicación fue profesional y receptiva durante todo el compromiso, y cumplió con todos los hitos del proyecto a tiempo. Su experiencia en Notion y sistemas no-code fue evidente en la calidad de su trabajo. Abordó la tarea con atención al detalle y una comprensión genuina de nuestras necesidades organizacionales. Altamente recomendado.",
+          "quote": "Contraté a Beyker para ayudarme a estructurar y automatizar varios flujos de trabajo operacionales. Lo que destacó inmediatamente fue su capacidad para escuchar, comprender los puntos de dolor subyacentes y traducir las necesidades en soluciones funcionales. Beyker no solo configuró herramientas - diseñó sistemas y procesos para que pudiera empezar a trabajar desde el primer día. Es excepcionalmente ingenioso, ya sea construyendo integraciones directas o encontrando soluciones creativas cuando las conexiones estándar no existen. Su conocimiento abarca todo el stack de productividad: Notion, Make, N8N y la mayoría de las plataformas actuales. Más allá de la experiencia técnica, Beyker es un verdadero socio. Toma en serio el feedback, itera rápidamente y no está satisfecho hasta que todo funciona realmente como lo necesitas. Invertirá el tiempo extra para hacer bien los procesos en lugar de entregar algo funcional pero incompleto. Si buscas a alguien que pueda integrar sistemas, automatizar flujos de trabajo y construir infraestructura escalable en múltiples plataformas, Beyker es el recurso que necesitas. Lo recomiendo altamente.",
           "author": "Vincent Socci",
           "role": "Copresidente y COO",
           "company": "William Pitt Sotheby's International Realty"
         },
         {
-          "quote": "No puedo expresar el alivio que el sistema de Beyker me ha traído. Antes, hacía malabares con todo manualmente: rastreando clientes, sesiones y pagos en cuadernos. Era abrumador. Beyker diseñó un espacio de trabajo en Notion que simplificó todo sin perder funcionalidad. La interfaz limpia, las visualizaciones de datos y la forma en que se organiza la información han agregado un valor tremendo a cómo dirijo mi práctica de coaching. Ahora puedo ver fácilmente mi carga de trabajo, rastrear mi embudo de conversión y entender las métricas de mi negocio de un vistazo. Este sistema ha cambiado genuinamente la forma en que trabajo. Estoy muy emocionada de finalmente tener algo que me ayuda a mantenerme organizada y eficiente.",
+          "quote": "Trabajé con Beyker en la creación y mejora de un dashboard de Notion para gestionar mi trabajo como coach. Comenzamos con una versión inicial y luego la evolucionamos hacia una versión 2.0 mucho más clara y funcional, completamente alineada con mi forma de trabajar. Valoro especialmente su capacidad para entender las necesidades reales, proponer mejoras prácticas y convertir procesos complejos en sistemas simples y usables. Gracias a su trabajo, logré mayor organización, enfoque y eficiencia en mi día a día. Lo recomiendo completamente a cualquiera que busque soluciones Notion bien pensadas y personalizadas.",
           "author": "Inge Yang",
           "role": "Coach de Vida y Carrera",
           "company": ""
@@ -132,9 +252,30 @@
       ]
     }
   },
+  "faqPreview": {
+    "headline": "Preguntas Comunes",
+    "subheadline": "Todo lo que necesitas saber antes de reservar tu auditoría.",
+    "viewAll": "Ver Todas las Preguntas Frecuentes",
+    "question1": {
+      "q": "¿Qué incluye la Auditoría de Sistemas de $150?",
+      "a": "Una llamada profunda de 60 minutos donde mapeamos tus sistemas actuales y puntos de dolor, una auditoría completa del espacio de trabajo y un reporte detallado mostrando qué está roto, qué arreglar primero y exactamente cuánto costaría construir. El 50% de los clientes de auditoría avanzan a la implementación."
+    },
+    "question2": {
+      "q": "¿Cuánto tiempo toma la implementación?",
+      "a": "Auditoría de Sistemas: 1 semana. Sistema Operativo Empresarial: 6-8 semanas. Sistema Operativo Empresarial Ultimate: 8-10 semanas. Todos los cronogramas incluyen capacitación del equipo y documentación. Verás progreso en incrementos semanales, no al final."
+    },
+    "question3": {
+      "q": "¿Mi equipo realmente usará esto, o se quedará sin usar?",
+      "a": "Cada sistema está construido alrededor de los flujos de trabajo reales de tu equipo, no plantillas genéricas. La capacitación está incluida. La documentación es clara. La mayoría de los equipos están completamente incorporados en 2 semanas porque el sistema está diseñado para ellos, no contra ellos."
+    },
+    "question4": {
+      "q": "¿Qué pasa si necesitamos cambios después de que el proyecto esté terminado?",
+      "a": "Todos los proyectos incluyen 2-4 semanas de soporte post-lanzamiento para ajustes. Después de eso, puedes manejar la mayoría de los cambios tú mismo (todo está documentado), o puedes reservar horas ad-hoc o establecer un retainer para trabajo continuo."
+    }
+  },
   "faq": {
     "title": "Preguntas Frecuentes",
-    "viewAll": "Ver Todas las Preguntas",
+    "viewAll": "Ver Todas las Preguntas Frecuentes",
     "question1": {
       "q": "¿Cuál es la diferencia entre un proyecto único y un retainer?",
       "a": "Los proyectos únicos tienen un alcance y fecha de finalización definidos. Los retainers proporcionan soporte continuo, iteración y optimización de tus sistemas."
@@ -154,14 +295,25 @@
     "primaryButton": "Obtener una Auditoría de Sistemas",
     "secondaryButton": "Agendar una Llamada"
   },
+  "finalCta": {
+    "headline": "¿Listo para Construir un Sistema que Realmente Funcione?",
+    "subheadline": "Deja de perder tiempo en herramientas que no se comunican entre sí. Comienza con una Auditoría de Sistemas de $150 y descubre exactamente qué está roto—y cómo arreglarlo.",
+    "cta": "Reserva tu Auditoría de Sistemas",
+    "trustSignals": {
+      "turnaround": "Entrega en 1 semana",
+      "payment": "Pago seguro",
+      "guarantee": "Garantía de devolución de dinero"
+    },
+    "quote": "\"No vendo plantillas. Construyo infraestructura que funciona cuando no estás mirando.\""
+  },
   "footer": {
     "description": "Diseñando Sistemas Operativos Empresariales, espacios de trabajo Notion y soluciones de automatización para equipos y agencias.",
     "servicesTitle": "Servicios",
     "companyTitle": "Empresa",
-    "businessOS": "Diseño de Sistema Operativo Empresarial",
-    "automation": "Proyectos de Automatización",
-    "notionArchitect": "Arquitecto Notion",
-    "automationOps": "Socio de Operaciones de Automatización",
+    "connectTitle": "Conectar",
+    "systemsAudit": "Auditoría de Sistemas",
+    "businessOS": "Sistema Operativo Empresarial",
+    "ultimateBusinessOS": "Sistema Operativo Empresarial Ultimate",
     "caseStudies": "Casos de Estudio",
     "faq": "Preguntas Frecuentes",
     "contact": "Contacto",
@@ -212,46 +364,62 @@
   },
   "servicesPage": {
     "title": "Servicios",
-    "subtitle": "Desde implementaciones únicas hasta asociaciones continuas, elige el modelo de servicio que se adapte a tus necesidades. Cada proyecto comienza entendiendo tus operaciones y termina con un sistema que puedes mantener.",
-    "learnMore": "Saber más",
+    "subtitle": "Desde la auditoría hasta la implementación completa. Elige lo que se ajuste a tus necesidades.",
+    "bookNow": "Reservar Ahora",
+    "contactUs": "Contáctanos",
     "services": [
       {
-        "title": "Diseño e Implementación de Sistema Operativo Empresarial",
-        "description": "Diseño completo del sistema operativo que conecta estrategia, operaciones y ejecución.",
-        "link": "/services/business-os"
-      },
-      {
-        "title": "Proyectos de Automatización",
-        "description": "Automatización de flujos de trabajo personalizados usando n8n, Zapier y Make para eliminar tareas repetitivas.",
-        "link": "/services/automation"
-      },
-      {
-        "title": "Arquitecto Notion en Retainer",
-        "description": "Diseño continuo del sistema Notion, optimización y capacitación del equipo.",
-        "link": "/services/notion-retainer"
-      },
-      {
-        "title": "Socio de Operaciones de Automatización",
-        "description": "Mantenimiento mensual de automatización, monitoreo y optimización en retainer.",
-        "link": "/services/automation-retainer"
-      },
-      {
         "title": "Auditoría de Sistemas",
-        "description": "Evaluación integral de tus operaciones con recomendaciones accionables.",
-        "link": "/services/systems-audit",
-        "badge": "Empieza Aquí"
+        "price": "$150",
+        "description": "¿No estás seguro de lo que necesitas? Comienza aquí con una consulta profunda de 60 minutos y auditoría completa del espacio de trabajo.",
+        "features": [
+          "Auditoría completa del espacio de trabajo",
+          "Reporte detallado con recomendaciones priorizadas",
+          "Hoja de ruta de implementación",
+          "Cotización personalizada para la construcción (si la deseas)"
+        ],
+        "note": "💡 El 50% de los clientes de auditoría avanzan a la implementación.",
+        "link": "https://cal.com/beykerestrada-consulting/systems-audit",
+        "badge": "Comienza Aquí",
+        "isExternal": true
       },
       {
-        "title": "Sistemas White-Label para Agencias",
-        "description": "Entrega servicios de sistemas y automatización a tus clientes bajo tu marca.",
-        "link": "/services/white-label",
-        "badge": "Para Agencias"
+        "title": "Sistema Operativo Empresarial",
+        "price": "desde $2,500",
+        "description": "Configuración básica del espacio de trabajo para tu equipo con automatizaciones esenciales y capacitación.",
+        "features": [
+          "Arquitectura de espacio de trabajo Notion",
+          "2-3 automatizaciones esenciales",
+          "Capacitación del equipo (2 sesiones)",
+          "Soporte de 30 días",
+          "Manual de operaciones"
+        ],
+        "note": "Auditoría de sistemas incluida",
+        "link": "/contact",
+        "badge": "Más Popular",
+        "isExternal": false
+      },
+      {
+        "title": "Sistema Operativo Empresarial Ultimate",
+        "price": "desde $4,500",
+        "description": "Sistema completo con suite de automatización avanzada y soporte extendido.",
+        "features": [
+          "Todo en Sistema Operativo Empresarial",
+          "Suite de automatización avanzada (más de 5 flujos de trabajo)",
+          "Dashboards personalizados y reportes",
+          "Capacitación extendida (3 sesiones)",
+          "Soporte de 60 días con seguimientos",
+          "Documentación completa"
+        ],
+        "note": "Auditoría de sistemas incluida",
+        "link": "/contact",
+        "isExternal": false
       }
     ],
     "notSure": {
-      "title": "¿No estás seguro de qué servicio se adapta a tus necesidades?",
-      "description": "Agenda una llamada para discutir tus operaciones y obtener una recomendación.",
-      "cta": "Agendar una Llamada"
+      "title": "¿No estás seguro de qué servicio se ajusta a tus necesidades?",
+      "description": "Comienza con una Auditoría de Sistemas de $150 para obtener una hoja de ruta clara y recomendaciones expertas.",
+      "cta": "Reserva tu Auditoría de Sistemas"
     }
   },
   "caseStudiesPage": {
@@ -273,16 +441,15 @@
         "client": "Inge Yang",
         "industry": "Coaching y Servicios Profesionales",
         "title": "Sistema Simplificado de CRM y Gestión de Sesiones para Práctica de Coaching",
-        "description": "Construimos un CRM personalizado en Notion y sistema de gestión de sesiones que transformó el seguimiento manual en un sistema operativo empresarial automatizado y amigable con TDAH para una coach de vida y carrera.",
-        "result": "Transformó el seguimiento manual en un sistema operativo empresarial automatizado y amigable con TDAH",
+        "description": "Construimos un CRM personalizado en Notion y sistema de gestión de sesiones que transformó el seguimiento manual en cuadernos en un sistema operativo empresarial automatizado y amigable con TDAH para una coach de vida y carrera.",
+        "result": "Transformó el seguimiento manual en cuadernos en un sistema operativo empresarial automatizado y amigable con TDAH",
         "metrics": ["Manual → CRM Automatizado", "30-60 min/semana ahorrados", "Dashboard empresarial en tiempo real", "Diseño amigable con TDAH"]
       }
     ],
     "cta": {
       "title": "¿Listo para Transformar tus Operaciones?",
-      "description": "Comienza con una auditoría de sistemas o agenda una llamada para discutir tus necesidades específicas.",
-      "primary": "Obtener una Auditoría de Sistemas",
-      "secondary": "Agendar una Llamada"
+      "description": "Comienza con una Auditoría de Sistemas de $150 y descubre exactamente qué está roto—y cómo arreglarlo.",
+      "primary": "Reserva tu Auditoría de Sistemas"
     }
   },
   "caseStudyDetail": {
@@ -300,11 +467,9 @@
     "clientTestimonial": "Testimonio del Cliente",
     "cta": {
       "title": "¿Listo para Transformar tus Operaciones?",
-      "description": "Comienza con una auditoría de sistemas o agenda una llamada para discutir tus necesidades específicas.",
-      "primary": "Obtener una Auditoría de Sistemas",
-      "primaryLink": "/services/systems-audit",
-      "secondary": "Agendar una Llamada",
-      "secondaryLink": "/contact"
+      "description": "Comienza con una Auditoría de Sistemas de $150 y descubre exactamente qué está roto—y cómo arreglarlo.",
+      "primary": "Reserva tu Auditoría de Sistemas",
+      "primaryLink": "https://cal.com/beykerestrada-consulting/systems-audit"
     }
   },
   "caseStudyContent": {
@@ -389,7 +554,7 @@
         "Flujos de trabajo estandarizados en todos los departamentos"
       ],
       "testimonial": {
-        "text": "Beyker fue excelente para trabajar. Completó una revisión exhaustiva de nuestra configuración de Notion y plantillas de base de datos, entregando información clara y recomendaciones prácticas. Su comunicación fue profesional y receptiva durante todo el compromiso, y cumplió con todos los hitos del proyecto a tiempo. Su experiencia en Notion y sistemas sin código fue evidente en la calidad de su trabajo. Abordó la asignación con atención al detalle y una comprensión genuina de nuestras necesidades organizacionales. Altamente recomendado.",
+        "text": "Beyker fue excelente para trabajar. Completó una revisión exhaustiva de nuestra configuración de Notion y plantillas de base de datos, entregando información clara y recomendaciones prácticas. Su comunicación fue profesional y receptiva durante todo el proyecto, y cumplió con todos los hitos a tiempo. Su experiencia en Notion y sistemas sin código fue evidente en la calidad de su trabajo. Abordó la asignación con atención al detalle y una comprensión genuina de nuestras necesidades organizacionales. Altamente recomendado.",
         "author": "Vincent Socci, William Pitt Sotheby's International Realty"
       }
     },
@@ -397,11 +562,11 @@
       "client": "Inge Yang",
       "industry": "Coaching y Servicios Profesionales",
       "title": "Sistema Simplificado de CRM y Gestión de Sesiones para Práctica de Coaching",
-      "result": "Transformó el seguimiento manual en un sistema operativo empresarial automatizado y amigable con TDAH",
+      "result": "Transformó el seguimiento manual en cuadernos en un sistema operativo empresarial automatizado y amigable con TDAH",
       "metrics": {
         "metric1": {
           "value": "Manual → Automatizado",
-          "description": "De seguimiento en cuaderno a CRM automatizado"
+          "description": "De seguimiento en cuadernos a CRM automatizado"
         },
         "metric2": {
           "value": "30-60 min/semana",
@@ -418,7 +583,7 @@
       },
       "clientContext": "Una coach de vida y carrera que gestiona una práctica de coaching en crecimiento necesitaba una mejor manera de rastrear información de clientes, notas de sesiones y operaciones empresariales. El seguimiento manual en cuadernos se estaba volviendo insostenible y dificultaba mantener una visión clara de su negocio mientras manejaba TDAH.",
       "problems": [
-        "El seguimiento manual en cuadernos físicos era consumía tiempo y estaba desorganizado",
+        "El seguimiento manual en cuadernos físicos consumía tiempo y estaba desorganizado",
         "Información de clientes dispersa en múltiples ubicaciones",
         "Difícil rastrear el progreso del cliente y el historial de sesiones",
         "Sin vista centralizada de operaciones empresariales",
@@ -476,7 +641,7 @@
         "Más tiempo disponible para coaching real y trabajo con clientes"
       ],
       "testimonial": {
-        "text": "Beyker transformó completamente cómo gestiono mi práctica de coaching. El sistema Notion personalizado que construyó es exactamente lo que necesitaba - simple, amigable con TDAH y me ahorra horas cada semana. Finalmente puedo enfocarme en mis clientes en lugar de ahogarme en trabajo administrativo.",
+        "text": "Trabajé con Beyker en la creación y mejora de un dashboard de Notion para gestionar mi trabajo como coach. Comenzamos con una versión inicial y luego la evolucionamos hacia una versión 2.0 mucho más clara y funcional, completamente alineada con mi forma de trabajar. Valoro especialmente su capacidad para entender las necesidades reales, proponer mejoras prácticas y convertir procesos complejos en sistemas simples y usables. Gracias a su trabajo, logré mayor organización, enfoque y eficiencia en mi día a día. Lo recomiendo completamente a cualquiera que busque soluciones Notion bien pensadas y personalizadas.",
         "author": "Inge Yang, Coach de Vida y Carrera"
       }
     }
@@ -532,7 +697,7 @@
           },
           {
             "question": "¿Qué pasa si una automatización falla?",
-            "answer": "Para proyectos únicos, el soporte básico está incluido durante 2-4 semanas después del lanzamiento. Para necesidades continuas, el retainer de Socio de Operaciones de Automatización proporciona monitoreo y correcciones rápidas."
+            "answer": "Todos los proyectos incluyen 30-60 días de soporte post-lanzamiento para corrección de errores y ajustes. Esto asegura que las automatizaciones funcionen de manera confiable antes de la entrega."
           }
         ]
       },
@@ -540,37 +705,20 @@
         "category": "Precios y Proceso",
         "questions": [
           {
-            "question": "¿Cuál es la diferencia entre un proyecto único y un retainer?",
-            "answer": "Los proyectos únicos tienen un alcance y entregable definidos. Los retainers proporcionan soporte continuo, optimización y desarrollo de nuevas características. Los retainers tienen sentido cuando tus sistemas necesitan evolucionar regularmente."
-          },
-          {
             "question": "¿Cuánto tiempo toma la implementación?",
-            "answer": "Auditorías de Sistemas: 1-2 semanas. Proyectos de automatización: 2-4 semanas. Sistema Operativo Empresarial: 6-8 semanas. Los plazos dependen del alcance del proyecto y la disponibilidad de tu equipo para feedback."
+            "answer": "Auditorías de Sistemas: 1-2 semanas. Sistema Operativo Empresarial: 6-8 semanas. Sistema Operativo Empresarial Ultimate: 8-12 semanas. Los plazos dependen del alcance del proyecto y la disponibilidad de tu equipo para feedback."
           },
           {
             "question": "¿Ofreces planes de pago?",
-            "answer": "Sí, los proyectos de más de $5,000 se pueden dividir en pagos basados en hitos. Los retainers se facturan mensualmente."
+            "answer": "Sí, los proyectos de más de $2,500 se pueden dividir en pagos basados en hitos."
           },
           {
             "question": "¿Qué está incluido en el soporte post-lanzamiento?",
-            "answer": "Todos los proyectos incluyen 2-4 semanas de soporte post-lanzamiento para corrección de errores y ajustes menores. Esto asegura que el sistema funcione como se espera antes de la entrega."
-          }
-        ]
-      },
-      {
-        "category": "Agencias y Socios",
-        "questions": [
-          {
-            "question": "¿Cómo funciona el white-label?",
-            "answer": "Vendes servicios a tus clientes bajo tu marca. Yo manejo la entrega detrás de escena. Tú mantienes la relación con el cliente y estableces tus propios precios. Yo proporciono precios al por mayor con costos predecibles."
+            "answer": "Todos los proyectos incluyen 30-60 días de soporte post-lanzamiento para corrección de errores y ajustes menores. Esto asegura que el sistema funcione como se espera antes de la entrega."
           },
           {
-            "question": "¿Cuál es el compromiso mínimo para asociaciones white-label?",
-            "answer": "Mínimo 2 proyectos por trimestre para mantener la asociación. Esto asegura que construyamos familiaridad con tu marca y estándares de entrega."
-          },
-          {
-            "question": "¿Puedes ayudar con ventas y planificación?",
-            "answer": "Sí, proporciono soporte de ventas incluyendo asistencia en planificación, plantillas de propuestas y orientación de precios para ayudarte a cerrar acuerdos."
+            "question": "¿Cuál es tu política de reembolso?",
+            "answer": "Las Auditorías de Sistemas vienen con garantía de devolución de dinero si no estás satisfecho. Para proyectos de implementación, trabajamos en fases con aprobaciones de hitos para asegurar alineación durante todo el proceso."
           }
         ]
       },
@@ -583,19 +731,19 @@
           },
           {
             "question": "¿Qué pasa si necesitamos cambios después de que el proyecto esté completo?",
-            "answer": "Los cambios menores están cubiertos durante el período de soporte. Para necesidades continuas, puedes reservar horas ad-hoc o establecer un retainer. Muchos clientes comienzan con un proyecto único y pasan a un retainer a medida que las necesidades evolucionan."
+            "answer": "Los cambios menores están cubiertos durante el período de soporte (30-60 días). Después de eso, puedes reservar horas ad-hoc según sea necesario para ajustes o nuevas funcionalidades."
           },
           {
-            "question": "¿Proporcionas soporte continuo después de la entrega?",
-            "answer": "El soporte continuo está disponible a través de acuerdos de retainer (Arquitecto Notion o Socio de Operaciones de Automatización). También se puede comprar soporte ad-hoc según sea necesario."
+            "question": "¿Proporcionas capacitación para nuestro equipo?",
+            "answer": "Sí. Las sesiones de capacitación están incluidas en todos los proyectos de Sistema Operativo Empresarial. El Sistema Operativo Empresarial Ultimate incluye capacitación extendida (3 sesiones) para asegurar que tu equipo se sienta completamente cómodo con el sistema."
           }
         ]
       }
     ],
     "cta": {
       "title": "¿Todavía Tienes Preguntas?",
-      "description": "Agenda una llamada para discutir tu situación específica y obtener respuestas personalizadas.",
-      "button": "Agendar una Llamada"
+      "description": "Comienza con una Auditoría de Sistemas de $150 para obtener respuestas claras y una hoja de ruta adaptada a tus necesidades.",
+      "button": "Reserva tu Auditoría de Sistemas"
     }
   },
   "serviceDetail": {
@@ -702,7 +850,7 @@
         "Capacidad de escalar operaciones sin crecimiento proporcional de personal"
       ],
       "pricing": {
-        "amount": "desde $500",
+        "amount": "desde $350",
         "details": ["Cronograma de 2-4 semanas", "Incluye implementación", "Pruebas y QA incluidas", "Soporte post-lanzamiento de 2 semanas"]
       },
       "cta": {
