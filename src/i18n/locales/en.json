@@ -188,12 +188,22 @@
     "williamPittSothebys": {
       "client": "William Pitt Sotheby's International Realty",
       "title": "Unified Business Operating System for Cross-Functional Teams",
-      "result": "Centralized operations across multiple locations with AI-powered automation"
+      "result": "Centralized operations across multiple locations with AI-powered automation",
+      "metrics": [
+        "Multiple tools → 1 unified platform",
+        "Manual reports → AI-automated",
+        "Real-time visibility across teams"
+      ]
     },
     "ingeYang": {
       "client": "Inge Yang",
       "title": "Simplified CRM & Session Management System for Coaching Practice",
-      "result": "Transformed manual notebook tracking into an automated, ADHD-friendly business operating system"
+      "result": "Transformed manual notebook tracking into an automated, ADHD-friendly business operating system",
+      "metrics": [
+        "Manual → Automated CRM",
+        "30-60 min/week saved",
+        "Real-time business dashboard"
+      ]
     },
     "consultingFirm": {
       "client": "Consulting Firm",
@@ -202,7 +212,7 @@
     }
   },
   "clients": {
-    "title": "Trusted by Leading Teams",
+    "title": "Trusted by Industry Leaders and Entrepreneurs",
     "subtitle": "Organizations that transformed their operations with custom systems and automation.",
     "list": [
       {
@@ -219,10 +229,10 @@
       }
     ],
     "testimonials": {
-      "title": "What Clients Say",
+      "title": "See What My Clients Say",
       "items": [
         {
-          "quote": "Beyker was excellent to work with. He completed a thorough review of our Notion setup and database templates, delivering clear insights and practical recommendations. His communication was professional and responsive throughout the engagement, and he met all project milestones on time. His expertise in Notion and no-code systems was evident in the quality of his work. He approached the assignment with attention to detail and a genuine understanding of our organizational needs. Highly recommended.",
+          "quote": "I engaged Beyker to help structure and automate several operational workflows. What stood out immediately was his ability to listen, understand the underlying pain points, and translate needs into working solutions. Beyker didn't just configure tools - he mapped out systems and processes so I could hit the ground running from day one. He's exceptionally resourceful, whether building direct integrations or finding creative workarounds when standard connections don't exist. His knowledge spans the full productivity stack: Notion, Make, N8N, and most current platforms. Beyond technical expertise, Beyker is a true partner. He takes feedback seriously, iterates quickly, and isn't satisfied until everything actually works the way you need it to. He'll invest the extra time to get processes right rather than deliver something functional but incomplete. If you're looking for someone who can integrate systems, automate workflows, and build scalable infrastructure across platforms, Beyker is the resource you need. I highly recommended him.",
           "author": "Vincent Socci",
           "role": "Co-President & COO",
           "company": "William Pitt Sotheby's International Realty"

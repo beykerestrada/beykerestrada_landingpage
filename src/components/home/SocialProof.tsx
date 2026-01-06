@@ -1,17 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronLeft, ChevronRight, TrendingUp } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight, TrendingUp } from "lucide-react";
+import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
 
 const SocialProof = () => {
   const { t } = useTranslation();
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const caseStudies = [
     {
@@ -19,39 +17,16 @@ const SocialProof = () => {
       title: t('caseStudies.williamPittSothebys.title'),
       result: t('caseStudies.williamPittSothebys.result'),
       link: "/case-studies/william-pitt-sothebys",
-      metrics: [
-        "Multiple tools → 1 unified platform",
-        "Manual reports → AI-automated",
-        "Real-time visibility across teams"
-      ]
+      metrics: t('caseStudies.williamPittSothebys.metrics', { returnObjects: true }) as string[]
     },
     {
       client: t('caseStudies.ingeYang.client'),
       title: t('caseStudies.ingeYang.title'),
       result: t('caseStudies.ingeYang.result'),
       link: "/case-studies/inge-yang",
-      metrics: [
-        "Manual → Automated CRM",
-        "30-60 min/week saved",
-        "Real-time business dashboard"
-      ]
+      metrics: t('caseStudies.ingeYang.metrics', { returnObjects: true }) as string[]
     },
   ];
-
-  const testimonials = t("clients.testimonials.items", { returnObjects: true }) as Array<{
-    quote: string;
-    author: string;
-    role: string;
-    company: string;
-  }>;
-
-  const nextTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
 
   return (
     <section className="w-full py-16 md:py-24 bg-muted/30">
@@ -77,7 +52,7 @@ const SocialProof = () => {
 
         {/* Case Studies */}
         <motion.div
-          className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-16"
+          className="grid grid-cols-1 gap-6 md:grid-cols-2"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -110,82 +85,6 @@ const SocialProof = () => {
               </Card>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Testimonial Carousel */}
-        <motion.div
-          className="max-w-4xl mx-auto"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          <h3 className="text-2xl font-semibold text-center mb-8">
-            {t('clients.testimonials.title')}
-          </h3>
-
-          <div className="relative">
-            <Card className="p-8 md:p-12">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentTestimonial}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <p className="text-lg text-muted-foreground italic mb-6 leading-relaxed">
-                    &ldquo;{testimonials[currentTestimonial].quote}&rdquo;
-                  </p>
-                  <div className="flex flex-col">
-                    <span className="font-semibold text-foreground">
-                      {testimonials[currentTestimonial].author}
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      {testimonials[currentTestimonial].role}
-                      {testimonials[currentTestimonial].company && `, ${testimonials[currentTestimonial].company}`}
-                    </span>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-            </Card>
-
-            {/* Carousel Controls */}
-            <div className="flex items-center justify-center gap-4 mt-6">
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={prevTestimonial}
-                aria-label="Previous testimonial"
-              >
-                <ChevronLeft className="h-4 w-4" />
-              </Button>
-
-              <div className="flex gap-2">
-                {testimonials.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentTestimonial(index)}
-                    className={`h-2 rounded-full transition-all ${
-                      index === currentTestimonial
-                        ? 'w-8 bg-primary'
-                        : 'w-2 bg-muted-foreground/30'
-                    }`}
-                    aria-label={`Go to testimonial ${index + 1}`}
-                  />
-                ))}
-              </div>
-
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={nextTestimonial}
-                aria-label="Next testimonial"
-              >
-                <ChevronRight className="h-4 w-4" />
-              </Button>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

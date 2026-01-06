@@ -35,7 +35,7 @@ const Header = () => {
         </div>
 
         <div className="hidden md:flex md:items-center md:gap-x-2">
-
+          <LanguageSwitcher />
           <Button asChild variant="default" size="sm">
             <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
               {t('nav.bookAudit')}
@@ -45,7 +45,7 @@ const Header = () => {
 
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center gap-2">
-
+          <LanguageSwitcher />
           <button
             type="button"
             className="rounded-md p-2 text-foreground"
