@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 export default function SystemsAuditLayout({
   children,
 }: {
-  children: React.Node;
+  children: React.ReactNode;
 }) {
   return children;
 }
