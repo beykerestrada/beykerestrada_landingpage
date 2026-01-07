@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClientProviders } from "./providers";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { OrganizationStructuredData } from "@/components/seo/StructuredData";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,19 +13,71 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Business Systems Consultant | Operations & Automation",
-  description: "Senior Consultant specializing in Business Operating Systems, Notion systems, and automation design for teams and agencies.",
-  authors: [{ name: "Business Systems Consultant" }],
+  metadataBase: new URL('https://beykerestrada.com'),
+  title: {
+    default: "Beyker Estrada | Notion Systems & Workflow Automation Consultant",
+    template: "%s | Beyker Estrada"
+  },
+  description: "Transform your business operations with custom Notion templates, workflow automation, and complete business systems. $150 Systems Audit • Notion Certified • 20+ Systems Deployed.",
+  keywords: [
+    "Notion consultant",
+    "Notion certified admin",
+    "business automation",
+    "workflow automation",
+    "Notion templates",
+    "n8n automation",
+    "business operating system",
+    "operations consultant",
+    "systems audit",
+    "Notion database design",
+    "no-code automation",
+    "business process automation",
+    "startup operations",
+    "agency operations",
+    "Notion expert"
+  ],
+  authors: [{ name: "Beyker Estrada", url: "https://beykerestrada.com" }],
+  creator: "Beyker Estrada",
+  publisher: "Beyker Estrada",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: "Business Systems Consultant | Operations & Automation",
-    description: "Senior Consultant specializing in Business Operating Systems, Notion systems, and automation design for teams and agencies.",
     type: "website",
-    images: ["https://lovable.dev/opengraph-image-p98pqg.png"],
+    locale: "en_US",
+    alternateLocale: ["es_ES"],
+    url: "https://beykerestrada.com",
+    siteName: "Beyker Estrada Consulting",
+    title: "Notion Systems & Workflow Automation Consultant | Beyker Estrada",
+    description: "Custom Notion templates, workflow automation, and complete business systems for growing teams. Start with a $150 Systems Audit. Notion Certified • 20+ Systems Deployed.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Beyker Estrada - Notion Systems & Workflow Automation Consultant",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Lovable",
-    images: ["https://lovable.dev/opengraph-image-p98pqg.png"],
+    title: "Notion Systems & Workflow Automation Consultant | Beyker Estrada",
+    description: "Custom Notion templates, workflow automation, and complete business systems for growing teams. Start with a $150 Systems Audit.",
+    images: ["/og-image.png"],
+    creator: "@beykerestrada",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -40,6 +93,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </head>
       <body className="font-inter">
+        <OrganizationStructuredData />
         <ClientProviders>
           <div className="min-h-screen flex flex-col">
             <Header />

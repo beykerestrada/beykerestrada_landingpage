@@ -2,6 +2,7 @@
   "nav": {
     "home": "Inicio",
     "services": "Servicios",
+    "howWeWork": "Cómo Trabajamos",
     "caseStudies": "Casos de Estudio",
     "faq": "Preguntas Frecuentes",
     "contact": "Contacto",
@@ -13,11 +14,11 @@
     "cta": "Reserva tu Auditoría"
   },
   "hero": {
-    "headline": "Construye Sistemas Operativos que Escalan",
-    "subheadline": "En Notion. Impulsados por Automatización.",
-    "valueProposition": "Diseño espacios de trabajo Notion de nivel profesional integrados con n8n, Zapier y Make para startups y agencias que necesitan más que plantillas—necesitas infraestructura que funcione cuando no estés mirando.",
+    "headline": "Soluciones Personalizadas en Notion y Automatización de Flujos de Trabajo",
+    "subheadline": "Templates personalizados, automatización inteligente y sistemas completos para equipos en crecimiento.",
+    "valueProposition": "Ayudo a startups y agencias a optimizar sus operaciones con templates Notion personalizados, automatización n8n y sistemas empresariales completos que se adaptan a tu forma de trabajar—no al revés.",
     "cta": {
-      "primary": "Reservar una Auditoría de Sistemas"
+      "primary": "Reservar Auditoría de $150"
     },
     "credibility": {
       "certified": "Administrador Certificado de Notion",
@@ -49,18 +50,18 @@
   },
   "whyMe": {
     "headline": "¿Por Qué Trabajar Conmigo?",
-    "subheadline": "No vendo plantillas. Construyo infraestructura de nivel profesional que funciona cuando no estás mirando.",
+    "subheadline": "Construyo soluciones adaptadas a tu forma de trabajar, no plantillas genéricas que te obligan a adaptarte.",
     "infrastructure": {
-      "title": "Infraestructura, No Plantillas",
-      "description": "No necesitas otra plantilla de Notion. Necesitas bases de datos que se conecten, fórmulas que calculen correctamente y automatizaciones que no se rompan. Construyo sistemas con el rigor de la ingeniería de software."
+      "title": "Adaptado a Tus Necesidades",
+      "description": "Cada solución comienza entendiendo cómo trabaja realmente tu equipo. Construyo espacios de trabajo Notion y automatizaciones que se ajustan a tus procesos—no al revés."
     },
     "production": {
-      "title": "Sistemas de Nivel Profesional",
-      "description": "Cada espacio de trabajo está construido para manejar casos extremos, escalar con el crecimiento y sobrevivir la rotación del equipo. Documentación incluida. Manejo de errores incorporado. Capacitación proporcionada."
+      "title": "Construido para Durar",
+      "description": "Tus sistemas están diseñados para crecer contigo. Documentación clara, capacitación adecuada y soporte aseguran que tu equipo pueda mantener y evolucionar todo lo que construyo."
     },
     "handoff": {
-      "title": "Construido para Transferencia",
-      "description": "Tú eres dueño del sistema, no yo. Todo está documentado, es mantenible por tu equipo y diseñado para evolucionar sin mi participación. Sin dependencia del proveedor."
+      "title": "Eres Dueño de Todo",
+      "description": "Sin dependencia del proveedor, sin dependencia continua. Obtienes propiedad completa de todos los templates, automatizaciones y documentación. Tu equipo puede gestionarlo todo de forma independiente."
     },
     "credibility": {
       "systems": {
@@ -79,49 +80,72 @@
   },
   "howItWorks": {
     "headline": "Servicios",
-    "subheadline": "Desde la auditoría hasta la implementación completa. Elige lo que se ajuste a tus necesidades.",
+    "subheadline": "Elige la solución que se ajuste a tus necesidades.",
+    "notSure": {
+      "headline": "¿No estás seguro de lo que necesitas?",
+      "subheadline": "Comienza con una Auditoría de Sistemas"
+    },
     "systemsAudit": {
       "title": "Auditoría de Sistemas",
       "price": "$150",
-      "description": "¿No estás seguro de lo que necesitas? Comienza aquí.",
+      "badge": "EMPIEZA AQUÍ",
+      "description": "¿No estás seguro de lo que necesitas? Comienza con una auditoría.",
       "features": [
         "Consulta profunda de 60 minutos",
         "Auditoría completa del espacio de trabajo",
-        "Reporte completo con: Qué está roto (y costándote tiempo/dinero), Recomendaciones priorizadas, Hoja de ruta de implementación",
+        "Qué está roto (y costándote tiempo/dinero)",
+        "Recomendaciones priorizadas",
+        "Hoja de ruta de implementación",
         "Cotización personalizada para la construcción (si la deseas)"
       ],
       "cta": "Reserva tu Auditoría",
       "note": "💰 Acreditado al costo de implementación."
     },
-    "businessOS": {
-      "badge": "MÁS POPULAR",
-      "title": "Sistema Operativo Empresarial",
-      "price": "desde $2,500",
-      "description": "Configuración básica del espacio de trabajo para tu equipo.",
+    "notionTemplates": {
+      "title": "Templates Notion Personalizados",
+      "price": "desde $500",
+      "description": "Configuración Notion personalizada para las necesidades específicas de tu equipo.",
       "features": [
-        "Arquitectura de espacio de trabajo Notion",
-        "2-3 automatizaciones esenciales",
-        "Capacitación del equipo (2 sesiones)",
-        "Soporte de 30 días",
-        "Manual de operaciones"
+        "Arquitectura de bases de datos personalizada",
+        "Vistas y filtros adaptados",
+        "Fórmulas y rollups configurados",
+        "Sesión de capacitación del equipo",
+        "Documentación incluida",
+        "Soporte de 2 semanas"
       ],
       "cta": "Comenzar",
-      "note": "💡 Auditoría de sistemas incluida"
+      "note": "✓ Soporte de 2 semanas • Propiedad total"
     },
-    "ultimateOS": {
-      "title": "Sistema Operativo Empresarial Ultimate",
-      "price": "desde $4,500",
-      "description": "Sistema completo con automatización avanzada.",
+    "automation": {
+      "title": "Automatización de Flujos de Trabajo",
+      "price": "desde $800",
+      "description": "Conecta tus herramientas y automatiza el trabajo repetitivo.",
       "features": [
-        "Todo en Sistema Operativo Empresarial",
-        "Suite de automatización avanzada (más de 5 flujos de trabajo)",
-        "Dashboards personalizados y reportes",
-        "Capacitación extendida (3 sesiones)",
-        "Soporte de 60 días con seguimientos",
-        "Documentación completa"
+        "Flujos de trabajo n8n personalizados (principal)",
+        "Opciones de integración Zapier/Make",
+        "Sincronización de datos entre herramientas",
+        "Manejo de errores y monitoreo",
+        "Documentación y capacitación",
+        "Soporte de 30 días"
       ],
       "cta": "Comenzar",
-      "note": "💡 Auditoría de sistemas incluida"
+      "note": "✓ Soporte de 30 días • Ahorra horas semanales"
+    },
+    "completeSystem": {
+      "badge": "MÁS POPULAR",
+      "title": "Sistema Empresarial Completo",
+      "price": "desde $2,000",
+      "description": "Espacio de trabajo Notion completo + suite de automatización.",
+      "features": [
+        "Todo en Templates Personalizados",
+        "Todo en Automatización de Flujos de Trabajo",
+        "Diseño de sistema integrado",
+        "Múltiples flujos de trabajo de automatización",
+        "Capacitación extendida (2-3 sesiones)",
+        "Soporte de 60 días"
+      ],
+      "cta": "Comenzar",
+      "note": "✓ Soporte de 60 días • Mejor valor • Propiedad total"
     }
   },
   "valuePillars": {
@@ -296,24 +320,26 @@
     "secondaryButton": "Agendar una Llamada"
   },
   "finalCta": {
-    "headline": "¿Listo para Construir un Sistema que Realmente Funcione?",
-    "subheadline": "Deja de perder tiempo en herramientas que no se comunican entre sí. Comienza con una Auditoría de Sistemas de $150 y descubre exactamente qué está roto—y cómo arreglarlo.",
+    "headline": "¿Listo para Optimizar tus Operaciones?",
+    "subheadline": "Ya sea que necesites templates Notion personalizados, automatización de flujos de trabajo o un sistema completo—comienza con una Auditoría de Sistemas de $150 para ver exactamente lo que necesitas.",
     "cta": "Reserva tu Auditoría de Sistemas",
     "trustSignals": {
       "turnaround": "Entrega en 1 semana",
       "payment": "Pago seguro",
       "guarantee": "Garantía de devolución de dinero"
     },
-    "quote": "\"No vendo plantillas. Construyo infraestructura que funciona cuando no estás mirando.\""
+    "quote": "\"Soluciones adaptadas a tu forma de trabajar, no plantillas genéricas que te obligan a adaptarte.\""
   },
   "footer": {
-    "description": "Diseñando Sistemas Operativos Empresariales, espacios de trabajo Notion y soluciones de automatización para equipos y agencias.",
+    "description": "Templates Notion personalizados, automatización de flujos de trabajo y sistemas empresariales completos para equipos y agencias en crecimiento.",
     "servicesTitle": "Servicios",
     "companyTitle": "Empresa",
     "connectTitle": "Conectar",
     "systemsAudit": "Auditoría de Sistemas",
-    "businessOS": "Sistema Operativo Empresarial",
-    "ultimateBusinessOS": "Sistema Operativo Empresarial Ultimate",
+    "notionTemplates": "Plantillas Personalizadas de Notion",
+    "workflowAutomation": "Automatización de Flujos",
+    "completeSystem": "Sistema Empresarial Completo",
+    "howWeWork": "Cómo Trabajamos",
     "caseStudies": "Casos de Estudio",
     "faq": "Preguntas Frecuentes",
     "contact": "Contacto",
@@ -1084,6 +1110,491 @@
       "bullet2": "Precios fijos para márgenes predecibles",
       "bullet3": "Soporte continuo incluido",
       "cta": "Conoce White-Label"
+    }
+  },
+  "servicePages": {
+    "backToServices": "Volver a Servicios",
+    "systemsAudit": {
+      "badge": "EMPIEZA AQUÍ",
+      "title": "Auditoría de Sistemas",
+      "price": "$150",
+      "priceNote": "Acreditado a la implementación",
+      "description": "Obtén una evaluación operacional completa, identifica cuellos de botella y recibe una hoja de ruta priorizada para la optimización—todo en una sesión enfocada.",
+      "cta": "Reserva tu Auditoría",
+      "whoIsThisFor": {
+        "title": "¿Para Quién Es Esto?",
+        "points": [
+          "Estás abrumado por herramientas dispersas y procesos manuales pero no sabes por dónde empezar",
+          "Has probado sistemas de productividad antes pero nunca se quedan con tu equipo",
+          "Quieres invertir en la solución correcta sin desperdiciar dinero en el enfoque equivocado",
+          "Necesitas una perspectiva externa sobre lo que realmente está roto (y costándote tiempo/dinero)",
+          "Estás considerando Notion o automatización pero quieres orientación experta antes de comprometerte"
+        ]
+      },
+      "whatYouGet": {
+        "title": "Qué Obtienes",
+        "items": [
+          {
+            "title": "Consulta Profunda de 60 Minutos",
+            "description": "Revisaremos tus sistemas actuales, flujos de trabajo y puntos de dolor. Haré las preguntas correctas para entender qué funciona, qué está roto y qué te está frenando."
+          },
+          {
+            "title": "Auditoría Completa del Espacio de Trabajo",
+            "description": "Revisaré tus herramientas, bases de datos, automatizaciones y flujos de trabajo existentes. Si tienes Notion, auditaré tu estructura de espacio de trabajo, arquitectura de base de datos y configuración de automatización."
+          },
+          {
+            "title": "Reporte Escrito Integral",
+            "description": "Recibirás un reporte detallado identificando qué está roto, recomendaciones priorizadas, hoja de ruta de implementación y estimaciones de costo/tiempo para cada recomendación."
+          },
+          {
+            "title": "Cotización de Implementación Personalizada",
+            "description": "Si quieres avanzar, obtendrás una propuesta personalizada para la implementación. Sin presión—el reporte es tuyo y puedes usarlo como quieras."
+          }
+        ]
+      },
+      "process": {
+        "title": "Cómo Funciona",
+        "steps": [
+          {
+            "title": "Reserva tu Auditoría",
+            "description": "Elige un horario que te funcione. Recibirás un cuestionario previo a la auditoría para maximizar el tiempo de nuestra sesión.",
+            "duration": "5 minutos"
+          },
+          {
+            "title": "Preparación Previa",
+            "description": "Completa un breve cuestionario sobre tu configuración actual, mayores puntos de dolor y objetivos. Esto me ayuda a venir preparado con preguntas específicas.",
+            "duration": "15-20 minutos"
+          },
+          {
+            "title": "Sesión de Auditoría en Vivo",
+            "description": "Nos reunimos durante 60 minutos por videollamada. Revisaré tus sistemas, haré preguntas aclaratorias e identificaré oportunidades en tiempo real.",
+            "duration": "60 minutos"
+          },
+          {
+            "title": "Entrega del Reporte",
+            "description": "Dentro de 3-5 días hábiles, recibirás tu reporte integral de auditoría con hallazgos, recomendaciones y próximos pasos.",
+            "duration": "3-5 días hábiles"
+          },
+          {
+            "title": "Seguimiento Opcional",
+            "description": "Si quieres avanzar, programaremos una llamada de seguimiento para discutir la implementación. Sin obligación—el reporte es tuyo de cualquier manera.",
+            "duration": "Opcional"
+          }
+        ]
+      },
+      "whatHappensAfter": {
+        "title": "¿Qué Pasa Después de la Auditoría?",
+        "description": "Tienes completa flexibilidad. Aquí están tus opciones:",
+        "options": [
+          "Usa el reporte para arreglar las cosas tú mismo (todo está documentado claramente)",
+          "Contrátame para implementar las soluciones recomendadas (la tarifa de auditoría se acredita al proyecto)",
+          "Comparte el reporte con tu equipo u otro consultor",
+          "Solo guárdalo—no hay fecha de vencimiento ni obligación"
+        ]
+      },
+      "faq": {
+        "title": "Preguntas Comunes",
+        "items": [
+          {
+            "question": "¿Qué pasa si aún no uso Notion?",
+            "answer": "No hay problema. La auditoría cubre toda tu configuración operacional—cualquiera que sean las herramientas que uses actualmente. Evaluaré si Notion es siquiera la opción correcta para ti."
+          },
+          {
+            "question": "¿Esto es solo una llamada de ventas?",
+            "answer": "No. Esta es una consulta pagada que entrega valor real ya sea que me contrates o no. Saldrás con insights accionables y una hoja de ruta clara."
+          },
+          {
+            "question": "¿Puedo obtener un reembolso si no estoy satisfecho?",
+            "answer": "Sí. Si no estás satisfecho con la auditoría, te reembolsaré completamente. Sin preguntas."
+          },
+          {
+            "question": "¿Qué tan pronto podemos programar?",
+            "answer": "Típicamente dentro de 3-5 días hábiles. Si lo necesitas antes, házmelo saber y haré mi mejor esfuerzo para acomodarlo."
+          },
+          {
+            "question": "¿Qué necesito preparar?",
+            "answer": "Solo acceso a tus herramientas y sistemas actuales. Enviaré un breve cuestionario después de reservar para ayudar a estructurar nuestra conversación."
+          }
+        ]
+      },
+      "testimonial": {
+        "title": "Lo Que Dicen Los Clientes",
+        "text": "Beyker fue excelente para trabajar. Completó una revisión exhaustiva de nuestra configuración de Notion y plantillas de base de datos, entregando insights claros y recomendaciones prácticas. Su comunicación fue profesional y receptiva durante todo el proyecto, y cumplió todos los hitos a tiempo. Su experiencia en Notion y sistemas no-code fue evidente en la calidad de su trabajo. Abordó la asignación con atención al detalle y una comprensión genuina de nuestras necesidades organizacionales. Altamente recomendado.",
+        "author": "Vincent Socci, Co-Presidente y COO, William Pitt Sotheby's International Realty"
+      },
+      "finalCta": {
+        "title": "¿Listo para Obtener Claridad?",
+        "description": "Deja de adivinar qué necesita ser arreglado. Obtén una evaluación profesional y un camino claro hacia adelante.",
+        "note": "💰 Tarifa de auditoría de $150 acreditada a cualquier proyecto de implementación"
+      }
+    },
+    "notionTemplates": {
+      "title": "Templates Notion Personalizados",
+      "price": "desde $500",
+      "description": "Obtén un espacio de trabajo Notion diseñado específicamente para los flujos de trabajo de tu equipo—no un template genérico.",
+      "cta": "Comenzar",
+      "whoIsThisFor": {
+        "title": "¿Para Quién Es Esto?",
+        "points": [
+          "Has probado templates pre-hechos pero no se ajustan a tus procesos únicos",
+          "Tu equipo necesita un espacio de trabajo centralizado pero no sabe por dónde empezar",
+          "Quieres Notion pero no tienes tiempo para aprender arquitectura de bases de datos",
+          "Necesitas vistas, filtros y fórmulas personalizadas configuradas correctamente desde el primer día",
+          "Quieres capacitación adecuada para que tu equipo realmente use lo que se construye"
+        ]
+      },
+      "whatYouGet": {
+        "title": "Qué Incluye",
+        "items": [
+          {
+            "title": "Arquitectura de Base de Datos Personalizada",
+            "description": "Bases de datos relacionales diseñadas para tus casos de uso específicos—ya sea gestión de proyectos, CRM, planificación de contenido o seguimiento de operaciones."
+          },
+          {
+            "title": "Vistas y Filtros Personalizados",
+            "description": "Vistas de tablero, calendario, galería y lista configuradas para que cada miembro del equipo vea exactamente lo que necesita."
+          },
+          {
+            "title": "Fórmulas y Rollups",
+            "description": "Cálculos automatizados, seguimiento de estado, gestión de fechas y agregación de datos para que tu espacio de trabajo trabaje para ti."
+          },
+          {
+            "title": "Sesión de Capacitación del Equipo",
+            "description": "Sesión de onboarding en vivo para guiar a tu equipo por el espacio de trabajo, responder preguntas y asegurar una adopción fluida."
+          }
+        ]
+      },
+      "process": {
+        "title": "El Proceso de Construcción",
+        "steps": [
+          {
+            "title": "Llamada de Descubrimiento",
+            "description": "Discutimos tus flujos de trabajo, puntos de dolor y requisitos. Haré preguntas para entender exactamente cómo trabaja tu equipo."
+          },
+          {
+            "title": "Diseño de Arquitectura",
+            "description": "Crearé una estructura de base de datos y plano del espacio de trabajo. Revisarás y proporcionarás feedback antes de que comience a construir."
+          },
+          {
+            "title": "Construcción e Iteración",
+            "description": "Construyo el espacio de trabajo según el diseño aprobado. Tenemos revisiones en puntos de control para asegurar que coincida con tu visión."
+          },
+          {
+            "title": "Capacitación y Entrega",
+            "description": "Sesión de capacitación en vivo con tu equipo. Proporcionaré documentación y responderé todas las preguntas para asegurar una adopción fluida."
+          },
+          {
+            "title": "Soporte de 2 Semanas",
+            "description": "Soporte post-lanzamiento para ajustes, preguntas y refinamientos mientras tu equipo comienza a usar el sistema."
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Ejemplos de Casos de Uso",
+        "examples": [
+          {
+            "title": "Hub de Gestión de Proyectos",
+            "description": "Rastrea proyectos, tareas, plazos y recursos en un solo lugar con vistas personalizadas para cada rol."
+          },
+          {
+            "title": "Sistema de Creación de Contenido",
+            "description": "Gestiona calendario de contenido, briefs, borradores, revisiones y publicación con seguimiento automático de estado."
+          },
+          {
+            "title": "CRM de Clientes",
+            "description": "Rastrea clientes, proyectos, comunicaciones y entregables con mapeo de relaciones."
+          },
+          {
+            "title": "Base de Conocimiento",
+            "description": "Centraliza documentación, SOPs y recursos con etiquetado inteligente y funcionalidad de búsqueda."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "¿Listo para Construir tu Espacio de Trabajo?",
+        "description": "Deja de luchar con templates que no se ajustan. Obtén una solución personalizada diseñada para tus flujos de trabajo reales."
+      }
+    },
+    "workflowAutomation": {
+      "title": "Automatización de Flujos de Trabajo",
+      "price": "desde $800",
+      "description": "Conecta tus herramientas y elimina el trabajo repetitivo con flujos de trabajo de automatización personalizados—impulsados por n8n, Zapier o Make.",
+      "cta": "Comenzar",
+      "whoIsThisFor": {
+        "title": "¿Para Quién Es Esto?",
+        "points": [
+          "Estás copiando datos manualmente entre herramientas (CRM a Notion, emails a bases de datos, etc.)",
+          "Tu equipo pierde horas en tareas repetitivas que podrían automatizarse",
+          "Has intentado construir automatizaciones tú mismo pero se rompen o no funcionan como esperabas",
+          "Necesitas datos sincronizados entre múltiples plataformas en tiempo real",
+          "Quieres automatizaciones que realmente manejen errores y casos límite apropiadamente"
+        ]
+      },
+      "whatYouGet": {
+        "title": "Qué Incluye",
+        "items": [
+          {
+            "title": "Diseño de Flujo de Trabajo Personalizado",
+            "description": "Flujos de trabajo n8n (preferido) o integraciones Zapier/Make adaptadas a tus requisitos exactos y lógica empresarial."
+          },
+          {
+            "title": "Integración Multi-Herramienta",
+            "description": "Conecta Notion, Google Workspace, Airtable, Slack, CRMs, email, calendarios y cientos de otras herramientas."
+          },
+          {
+            "title": "Manejo de Errores y Monitoreo",
+            "description": "Manejo adecuado de errores, lógica de reintentos y notificaciones para que sepas inmediatamente si algo se rompe."
+          },
+          {
+            "title": "Documentación y Capacitación",
+            "description": "Documentación clara de cómo funcionan los flujos de trabajo, cuándo se ejecutan y cómo solucionar problemas comunes."
+          }
+        ]
+      },
+      "process": {
+        "title": "El Proceso de Implementación",
+        "steps": [
+          {
+            "title": "Mapeo de Flujo de Trabajo",
+            "description": "Identificamos tareas repetitivas, entrada manual de datos y oportunidades de automatización en tus procesos actuales."
+          },
+          {
+            "title": "Selección de Plataforma",
+            "description": "Elegimos la plataforma de automatización correcta (n8n, Zapier, Make) basada en complejidad, costo y requisitos técnicos."
+          },
+          {
+            "title": "Construcción y Prueba",
+            "description": "Construyo los flujos de trabajo, pruebo casos límite y aseguro que el manejo de errores funcione correctamente antes del despliegue."
+          },
+          {
+            "title": "Despliegue y Capacitación",
+            "description": "Lanzo las automatizaciones, capacito a tu equipo sobre cómo funcionan y proporciono documentación para referencia futura."
+          },
+          {
+            "title": "Soporte de 30 Días",
+            "description": "Monitoreo el rendimiento, corrijo cualquier problema y hago ajustes basados en el uso real."
+          }
+        ]
+      },
+      "examples": {
+        "title": "Ejemplos Comunes de Automatización",
+        "items": [
+          {
+            "title": "Sincronización CRM a Notion",
+            "description": "Crea automáticamente entradas en la base de datos de Notion cuando se crean nuevos tratos en tu CRM."
+          },
+          {
+            "title": "Email a Base de Datos",
+            "description": "Analiza emails y crea entradas estructuradas en bases de datos con adjuntos y metadatos."
+          },
+          {
+            "title": "Notificaciones de Slack",
+            "description": "Envía notificaciones inteligentes a Slack cuando se cumplen condiciones específicas en tus bases de datos."
+          },
+          {
+            "title": "Gestión de Calendario",
+            "description": "Sincroniza eventos, crea recordatorios y actualiza bases de datos basadas en actividades del calendario."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "¿Listo para Automatizar tu Flujo de Trabajo?",
+        "description": "Deja de perder tiempo en tareas repetitivas. Deja que la automatización maneje el trabajo ocupado mientras te enfocas en lo que importa."
+      }
+    },
+    "completeSystem": {
+      "badge": "MÁS POPULAR",
+      "title": "Sistema Empresarial Completo",
+      "price": "desde $2,000",
+      "description": "Obtén un espacio de trabajo Notion completamente integrado + suite de automatización diseñada para ejecutar toda tu operación—desde proyectos hasta clientes y operaciones.",
+      "cta": "Comenzar",
+      "whoIsThisFor": {
+        "title": "¿Para Quién Es Esto?",
+        "points": [
+          "Necesitas una renovación operacional completa, no solo una herramienta o flujo de trabajo",
+          "Tu equipo está escalando y los sistemas actuales no pueden seguir el ritmo",
+          "Quieres Notion + automatización trabajando juntos sin problemas",
+          "Estás listo para invertir en sistemas que crecerán contigo",
+          "Quieres el mejor valor—todo incluido, totalmente integrado, con capacitación adecuada"
+        ]
+      },
+      "whatsIncluded": {
+        "title": "Qué Incluye",
+        "notion": {
+          "title": "Todo en Templates Notion Personalizados",
+          "items": [
+            "Arquitectura completa del espacio de trabajo",
+            "Múltiples bases de datos interconectadas",
+            "Vistas, filtros y fórmulas personalizadas",
+            "Base de conocimiento y documentación",
+            "Permisos y controles de acceso del equipo"
+          ]
+        },
+        "automation": {
+          "title": "Todo en Automatización de Flujos de Trabajo",
+          "items": [
+            "Múltiples flujos de trabajo de automatización",
+            "Integraciones de herramientas (CRM, email, calendario, etc.)",
+            "Manejo de errores y monitoreo",
+            "Sincronización de datos entre plataformas"
+          ]
+        },
+        "plus": {
+          "title": "Más Beneficios Adicionales",
+          "items": [
+            "Diseño de sistema integrado (Notion + Automatización trabajando juntos)",
+            "Capacitación extendida (2-3 sesiones con tu equipo)",
+            "Biblioteca integral de documentación",
+            "Soporte post-lanzamiento de 60 días",
+            "Tiempos de respuesta prioritarios",
+            "Recomendaciones de optimización del sistema"
+          ]
+        }
+      },
+      "process": {
+        "title": "El Proceso de Implementación",
+        "steps": [
+          {
+            "title": "Descubrimiento y Planificación",
+            "description": "Inmersión profunda en tus operaciones, flujos de trabajo y objetivos. Mapear la arquitectura completa del sistema."
+          },
+          {
+            "title": "Diseño de Arquitectura",
+            "description": "Crear el plano para todo tu sistema—bases de datos, automatizaciones, integraciones y flujos de trabajo."
+          },
+          {
+            "title": "Fase de Construcción",
+            "description": "Construir el espacio de trabajo Notion y los flujos de trabajo de automatización. Revisiones regulares en puntos de control para asegurar alineación."
+          },
+          {
+            "title": "Integración y Prueba",
+            "description": "Conectar todas las herramientas, probar flujos de trabajo y asegurar que todo funcione junto sin problemas."
+          },
+          {
+            "title": "Capacitación y Lanzamiento",
+            "description": "Múltiples sesiones de capacitación con tu equipo. Despliegue gradual para asegurar una adopción fluida."
+          },
+          {
+            "title": "Soporte y Optimización",
+            "description": "60 días de soporte para refinamientos, ajustes y optimización mientras usas el sistema."
+          }
+        ]
+      },
+      "bestValue": {
+        "title": "Por Qué Este Es el Mejor Valor",
+        "points": [
+          {
+            "title": "Completamente Integrado",
+            "description": "Todo funciona junto—no herramientas separadas peleando entre sí. Tu espacio de trabajo Notion y automatizaciones están diseñados como un sistema cohesivo."
+          },
+          {
+            "title": "Solución Completa",
+            "description": "No necesitas juntar múltiples proveedores o proyectos. Todo lo que necesitas para ejecutar tus operaciones en una implementación."
+          },
+          {
+            "title": "Soporte Extendido",
+            "description": "60 días de soporte post-lanzamiento significa que no solo construimos y desaparecemos—aseguramos que realmente funcione para tu equipo."
+          },
+          {
+            "title": "Mejor ROI",
+            "description": "Obtener todo a la vez cuesta menos que hacer múltiples proyectos separados. Además, comienzas a ver beneficios inmediatamente."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "¿Listo para Transformar tus Operaciones?",
+        "description": "Este es el camino más rápido a un sistema completamente operacional. Todo lo que necesitas, correctamente integrado, con capacitación y soporte completos.",
+        "note": "La mayoría de proyectos de Sistema Completo se completan dentro de 6-8 semanas"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Cómo Trabajamos",
+    "description": "Cada proyecto sigue una metodología probada diseñada para entregar resultados, no solo entregables. Esto es exactamente lo que sucede cuando trabajas conmigo.",
+    "deliverables": "Qué Obtienes",
+    "steps": [
+      {
+        "title": "Descubrimiento y Análisis",
+        "description": "Comenzamos entendiendo tu negocio, flujos de trabajo y puntos de dolor. Hago preguntas, reviso tus sistemas actuales e identifico qué está realmente roto—no lo que crees que está roto.",
+        "deliverables": [
+          "Análisis del estado actual",
+          "Documentación de puntos de dolor",
+          "Evaluación de oportunidades",
+          "Definición del alcance del proyecto"
+        ]
+      },
+      {
+        "title": "Arquitectura y Diseño",
+        "description": "Diseño una arquitectura de sistema adaptada a tus necesidades específicas. No se trata de forzarte a un template—se trata de construir algo que se ajuste a tu flujo de trabajo real.",
+        "deliverables": [
+          "Plano de arquitectura del sistema",
+          "Diseño de estructura de base de datos",
+          "Mapeo de flujos de trabajo",
+          "Maquetas visuales (cuando sea aplicable)"
+        ]
+      },
+      {
+        "title": "Construcción y Desarrollo",
+        "description": "Construyo tu solución según el diseño aprobado. Revisiones regulares en puntos de control aseguran que nos mantengamos alineados. Ves progreso, no silencio.",
+        "deliverables": [
+          "Configuración del espacio de trabajo Notion",
+          "Flujos de trabajo de automatización personalizados",
+          "Configuración de integraciones",
+          "Check-ins de progreso"
+        ]
+      },
+      {
+        "title": "Pruebas y Refinamiento",
+        "description": "Antes del lanzamiento, pruebo casos límite, valido el manejo de errores y aseguro que todo funcione como se espera. Si algo se rompe, lo arreglo antes de que lo veas.",
+        "deliverables": [
+          "Pruebas exhaustivas",
+          "Corrección de errores y refinamientos",
+          "Optimización de rendimiento",
+          "Aseguramiento de calidad"
+        ]
+      },
+      {
+        "title": "Capacitación y Entrega",
+        "description": "Capacito a tu equipo sobre cómo usar el sistema. Sesiones en vivo, documentación clara y preguntas y respuestas para asegurar una adopción fluida. Sin enfoque de \"descúbrelo tú mismo\".",
+        "deliverables": [
+          "Sesiones de capacitación en vivo",
+          "Documentación completa",
+          "Tutoriales en video",
+          "Soporte de preguntas y respuestas"
+        ]
+      },
+      {
+        "title": "Soporte y Optimización",
+        "description": "El soporte post-lanzamiento significa que no desaparezco. Monitoreo el uso, corrijo problemas y hago ajustes basados en feedback real de tu equipo.",
+        "deliverables": [
+          "Soporte post-lanzamiento (2-8 semanas)",
+          "Resolución de problemas",
+          "Monitoreo de uso",
+          "Recomendaciones de optimización"
+        ]
+      }
+    ],
+    "principles": {
+      "title": "Nuestros Principios Guía",
+      "items": [
+        {
+          "title": "Sin Dependencia del Proveedor",
+          "description": "Eres dueño de todo. Acceso completo a todos los espacios de trabajo, automatizaciones y documentación. Sin dependencia continua."
+        },
+        {
+          "title": "Construido para tu Equipo",
+          "description": "Sistemas diseñados alrededor de tus flujos de trabajo—no forzándote a adaptarte a templates genéricos."
+        },
+        {
+          "title": "Transparencia Siempre",
+          "description": "Precios claros, plazos realistas y comunicación honesta. Sin sorpresas, sin costos ocultos."
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para Comenzar?",
+      "description": "Comienza con una Auditoría de Sistemas de $150 para ver exactamente lo que necesitas—sin presión, solo claridad.",
+      "button": "Reserva tu Auditoría de Sistemas"
     }
   }
 }

@@ -23,6 +23,9 @@ const Header = () => {
           <Link href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.services')}
           </Link>
+          <Link href="/how-we-work" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            {t('nav.howWeWork')}
+          </Link>
           <Link href="/case-studies" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.caseStudies')}
           </Link>
@@ -66,6 +69,13 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.services')}
+            </Link>
+            <Link
+              href="/how-we-work"
+              className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.howWeWork')}
             </Link>
             <Link
               href="/case-studies"
