@@ -21,18 +21,23 @@ const Footer = () => {
             <h4 className="text-sm font-semibold mb-3">{t('footer.servicesTitle')}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link href="/#how-it-works" className="hover:text-foreground transition-colors">
+                <Link href="/services/systems-audit" className="hover:text-foreground transition-colors">
                   {t('footer.systemsAudit')}
                 </Link>
               </li>
               <li>
-                <Link href="/#how-it-works" className="hover:text-foreground transition-colors">
-                  {t('footer.businessOS')}
+                <Link href="/services/notion-templates" className="hover:text-foreground transition-colors">
+                  {t('footer.notionTemplates')}
                 </Link>
               </li>
               <li>
-                <Link href="/#how-it-works" className="hover:text-foreground transition-colors">
-                  {t('footer.ultimateBusinessOS')}
+                <Link href="/services/workflow-automation" className="hover:text-foreground transition-colors">
+                  {t('footer.workflowAutomation')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/complete-system" className="hover:text-foreground transition-colors">
+                  {t('footer.completeSystem')}
                 </Link>
               </li>
             </ul>
@@ -41,6 +46,11 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-semibold mb-3">{t('footer.companyTitle')}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
+              <li>
+                <Link href="/how-we-work" className="hover:text-foreground transition-colors">
+                  {t('footer.howWeWork')}
+                </Link>
+              </li>
               <li>
                 <Link href="/case-studies" className="hover:text-foreground transition-colors">
                   {t('footer.caseStudies')}

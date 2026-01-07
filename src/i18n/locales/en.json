@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "howWeWork": "How We Work",
     "caseStudies": "Case Studies",
     "faq": "FAQ",
     "contact": "Contact",
@@ -13,11 +14,11 @@
     "cta": "Book Your Audit"
   },
   "hero": {
-    "headline": "Build Operating Systems That Scale",
-    "subheadline": "In Notion. Powered by Automation.",
-    "valueProposition": "I architect production-grade Notion workspaces integrated with n8n, Zapier, and Make for startups and agencies that need more than templates—you need infrastructure that works when you're not watching.",
+    "headline": "Custom Notion Solutions & Workflow Automation",
+    "subheadline": "Tailored templates, smart automation, and complete systems for growing teams.",
+    "valueProposition": "I help startups and agencies streamline operations with custom Notion templates, n8n automation, and complete business systems that fit your workflow—not the other way around.",
     "cta": {
-      "primary": "Book a Systems Audit"
+      "primary": "Book $150 Systems Audit"
     },
     "credibility": {
       "certified": "Notion Certified Admin",
@@ -49,18 +50,18 @@
   },
   "whyMe": {
     "headline": "Why Work With Me?",
-    "subheadline": "I don't sell templates. I build production-grade infrastructure that runs when you're not watching.",
+    "subheadline": "I build solutions tailored to your workflow, not generic templates that force you to adapt.",
     "infrastructure": {
-      "title": "Infrastructure, Not Templates",
-      "description": "You don't need another Notion template. You need databases that connect, formulas that calculate correctly, and automations that don't break. I build systems with the rigor of software engineering."
+      "title": "Tailored to Your Needs",
+      "description": "Every solution starts with understanding how your team actually works. I build Notion workspaces and automations that fit your processes—not the other way around."
     },
     "production": {
-      "title": "Production-Grade Systems",
-      "description": "Every workspace is built to handle edge cases, scale with growth, and survive team turnover. Documentation included. Error handling built-in. Training provided."
+      "title": "Built to Last",
+      "description": "Your systems are designed to grow with you. Clear documentation, proper training, and support ensure your team can maintain and evolve everything I build."
     },
     "handoff": {
-      "title": "Built for Handoff",
-      "description": "You own the system, not me. Everything is documented, maintainable by your team, and designed to evolve without my involvement. No vendor lock-in."
+      "title": "You Own Everything",
+      "description": "No vendor lock-in, no ongoing dependency. You get full ownership of all templates, automations, and documentation. Your team can manage it all independently."
     },
     "credibility": {
       "systems": {
@@ -79,49 +80,72 @@
   },
   "howItWorks": {
     "headline": "Services",
-    "subheadline": "From audit to full implementation. Choose what fits your needs.",
+    "subheadline": "Pick the solution that fits your needs.",
+    "notSure": {
+      "headline": "Not sure what you need?",
+      "subheadline": "Start with a Systems Audit"
+    },
     "systemsAudit": {
       "title": "Systems Audit",
       "price": "$150",
-      "description": "Not sure what you need? Start here.",
+      "badge": "START HERE",
+      "description": "Not sure what you need? Start with an audit.",
       "features": [
         "60-minute deep-dive consultation",
         "Complete workspace audit",
-        "Complete report with: What's broken (and costing you time/money), Prioritized recommendations, Implementation roadmap",
+        "What's broken (and costing you time/money)",
+        "Prioritized recommendations",
+        "Implementation roadmap",
         "Custom quote for build (if you want it)"
       ],
       "cta": "Book Your Audit",
       "note": "💰 Credited toward implementation cost."
     },
-    "businessOS": {
-      "badge": "MOST POPULAR",
-      "title": "Business Operating System",
-      "price": "from $2,500",
-      "description": "Core workspace setup for your team.",
+    "notionTemplates": {
+      "title": "Custom Notion Templates",
+      "price": "from $500",
+      "description": "Tailored Notion setup for your team's specific needs.",
       "features": [
-        "Notion workspace architecture",
-        "2-3 essential automations",
-        "Team training (2 sessions)",
-        "30-day support",
-        "Operations manual"
+        "Custom database architecture",
+        "Tailored views and filters",
+        "Formulas and rollups configured",
+        "Team training session",
+        "Documentation included",
+        "2-week support"
       ],
       "cta": "Get Started",
-      "note": "💡 Systems audit included"
+      "note": "✓ 2-week support • Full template ownership"
     },
-    "ultimateOS": {
-      "title": "Ultimate Business OS",
-      "price": "from $4,500",
-      "description": "Full system with advanced automation.",
+    "automation": {
+      "title": "Workflow Automation",
+      "price": "from $800",
+      "description": "Connect your tools and automate repetitive work.",
       "features": [
-        "Everything in Business OS",
-        "Advanced automation suite (5+ workflows)",
-        "Custom dashboards & reporting",
-        "Extended training (3 sessions)",
-        "60-day support with check-ins",
-        "Full documentation"
+        "Custom n8n workflows (primary)",
+        "Zapier/Make integration options",
+        "Data sync between tools",
+        "Error handling & monitoring",
+        "Documentation & training",
+        "30-day support"
       ],
       "cta": "Get Started",
-      "note": "💡 Systems audit included"
+      "note": "✓ 30-day support • Save hours weekly"
+    },
+    "completeSystem": {
+      "badge": "MOST POPULAR",
+      "title": "Complete Business System",
+      "price": "from $2,000",
+      "description": "Full Notion workspace + automation suite.",
+      "features": [
+        "Everything in Custom Templates",
+        "Everything in Workflow Automation",
+        "Integrated system design",
+        "Multiple automation workflows",
+        "Extended training (2-3 sessions)",
+        "60-day support"
+      ],
+      "cta": "Get Started",
+      "note": "✓ 60-day support • Best value • Full ownership"
     }
   },
   "valuePillars": {
@@ -296,24 +320,26 @@
     "secondaryButton": "Book a Call"
   },
   "finalCta": {
-    "headline": "Ready to Build a System That Actually Works?",
-    "subheadline": "Stop wasting time on tools that don't talk to each other. Start with a $150 Systems Audit and see exactly what's broken—and how to fix it.",
+    "headline": "Ready to Streamline Your Operations?",
+    "subheadline": "Whether you need custom Notion templates, workflow automation, or a complete system—start with a $150 Systems Audit to see exactly what you need.",
     "cta": "Book Your Systems Audit",
     "trustSignals": {
       "turnaround": "1-week turnaround",
       "payment": "Secure payment",
       "guarantee": "Money-back guarantee"
     },
-    "quote": "\"I don't sell templates. I build infrastructure that works when you're not watching.\""
+    "quote": "\"Tailored solutions that fit your workflow, not generic templates that force you to adapt.\""
   },
   "footer": {
-    "description": "Designing Business Operating Systems, Notion workspaces, and automation solutions for teams and agencies.",
+    "description": "Custom Notion templates, workflow automation, and complete business systems for growing teams and agencies.",
     "servicesTitle": "Services",
     "companyTitle": "Company",
     "connectTitle": "Connect",
     "systemsAudit": "Systems Audit",
-    "businessOS": "Business Operating System",
-    "ultimateBusinessOS": "Ultimate Business OS",
+    "notionTemplates": "Custom Notion Templates",
+    "workflowAutomation": "Workflow Automation",
+    "completeSystem": "Complete Business System",
+    "howWeWork": "How We Work",
     "caseStudies": "Case Studies",
     "faq": "FAQ",
     "contact": "Contact",
@@ -1084,6 +1110,491 @@
       "bullet2": "Fixed pricing for predictable margins",
       "bullet3": "Ongoing support included",
       "cta": "Learn About White-Label"
+    }
+  },
+  "servicePages": {
+    "backToServices": "Back to Services",
+    "systemsAudit": {
+      "badge": "START HERE",
+      "title": "Systems Audit",
+      "price": "$150",
+      "priceNote": "Credited toward implementation",
+      "description": "Get a complete operational assessment, identify bottlenecks, and receive a prioritized roadmap for optimization—all in one focused session.",
+      "cta": "Book Your Audit",
+      "whoIsThisFor": {
+        "title": "Who Is This For?",
+        "points": [
+          "You're overwhelmed by scattered tools and manual processes but don't know where to start",
+          "You've tried productivity systems before but they never stick with your team",
+          "You want to invest in the right solution without wasting money on the wrong approach",
+          "You need an outside perspective on what's actually broken (and costing you time/money)",
+          "You're considering Notion or automation but want expert guidance before committing"
+        ]
+      },
+      "whatYouGet": {
+        "title": "What You Get",
+        "items": [
+          {
+            "title": "60-Minute Deep-Dive Consultation",
+            "description": "We'll walk through your current systems, workflows, and pain points. I'll ask the right questions to understand what's working, what's broken, and what's holding you back."
+          },
+          {
+            "title": "Complete Workspace Audit",
+            "description": "I'll review your existing tools, databases, automations, and workflows. If you have Notion, I'll audit your workspace structure, database architecture, and automation setup."
+          },
+          {
+            "title": "Comprehensive Written Report",
+            "description": "You'll receive a detailed report identifying what's broken, prioritized recommendations, implementation roadmap, and cost/time estimates for each recommendation."
+          },
+          {
+            "title": "Custom Implementation Quote",
+            "description": "If you want to move forward, you'll get a tailored proposal for implementation. No pressure—you own the report and can use it however you like."
+          }
+        ]
+      },
+      "process": {
+        "title": "How It Works",
+        "steps": [
+          {
+            "title": "Book Your Audit",
+            "description": "Choose a time that works for you. You'll receive a pre-audit questionnaire to maximize our session time.",
+            "duration": "5 minutes"
+          },
+          {
+            "title": "Pre-Audit Prep",
+            "description": "Fill out a brief questionnaire about your current setup, biggest pain points, and goals. This helps me come prepared with specific questions.",
+            "duration": "15-20 minutes"
+          },
+          {
+            "title": "Live Audit Session",
+            "description": "We meet for 60 minutes via video call. I'll review your systems, ask clarifying questions, and identify opportunities in real-time.",
+            "duration": "60 minutes"
+          },
+          {
+            "title": "Report Delivery",
+            "description": "Within 3-5 business days, you'll receive your comprehensive audit report with findings, recommendations, and next steps.",
+            "duration": "3-5 business days"
+          },
+          {
+            "title": "Optional Follow-Up",
+            "description": "If you want to move forward, we'll schedule a follow-up call to discuss implementation. No obligation—the report is yours either way.",
+            "duration": "Optional"
+          }
+        ]
+      },
+      "whatHappensAfter": {
+        "title": "What Happens After the Audit?",
+        "description": "You have complete flexibility. Here are your options:",
+        "options": [
+          "Use the report to fix things yourself (everything is documented clearly)",
+          "Hire me to implement the recommended solutions (audit fee is credited toward project)",
+          "Share the report with your team or another consultant",
+          "Just sit on it—there's no expiration date or obligation"
+        ]
+      },
+      "faq": {
+        "title": "Common Questions",
+        "items": [
+          {
+            "question": "What if I don't use Notion yet?",
+            "answer": "No problem. The audit covers your entire operational setup—whatever tools you're currently using. I'll assess whether Notion is even the right fit for you."
+          },
+          {
+            "question": "Is this just a sales call?",
+            "answer": "No. This is a paid consultation that delivers real value whether you hire me or not. You'll walk away with actionable insights and a clear roadmap."
+          },
+          {
+            "question": "Can I get a refund if I'm not satisfied?",
+            "answer": "Yes. If you're not satisfied with the audit, I'll refund you in full. No questions asked."
+          },
+          {
+            "question": "How soon can we schedule?",
+            "answer": "Typically within 3-5 business days. If you need it sooner, let me know and I'll do my best to accommodate."
+          },
+          {
+            "question": "What do I need to prepare?",
+            "answer": "Just access to your current tools and systems. I'll send a brief questionnaire after booking to help structure our conversation."
+          }
+        ]
+      },
+      "testimonial": {
+        "title": "What Clients Say",
+        "text": "Beyker was excellent to work with. He completed a thorough review of our Notion setup and database templates, delivering clear insights and practical recommendations. His communication was professional and responsive throughout the engagement, and he met all project milestones on time. His expertise in Notion and no-code systems was evident in the quality of his work. He approached the assignment with attention to detail and a genuine understanding of our organizational needs. Highly recommended.",
+        "author": "Vincent Socci, Co-President & COO, William Pitt Sotheby's International Realty"
+      },
+      "finalCta": {
+        "title": "Ready to Get Clarity?",
+        "description": "Stop guessing what needs to be fixed. Get a professional assessment and a clear path forward.",
+        "note": "💰 $150 audit fee credited toward any implementation project"
+      }
+    },
+    "notionTemplates": {
+      "title": "Custom Notion Templates",
+      "price": "from $500",
+      "description": "Get a tailored Notion workspace designed specifically for your team's workflows—not a one-size-fits-all template.",
+      "cta": "Get Started",
+      "whoIsThisFor": {
+        "title": "Who Is This For?",
+        "points": [
+          "You've tried pre-built templates but they don't fit your unique processes",
+          "Your team needs a centralized workspace but doesn't know where to start",
+          "You want Notion but don't have time to learn database architecture",
+          "You need custom views, filters, and formulas configured correctly from day one",
+          "You want proper training so your team actually uses what's built"
+        ]
+      },
+      "whatYouGet": {
+        "title": "What's Included",
+        "items": [
+          {
+            "title": "Custom Database Architecture",
+            "description": "Relational databases designed for your specific use cases—whether it's project management, CRM, content planning, or operations tracking."
+          },
+          {
+            "title": "Tailored Views & Filters",
+            "description": "Board views, calendar views, gallery views, and list views configured so each team member sees exactly what they need."
+          },
+          {
+            "title": "Formulas & Rollups",
+            "description": "Automated calculations, status tracking, date management, and data aggregation so your workspace works for you."
+          },
+          {
+            "title": "Team Training Session",
+            "description": "Live onboarding session to walk your team through the workspace, answer questions, and ensure smooth adoption."
+          }
+        ]
+      },
+      "process": {
+        "title": "The Build Process",
+        "steps": [
+          {
+            "title": "Discovery Call",
+            "description": "We discuss your workflows, pain points, and requirements. I'll ask questions to understand exactly how your team works."
+          },
+          {
+            "title": "Architecture Design",
+            "description": "I'll create a database structure and workspace blueprint. You'll review and provide feedback before I start building."
+          },
+          {
+            "title": "Build & Iterate",
+            "description": "I build the workspace according to the approved design. We have checkpoint reviews to ensure it matches your vision."
+          },
+          {
+            "title": "Training & Handoff",
+            "description": "Live training session with your team. I'll provide documentation and answer all questions to ensure smooth adoption."
+          },
+          {
+            "title": "2-Week Support",
+            "description": "Post-launch support for adjustments, questions, and refinements as your team starts using the system."
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Example Use Cases",
+        "examples": [
+          {
+            "title": "Project Management Hub",
+            "description": "Track projects, tasks, deadlines, and resources in one place with custom views for each role."
+          },
+          {
+            "title": "Content Creation System",
+            "description": "Manage content calendar, briefs, drafts, reviews, and publishing with automated status tracking."
+          },
+          {
+            "title": "Client CRM",
+            "description": "Track clients, projects, communications, and deliverables with relationship mapping."
+          },
+          {
+            "title": "Knowledge Base",
+            "description": "Centralize documentation, SOPs, and resources with smart tagging and search functionality."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Ready to Build Your Workspace?",
+        "description": "Stop struggling with templates that don't fit. Get a custom solution designed for your actual workflows."
+      }
+    },
+    "workflowAutomation": {
+      "title": "Workflow Automation",
+      "price": "from $800",
+      "description": "Connect your tools and eliminate repetitive work with custom automation workflows—powered by n8n, Zapier, or Make.",
+      "cta": "Get Started",
+      "whoIsThisFor": {
+        "title": "Who Is This For?",
+        "points": [
+          "You're manually copying data between tools (CRM to Notion, emails to databases, etc.)",
+          "Your team wastes hours on repetitive tasks that could be automated",
+          "You've tried building automations yourself but they break or don't work as expected",
+          "You need data synchronized across multiple platforms in real-time",
+          "You want automations that actually handle errors and edge cases properly"
+        ]
+      },
+      "whatYouGet": {
+        "title": "What's Included",
+        "items": [
+          {
+            "title": "Custom Workflow Design",
+            "description": "n8n workflows (preferred) or Zapier/Make integrations tailored to your exact requirements and business logic."
+          },
+          {
+            "title": "Multi-Tool Integration",
+            "description": "Connect Notion, Google Workspace, Airtable, Slack, CRMs, email, calendars, and hundreds of other tools."
+          },
+          {
+            "title": "Error Handling & Monitoring",
+            "description": "Proper error handling, retry logic, and notifications so you know immediately if something breaks."
+          },
+          {
+            "title": "Documentation & Training",
+            "description": "Clear documentation of how workflows work, when they run, and how to troubleshoot common issues."
+          }
+        ]
+      },
+      "process": {
+        "title": "The Implementation Process",
+        "steps": [
+          {
+            "title": "Workflow Mapping",
+            "description": "We identify repetitive tasks, manual data entry, and automation opportunities in your current processes."
+          },
+          {
+            "title": "Platform Selection",
+            "description": "Choose the right automation platform (n8n, Zapier, Make) based on complexity, cost, and technical requirements."
+          },
+          {
+            "title": "Build & Test",
+            "description": "I build the workflows, test edge cases, and ensure error handling works properly before deployment."
+          },
+          {
+            "title": "Deployment & Training",
+            "description": "Launch the automations, train your team on how they work, and provide documentation for future reference."
+          },
+          {
+            "title": "30-Day Support",
+            "description": "Monitor performance, fix any issues, and make adjustments based on real-world usage."
+          }
+        ]
+      },
+      "examples": {
+        "title": "Common Automation Examples",
+        "items": [
+          {
+            "title": "CRM to Notion Sync",
+            "description": "Automatically create Notion database entries when new deals are created in your CRM."
+          },
+          {
+            "title": "Email to Database",
+            "description": "Parse emails and create structured database entries with attachments and metadata."
+          },
+          {
+            "title": "Slack Notifications",
+            "description": "Send smart notifications to Slack when specific conditions are met in your databases."
+          },
+          {
+            "title": "Calendar Management",
+            "description": "Sync events, create reminders, and update databases based on calendar activities."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Ready to Automate Your Workflow?",
+        "description": "Stop wasting time on repetitive tasks. Let automation handle the busy work while you focus on what matters."
+      }
+    },
+    "completeSystem": {
+      "badge": "MOST POPULAR",
+      "title": "Complete Business System",
+      "price": "from $2,000",
+      "description": "Get a fully integrated Notion workspace + automation suite designed to run your entire operation—from projects to clients to operations.",
+      "cta": "Get Started",
+      "whoIsThisFor": {
+        "title": "Who Is This For?",
+        "points": [
+          "You need a complete operational overhaul, not just a single tool or workflow",
+          "Your team is scaling and current systems can't keep up",
+          "You want Notion + automation working together seamlessly",
+          "You're ready to invest in systems that will grow with you",
+          "You want the best value—everything included, fully integrated, properly trained"
+        ]
+      },
+      "whatsIncluded": {
+        "title": "What's Included",
+        "notion": {
+          "title": "Everything in Custom Notion Templates",
+          "items": [
+            "Complete workspace architecture",
+            "Multiple interconnected databases",
+            "Custom views, filters, and formulas",
+            "Knowledge base and documentation",
+            "Team permissions and access controls"
+          ]
+        },
+        "automation": {
+          "title": "Everything in Workflow Automation",
+          "items": [
+            "Multiple automation workflows",
+            "Tool integrations (CRM, email, calendar, etc.)",
+            "Error handling and monitoring",
+            "Data synchronization across platforms"
+          ]
+        },
+        "plus": {
+          "title": "Plus Additional Benefits",
+          "items": [
+            "Integrated system design (Notion + Automation working together)",
+            "Extended training (2-3 sessions with your team)",
+            "Comprehensive documentation library",
+            "60-day post-launch support",
+            "Priority response times",
+            "System optimization recommendations"
+          ]
+        }
+      },
+      "process": {
+        "title": "The Implementation Process",
+        "steps": [
+          {
+            "title": "Discovery & Planning",
+            "description": "Deep dive into your operations, workflows, and goals. Map out the complete system architecture."
+          },
+          {
+            "title": "Architecture Design",
+            "description": "Create the blueprint for your entire system—databases, automations, integrations, and workflows."
+          },
+          {
+            "title": "Build Phase",
+            "description": "Build the Notion workspace and automation workflows. Regular checkpoint reviews to ensure alignment."
+          },
+          {
+            "title": "Integration & Testing",
+            "description": "Connect all tools, test workflows, and ensure everything works together seamlessly."
+          },
+          {
+            "title": "Training & Launch",
+            "description": "Multiple training sessions with your team. Gradual rollout to ensure smooth adoption."
+          },
+          {
+            "title": "Support & Optimization",
+            "description": "60 days of support for refinements, adjustments, and optimization as you use the system."
+          }
+        ]
+      },
+      "bestValue": {
+        "title": "Why This Is the Best Value",
+        "points": [
+          {
+            "title": "Fully Integrated",
+            "description": "Everything works together—not separate tools fighting each other. Your Notion workspace and automations are designed as one cohesive system."
+          },
+          {
+            "title": "Complete Solution",
+            "description": "No need to piece together multiple vendors or projects. Everything you need to run your operations in one implementation."
+          },
+          {
+            "title": "Extended Support",
+            "description": "60 days of post-launch support means we don't just build and disappear—we ensure it actually works for your team."
+          },
+          {
+            "title": "Best ROI",
+            "description": "Getting everything at once costs less than doing multiple separate projects. Plus, you start seeing benefits immediately."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Ready to Transform Your Operations?",
+        "description": "This is the fastest path to a fully operational system. Everything you need, properly integrated, with full training and support.",
+        "note": "Most Complete System projects are completed within 6-8 weeks"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "How We Work",
+    "description": "Every project follows a proven methodology designed to deliver results, not just deliverables. Here's exactly what happens when you work with me.",
+    "deliverables": "What You Get",
+    "steps": [
+      {
+        "title": "Discovery & Analysis",
+        "description": "We start by understanding your business, workflows, and pain points. I ask questions, review your current systems, and identify what's actually broken—not what you think is broken.",
+        "deliverables": [
+          "Current state analysis",
+          "Pain point documentation",
+          "Opportunity assessment",
+          "Project scope definition"
+        ]
+      },
+      {
+        "title": "Architecture & Design",
+        "description": "I design a system architecture tailored to your specific needs. This isn't about forcing you into a template—it's about building something that fits your actual workflow.",
+        "deliverables": [
+          "System architecture blueprint",
+          "Database structure design",
+          "Workflow mapping",
+          "Visual mockups (when applicable)"
+        ]
+      },
+      {
+        "title": "Build & Development",
+        "description": "I build your solution according to the approved design. Regular checkpoint reviews ensure we stay aligned. You see progress, not radio silence.",
+        "deliverables": [
+          "Notion workspace configuration",
+          "Custom automation workflows",
+          "Integration setup",
+          "Progress check-ins"
+        ]
+      },
+      {
+        "title": "Testing & Refinement",
+        "description": "Before launch, I test edge cases, validate error handling, and ensure everything works as expected. If something breaks, I fix it before you see it.",
+        "deliverables": [
+          "Comprehensive testing",
+          "Bug fixes and refinements",
+          "Performance optimization",
+          "Quality assurance"
+        ]
+      },
+      {
+        "title": "Training & Handoff",
+        "description": "I train your team on how to use the system. Live sessions, clear documentation, and Q&A to ensure smooth adoption. No \"figure it out yourself\" approach.",
+        "deliverables": [
+          "Live training sessions",
+          "Complete documentation",
+          "Video walkthroughs",
+          "Q&A support"
+        ]
+      },
+      {
+        "title": "Support & Optimization",
+        "description": "Post-launch support means I don't disappear. I monitor usage, fix issues, and make adjustments based on real-world feedback from your team.",
+        "deliverables": [
+          "Post-launch support (2-8 weeks)",
+          "Issue resolution",
+          "Usage monitoring",
+          "Optimization recommendations"
+        ]
+      }
+    ],
+    "principles": {
+      "title": "Our Guiding Principles",
+      "items": [
+        {
+          "title": "No Vendor Lock-In",
+          "description": "You own everything. Full access to all workspaces, automations, and documentation. No ongoing dependency."
+        },
+        {
+          "title": "Built for Your Team",
+          "description": "Systems designed around your workflows—not forcing you to adapt to generic templates."
+        },
+        {
+          "title": "Transparency Always",
+          "description": "Clear pricing, realistic timelines, and honest communication. No surprises, no hidden costs."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Start with a $150 Systems Audit to see exactly what you need—no pressure, just clarity.",
+      "button": "Book Your Systems Audit"
     }
   }
 }
