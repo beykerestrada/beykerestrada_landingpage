@@ -35,7 +35,7 @@ const FaqPreview = () => {
   ];
 
   return (
-    <section className="w-full py-16 md:py-24 bg-muted/30">
+    <section className="w-full py-16 md:py-24">
       <div className="mx-auto max-w-content px-6 lg:px-8">
         <motion.div
           className="mb-12 text-center"
