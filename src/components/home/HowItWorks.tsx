@@ -70,7 +70,7 @@ const HowItWorks = () => {
               </CardContent>
               <CardFooter className="pt-0 flex-col gap-3">
                 <Button asChild className="w-full" size="sm">
-                  <Link href="/contact">
+                  <Link href={t('howItWorks.notionTemplates.ctaLink')} target="_blank">
                     {t('howItWorks.notionTemplates.cta')}
                   </Link>
                 </Button>
