@@ -52,7 +52,7 @@ const CompleteSystemPage = () => {
 
           <motion.div variants={fadeInUp}>
             <Button asChild size="lg">
-              <Link href="/contact">
+              <Link href={t('servicePages.completeSystem.ctaLink')} target="_blank">
                 {t('servicePages.completeSystem.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -212,7 +212,7 @@ const CompleteSystemPage = () => {
             {t('servicePages.completeSystem.finalCta.description')}
           </p>
           <Button asChild size="lg">
-            <Link href="/contact">
+            <Link href={t('servicePages.completeSystem.ctaLink')} target="_blank">
               {t('servicePages.completeSystem.cta')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
