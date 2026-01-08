@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Sparkles } from "lucide-react";
+import { CheckCircle2, Sparkles, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
@@ -68,12 +68,19 @@ const HowItWorks = () => {
                   {t('howItWorks.notionTemplates.note')}
                 </p>
               </CardContent>
-              <CardFooter className="pt-0">
+              <CardFooter className="pt-0 flex-col gap-3">
                 <Button asChild className="w-full" size="sm">
-                  <Link href="/services/notion-templates">
+                  <Link href="/contact">
                     {t('howItWorks.notionTemplates.cta')}
                   </Link>
                 </Button>
+                <Link
+                  href="/services/notion-templates"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center justify-center gap-1"
+                >
+                  {t('howItWorks.notionTemplates.learnMore')}
+                  <ArrowRight className="h-3 w-3" />
+                </Link>
               </CardFooter>
             </Card>
           </motion.div>
@@ -117,12 +124,19 @@ const HowItWorks = () => {
                   {t('howItWorks.completeSystem.note')}
                 </p>
               </CardContent>
-              <CardFooter className="pt-0">
+              <CardFooter className="pt-0 flex-col gap-3">
                 <Button asChild className="w-full" size="sm">
-                  <Link href="/services/complete-system">
+                  <Link href="/contact">
                     {t('howItWorks.completeSystem.cta')}
                   </Link>
                 </Button>
+                <Link
+                  href="/services/complete-system"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center justify-center gap-1"
+                >
+                  {t('howItWorks.completeSystem.learnMore')}
+                  <ArrowRight className="h-3 w-3" />
+                </Link>
               </CardFooter>
             </Card>
           </motion.div>
@@ -160,12 +174,19 @@ const HowItWorks = () => {
                   {t('howItWorks.automation.note')}
                 </p>
               </CardContent>
-              <CardFooter className="pt-0">
+              <CardFooter className="pt-0 flex-col gap-3">
                 <Button asChild className="w-full" size="sm">
-                  <Link href="/services/workflow-automation">
+                  <Link href="/contact">
                     {t('howItWorks.automation.cta')}
                   </Link>
                 </Button>
+                <Link
+                  href="/services/workflow-automation"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center justify-center gap-1"
+                >
+                  {t('howItWorks.automation.learnMore')}
+                  <ArrowRight className="h-3 w-3" />
+                </Link>
               </CardFooter>
             </Card>
           </motion.div>

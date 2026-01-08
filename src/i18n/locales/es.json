@@ -116,6 +116,7 @@
         "Soporte de 2 semanas"
       ],
       "cta": "Comenzar",
+      "learnMore": "Ver Detalles",
       "note": "✓ Soporte de 2 semanas • Propiedad total"
     },
     "automation": {
@@ -131,6 +132,7 @@
         "Soporte de 30 días"
       ],
       "cta": "Comenzar",
+      "learnMore": "Ver Detalles",
       "note": "✓ Soporte de 30 días • Ahorra horas semanales"
     },
     "completeSystem": {
@@ -147,6 +149,7 @@
         "Soporte de 60 días"
       ],
       "cta": "Comenzar",
+      "learnMore": "Ver Detalles",
       "note": "✓ Soporte de 60 días • Mejor valor • Propiedad total"
     }
   },

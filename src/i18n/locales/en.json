@@ -116,6 +116,7 @@
         "2-week support"
       ],
       "cta": "Get Started",
+      "learnMore": "Learn More",
       "note": "✓ 2-week support • Full template ownership"
     },
     "automation": {
@@ -131,6 +132,7 @@
         "30-day support"
       ],
       "cta": "Get Started",
+      "learnMore": "Learn More",
       "note": "✓ 30-day support • Save hours weekly"
     },
     "completeSystem": {
@@ -147,6 +149,7 @@
         "60-day support"
       ],
       "cta": "Get Started",
+      "learnMore": "Learn More",
       "note": "✓ 60-day support • Best value • Full ownership"
     }
   },
