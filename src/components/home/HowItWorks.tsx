@@ -240,11 +240,20 @@ const HowItWorks = () => {
                     </div>
                   </div>
 
-                  <Button asChild className="rounded-full">
-                    <Link href="/services/systems-audit">
-                      {t('howItWorks.systemsAudit.cta')}
+                  <div className="flex flex-col sm:flex-row gap-3 items-start">
+                    <Button asChild className="rounded-full">
+                      <Link href={t('nav.bookAuditLink')} target="_blank">
+                        {t('howItWorks.systemsAudit.cta')}
+                      </Link>
+                    </Button>
+                    <Link
+                      href="/services/systems-audit"
+                      className="text-sm text-slate-300 hover:text-white transition-colors flex items-center gap-1 px-4 py-2"
+                    >
+                      {t('howItWorks.systemsAudit.learnMore')}
+                      <ArrowRight className="h-3 w-3" />
                     </Link>
-                  </Button>
+                  </div>
                 </div>
 
                 {/* Right side - Features */}
