@@ -54,7 +54,7 @@ const SystemsAuditPage = () => {
 
           <motion.div variants={fadeInUp}>
             <Button asChild size="lg">
-              <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+              <Link href={t('servicePages.systemsAudit.ctaLink')} target="_blank">
                 {t('servicePages.systemsAudit.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -235,7 +235,7 @@ const SystemsAuditPage = () => {
             {t('servicePages.systemsAudit.finalCta.description')}
           </p>
           <Button asChild size="lg">
-            <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+            <Link href={t('servicePages.systemsAudit.ctaLink')} target="_blank">
               {t('servicePages.systemsAudit.cta')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

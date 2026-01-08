@@ -33,7 +33,7 @@ const FinalCta = () => {
 
           <motion.div className="mb-8" variants={fadeInUp}>
             <Button asChild size="lg" className="text-base px-8">
-              <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+              <Link href={t('finalCta.ctaLink')} target="_blank">
                 {t('finalCta.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

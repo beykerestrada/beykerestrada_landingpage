@@ -119,7 +119,7 @@ const HowWeWorkPage = () => {
             {t('howWeWork.cta.description')}
           </p>
           <Button asChild size="lg">
-            <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+            <Link href={t('howWeWork.cta.buttonLink')} target="_blank">
               {t('howWeWork.cta.button')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

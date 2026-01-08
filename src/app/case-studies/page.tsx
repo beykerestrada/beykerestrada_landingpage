@@ -91,7 +91,7 @@ export default function CaseStudiesPage() {
             {t("caseStudiesPage.cta.description")}
           </p>
           <Button asChild size="lg">
-            <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+            <Link href={t("caseStudiesPage.cta.primaryLink")} target="_blank">
               {t("caseStudiesPage.cta.primary")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
