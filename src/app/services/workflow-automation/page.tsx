@@ -45,7 +45,7 @@ const WorkflowAutomationPage = () => {
 
           <motion.div variants={fadeInUp}>
             <Button asChild size="lg">
-              <Link href="/contact">
+              <Link href={t('servicePages.workflowAutomation.ctaLink')} target="_blank">
                 {t('servicePages.workflowAutomation.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -173,7 +173,7 @@ const WorkflowAutomationPage = () => {
             {t('servicePages.workflowAutomation.finalCta.description')}
           </p>
           <Button asChild size="lg">
-            <Link href="/contact">
+            <Link href={t('servicePages.workflowAutomation.ctaLink')} target="_blank">
               {t('servicePages.workflowAutomation.cta')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
