@@ -6,7 +6,8 @@
     "caseStudies": "Casos de Estudio",
     "faq": "Preguntas Frecuentes",
     "contact": "Contacto",
-    "bookAudit": "Reservar Auditoría"
+    "bookAudit": "Reservar Auditoría",
+    "bookAuditLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas"
   },
   "stickyCta": {
     "headline": "¿Listo para arreglar tus sistemas?",
@@ -18,7 +19,8 @@
     "subheadline": "Templates personalizados, automatización inteligente y sistemas completos para equipos en crecimiento.",
     "valueProposition": "Ayudo a startups y agencias a optimizar sus operaciones con templates Notion personalizados, automatización n8n y sistemas empresariales completos que se adaptan a tu forma de trabajar—no al revés.",
     "cta": {
-      "primary": "Reservar Auditoría de $150"
+      "primary": "Reservar Auditoría de $150",
+      "primaryLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas"
     },
     "credibility": {
       "certified": "Administrador Certificado de Notion",
@@ -323,6 +325,7 @@
     "headline": "¿Listo para Optimizar tus Operaciones?",
     "subheadline": "Ya sea que necesites templates Notion personalizados, automatización de flujos de trabajo o un sistema completo—comienza con una Auditoría de Sistemas de $150 para ver exactamente lo que necesitas.",
     "cta": "Reserva tu Auditoría de Sistemas",
+    "ctaLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas",
     "trustSignals": {
       "turnaround": "Entrega en 1 semana",
       "payment": "Pago seguro",
@@ -405,7 +408,7 @@
           "Cotización personalizada para la construcción (si la deseas)"
         ],
         "note": "💡 El 50% de los clientes de auditoría avanzan a la implementación.",
-        "link": "https://cal.com/beykerestrada-consulting/systems-audit",
+        "link": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas",
         "badge": "Comienza Aquí",
         "isExternal": true
       },
@@ -475,7 +478,8 @@
     "cta": {
       "title": "¿Listo para Transformar tus Operaciones?",
       "description": "Comienza con una Auditoría de Sistemas de $150 y descubre exactamente qué está roto—y cómo arreglarlo.",
-      "primary": "Reserva tu Auditoría de Sistemas"
+      "primary": "Reserva tu Auditoría de Sistemas",
+      "primaryLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas"
     }
   },
   "caseStudyDetail": {
@@ -495,7 +499,7 @@
       "title": "¿Listo para Transformar tus Operaciones?",
       "description": "Comienza con una Auditoría de Sistemas de $150 y descubre exactamente qué está roto—y cómo arreglarlo.",
       "primary": "Reserva tu Auditoría de Sistemas",
-      "primaryLink": "https://cal.com/beykerestrada-consulting/systems-audit"
+      "primaryLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas"
     }
   },
   "caseStudyContent": {
@@ -769,7 +773,8 @@
     "cta": {
       "title": "¿Todavía Tienes Preguntas?",
       "description": "Comienza con una Auditoría de Sistemas de $150 para obtener respuestas claras y una hoja de ruta adaptada a tus necesidades.",
-      "button": "Reserva tu Auditoría de Sistemas"
+      "button": "Reserva tu Auditoría de Sistemas",
+      "buttonLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas"
     }
   },
   "serviceDetail": {
@@ -1121,6 +1126,7 @@
       "priceNote": "Acreditado a la implementación",
       "description": "Obtén una evaluación operacional completa, identifica cuellos de botella y recibe una hoja de ruta priorizada para la optimización—todo en una sesión enfocada.",
       "cta": "Reserva tu Auditoría",
+      "ctaLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas",
       "whoIsThisFor": {
         "title": "¿Para Quién Es Esto?",
         "points": [
@@ -1594,7 +1600,8 @@
     "cta": {
       "title": "¿Listo para Comenzar?",
       "description": "Comienza con una Auditoría de Sistemas de $150 para ver exactamente lo que necesitas—sin presión, solo claridad.",
-      "button": "Reserva tu Auditoría de Sistemas"
+      "button": "Reserva tu Auditoría de Sistemas",
+      "buttonLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas"
     }
   }
 }

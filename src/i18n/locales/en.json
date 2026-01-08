@@ -6,7 +6,8 @@
     "caseStudies": "Case Studies",
     "faq": "FAQ",
     "contact": "Contact",
-    "bookAudit": "Book Audit"
+    "bookAudit": "Book Audit",
+    "bookAuditLink": "https://cal.com/beykerestrada-consulting/systems-audit"
   },
   "stickyCta": {
     "headline": "Ready to fix your systems?",
@@ -18,7 +19,8 @@
     "subheadline": "Tailored templates, smart automation, and complete systems for growing teams.",
     "valueProposition": "I help startups and agencies streamline operations with custom Notion templates, n8n automation, and complete business systems that fit your workflow—not the other way around.",
     "cta": {
-      "primary": "Book $150 Systems Audit"
+      "primary": "Book $150 Systems Audit",
+      "primaryLink": "https://cal.com/beykerestrada-consulting/systems-audit"
     },
     "credibility": {
       "certified": "Notion Certified Admin",
@@ -323,6 +325,7 @@
     "headline": "Ready to Streamline Your Operations?",
     "subheadline": "Whether you need custom Notion templates, workflow automation, or a complete system—start with a $150 Systems Audit to see exactly what you need.",
     "cta": "Book Your Systems Audit",
+    "ctaLink": "https://cal.com/beykerestrada-consulting/systems-audit",
     "trustSignals": {
       "turnaround": "1-week turnaround",
       "payment": "Secure payment",
@@ -475,7 +478,8 @@
     "cta": {
       "title": "Ready to Transform Your Operations?",
       "description": "Start with a $150 Systems Audit and see exactly what's broken—and how to fix it.",
-      "primary": "Book Your Systems Audit"
+      "primary": "Book Your Systems Audit",
+      "primaryLink": "https://cal.com/beykerestrada-consulting/systems-audit"
     }
   },
   "caseStudyDetail": {
@@ -769,7 +773,8 @@
     "cta": {
       "title": "Still Have Questions?",
       "description": "Start with a $150 Systems Audit to get clear answers and a roadmap tailored to your needs.",
-      "button": "Book Your Systems Audit"
+      "button": "Book Your Systems Audit",
+      "buttonLink": "https://cal.com/beykerestrada-consulting/systems-audit"
     }
   },
   "serviceDetail": {
@@ -1121,6 +1126,7 @@
       "priceNote": "Credited toward implementation",
       "description": "Get a complete operational assessment, identify bottlenecks, and receive a prioritized roadmap for optimization—all in one focused session.",
       "cta": "Book Your Audit",
+      "ctaLink": "https://cal.com/beykerestrada-consulting/systems-audit",
       "whoIsThisFor": {
         "title": "Who Is This For?",
         "points": [
@@ -1594,7 +1600,8 @@
     "cta": {
       "title": "Ready to Get Started?",
       "description": "Start with a $150 Systems Audit to see exactly what you need—no pressure, just clarity.",
-      "button": "Book Your Systems Audit"
+      "button": "Book Your Systems Audit",
+      "buttonLink": "https://cal.com/beykerestrada-consulting/systems-audit"
     }
   }
 }

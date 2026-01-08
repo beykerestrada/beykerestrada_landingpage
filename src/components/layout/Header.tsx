@@ -40,7 +40,7 @@ const Header = () => {
         <div className="hidden md:flex md:items-center md:gap-x-2">
           <LanguageSwitcher />
           <Button asChild variant="default" size="sm">
-            <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+            <Link href={t('nav.bookAuditLink')} target="_blank">
               {t('nav.bookAudit')}
             </Link>
           </Button>
@@ -100,7 +100,7 @@ const Header = () => {
             </Link>
             <div className="pt-4">
               <Button asChild className="w-full" size="sm">
-                <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+                <Link href={t('nav.bookAuditLink')} target="_blank">
                   {t('nav.bookAudit')}
                 </Link>
               </Button>

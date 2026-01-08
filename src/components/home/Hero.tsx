@@ -58,7 +58,7 @@ const Hero = () => {
               size="lg"
               className="text-base"
             >
-              <Link href="https://cal.com/beykerestrada-consulting/systems-audit" target="_blank">
+              <Link href={t('hero.cta.primaryLink')} target="_blank">
                 {t('hero.cta.primary')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
