@@ -34,7 +34,7 @@ const Clients = () => {
   };
 
   return (
-    <section className="w-full py-16 md:py-24 bg-white">
+    <section className="w-full py-16 md:py-24 bg-slate-50/50">
       <div className="mx-auto max-w-content px-6 lg:px-8">
         {/* Header */}
         <motion.div

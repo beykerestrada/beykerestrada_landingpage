@@ -12,7 +12,7 @@ const HowItWorks = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="how-it-works" className="relative w-full py-16 md:py-24 bg-muted/30">
+    <section id="how-it-works" className="relative w-full py-16 md:py-24 bg-muted/15">
       <div className="mx-auto max-w-content px-6 lg:px-8">
         {/* Services Section */}
         <motion.div
