@@ -45,7 +45,7 @@ const NotionTemplatesPage = () => {
 
           <motion.div variants={fadeInUp}>
             <Button asChild size="lg">
-              <Link href="/contact">
+              <Link href={t('servicePages.notionTemplates.ctaLink')} target="_blank">
                 {t('servicePages.notionTemplates.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -173,7 +173,7 @@ const NotionTemplatesPage = () => {
             {t('servicePages.notionTemplates.finalCta.description')}
           </p>
           <Button asChild size="lg">
-            <Link href="/contact">
+            <Link href={t('servicePages.notionTemplates.ctaLink')} target="_blank">
               {t('servicePages.notionTemplates.cta')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

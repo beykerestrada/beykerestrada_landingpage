@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Sparkles } from "lucide-react";
+import { CheckCircle2, Sparkles, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
@@ -68,12 +68,19 @@ const HowItWorks = () => {
                   {t('howItWorks.notionTemplates.note')}
                 </p>
               </CardContent>
-              <CardFooter className="pt-0">
+              <CardFooter className="pt-0 flex-col gap-3">
                 <Button asChild className="w-full" size="sm">
-                  <Link href="/services/notion-templates">
+                  <Link href={t('howItWorks.notionTemplates.ctaLink')} target="_blank">
                     {t('howItWorks.notionTemplates.cta')}
                   </Link>
                 </Button>
+                <Link
+                  href="/services/notion-templates"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center justify-center gap-1"
+                >
+                  {t('howItWorks.notionTemplates.learnMore')}
+                  <ArrowRight className="h-3 w-3" />
+                </Link>
               </CardFooter>
             </Card>
           </motion.div>
@@ -117,12 +124,19 @@ const HowItWorks = () => {
                   {t('howItWorks.completeSystem.note')}
                 </p>
               </CardContent>
-              <CardFooter className="pt-0">
+              <CardFooter className="pt-0 flex-col gap-3">
                 <Button asChild className="w-full" size="sm">
-                  <Link href="/services/complete-system">
+                  <Link href={t('howItWorks.completeSystem.ctaLink')} target="_blank">
                     {t('howItWorks.completeSystem.cta')}
                   </Link>
                 </Button>
+                <Link
+                  href="/services/complete-system"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center justify-center gap-1"
+                >
+                  {t('howItWorks.completeSystem.learnMore')}
+                  <ArrowRight className="h-3 w-3" />
+                </Link>
               </CardFooter>
             </Card>
           </motion.div>
@@ -160,12 +174,19 @@ const HowItWorks = () => {
                   {t('howItWorks.automation.note')}
                 </p>
               </CardContent>
-              <CardFooter className="pt-0">
+              <CardFooter className="pt-0 flex-col gap-3">
                 <Button asChild className="w-full" size="sm">
-                  <Link href="/services/workflow-automation">
+                  <Link href={t('howItWorks.automation.ctaLink')} target="_blank">
                     {t('howItWorks.automation.cta')}
                   </Link>
                 </Button>
+                <Link
+                  href="/services/workflow-automation"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center justify-center gap-1"
+                >
+                  {t('howItWorks.automation.learnMore')}
+                  <ArrowRight className="h-3 w-3" />
+                </Link>
               </CardFooter>
             </Card>
           </motion.div>
@@ -219,11 +240,20 @@ const HowItWorks = () => {
                     </div>
                   </div>
 
-                  <Button asChild className="rounded-full">
-                    <Link href="/services/systems-audit">
-                      {t('howItWorks.systemsAudit.cta')}
+                  <div className="flex flex-col sm:flex-row gap-3 items-start">
+                    <Button asChild className="rounded-full">
+                      <Link href={t('nav.bookAuditLink')} target="_blank">
+                        {t('howItWorks.systemsAudit.cta')}
+                      </Link>
+                    </Button>
+                    <Link
+                      href="/services/systems-audit"
+                      className="text-sm text-slate-300 hover:text-white transition-colors flex items-center gap-1 px-4 py-2"
+                    >
+                      {t('howItWorks.systemsAudit.learnMore')}
+                      <ArrowRight className="h-3 w-3" />
                     </Link>
-                  </Button>
+                  </div>
                 </div>
 
                 {/* Right side - Features */}

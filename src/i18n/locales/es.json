@@ -101,6 +101,7 @@
         "Cotización personalizada para la construcción (si la deseas)"
       ],
       "cta": "Reserva tu Auditoría",
+      "learnMore": "Ver Detalles",
       "note": "💰 Acreditado al costo de implementación."
     },
     "notionTemplates": {
@@ -116,6 +117,8 @@
         "Soporte de 2 semanas"
       ],
       "cta": "Comenzar",
+      "ctaLink": "https://tally.so/r/2EazED",
+      "learnMore": "Ver Detalles",
       "note": "✓ Soporte de 2 semanas • Propiedad total"
     },
     "automation": {
@@ -131,6 +134,8 @@
         "Soporte de 30 días"
       ],
       "cta": "Comenzar",
+      "ctaLink": "https://tally.so/r/ja6XaJ",
+      "learnMore": "Ver Detalles",
       "note": "✓ Soporte de 30 días • Ahorra horas semanales"
     },
     "completeSystem": {
@@ -147,6 +152,8 @@
         "Soporte de 60 días"
       ],
       "cta": "Comenzar",
+      "ctaLink": "https://tally.so/r/EkdrjB",
+      "learnMore": "Ver Detalles",
       "note": "✓ Soporte de 60 días • Mejor valor • Propiedad total"
     }
   },
@@ -1239,6 +1246,7 @@
       "price": "desde $500",
       "description": "Obtén un espacio de trabajo Notion diseñado específicamente para los flujos de trabajo de tu equipo—no un template genérico.",
       "cta": "Comenzar",
+      "ctaLink": "https://tally.so/r/2EazED",
       "whoIsThisFor": {
         "title": "¿Para Quién Es Esto?",
         "points": [
@@ -1326,6 +1334,7 @@
       "price": "desde $800",
       "description": "Conecta tus herramientas y elimina el trabajo repetitivo con flujos de trabajo de automatización personalizados—impulsados por n8n, Zapier o Make.",
       "cta": "Comenzar",
+      "ctaLink": "https://tally.so/r/ja6XaJ",
       "whoIsThisFor": {
         "title": "¿Para Quién Es Esto?",
         "points": [
@@ -1414,6 +1423,7 @@
       "price": "desde $2,000",
       "description": "Obtén un espacio de trabajo Notion completamente integrado + suite de automatización diseñada para ejecutar toda tu operación—desde proyectos hasta clientes y operaciones.",
       "cta": "Comenzar",
+      "ctaLink": "https://tally.so/r/EkdrjB",
       "whoIsThisFor": {
         "title": "¿Para Quién Es Esto?",
         "points": [

@@ -101,6 +101,7 @@
         "Custom quote for build (if you want it)"
       ],
       "cta": "Book Your Audit",
+      "learnMore": "Learn More",
       "note": "💰 Credited toward implementation cost."
     },
     "notionTemplates": {
@@ -116,6 +117,8 @@
         "2-week support"
       ],
       "cta": "Get Started",
+      "ctaLink": "https://tally.so/r/zxyR9Z",
+      "learnMore": "Learn More",
       "note": "✓ 2-week support • Full template ownership"
     },
     "automation": {
@@ -131,6 +134,8 @@
         "30-day support"
       ],
       "cta": "Get Started",
+      "ctaLink": "https://tally.so/r/gDdxBJ",
+      "learnMore": "Learn More",
       "note": "✓ 30-day support • Save hours weekly"
     },
     "completeSystem": {
@@ -147,6 +152,8 @@
         "60-day support"
       ],
       "cta": "Get Started",
+      "ctaLink": "https://tally.so/r/q4D70O",
+      "learnMore": "Learn More",
       "note": "✓ 60-day support • Best value • Full ownership"
     }
   },
@@ -1239,6 +1246,7 @@
       "price": "from $500",
       "description": "Get a tailored Notion workspace designed specifically for your team's workflows—not a one-size-fits-all template.",
       "cta": "Get Started",
+      "ctaLink": "https://tally.so/r/zxyR9Z",
       "whoIsThisFor": {
         "title": "Who Is This For?",
         "points": [
@@ -1326,6 +1334,7 @@
       "price": "from $800",
       "description": "Connect your tools and eliminate repetitive work with custom automation workflows—powered by n8n, Zapier, or Make.",
       "cta": "Get Started",
+      "ctaLink": "https://tally.so/r/gDdxBJ",
       "whoIsThisFor": {
         "title": "Who Is This For?",
         "points": [
@@ -1414,6 +1423,7 @@
       "price": "from $2,000",
       "description": "Get a fully integrated Notion workspace + automation suite designed to run your entire operation—from projects to clients to operations.",
       "cta": "Get Started",
+      "ctaLink": "https://tally.so/r/q4D70O",
       "whoIsThisFor": {
         "title": "Who Is This For?",
         "points": [
