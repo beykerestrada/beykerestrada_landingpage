@@ -16,7 +16,7 @@ const WorkflowAutomationPage = () => {
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         {/* Back Button */}
         <Button asChild variant="ghost" className="mb-8 px-0">
-          <Link href="/#how-it-works">
+          <Link href="/#services">
             <ArrowLeft className="mr-2 h-4 w-4" />
             {t('servicePages.backToServices')}
           </Link>
@@ -34,12 +34,12 @@ const WorkflowAutomationPage = () => {
           </motion.h1>
 
           <motion.div variants={fadeInUp} className="flex items-baseline gap-4 mb-6">
-            <div className="text-5xl font-bold text-primary">
+            <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">
               {t('servicePages.workflowAutomation.price')}
             </div>
           </motion.div>
 
-          <motion.p variants={fadeInUp} className="text-xl text-muted-foreground mb-8 leading-relaxed">
+          <motion.p variants={fadeInUp} className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
             {t('servicePages.workflowAutomation.description')}
           </motion.p>
 
@@ -93,7 +93,7 @@ const WorkflowAutomationPage = () => {
               <motion.div key={index} variants={fadeInUp}>
                 <Card className="hover:shadow-md transition-shadow">
                   <CardHeader>
-                    <CardTitle className="text-lg flex items-center gap-3">
+                    <CardTitle className="text-base md:text-lg flex items-center gap-3">
                       <div className="p-2 bg-primary/10 rounded-lg">
                         {index === 0 && <Workflow className="h-5 w-5 text-primary" />}
                         {index === 1 && <Plug className="h-5 w-5 text-primary" />}
@@ -131,7 +131,7 @@ const WorkflowAutomationPage = () => {
                   </div>
                 </div>
                 <div className="flex-grow">
-                  <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                  <h3 className="text-lg md:text-xl font-semibold mb-2">{step.title}</h3>
                   <p className="text-muted-foreground">{step.description}</p>
                 </div>
               </div>
@@ -169,7 +169,7 @@ const WorkflowAutomationPage = () => {
           variants={fadeInUp}
         >
           <h2 className="mb-4">{t('servicePages.workflowAutomation.finalCta.title')}</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             {t('servicePages.workflowAutomation.finalCta.description')}
           </p>
           <Button asChild size="lg">

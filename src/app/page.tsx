@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "@/components/home/Hero";
-import HowItWorks from "@/components/home/HowItWorks";
+import Services from "@/components/home/Services";
 import ProblemSolution from "@/components/home/ProblemSolution";
 import SocialProof from "@/components/home/SocialProof";
 import Clients from "@/components/home/Clients";
@@ -16,7 +16,7 @@ export default function HomePage() {
       <Clients />
       <ProblemSolution />
       <SocialProof />
-      <HowItWorks />
+      <Services />
       <WhyMe />
       <FaqPreview />
       <FinalCta />

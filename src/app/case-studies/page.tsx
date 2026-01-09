@@ -32,7 +32,7 @@ export default function CaseStudiesPage() {
           variants={fadeInUp}
         >
           <h1 className="mb-6">{t("caseStudiesPage.title")}</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl">
             {t("caseStudiesPage.subtitle")}
           </p>
         </motion.div>
@@ -54,10 +54,10 @@ export default function CaseStudiesPage() {
                       <span className="text-sm text-muted-foreground">·</span>
                       <span className="text-sm text-muted-foreground">{study.industry}</span>
                     </div>
-                    <h2 className="mb-4 text-2xl">{study.title}</h2>
+                    <h2 className="mb-4 text-xl md:text-2xl">{study.title}</h2>
                     <p className="mb-6 text-muted-foreground">{study.description}</p>
                     <div className="mb-6">
-                      <div className="text-lg font-semibold text-accent mb-3">{study.result}</div>
+                      <div className="text-base md:text-lg font-semibold text-accent mb-3">{study.result}</div>
                       <div className="flex flex-wrap gap-3">
                         {study.metrics.map((metric, index) => (
                           <div key={index} className="rounded-lg bg-muted px-3 py-1.5 text-sm text-muted-foreground">
@@ -87,7 +87,7 @@ export default function CaseStudiesPage() {
           variants={scaleIn}
         >
           <h2 className="mb-4">{t("caseStudiesPage.cta.title")}</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             {t("caseStudiesPage.cta.description")}
           </p>
           <Button asChild size="lg">

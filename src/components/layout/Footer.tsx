@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="w-full border-t border-border bg-background">
       <div className="mx-auto max-w-content px-6 py-12 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-4">
           <div>
             <h3 className="text-lg font-semibold mb-3">Beyker Estrada</h3>
             <p className="text-sm text-muted-foreground max-w-md">

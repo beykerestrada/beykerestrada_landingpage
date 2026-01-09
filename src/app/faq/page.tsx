@@ -35,7 +35,7 @@ const Faq = () => {
           variants={fadeInUp}
         >
           <h1 className="mb-6">{t("faqPage.title")}</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl">
             {t("faqPage.subtitle")}
           </p>
         </motion.div>
@@ -50,7 +50,7 @@ const Faq = () => {
               variants={fadeInUp}
               transition={{ delay: sectionIndex * 0.1 }}
             >
-              <h2 className="mb-6 text-2xl">{section.category}</h2>
+              <h2 className="mb-6 text-xl md:text-2xl">{section.category}</h2>
               <Accordion type="single" collapsible className="w-full">
                 {section.questions.map((faq, index) => (
                   <AccordionItem key={index} value={`${section.category}-${index}`}>
@@ -73,7 +73,7 @@ const Faq = () => {
           variants={scaleIn}
         >
           <h2 className="mb-4">{t("faqPage.cta.title")}</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             {t("faqPage.cta.description")}
           </p>
           <Button asChild size="lg">

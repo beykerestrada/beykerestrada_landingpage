@@ -16,7 +16,7 @@ const SystemsAuditPage = () => {
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         {/* Back Button */}
         <Button asChild variant="ghost" className="mb-8 px-0">
-          <Link href="/#how-it-works">
+          <Link href="/#services">
             <ArrowLeft className="mr-2 h-4 w-4" />
             {t('servicePages.backToServices')}
           </Link>
@@ -40,15 +40,15 @@ const SystemsAuditPage = () => {
           </motion.h1>
 
           <motion.div variants={fadeInUp} className="flex items-baseline gap-4 mb-6">
-            <div className="text-5xl font-bold text-primary">
+            <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">
               {t('servicePages.systemsAudit.price')}
             </div>
-            <div className="text-lg text-muted-foreground">
+            <div className="text-sm md:text-base lg:text-lg text-muted-foreground">
               {t('servicePages.systemsAudit.priceNote')}
             </div>
           </motion.div>
 
-          <motion.p variants={fadeInUp} className="text-xl text-muted-foreground mb-8 leading-relaxed">
+          <motion.p variants={fadeInUp} className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
             {t('servicePages.systemsAudit.description')}
           </motion.p>
 
@@ -102,7 +102,7 @@ const SystemsAuditPage = () => {
               <motion.div key={index} variants={fadeInUp}>
                 <Card className="hover:shadow-md transition-shadow">
                   <CardHeader>
-                    <CardTitle className="text-lg flex items-center gap-3">
+                    <CardTitle className="text-base md:text-lg flex items-center gap-3">
                       <div className="p-2 bg-primary/10 rounded-lg">
                         {index === 0 && <Clock className="h-5 w-5 text-primary" />}
                         {index === 1 && <Target className="h-5 w-5 text-primary" />}
@@ -140,7 +140,7 @@ const SystemsAuditPage = () => {
                   </div>
                 </div>
                 <div className="flex-grow">
-                  <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                  <h3 className="text-lg md:text-xl font-semibold mb-2">{step.title}</h3>
                   <p className="text-muted-foreground">{step.description}</p>
                   {step.duration && (
                     <div className="mt-2 text-sm text-muted-foreground flex items-center gap-2">
@@ -212,7 +212,7 @@ const SystemsAuditPage = () => {
           <h2 className="mb-6">{t('servicePages.systemsAudit.testimonial.title')}</h2>
           <Card className="border-primary/20 bg-primary/5">
             <CardContent className="p-8">
-              <p className="text-lg italic mb-4 text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg italic mb-4 text-muted-foreground leading-relaxed">
                 "{t('servicePages.systemsAudit.testimonial.text')}"
               </p>
               <div className="text-sm font-semibold">
@@ -231,7 +231,7 @@ const SystemsAuditPage = () => {
           variants={fadeInUp}
         >
           <h2 className="mb-4">{t('servicePages.systemsAudit.finalCta.title')}</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             {t('servicePages.systemsAudit.finalCta.description')}
           </p>
           <Button asChild size="lg">

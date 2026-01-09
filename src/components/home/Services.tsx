@@ -8,11 +8,11 @@ import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
 
-const HowItWorks = () => {
+const Services = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="how-it-works" className="relative w-full py-16 md:py-24 bg-muted/30">
+    <section id="services" className="relative w-full py-16 md:py-24 bg-muted/30">
       <div className="mx-auto max-w-content px-6 lg:px-8">
         {/* Services Section */}
         <motion.div
@@ -26,15 +26,15 @@ const HowItWorks = () => {
             {t('howItWorks.headline')}
           </motion.h2>
           <motion.p
-            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+            className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
             variants={fadeInUp}
           >
             {t('howItWorks.subheadline')}
           </motion.p>
         </motion.div>
-        
 
-        <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+
+        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto">
           {/* Service 1: Custom Notion Templates */}
           <motion.div
             variants={fadeInUp}
@@ -45,10 +45,10 @@ const HowItWorks = () => {
           >
             <Card className="flex-grow flex flex-col">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl mb-1">
+                <CardTitle className="text-base md:text-lg lg:text-xl mb-1">
                   {t('howItWorks.notionTemplates.title')}
                 </CardTitle>
-                <div className="text-2xl font-bold text-primary mb-2">
+                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
                   {t('howItWorks.notionTemplates.price')}
                 </div>
                 <CardDescription className="text-sm">
@@ -85,7 +85,7 @@ const HowItWorks = () => {
             </Card>
           </motion.div>
 
-                   {/* Service 3: Complete Business System (Most Popular) */}
+          {/* Service 2: Workflow Automation (Most Popular) */}
           <motion.div
             variants={fadeInUp}
             initial="hidden"
@@ -97,64 +97,14 @@ const HowItWorks = () => {
               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
                   <Sparkles className="h-3 w-3" />
-                  {t('howItWorks.completeSystem.badge')}
+                  {t('howItWorks.automation.badge')}
                 </div>
               </div>
               <CardHeader className="pb-4 pt-6">
-                <CardTitle className="text-xl mb-1">
-                  {t('howItWorks.completeSystem.title')}
-                </CardTitle>
-                <div className="text-2xl font-bold text-primary mb-2">
-                  {t('howItWorks.completeSystem.price')}
-                </div>
-                <CardDescription className="text-sm">
-                  {t('howItWorks.completeSystem.description')}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow pb-4 flex flex-col">
-                <ul className="space-y-2 mb-4">
-                  {(t('howItWorks.completeSystem.features', { returnObjects: true }) as string[]).map((item: string, index: number) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-success shrink-0 mt-0.5" />
-                      <span className="text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-xs text-center text-muted-foreground mt-auto">
-                  {t('howItWorks.completeSystem.note')}
-                </p>
-              </CardContent>
-              <CardFooter className="pt-0 flex-col gap-3">
-                <Button asChild className="w-full" size="sm">
-                  <Link href={t('howItWorks.completeSystem.ctaLink')} target="_blank">
-                    {t('howItWorks.completeSystem.cta')}
-                  </Link>
-                </Button>
-                <Link
-                  href="/services/complete-system"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center justify-center gap-1"
-                >
-                  {t('howItWorks.completeSystem.learnMore')}
-                  <ArrowRight className="h-3 w-3" />
-                </Link>
-              </CardFooter>
-            </Card>
-          </motion.div>
-
-          {/* Service 2: Workflow Automation */}
-          <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="flex flex-col"
-          >
-            <Card className="flex-grow flex flex-col">
-              <CardHeader className="pb-4">
-                <CardTitle className="text-xl mb-1">
+                <CardTitle className="text-base md:text-lg lg:text-xl mb-1">
                   {t('howItWorks.automation.title')}
                 </CardTitle>
-                <div className="text-2xl font-bold text-primary mb-2">
+                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
                   {t('howItWorks.automation.price')}
                 </div>
                 <CardDescription className="text-sm">
@@ -191,6 +141,56 @@ const HowItWorks = () => {
             </Card>
           </motion.div>
 
+          {/* Service 3: Complete Business System */}
+          <motion.div
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="flex flex-col"
+          >
+            <Card className="flex-grow flex flex-col">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-base md:text-lg lg:text-xl mb-1">
+                  {t('howItWorks.completeSystem.title')}
+                </CardTitle>
+                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
+                  {t('howItWorks.completeSystem.price')}
+                </div>
+                <CardDescription className="text-sm">
+                  {t('howItWorks.completeSystem.description')}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="flex-grow pb-4 flex flex-col">
+                <ul className="space-y-2 mb-4">
+                  {(t('howItWorks.completeSystem.features', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-success shrink-0 mt-0.5" />
+                      <span className="text-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-xs text-center text-muted-foreground mt-auto">
+                  {t('howItWorks.completeSystem.note')}
+                </p>
+              </CardContent>
+              <CardFooter className="pt-0 flex-col gap-3">
+                <Button asChild className="w-full" size="sm">
+                  <Link href={t('howItWorks.completeSystem.ctaLink')} target="_blank">
+                    {t('howItWorks.completeSystem.cta')}
+                  </Link>
+                </Button>
+                <Link
+                  href="/services/complete-system"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center justify-center gap-1"
+                >
+                  {t('howItWorks.completeSystem.learnMore')}
+                  <ArrowRight className="h-3 w-3" />
+                </Link>
+              </CardFooter>
+            </Card>
+          </motion.div>
+
 
         </div>
 
@@ -215,7 +215,7 @@ const HowItWorks = () => {
             <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/10 blur-3xl"></div>
 
             <div className="relative p-8 md:p-12">
-              <div className="grid md:grid-cols-[1.2fr,1fr] gap-10 items-center">
+              <div className="grid md:grid-cols-[1.2fr,1fr] gap-6 md:gap-10 items-center">
                 {/* Left side - Content */}
                 <div>
                   <div className="inline-flex items-center gap-2 mb-4 bg-primary/20 px-3 py-1 rounded-full">
@@ -224,15 +224,15 @@ const HowItWorks = () => {
                     </span>
                   </div>
 
-                  <h3 className="text-3xl md:text-4xl font-bold mb-3 leading-tight">
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 leading-tight">
                     {t('howItWorks.notSure.headline')}
                   </h3>
-                  <p className="text-lg md:text-xl text-slate-300 mb-6 leading-relaxed">
+                  <p className="text-base md:text-lg text-slate-300 mb-6 leading-relaxed">
                     {t('howItWorks.notSure.subheadline')}
                   </p>
 
                   <div className="mb-8">
-                    <div className="text-5xl md:text-6xl font-bold mb-1">
+                    <div className="text-3xl md:text-4xl lg:text-5xl font-bold mb-1">
                       {t('howItWorks.systemsAudit.price')}
                     </div>
                     <div className="text-sm text-slate-400">
@@ -279,4 +279,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HowItWorks;
+export default Services;

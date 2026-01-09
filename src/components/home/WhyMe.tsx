@@ -48,7 +48,7 @@ const WhyMe = () => {
           </motion.p>
         </motion.div>
 
-        <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto mb-12">
+        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto mb-12">
           {differentiators.map((item, index) => (
             <motion.div
               key={index}
@@ -62,7 +62,7 @@ const WhyMe = () => {
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                     <item.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="mb-3 text-lg font-semibold">{item.title}</h3>
+                  <h3 className="mb-3 text-base md:text-lg font-semibold">{item.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {item.description}
                   </p>
@@ -84,7 +84,7 @@ const WhyMe = () => {
             <CardContent className="p-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-1">
+                  <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">
                     {t('whyMe.credibility.systems.value')}
                   </div>
                   <div className="text-sm text-muted-foreground">
@@ -92,7 +92,7 @@ const WhyMe = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-1">
+                  <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">
                     {t('whyMe.credibility.experience.value')}
                   </div>
                   <div className="text-sm text-muted-foreground">
@@ -100,7 +100,7 @@ const WhyMe = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-1">
+                  <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">
                     {t('whyMe.credibility.certified.value')}
                   </div>
                   <div className="text-sm text-muted-foreground">

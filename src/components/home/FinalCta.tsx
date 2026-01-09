@@ -25,7 +25,7 @@ const FinalCta = () => {
           </motion.h2>
 
           <motion.p
-            className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto"
+            className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto"
             variants={fadeInUp}
           >
             {t('finalCta.subheadline')}
@@ -42,7 +42,7 @@ const FinalCta = () => {
 
           {/* Trust Signals */}
           <motion.div
-            className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground mb-8"
+            className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm text-muted-foreground mb-8"
             variants={fadeInUp}
           >
             <div className="flex items-center gap-2">

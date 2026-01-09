@@ -10,8 +10,8 @@ import { useTranslation } from "react-i18next";
 const Hero = () => {
   const { t } = useTranslation();
 
-  const scrollToHowItWorks = () => {
-    const element = document.getElementById('how-it-works');
+  const scrollToServices = () => {
+    const element = document.getElementById('services');
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -26,7 +26,7 @@ const Hero = () => {
         >
           {/* Main Headline */}
           <motion.h1
-            className="mb-4 text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"
+            className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
             variants={fadeInUp}
           >
             {t('hero.headline')}
@@ -34,7 +34,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <motion.p
-            className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6"
+            className="text-xl sm:text-2xl md:text-3xl font-medium text-muted-foreground mb-6"
             variants={fadeInUp}
           >
             {t('hero.subheadline')}
@@ -42,7 +42,7 @@ const Hero = () => {
 
           {/* Value Proposition */}
           <motion.p
-            className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto"
+            className="text-base md:text-lg lg:text-xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto"
             variants={fadeInUp}
           >
             {t('hero.valueProposition')}
@@ -50,7 +50,7 @@ const Hero = () => {
 
           {/* CTA */}
           <motion.div
-            className="flex justify-center mb-12"
+            className="flex justify-center mb-6 md:mb-12"
             variants={fadeInUp}
           >
             <Button
@@ -67,7 +67,7 @@ const Hero = () => {
 
           {/* Credibility Bar */}
           <motion.div
-            className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground"
+            className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm text-muted-foreground"
             variants={fadeInUp}
           >
             <div className="flex items-center gap-2">

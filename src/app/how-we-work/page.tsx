@@ -25,7 +25,7 @@ const HowWeWorkPage = () => {
             {t('howWeWork.title')}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <motion.p variants={fadeInUp} className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             {t('howWeWork.description')}
           </motion.p>
         </motion.div>
@@ -59,7 +59,7 @@ const HowWeWorkPage = () => {
                             {index === 4 && <Users className="h-6 w-6 text-primary" />}
                             {index === 5 && <LineChart className="h-6 w-6 text-primary" />}
                           </div>
-                          <h2 className="text-2xl font-bold">{step.title}</h2>
+                          <h2 className="text-xl md:text-2xl font-bold">{step.title}</h2>
                         </div>
                         <p className="text-muted-foreground mb-4 leading-relaxed">
                           {step.description}
@@ -94,7 +94,7 @@ const HowWeWorkPage = () => {
           variants={fadeInUp}
         >
           <h2 className="text-center mb-8">{t('howWeWork.principles.title')}</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {(t('howWeWork.principles.items', { returnObjects: true }) as any[]).map((principle, index) => (
               <Card key={index} className="bg-muted/30">
                 <CardContent className="p-6">
@@ -115,7 +115,7 @@ const HowWeWorkPage = () => {
           variants={fadeInUp}
         >
           <h2 className="mb-4">{t('howWeWork.cta.title')}</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             {t('howWeWork.cta.description')}
           </p>
           <Button asChild size="lg">
