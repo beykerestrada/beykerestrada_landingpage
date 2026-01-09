@@ -26,7 +26,7 @@ const Services = () => {
             {t('howItWorks.headline')}
           </motion.h2>
           <motion.p
-            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+            className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
             variants={fadeInUp}
           >
             {t('howItWorks.subheadline')}
@@ -34,7 +34,7 @@ const Services = () => {
         </motion.div>
 
 
-        <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto">
           {/* Service 1: Custom Notion Templates */}
           <motion.div
             variants={fadeInUp}
@@ -45,10 +45,10 @@ const Services = () => {
           >
             <Card className="flex-grow flex flex-col">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl mb-1">
+                <CardTitle className="text-base md:text-lg lg:text-xl mb-1">
                   {t('howItWorks.notionTemplates.title')}
                 </CardTitle>
-                <div className="text-2xl font-bold text-primary mb-2">
+                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
                   {t('howItWorks.notionTemplates.price')}
                 </div>
                 <CardDescription className="text-sm">
@@ -101,10 +101,10 @@ const Services = () => {
                 </div>
               </div>
               <CardHeader className="pb-4 pt-6">
-                <CardTitle className="text-xl mb-1">
+                <CardTitle className="text-base md:text-lg lg:text-xl mb-1">
                   {t('howItWorks.automation.title')}
                 </CardTitle>
-                <div className="text-2xl font-bold text-primary mb-2">
+                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
                   {t('howItWorks.automation.price')}
                 </div>
                 <CardDescription className="text-sm">
@@ -151,10 +151,10 @@ const Services = () => {
           >
             <Card className="flex-grow flex flex-col">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl mb-1">
+                <CardTitle className="text-base md:text-lg lg:text-xl mb-1">
                   {t('howItWorks.completeSystem.title')}
                 </CardTitle>
-                <div className="text-2xl font-bold text-primary mb-2">
+                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
                   {t('howItWorks.completeSystem.price')}
                 </div>
                 <CardDescription className="text-sm">
@@ -215,7 +215,7 @@ const Services = () => {
             <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/10 blur-3xl"></div>
 
             <div className="relative p-8 md:p-12">
-              <div className="grid md:grid-cols-[1.2fr,1fr] gap-10 items-center">
+              <div className="grid md:grid-cols-[1.2fr,1fr] gap-6 md:gap-10 items-center">
                 {/* Left side - Content */}
                 <div>
                   <div className="inline-flex items-center gap-2 mb-4 bg-primary/20 px-3 py-1 rounded-full">
@@ -224,15 +224,15 @@ const Services = () => {
                     </span>
                   </div>
 
-                  <h3 className="text-3xl md:text-4xl font-bold mb-3 leading-tight">
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 leading-tight">
                     {t('howItWorks.notSure.headline')}
                   </h3>
-                  <p className="text-lg md:text-xl text-slate-300 mb-6 leading-relaxed">
+                  <p className="text-base md:text-lg text-slate-300 mb-6 leading-relaxed">
                     {t('howItWorks.notSure.subheadline')}
                   </p>
 
                   <div className="mb-8">
-                    <div className="text-5xl md:text-6xl font-bold mb-1">
+                    <div className="text-3xl md:text-4xl lg:text-5xl font-bold mb-1">
                       {t('howItWorks.systemsAudit.price')}
                     </div>
                     <div className="text-sm text-slate-400">

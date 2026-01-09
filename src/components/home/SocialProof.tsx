@@ -43,7 +43,7 @@ const SocialProof = () => {
             {t('socialProof.headline')}
           </motion.h2>
           <motion.p
-            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+            className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
             variants={fadeInUp}
           >
             {t('socialProof.subheadline')}
@@ -52,7 +52,7 @@ const SocialProof = () => {
 
         {/* Case Studies */}
         <motion.div
-          className="grid grid-cols-1 gap-6 md:grid-cols-2"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -62,7 +62,7 @@ const SocialProof = () => {
             <motion.div key={index} variants={fadeInUp}>
               <Card className="p-6 h-full flex flex-col hover:shadow-lg transition-shadow">
                 <div className="mb-3 text-sm font-semibold text-primary">{study.client}</div>
-                <h3 className="mb-3 text-lg font-semibold">{study.title}</h3>
+                <h3 className="mb-3 text-base md:text-lg font-semibold">{study.title}</h3>
 
                 {/* Metrics */}
                 <div className="mb-4 flex-grow">
