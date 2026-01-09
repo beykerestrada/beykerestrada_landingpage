@@ -20,13 +20,13 @@ export default function ContactPage() {
           variants={fadeInUp}
         >
           <h1 className="mb-6">{t("contact.title")}</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
             {t("contact.subtitle")}
           </p>
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 gap-8 lg:grid-cols-2 max-w-4xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -37,7 +37,7 @@ export default function ContactPage() {
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                 <Mail className="h-6 w-6 text-primary" />
               </div>
-              <h2 className="mb-3 text-xl font-semibold">{t("contact.email.title")}</h2>
+              <h2 className="mb-3 text-base md:text-lg lg:text-xl font-semibold">{t("contact.email.title")}</h2>
               <p className="text-muted-foreground mb-4">
                 {t("contact.email.description")}
               </p>
@@ -52,7 +52,7 @@ export default function ContactPage() {
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                 <Clock className="h-6 w-6 text-primary" />
               </div>
-              <h2 className="mb-3 text-xl font-semibold">{t("contact.call.title")}</h2>
+              <h2 className="mb-3 text-base md:text-lg lg:text-xl font-semibold">{t("contact.call.title")}</h2>
               <p className="text-muted-foreground mb-4">
                 {t("contact.call.description")}
               </p>
@@ -74,25 +74,25 @@ export default function ContactPage() {
             <h2 className="mb-6 text-2xl">{t("contact.expectations.title")}</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="mb-2 text-lg font-semibold">{t("contact.expectations.initialResponse.title")}</h3>
+                <h3 className="mb-2 text-base md:text-lg font-semibold">{t("contact.expectations.initialResponse.title")}</h3>
                 <p className="text-muted-foreground">
                   {t("contact.expectations.initialResponse.description")}
                 </p>
               </div>
               <div>
-                <h3 className="mb-2 text-lg font-semibold">{t("contact.expectations.discoveryCall.title")}</h3>
+                <h3 className="mb-2 text-base md:text-lg font-semibold">{t("contact.expectations.discoveryCall.title")}</h3>
                 <p className="text-muted-foreground">
                   {t("contact.expectations.discoveryCall.description")}
                 </p>
               </div>
               <div>
-                <h3 className="mb-2 text-lg font-semibold">{t("contact.expectations.proposal.title")}</h3>
+                <h3 className="mb-2 text-base md:text-lg font-semibold">{t("contact.expectations.proposal.title")}</h3>
                 <p className="text-muted-foreground">
                   {t("contact.expectations.proposal.description")}
                 </p>
               </div>
               <div>
-                <h3 className="mb-2 text-lg font-semibold">{t("contact.expectations.projectStart.title")}</h3>
+                <h3 className="mb-2 text-base md:text-lg font-semibold">{t("contact.expectations.projectStart.title")}</h3>
                 <p className="text-muted-foreground">
                   {t("contact.expectations.projectStart.description")}
                 </p>
