@@ -16,7 +16,7 @@ const NotionTemplatesPage = () => {
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         {/* Back Button */}
         <Button asChild variant="ghost" className="mb-8 px-0">
-          <Link href="/#how-it-works">
+          <Link href="/#services">
             <ArrowLeft className="mr-2 h-4 w-4" />
             {t('servicePages.backToServices')}
           </Link>

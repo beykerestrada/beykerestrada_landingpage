@@ -8,11 +8,11 @@ import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
 
-const HowItWorks = () => {
+const Services = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="how-it-works" className="relative w-full py-16 md:py-24 bg-muted/30">
+    <section id="services" className="relative w-full py-16 md:py-24 bg-muted/30">
       <div className="mx-auto max-w-content px-6 lg:px-8">
         {/* Services Section */}
         <motion.div
@@ -32,7 +32,7 @@ const HowItWorks = () => {
             {t('howItWorks.subheadline')}
           </motion.p>
         </motion.div>
-        
+
 
         <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
           {/* Service 1: Custom Notion Templates */}
@@ -279,4 +279,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HowItWorks;
+export default Services;

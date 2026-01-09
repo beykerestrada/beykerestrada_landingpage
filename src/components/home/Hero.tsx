@@ -10,8 +10,8 @@ import { useTranslation } from "react-i18next";
 const Hero = () => {
   const { t } = useTranslation();
 
-  const scrollToHowItWorks = () => {
-    const element = document.getElementById('how-it-works');
+  const scrollToServices = () => {
+    const element = document.getElementById('services');
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 

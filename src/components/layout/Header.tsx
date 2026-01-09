@@ -20,7 +20,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:gap-x-8">
-          <Link href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/#services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.services')}
           </Link>
           <Link href="/how-we-work" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
@@ -64,7 +64,7 @@ const Header = () => {
         <div className="md:hidden border-t border-border bg-background">
           <div className="space-y-1 px-6 py-4">
             <Link
-              href="/#how-it-works"
+              href="/#services"
               className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
