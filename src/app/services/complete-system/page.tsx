@@ -41,12 +41,12 @@ const CompleteSystemPage = () => {
           </motion.h1>
 
           <motion.div variants={fadeInUp} className="flex items-baseline gap-4 mb-6">
-            <div className="text-5xl font-bold text-primary">
+            <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">
               {t('servicePages.completeSystem.price')}
             </div>
           </motion.div>
 
-          <motion.p variants={fadeInUp} className="text-xl text-muted-foreground mb-8 leading-relaxed">
+          <motion.p variants={fadeInUp} className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
             {t('servicePages.completeSystem.description')}
           </motion.p>
 
@@ -95,7 +95,7 @@ const CompleteSystemPage = () => {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <Card className="bg-primary/5 border-primary/20">
               <CardHeader>
-                <CardTitle className="text-lg">{t('servicePages.completeSystem.whatsIncluded.notion.title')}</CardTitle>
+                <CardTitle className="text-base md:text-lg">{t('servicePages.completeSystem.whatsIncluded.notion.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
@@ -111,7 +111,7 @@ const CompleteSystemPage = () => {
 
             <Card className="bg-primary/5 border-primary/20">
               <CardHeader>
-                <CardTitle className="text-lg">{t('servicePages.completeSystem.whatsIncluded.automation.title')}</CardTitle>
+                <CardTitle className="text-base md:text-lg">{t('servicePages.completeSystem.whatsIncluded.automation.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
@@ -128,7 +128,7 @@ const CompleteSystemPage = () => {
 
           <Card className="bg-muted/30">
             <CardHeader>
-              <CardTitle className="text-lg">{t('servicePages.completeSystem.whatsIncluded.plus.title')}</CardTitle>
+              <CardTitle className="text-base md:text-lg">{t('servicePages.completeSystem.whatsIncluded.plus.title')}</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
@@ -162,7 +162,7 @@ const CompleteSystemPage = () => {
                   </div>
                 </div>
                 <div className="flex-grow">
-                  <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                  <h3 className="text-lg md:text-xl font-semibold mb-2">{step.title}</h3>
                   <p className="text-muted-foreground">{step.description}</p>
                 </div>
               </div>
@@ -208,7 +208,7 @@ const CompleteSystemPage = () => {
           variants={fadeInUp}
         >
           <h2 className="mb-4">{t('servicePages.completeSystem.finalCta.title')}</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             {t('servicePages.completeSystem.finalCta.description')}
           </p>
           <Button asChild size="lg">
