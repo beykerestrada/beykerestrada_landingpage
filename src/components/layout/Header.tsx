@@ -65,41 +65,41 @@ const Header = () => {
           <div className="space-y-1 px-6 py-4">
             <Link
               href="/#services"
-              className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
+              className="block rounded-md px-4 py-3 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.services')}
             </Link>
             <Link
               href="/how-we-work"
-              className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
+              className="block rounded-md px-4 py-3 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.howWeWork')}
             </Link>
             <Link
               href="/case-studies"
-              className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
+              className="block rounded-md px-4 py-3 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.caseStudies')}
             </Link>
             <Link
               href="/faq"
-              className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
+              className="block rounded-md px-4 py-3 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.faq')}
             </Link>
             <Link
               href="/contact"
-              className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
+              className="block rounded-md px-4 py-3 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.contact')}
             </Link>
             <div className="pt-4">
-              <Button asChild className="w-full" size="sm">
+              <Button asChild className="w-full" size="default">
                 <Link href={t('nav.bookAuditLink')} target="_blank">
                   {t('nav.bookAudit')}
                 </Link>
