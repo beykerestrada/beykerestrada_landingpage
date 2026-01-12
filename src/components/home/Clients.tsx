@@ -71,47 +71,41 @@ const Clients = () => {
           ))}
         </motion.div>
 
-        {/* Featured Testimonials */}
+        {/* Featured Testimonial */}
         <motion.div
           className="max-w-4xl mx-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={staggerContainer}
+          variants={fadeInUp}
         >
           <h3 className="text-xl md:text-2xl font-semibold text-center mb-8">
             {t('clients.testimonials.title')}
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            {testimonials.slice(0, 2).map((testimonial, index) => (
-              <motion.div key={index} variants={fadeInUp}>
-                <Card className="p-8 md:p-12 h-full">
-                  <p className="text-sm md:text-base text-muted-foreground italic mb-6 leading-relaxed">
-                    &ldquo;{testimonial.quote}&rdquo;
-                  </p>
-                  <div className="flex flex-col">
-                    <span className="font-semibold text-foreground">
-                      {testimonial.author}
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      {testimonial.role}
-                      {testimonial.company && `, ${testimonial.company}`}
-                    </span>
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
+          <Card className="p-8 md:p-12 mb-8">
+            <p className="text-sm md:text-base text-muted-foreground italic mb-6 leading-relaxed">
+              &ldquo;{testimonials[0].quote}&rdquo;
+            </p>
+            <div className="flex flex-col">
+              <span className="font-semibold text-foreground">
+                {testimonials[0].author}
+              </span>
+              <span className="text-sm text-muted-foreground">
+                {testimonials[0].role}
+                {testimonials[0].company && `, ${testimonials[0].company}`}
+              </span>
+            </div>
+          </Card>
 
-          <motion.div variants={fadeInUp} className="text-center">
+          <div className="text-center">
             <Button asChild variant="outline">
               <Link href="/testimonials">
                 {t('clients.testimonials.viewAll')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>
