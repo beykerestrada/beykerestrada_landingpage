@@ -107,6 +107,7 @@
     ],
     "testimonials": {
       "title": "Ce Que Disent les Clients",
+      "viewAll": "Voir Tous les Témoignages",
       "items": [
         {
           "quote": "Beyker était excellent à travailler avec. Il a effectué un examen approfondi de notre configuration Notion et de nos modèles de base de données, fournissant des informations claires et des recommandations pratiques. Sa communication était professionnelle et réactive tout au long de l'engagement, et il a respecté tous les jalons du projet à temps. Son expertise en Notion et en systèmes no-code était évidente dans la qualité de son travail. Il a abordé la mission avec attention aux détails et une compréhension authentique de nos besoins organisationnels. Hautement recommandé.",
@@ -181,5 +182,15 @@
     "processLink": "Processus",
     "contactLink": "Contact",
     "copyright": "Tous droits réservés."
+  },
+  "testimonialsPage": {
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Expériences réelles d'entreprises qui ont transformé leurs opérations avec des systèmes personnalisés et l'automatisation.",
+    "cta": {
+      "title": "Prêt à Transformer Votre Entreprise?",
+      "description": "Rejoignez les entrepreneurs et équipes qui ont déjà rationalisé leurs opérations. Commencez par un Audit de Systèmes pour découvrir ce qui est possible.",
+      "button": "Réservez votre Audit de Systèmes",
+      "buttonLink": "https://cal.com/beykerestrada-consulting/systems-audit"
+    }
   }
 }
