@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
@@ -12,6 +13,7 @@ import { useTranslation } from "react-i18next";
 const Clients = () => {
   const { t } = useTranslation();
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [isHovering, setIsHovering] = useState(false);
 
   const clients = t("clients.list", { returnObjects: true }) as Array<{
     name: string;
@@ -20,6 +22,7 @@ const Clients = () => {
 
   const testimonials = t("clients.testimonials.items", { returnObjects: true }) as Array<{
     quote: string;
+    shortQuote: string;
     author: string;
     role: string;
     company: string;
@@ -31,6 +34,27 @@ const Clients = () => {
 
   const prevTestimonial = () => {
     setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  // Auto-play functionality (desktop only)
+  useEffect(() => {
+    if (isHovering) return;
+
+    const interval = setInterval(() => {
+      nextTestimonial();
+    }, 6000); // Change every 6 seconds
+
+    return () => clearInterval(interval);
+  }, [currentTestimonial, isHovering]);
+
+  // Handle drag end for mobile swipe
+  const handleDragEnd = (event: any, info: any) => {
+    const swipeThreshold = 50;
+    if (info.offset.x > swipeThreshold) {
+      prevTestimonial();
+    } else if (info.offset.x < -swipeThreshold) {
+      nextTestimonial();
+    }
   };
 
   return (
@@ -92,7 +116,12 @@ const Clients = () => {
             {t('clients.testimonials.title')}
           </h3>
 
-          <div className="relative">
+          {/* Desktop: Standard carousel with auto-play */}
+          <div
+            className="relative hidden md:block"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+          >
             <Card className="p-8 md:p-12">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -103,7 +132,7 @@ const Clients = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <p className="text-sm md:text-base text-muted-foreground italic mb-6 leading-relaxed">
-                    &ldquo;{testimonials[currentTestimonial].quote}&rdquo;
+                    &ldquo;{testimonials[currentTestimonial].shortQuote}&rdquo;
                   </p>
                   <div className="flex flex-col">
                     <span className="font-semibold text-foreground">
@@ -118,7 +147,7 @@ const Clients = () => {
               </AnimatePresence>
             </Card>
 
-            {/* Carousel Controls */}
+            {/* Desktop Carousel Controls */}
             <div className="flex items-center justify-center gap-4 mt-6">
               <Button
                 variant="outline"
@@ -154,6 +183,72 @@ const Clients = () => {
               </Button>
             </div>
           </div>
+
+          {/* Mobile: Swipeable carousel with peek effect */}
+          <div className="relative md:hidden overflow-visible">
+            <div className="relative overflow-hidden">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentTestimonial}
+                  drag="x"
+                  dragConstraints={{ left: 0, right: 0 }}
+                  dragElastic={0.2}
+                  onDragEnd={handleDragEnd}
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 0.3 }}
+                  className="cursor-grab active:cursor-grabbing"
+                >
+                  <Card className="p-6 mr-4">
+                    <p className="text-sm text-muted-foreground italic mb-4 leading-relaxed">
+                      &ldquo;{testimonials[currentTestimonial].shortQuote}&rdquo;
+                    </p>
+                    <div className="flex flex-col">
+                      <span className="font-semibold text-foreground">
+                        {testimonials[currentTestimonial].author}
+                      </span>
+                      <span className="text-sm text-muted-foreground">
+                        {testimonials[currentTestimonial].role}
+                        {testimonials[currentTestimonial].company && `, ${testimonials[currentTestimonial].company}`}
+                      </span>
+                    </div>
+                  </Card>
+                </motion.div>
+              </AnimatePresence>
+
+              {/* Peek effect - show partial next card */}
+              <div className="absolute top-0 right-0 w-16 h-full pointer-events-none">
+                <div className="h-full bg-gradient-to-l from-background via-background/50 to-transparent" />
+              </div>
+            </div>
+
+            {/* Mobile Dot Indicators */}
+            <div className="flex justify-center gap-2 mt-6">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentTestimonial(index)}
+                  className={`h-2 rounded-full transition-all ${
+                    index === currentTestimonial
+                      ? 'w-8 bg-primary'
+                      : 'w-2 bg-muted-foreground/30'
+                  }`}
+                  aria-label={`Go to testimonial ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* View All Testimonials Button */}
+          <motion.div variants={fadeInUp} className="text-center mt-8">
+            <Button asChild variant="outline" size="lg">
+              <Link href="/testimonials">
+                {t('clients.testimonials.viewAll')}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </motion.div>
         </motion.div>
       </div>
     </section>

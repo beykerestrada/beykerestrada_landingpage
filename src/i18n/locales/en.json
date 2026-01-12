@@ -264,21 +264,25 @@
     ],
     "testimonials": {
       "title": "See What My Clients Say",
+      "viewAll": "View All Testimonials",
       "items": [
         {
           "quote": "I engaged Beyker to help structure and automate several operational workflows. What stood out immediately was his ability to listen, understand the underlying pain points, and translate needs into working solutions. Beyker didn't just configure tools - he mapped out systems and processes so I could hit the ground running from day one. He's exceptionally resourceful, whether building direct integrations or finding creative workarounds when standard connections don't exist. His knowledge spans the full productivity stack: Notion, Make, N8N, and most current platforms. Beyond technical expertise, Beyker is a true partner. He takes feedback seriously, iterates quickly, and isn't satisfied until everything actually works the way you need it to. He'll invest the extra time to get processes right rather than deliver something functional but incomplete. If you're looking for someone who can integrate systems, automate workflows, and build scalable infrastructure across platforms, Beyker is the resource you need. I highly recommended him.",
+          "shortQuote": "Beyker's ability to listen and translate pain points into working solutions stood out immediately. He didn't just configure tools—he mapped out complete systems and processes so I could hit the ground running from day one. His knowledge spans the full productivity stack, and he's a true partner who isn't satisfied until everything works perfectly.",
           "author": "Vincent Socci",
           "role": "Co-President & COO",
           "company": "William Pitt Sotheby's International Realty"
         },
         {
           "quote": "I worked with Beyker on the creation and improvement of a Notion dashboard to manage my work as a coach. We started with an initial version and then evolved it into a much clearer, more functional 2.0, fully aligned with the way I work. I especially value his ability to understand real needs, propose practical improvements, and turn complex processes into simple, usable systems. Thanks to his work, I achieved greater organization, focus, and efficiency in my day-to-day work. I fully recommend him to anyone looking for well-thought-out, personalized Notion solutions.",
+          "shortQuote": "Beyker designed a Notion workspace that transformed how I run my coaching practice. What I value most is his ability to understand real needs and turn complex processes into simple, usable systems. Thanks to his work, I achieved greater organization, focus, and efficiency in my day-to-day.",
           "author": "Inge Yang",
           "role": "Life & Career Coach",
           "company": ""
         },
         {
           "quote": "It is always a pleasure to meet with fellow technology enthusiasts who have the tools to help improve workflow within an organization and who understand the needs of today's market. At Tu Naranja Digital, we are committed to innovation and continuous improvement. When we began working with Beyker, we realized that we shared these values. We are very happy with the relationship we have. He is a valuable partner who helps us achieve our goals. I would highly recommend Beyker to any company looking to improve its technology and processes.",
+          "shortQuote": "At Tu Naranja Digital, we're committed to innovation and continuous improvement. When we started working with Beyker, we realized we shared these values. He's a valuable partner who helps us achieve our goals and understand the needs of today's market.",
           "author": "Alvaro Diaz",
           "role": "CEO",
           "company": "Tu Naranja Digital"
@@ -1611,6 +1615,16 @@
     "cta": {
       "title": "Ready to Get Started?",
       "description": "Start with a $150 Systems Audit to see exactly what you need—no pressure, just clarity.",
+      "button": "Book Your Systems Audit",
+      "buttonLink": "https://cal.com/beykerestrada-consulting/systems-audit"
+    }
+  },
+  "testimonialsPage": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real experiences from businesses who transformed their operations with custom systems and automation.",
+    "cta": {
+      "title": "Ready to Transform Your Business?",
+      "description": "Join the entrepreneurs and teams who've already streamlined their operations. Start with a Systems Audit to discover what's possible.",
       "button": "Book Your Systems Audit",
       "buttonLink": "https://cal.com/beykerestrada-consulting/systems-audit"
     }
