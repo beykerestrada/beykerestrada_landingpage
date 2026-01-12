@@ -107,24 +107,35 @@
     ],
     "testimonials": {
       "title": "Ce Que Disent les Clients",
+      "viewAll": "Voir Tous les Témoignages",
       "items": [
         {
           "quote": "Beyker était excellent à travailler avec. Il a effectué un examen approfondi de notre configuration Notion et de nos modèles de base de données, fournissant des informations claires et des recommandations pratiques. Sa communication était professionnelle et réactive tout au long de l'engagement, et il a respecté tous les jalons du projet à temps. Son expertise en Notion et en systèmes no-code était évidente dans la qualité de son travail. Il a abordé la mission avec attention aux détails et une compréhension authentique de nos besoins organisationnels. Hautement recommandé.",
+          "shortQuote": "La capacité de Beyker à écouter et à traduire les points de douleur en solutions fonctionnelles s'est immédiatement démarquée. Il n'a pas seulement configuré des outils—il a cartographié des systèmes et des processus complets pour que je puisse être opérationnel dès le premier jour. Ses connaissances couvrent toute la pile de productivité, et c'est un véritable partenaire qui n'est pas satisfait tant que tout ne fonctionne pas parfaitement.",
           "author": "Vincent Socci",
           "role": "Co-Président et COO",
           "company": "William Pitt Sotheby's International Realty"
         },
         {
           "quote": "Je ne peux pas exprimer le soulagement que le système de Beyker m'a apporté. Avant, je jonglais avec tout manuellement : suivi des clients, des séances et des paiements dans des carnets. C'était accablant. Beyker a conçu un espace de travail Notion qui a simplifié tout sans perdre de fonctionnalité. L'interface épurée, les visualisations de données et la façon dont l'information est organisée ont apporté une valeur énorme à la gestion de ma pratique de coaching. Maintenant, je peux facilement voir ma charge de travail, suivre mon entonnoir de conversion et comprendre mes métriques commerciales d'un coup d'œil. Ce système a vraiment changé ma façon de travailler. Je suis tellement ravie d'avoir enfin quelque chose qui m'aide à rester organisée et efficace.",
+          "shortQuote": "Je ne peux pas exprimer le soulagement que le système de Beyker m'a apporté. Avant, je jonglais avec tout manuellement dans des carnets—c'était accablant. Il a conçu un espace de travail Notion qui a tout simplifié. L'interface épurée et l'organisation de l'information ont apporté une valeur énorme. Maintenant je peux voir ma charge de travail, suivre mon entonnoir de conversion et comprendre mes métriques d'un coup d'œil. Ce système a vraiment changé ma façon de travailler.",
           "author": "Inge Yang",
           "role": "Coach de Vie et Carrière",
           "company": ""
         },
         {
           "quote": "C'est toujours un plaisir de rencontrer des passionnés de technologie qui possèdent les outils pour améliorer le flux de travail au sein d'une organisation et qui comprennent les besoins du marché actuel. Chez Tu Naranja Digital, nous sommes engagés dans l'innovation et l'amélioration continue. Quand nous avons commencé à travailler avec Beyker, nous avons réalisé que nous partagions ces valeurs. Nous sommes très satisfaits de notre relation. Il est un partenaire précieux qui nous aide à atteindre nos objectifs. Je recommanderais vivement Beyker à toute entreprise cherchant à améliorer sa technologie et ses processus.",
+          "shortQuote": "C'est toujours un plaisir de rencontrer des professionnels passionnés de technologie qui possèdent les outils pour améliorer le flux de travail organisationnel et comprennent les besoins du marché. Quand nous avons commencé à travailler avec Beyker, nous avons réalisé que nous partagions des valeurs d'innovation et d'amélioration continue. Il est un partenaire précieux qui nous aide à atteindre nos objectifs.",
           "author": "Alvaro Diaz",
           "role": "PDG",
           "company": "Tu Naranja Digital"
+        },
+        {
+          "quote": "Travailler avec Beyker est un véritable plaisir. Peu après nous être rencontrés chez Buda.com, ses qualités humaines et professionnelles sont devenues évidentes. Il a une passion authentique pour comprendre et aider les gens, et un niveau d'engagement envers chaque projet qu'il touche qui est difficile à trouver aujourd'hui. Tout cela est complété par un caractère profondément analytique et une pensée systémique qui lui permettent de développer des outils pratiques, conçus pour résoudre des problèmes réels. De plus, il apprend toujours et ajuste sa façon de travailler en fonction des retours. Son attention aux détails donne une grande tranquillité d'esprit à l'équipe, car vous savez que les problèmes seront bien résolus. Recommander Beyker est facile. Il travaille de manière très respectueuse, sait construire à partir des idées des autres et apporte une vraie valeur au travail d'équipe.",
+          "shortQuote": "Travailler avec Beyker est un véritable plaisir. Il a une passion authentique pour comprendre et aider les gens, avec un engagement exceptionnel envers chaque projet. Son caractère analytique et sa pensée systémique lui permettent de développer des outils pratiques pour résoudre des problèmes réels. Il apprend toujours et son attention aux détails rassure l'équipe.",
+          "author": "Alberto Edery",
+          "role": "Co-fondateur",
+          "company": "Solar Research Studios"
         }
       ]
     }
@@ -181,5 +192,15 @@
     "processLink": "Processus",
     "contactLink": "Contact",
     "copyright": "Tous droits réservés."
+  },
+  "testimonialsPage": {
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Expériences réelles d'entreprises qui ont transformé leurs opérations avec des systèmes personnalisés et l'automatisation.",
+    "cta": {
+      "title": "Prêt à Transformer Votre Entreprise?",
+      "description": "Rejoignez les entrepreneurs et équipes qui ont déjà rationalisé leurs opérations. Commencez par un Audit de Systèmes pour découvrir ce qui est possible.",
+      "button": "Réservez votre Audit de Systèmes",
+      "buttonLink": "https://cal.com/beykerestrada-consulting/systems-audit"
+    }
   }
 }

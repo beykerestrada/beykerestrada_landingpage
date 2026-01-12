@@ -107,24 +107,35 @@
     ],
     "testimonials": {
       "title": "O Que os Clientes Dizem",
+      "viewAll": "Ver Todos os Depoimentos",
       "items": [
         {
           "quote": "Beyker foi excelente para trabalhar. Ele completou uma revisão completa de nossa configuração do Notion e modelos de banco de dados, fornecendo insights claros e recomendações práticas. Sua comunicação foi profissional e responsiva durante todo o engajamento, e ele cumpriu todos os marcos do projeto no prazo. Sua expertise em Notion e sistemas no-code foi evidente na qualidade de seu trabalho. Ele abordou a tarefa com atenção aos detalhes e uma compreensão genuína de nossas necessidades organizacionais. Altamente recomendado.",
+          "shortQuote": "A capacidade do Beyker de ouvir e traduzir pontos de dor em soluções funcionais se destacou imediatamente. Ele não apenas configurou ferramentas—ele mapeou sistemas e processos completos para que eu pudesse começar a funcionar desde o primeiro dia. Seu conhecimento abrange todo o stack de produtividade, e ele é um verdadeiro parceiro que não está satisfeito até que tudo funcione perfeitamente.",
           "author": "Vincent Socci",
           "role": "Co-Presidente e COO",
           "company": "William Pitt Sotheby's International Realty"
         },
         {
           "quote": "Não consigo expressar o alívio que o sistema do Beyker me trouxe. Antes, eu fazia malabarismos com tudo manualmente: rastreando clientes, sessões e pagamentos em cadernos. Era esmagador. Beyker projetou um espaço de trabalho no Notion que simplificou tudo sem perder funcionalidade. A interface limpa, as visualizações de dados e a forma como a informação é organizada agregaram um valor tremendo à forma como conduzo minha prática de coaching. Agora posso ver facilmente minha carga de trabalho, rastrear meu funil de conversão e entender minhas métricas de negócio num relance. Este sistema genuinamente mudou a forma como trabalho. Estou tão empolgada por finalmente ter algo que me ajuda a manter-me organizada e eficiente.",
+          "shortQuote": "Não consigo expressar o alívio que o sistema do Beyker me trouxe. Antes, eu fazia malabarismos com tudo manualmente em cadernos—era esmagador. Ele projetou um espaço de trabalho no Notion que simplificou tudo. A interface limpa e a organização da informação agregaram valor tremendo. Agora posso ver minha carga de trabalho, rastrear meu funil de conversão e entender minhas métricas num relance. Este sistema genuinamente mudou minha forma de trabalhar.",
           "author": "Inge Yang",
           "role": "Coach de Vida e Carreira",
           "company": ""
         },
         {
           "quote": "É sempre um prazer conhecer colegas entusiastas da tecnologia que possuem as ferramentas para ajudar a melhorar o fluxo de trabalho dentro de uma organização e que entendem as necessidades do mercado atual. Na Tu Naranja Digital, estamos comprometidos com a inovação e a melhoria contínua. Quando começamos a trabalhar com Beyker, percebemos que compartilhávamos esses valores. Estamos muito satisfeitos com o relacionamento que temos. Ele é um parceiro valioso que nos ajuda a alcançar nossos objetivos. Eu recomendaria fortemente Beyker a qualquer empresa que procura melhorar sua tecnologia e processos.",
+          "shortQuote": "É sempre um prazer conhecer profissionais apaixonados por tecnologia que possuem as ferramentas para melhorar o fluxo de trabalho organizacional e entendem as necessidades do mercado. Quando começamos a trabalhar com Beyker, percebemos que compartilhávamos valores de inovação e melhoria contínua. Ele é um parceiro valioso que nos ajuda a alcançar nossos objetivos.",
           "author": "Alvaro Diaz",
           "role": "CEO",
           "company": "Tu Naranja Digital"
+        },
+        {
+          "quote": "Trabalhar com Beyker é um verdadeiro prazer. Pouco depois de nos conhecermos na Buda.com, suas qualidades humanas e profissionais se tornaram evidentes. Ele tem uma paixão genuína por entender e ajudar as pessoas, e um nível de comprometimento com cada projeto que toca que hoje em dia é difícil de encontrar. Tudo isso é complementado por um caráter profundamente analítico e um pensamento sistêmico que lhe permitem desenvolver ferramentas práticas, pensadas para resolver problemas reais. Além disso, está sempre aprendendo e ajustando sua forma de trabalhar com base no feedback. Sua atenção aos detalhes dá muita tranquilidade à equipe, porque você sabe que os assuntos ficarão bem resolvidos. Recomendar Beyker é fácil. Ele trabalha de forma muito respeitosa, sabe construir a partir das ideias dos outros e agrega valor real ao trabalho em equipe.",
+          "shortQuote": "Trabalhar com Beyker é um verdadeiro prazer. Ele tem uma paixão genuína por entender e ajudar as pessoas, com comprometimento excepcional a cada projeto. Seu caráter analítico e pensamento sistêmico lhe permitem desenvolver ferramentas práticas para resolver problemas reais. Está sempre aprendendo e sua atenção aos detalhes dá tranquilidade à equipe.",
+          "author": "Alberto Edery",
+          "role": "Co-fundador",
+          "company": "Solar Research Studios"
         }
       ]
     }
@@ -181,5 +192,15 @@
     "processLink": "Processo",
     "contactLink": "Contato",
     "copyright": "Todos os direitos reservados."
+  },
+  "testimonialsPage": {
+    "title": "O Que Nossos Clientes Dizem",
+    "subtitle": "Experiências reais de empresas que transformaram suas operações com sistemas personalizados e automação.",
+    "cta": {
+      "title": "Pronto para Transformar Seu Negócio?",
+      "description": "Junte-se aos empreendedores e equipes que já simplificaram suas operações. Comece com uma Auditoria de Sistemas para descobrir o que é possível.",
+      "button": "Agende sua Auditoria de Sistemas",
+      "buttonLink": "https://cal.com/beykerestrada-consulting/systems-audit"
+    }
   }
 }
