@@ -25,14 +25,15 @@ export default function TestimonialsPage() {
         <motion.div
           className="mb-16"
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeInUp}
+          animate="visible"
+          variants={staggerContainer}
         >
-          <h1 className="mb-6">{t("testimonialsPage.title")}</h1>
-          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl">
+          <motion.h1 variants={fadeInUp} className="mb-6">
+            {t("testimonialsPage.title")}
+          </motion.h1>
+          <motion.p variants={fadeInUp} className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl">
             {t("testimonialsPage.subtitle")}
-          </p>
+          </motion.p>
         </motion.div>
 
         {/* Testimonials Grid */}
@@ -40,8 +41,7 @@ export default function TestimonialsPage() {
           className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16"
           variants={staggerContainer}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          animate="visible"
         >
           {testimonials.map((testimonial, index) => (
             <motion.div key={index} variants={fadeInUp}>
@@ -67,8 +67,7 @@ export default function TestimonialsPage() {
         <motion.div
           className="rounded-lg border border-border bg-card p-12 text-center"
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          animate="visible"
           variants={scaleIn}
         >
           <h2 className="mb-4">{t("testimonialsPage.cta.title")}</h2>
