@@ -264,7 +264,6 @@
     ],
     "testimonials": {
       "title": "Mira lo Que Dicen mis Clientes",
-      "viewAll": "Ver Todos los Testimonios",
       "items": [
         {
           "quote": "Contraté a Beyker para ayudarme a estructurar y automatizar varios flujos de trabajo operacionales. Lo que destacó inmediatamente fue su capacidad para escuchar, comprender los puntos de dolor subyacentes y traducir las necesidades en soluciones funcionales. Beyker no solo configuró herramientas - diseñó sistemas y procesos para que pudiera empezar a trabajar desde el primer día. Es excepcionalmente ingenioso, ya sea construyendo integraciones directas o encontrando soluciones creativas cuando las conexiones estándar no existen. Su conocimiento abarca todo el stack de productividad: Notion, Make, N8N y la mayoría de las plataformas actuales. Más allá de la experiencia técnica, Beyker es un verdadero socio. Toma en serio el feedback, itera rápidamente y no está satisfecho hasta que todo funciona realmente como lo necesitas. Invertirá el tiempo extra para hacer bien los procesos en lugar de entregar algo funcional pero incompleto. Si buscas a alguien que pueda integrar sistemas, automatizar flujos de trabajo y construir infraestructura escalable en múltiples plataformas, Beyker es el recurso que necesitas. Lo recomiendo altamente.",
@@ -1612,16 +1611,6 @@
     "cta": {
       "title": "¿Listo para Comenzar?",
       "description": "Comienza con una Auditoría de Sistemas de $150 para ver exactamente lo que necesitas—sin presión, solo claridad.",
-      "button": "Reserva tu Auditoría de Sistemas",
-      "buttonLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas"
-    }
-  },
-  "testimonialsPage": {
-    "title": "Lo Que Dicen Nuestros Clientes",
-    "subtitle": "Experiencias reales de empresas que transformaron sus operaciones con sistemas personalizados y automatización.",
-    "cta": {
-      "title": "¿Listo para Transformar tu Negocio?",
-      "description": "Únete a los emprendedores y equipos que ya optimizaron sus operaciones. Comienza con una Auditoría de Sistemas para descubrir lo que es posible.",
       "button": "Reserva tu Auditoría de Sistemas",
       "buttonLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas"
     }
