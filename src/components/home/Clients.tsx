@@ -1,17 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
 
 const Clients = () => {
   const { t } = useTranslation();
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const clients = t("clients.list", { returnObjects: true }) as Array<{
     name: string;
@@ -24,14 +23,6 @@ const Clients = () => {
     role: string;
     company: string;
   }>;
-
-  const nextTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
 
   return (
     <section className="w-full py-16 md:py-24 bg-background">
@@ -80,80 +71,47 @@ const Clients = () => {
           ))}
         </motion.div>
 
-        {/* Testimonial Carousel */}
+        {/* Featured Testimonials */}
         <motion.div
           className="max-w-4xl mx-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fadeInUp}
+          variants={staggerContainer}
         >
           <h3 className="text-xl md:text-2xl font-semibold text-center mb-8">
             {t('clients.testimonials.title')}
           </h3>
 
-          <div className="relative">
-            <Card className="p-8 md:p-12">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentTestimonial}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.3 }}
-                >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {testimonials.slice(0, 2).map((testimonial, index) => (
+              <motion.div key={index} variants={fadeInUp}>
+                <Card className="p-8 md:p-12 h-full">
                   <p className="text-sm md:text-base text-muted-foreground italic mb-6 leading-relaxed">
-                    &ldquo;{testimonials[currentTestimonial].quote}&rdquo;
+                    &ldquo;{testimonial.quote}&rdquo;
                   </p>
                   <div className="flex flex-col">
                     <span className="font-semibold text-foreground">
-                      {testimonials[currentTestimonial].author}
+                      {testimonial.author}
                     </span>
                     <span className="text-sm text-muted-foreground">
-                      {testimonials[currentTestimonial].role}
-                      {testimonials[currentTestimonial].company && `, ${testimonials[currentTestimonial].company}`}
+                      {testimonial.role}
+                      {testimonial.company && `, ${testimonial.company}`}
                     </span>
                   </div>
-                </motion.div>
-              </AnimatePresence>
-            </Card>
-
-            {/* Carousel Controls */}
-            <div className="flex items-center justify-center gap-4 mt-6">
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={prevTestimonial}
-                aria-label="Previous testimonial"
-              >
-                <ChevronLeft className="h-4 w-4" />
-              </Button>
-
-              <div className="flex gap-2">
-                {testimonials.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentTestimonial(index)}
-                    className={`h-2 rounded-full transition-all ${
-                      index === currentTestimonial
-                        ? 'w-8 bg-primary'
-                        : 'w-2 bg-muted-foreground/30'
-                    }`}
-                    aria-label={`Go to testimonial ${index + 1}`}
-                  />
-                ))}
-              </div>
-
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={nextTestimonial}
-                aria-label="Next testimonial"
-              >
-                <ChevronRight className="h-4 w-4" />
-              </Button>
-            </div>
+                </Card>
+              </motion.div>
+            ))}
           </div>
+
+          <motion.div variants={fadeInUp} className="text-center">
+            <Button asChild variant="outline">
+              <Link href="/testimonials">
+                {t('clients.testimonials.viewAll')}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </motion.div>
         </motion.div>
       </div>
     </section>
