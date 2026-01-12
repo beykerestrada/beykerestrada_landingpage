@@ -3,11 +3,10 @@
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BadgeCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, scaleIn } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
-import Masonry from "react-masonry-css";
 
 export default function TestimonialsPage() {
   const { t } = useTranslation();
@@ -19,12 +18,33 @@ export default function TestimonialsPage() {
     company: string;
   }>;
 
-  const breakpointColumns = {
-    default: 3,
-    1280: 3,
-    1024: 2,
-    768: 2,
-    640: 1
+  // Helper function to get initials from name
+  const getInitials = (name: string) => {
+    const names = name.split(' ');
+    if (names.length >= 2) {
+      return names[0][0] + names[names.length - 1][0];
+    }
+    return names[0][0];
+  };
+
+  // Subtle background colors for varied card styling
+  const accentVariants = [
+    'bg-card border-border',
+    'bg-muted/20 border-border',
+    'bg-card border-border',
+    'bg-muted/20 border-border'
+  ];
+
+  // Bento grid pattern - define which cards should be larger
+  // Pattern: large, small, small, large
+  const getBentoGridClass = (index: number) => {
+    const pattern = [
+      'md:col-span-2', // 0: large
+      'md:col-span-1', // 1: small
+      'md:col-span-1', // 2: small
+      'md:col-span-2', // 3: large
+    ];
+    return pattern[index % pattern.length];
   };
 
   return (
@@ -45,37 +65,54 @@ export default function TestimonialsPage() {
           </motion.p>
         </motion.div>
 
-        {/* Testimonials Masonry Grid */}
+        {/* Testimonials Bento Grid */}
         <motion.div
           className="mb-16"
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
         >
-          <Masonry
-            breakpointCols={breakpointColumns}
-            className="flex -ml-6 md:-ml-8 w-auto"
-            columnClassName="pl-6 md:pl-8 bg-clip-padding"
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 auto-rows-auto">
             {testimonials.map((testimonial, index) => (
-              <motion.div key={index} variants={fadeInUp} className="mb-6 md:mb-8">
-                <Card className="p-6 md:p-8 hover:shadow-md transition-shadow">
-                  <p className="text-sm md:text-base text-muted-foreground italic mb-4 leading-relaxed">
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                className={getBentoGridClass(index)}
+              >
+                <Card className={`p-6 md:p-8 h-full hover:shadow-md transition-shadow border ${accentVariants[index % accentVariants.length]}`}>
+                  {/* Avatar Circle with Initials */}
+                  <div className="mb-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <span className="text-lg font-semibold text-primary">
+                        {getInitials(testimonial.author)}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Testimonial Quote */}
+                  <p className="text-sm md:text-base text-muted-foreground italic mb-6 leading-relaxed">
                     &ldquo;{testimonial.quote}&rdquo;
                   </p>
-                  <div className="flex flex-col">
-                    <span className="font-semibold text-foreground">
-                      {testimonial.author}
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      {testimonial.role}
-                      {testimonial.company && `, ${testimonial.company}`}
-                    </span>
+
+                  {/* Author Info with Badge */}
+                  <div className="flex items-start gap-2">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-1.5 mb-1">
+                        <span className="font-semibold text-foreground">
+                          {testimonial.author}
+                        </span>
+                        <BadgeCheck className="w-4 h-4 text-primary flex-shrink-0" />
+                      </div>
+                      <span className="text-sm text-muted-foreground">
+                        {testimonial.role}
+                        {testimonial.company && `, ${testimonial.company}`}
+                      </span>
+                    </div>
                   </div>
                 </Card>
               </motion.div>
             ))}
-          </Masonry>
+          </div>
         </motion.div>
 
         {/* Final CTA */}

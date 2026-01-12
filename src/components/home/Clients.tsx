@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight, BadgeCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
@@ -27,6 +27,23 @@ const Clients = () => {
     role: string;
     company: string;
   }>;
+
+  // Helper function to get initials from name
+  const getInitials = (name: string) => {
+    const names = name.split(' ');
+    if (names.length >= 2) {
+      return names[0][0] + names[names.length - 1][0];
+    }
+    return names[0][0];
+  };
+
+  // Accent colors for varied card backgrounds
+  const accentVariants = [
+    'bg-primary/5 border-primary/20',
+    'bg-accent/5 border-accent/20',
+    'bg-card border-border',
+    'bg-muted/30 border-border'
+  ];
 
   const nextTestimonial = () => {
     setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -122,7 +139,7 @@ const Clients = () => {
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
           >
-            <Card className="p-8 md:p-12">
+            <Card className={`p-8 md:p-12 border ${accentVariants[currentTestimonial % accentVariants.length]}`}>
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentTestimonial}
@@ -131,17 +148,34 @@ const Clients = () => {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
                 >
+                  {/* Avatar Circle with Initials */}
+                  <div className="mb-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <span className="text-lg font-semibold text-primary">
+                        {getInitials(testimonials[currentTestimonial].author)}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Testimonial Quote */}
                   <p className="text-sm md:text-base text-muted-foreground italic mb-6 leading-relaxed">
                     &ldquo;{testimonials[currentTestimonial].shortQuote}&rdquo;
                   </p>
-                  <div className="flex flex-col">
-                    <span className="font-semibold text-foreground">
-                      {testimonials[currentTestimonial].author}
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      {testimonials[currentTestimonial].role}
-                      {testimonials[currentTestimonial].company && `, ${testimonials[currentTestimonial].company}`}
-                    </span>
+
+                  {/* Author Info with Badge */}
+                  <div className="flex items-start gap-2">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-1.5 mb-1">
+                        <span className="font-semibold text-foreground">
+                          {testimonials[currentTestimonial].author}
+                        </span>
+                        <BadgeCheck className="w-4 h-4 text-primary flex-shrink-0" />
+                      </div>
+                      <span className="text-sm text-muted-foreground">
+                        {testimonials[currentTestimonial].role}
+                        {testimonials[currentTestimonial].company && `, ${testimonials[currentTestimonial].company}`}
+                      </span>
+                    </div>
                   </div>
                 </motion.div>
               </AnimatePresence>
@@ -200,18 +234,35 @@ const Clients = () => {
                   transition={{ duration: 0.3 }}
                   className="cursor-grab active:cursor-grabbing"
                 >
-                  <Card className="p-6 mr-4">
+                  <Card className={`p-6 mr-4 border ${accentVariants[currentTestimonial % accentVariants.length]}`}>
+                    {/* Avatar Circle with Initials */}
+                    <div className="mb-4">
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                        <span className="text-lg font-semibold text-primary">
+                          {getInitials(testimonials[currentTestimonial].author)}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Testimonial Quote */}
                     <p className="text-sm text-muted-foreground italic mb-4 leading-relaxed">
                       &ldquo;{testimonials[currentTestimonial].shortQuote}&rdquo;
                     </p>
-                    <div className="flex flex-col">
-                      <span className="font-semibold text-foreground">
-                        {testimonials[currentTestimonial].author}
-                      </span>
-                      <span className="text-sm text-muted-foreground">
-                        {testimonials[currentTestimonial].role}
-                        {testimonials[currentTestimonial].company && `, ${testimonials[currentTestimonial].company}`}
-                      </span>
+
+                    {/* Author Info with Badge */}
+                    <div className="flex items-start gap-2">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-1.5 mb-1">
+                          <span className="font-semibold text-foreground">
+                            {testimonials[currentTestimonial].author}
+                          </span>
+                          <BadgeCheck className="w-4 h-4 text-primary flex-shrink-0" />
+                        </div>
+                        <span className="text-sm text-muted-foreground">
+                          {testimonials[currentTestimonial].role}
+                          {testimonials[currentTestimonial].company && `, ${testimonials[currentTestimonial].company}`}
+                        </span>
+                      </div>
                     </div>
                   </Card>
                 </motion.div>
