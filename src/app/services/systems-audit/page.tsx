@@ -212,7 +212,7 @@ const SystemsAuditPage = () => {
           <h2 className="mb-6">{t('servicePages.systemsAudit.testimonial.title')}</h2>
           <Card className="border-primary/20 bg-primary/5">
             <CardContent className="p-8">
-              <p className="text-base md:text-lg italic mb-4 text-muted-foreground leading-relaxed">
+              <p className="text-sm md:text-base italic mb-4 text-muted-foreground leading-relaxed">
                 "{t('servicePages.systemsAudit.testimonial.text')}"
               </p>
               <div className="text-sm font-semibold">

@@ -102,7 +102,7 @@ const Clients = () => {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <p className="text-base md:text-lg text-muted-foreground italic mb-6 leading-relaxed">
+                  <p className="text-sm md:text-base text-muted-foreground italic mb-6 leading-relaxed">
                     &ldquo;{testimonials[currentTestimonial].quote}&rdquo;
                   </p>
                   <div className="flex flex-col">
