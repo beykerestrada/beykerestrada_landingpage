@@ -15,8 +15,8 @@
     "cta": "Reserva tu Auditoría"
   },
   "hero": {
-    "headline": "Soluciones Personalizadas en Notion y Automatización de Flujos de Trabajo",
-    "subheadline": "Templates personalizados, automatización inteligente y sistemas completos para equipos en crecimiento.",
+    "headline": "Deja de Perder Más de 10 Horas por Semana en Trabajo Manual",
+    "subheadline": "Construyo espacios de trabajo en Notion + automatización n8n que eliminan el trabajo tedioso para que tu equipo pueda enfocarse en el crecimiento, no en la entrada de datos.",
     "valueProposition": "Ayudo a startups y agencias a optimizar sus operaciones con templates Notion personalizados, automatización n8n y sistemas empresariales completos que se adaptan a tu forma de trabajar—no al revés.",
     "cta": {
       "primary": "Reservar Auditoría de $150",
@@ -365,6 +365,7 @@
     "caseStudies": "Casos de Estudio",
     "faq": "Preguntas Frecuentes",
     "contact": "Contacto",
+    "privacy": "Política de Privacidad",
     "rights": "Todos los derechos reservados."
   },
   "notFound": {
@@ -1635,5 +1636,174 @@
       "button": "Reserva tu Auditoría de Sistemas",
       "buttonLink": "https://cal.com/beykerestrada-consulting/auditoria-de-sistemas"
     }
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 16 de enero de 2026",
+    "sections": [
+      {
+        "heading": "Introducción",
+        "content": "Beyker Estrada (\"nosotros\", \"nuestro\" o \"nos\") opera beykerestrada.com (el \"Sitio Web\"). Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando visita nuestro Sitio Web o utiliza nuestros servicios.\n\nAl utilizar nuestro Sitio Web o servicios, usted acepta la recopilación y el uso de información de acuerdo con esta política."
+      },
+      {
+        "heading": "Información que Recopilamos",
+        "subsections": [
+          {
+            "subheading": "Información Personal que Usted Proporciona",
+            "content": "Recopilamos información que usted proporciona voluntariamente cuando:\n\n• Reserva una consulta a través de Cal.com\n• Envía un formulario de solicitud de servicio a través de Tally\n• Se suscribe a nuestro boletín o descarga recursos\n• Nos contacta por correo electrónico o formularios de contacto\n• Contrata nuestros servicios de plantillas Notion, automatización de flujos de trabajo o sistemas completos\n\nEsta información puede incluir:\n\n• Nombre completo\n• Dirección de correo electrónico\n• Nombre de la empresa y cargo\n• Número de teléfono (opcional)\n• Detalles del proyecto e información empresarial\n• Información de pago (procesada a través de PayPal)\n• Cualquier otra información que elija proporcionar"
+          },
+          {
+            "subheading": "Información Recopilada Automáticamente",
+            "content": "Cuando visita nuestro Sitio Web, recopilamos automáticamente cierta información sobre su dispositivo, incluyendo:\n\n• Dirección IP\n• Tipo y versión del navegador\n• Sistema operativo\n• URLs de referencia\n• Páginas visitadas y tiempo pasado en las páginas\n• Tipo de dispositivo (escritorio, móvil, tableta)\n\nUtilizamos cookies y tecnologías de seguimiento similares para recopilar esta información. Puede configurar su navegador para rechazar todas las cookies o para indicar cuándo se envía una cookie."
+          }
+        ]
+      },
+      {
+        "heading": "Cómo Usamos su Información",
+        "content": "Utilizamos la información recopilada para los siguientes propósitos:",
+        "list": [
+          {
+            "title": "Prestación de Servicios",
+            "items": [
+              "Proporcionar, operar y mantener nuestros servicios de consultoría",
+              "Procesar sus solicitudes de servicio e implementaciones de proyectos",
+              "Comunicarnos con usted sobre sus proyectos",
+              "Entregar plantillas Notion, flujos de trabajo de automatización y sistemas completos",
+              "Proporcionar soporte al cliente"
+            ]
+          },
+          {
+            "title": "Operaciones Comerciales",
+            "items": [
+              "Procesar pagos a través de PayPal",
+              "Enviarle recibos y facturas",
+              "Programar consultas a través de Cal.com",
+              "Gestionar cronogramas y entregables del proyecto"
+            ]
+          },
+          {
+            "title": "Marketing y Comunicaciones",
+            "items": [
+              "Enviarle boletines, consejos de automatización y contenido educativo (con su consentimiento)",
+              "Responder a sus consultas y solicitudes",
+              "Enviarle actualizaciones sobre nuestros servicios",
+              "Notificarle sobre cambios en nuestros servicios o políticas"
+            ]
+          },
+          {
+            "title": "Análisis y Mejora",
+            "items": [
+              "Comprender cómo los visitantes utilizan nuestro Sitio Web",
+              "Mejorar nuestro Sitio Web y servicios",
+              "Desarrollar nuevas funciones y ofertas",
+              "Monitorear y analizar patrones de uso"
+            ]
+          }
+        ],
+        "note": "Puede darse de baja de los correos electrónicos de marketing en cualquier momento haciendo clic en el enlace \"cancelar suscripción\" en cualquier correo electrónico o contactándonos en unsubscribe@beykerestrada.com."
+      },
+      {
+        "heading": "Cómo Compartimos su Información",
+        "intro": "No vendemos, comercializamos ni alquilamos su información personal a terceros. Podemos compartir su información en las siguientes circunstancias:",
+        "subsections": [
+          {
+            "subheading": "Proveedores de Servicios",
+            "content": "Trabajamos con proveedores de servicios externos que nos ayudan a operar nuestro Sitio Web y brindar nuestros servicios:\n\n• Cal.com - Programación de citas\n• Tally - Envío de formularios y calificación de clientes potenciales\n• PayPal - Procesamiento de pagos\n• ConvertKit/Mailchimp - Marketing por correo electrónico (si se suscribe)\n• Notion - Gestión de proyectos y entrega\n• Google Analytics - Análisis del sitio web (anonimizado)\n\nEstos proveedores tienen acceso a su información personal solo para realizar tareas específicas en nuestro nombre y están obligados a proteger su información."
+          },
+          {
+            "subheading": "Requisitos Legales",
+            "content": "Podemos divulgar su información si así lo exige la ley o en respuesta a solicitudes válidas de las autoridades públicas (por ejemplo, órdenes judiciales, agencias gubernamentales)."
+          },
+          {
+            "subheading": "Transferencias Comerciales",
+            "content": "En caso de fusión, adquisición o venta de activos, su información puede transferirse. Proporcionaremos aviso antes de que su información se transfiera y esté sujeta a una política de privacidad diferente."
+          }
+        ]
+      },
+      {
+        "heading": "Seguridad de los Datos",
+        "content": "Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger su información personal contra el acceso no autorizado, alteración, divulgación o destrucción.\n\nSin embargo, ningún método de transmisión por Internet o almacenamiento electrónico es 100% seguro. Si bien nos esforzamos por utilizar medios comercialmente aceptables para proteger su información, no podemos garantizar seguridad absoluta."
+      },
+      {
+        "heading": "Retención de Datos",
+        "content": "Conservamos su información personal solo durante el tiempo necesario para cumplir con los propósitos descritos en esta Política de Privacidad, a menos que la ley requiera un período de retención más largo.",
+        "list": [
+          "Información de contacto: Retenida mientras sea cliente o suscriptor",
+          "Datos del proyecto: Retenidos durante la duración del proyecto más 2 años como referencia",
+          "Registros de pago: Retenidos durante 7 años con fines fiscales y contables",
+          "Datos analíticos: Anonimizados y retenidos indefinidamente"
+        ],
+        "note": "Puede solicitar la eliminación de su información personal en cualquier momento contactándonos en compliance@beykerestrada.com."
+      },
+      {
+        "heading": "Sus Derechos",
+        "intro": "Dependiendo de su ubicación, puede tener los siguientes derechos con respecto a su información personal:",
+        "rights": [
+          {
+            "title": "Acceso y Portabilidad",
+            "items": [
+              "Solicitar acceso a la información personal que tenemos sobre usted",
+              "Recibir una copia de su información en un formato estructurado y legible por máquina"
+            ]
+          },
+          {
+            "title": "Corrección y Eliminación",
+            "items": [
+              "Solicitar la corrección de información inexacta o incompleta",
+              "Solicitar la eliminación de su información personal"
+            ]
+          },
+          {
+            "title": "Objeción y Restricción",
+            "items": [
+              "Objetar el procesamiento de su información personal",
+              "Solicitar restricción del procesamiento en ciertas circunstancias"
+            ]
+          },
+          {
+            "title": "Retiro del Consentimiento",
+            "items": [
+              "Retirar su consentimiento para las comunicaciones de marketing en cualquier momento"
+            ]
+          }
+        ],
+        "note": "Para ejercer cualquiera de estos derechos, contáctenos en beyker@beykerestrada.com."
+      },
+      {
+        "heading": "Política de Cookies",
+        "content": "Nuestro Sitio Web utiliza cookies para mejorar su experiencia de navegación. Las cookies son pequeños archivos de texto almacenados en su dispositivo.",
+        "subsections": [
+          {
+            "subheading": "Tipos de Cookies que Usamos",
+            "list": [
+              "Cookies Esenciales: Requeridas para que el Sitio Web funcione correctamente",
+              "Cookies Analíticas: Nos ayudan a comprender cómo los visitantes usan nuestro Sitio Web",
+              "Cookies Funcionales: Recuerdan sus preferencias y configuraciones"
+            ]
+          }
+        ],
+        "note": "Puede controlar las cookies a través de la configuración de su navegador. Tenga en cuenta que deshabilitar ciertas cookies puede afectar la funcionalidad del Sitio Web."
+      },
+      {
+        "heading": "Enlaces de Terceros",
+        "content": "Nuestro Sitio Web puede contener enlaces a sitios web de terceros (por ejemplo, LinkedIn, YouTube, Upwork, Notion). No somos responsables de las prácticas de privacidad de estos sitios externos. Le recomendamos que revise sus políticas de privacidad."
+      },
+      {
+        "heading": "Privacidad de los Niños",
+        "content": "Nuestros servicios no están dirigidos a personas menores de 18 años. No recopilamos intencionalmente información personal de niños. Si cree que hemos recopilado información de un niño, contáctenos inmediatamente."
+      },
+      {
+        "heading": "Transferencias Internacionales de Datos",
+        "content": "Operamos desde Chile. Si accede a nuestro Sitio Web desde fuera de Chile, tenga en cuenta que su información puede transferirse, almacenarse y procesarse en Chile u otros países donde operan nuestros proveedores de servicios.\n\nAl utilizar nuestros servicios, usted acepta la transferencia de su información a países fuera de su país de residencia, que pueden tener leyes de protección de datos diferentes."
+      },
+      {
+        "heading": "Cambios a esta Política de Privacidad",
+        "content": "Podemos actualizar esta Política de Privacidad de vez en cuando. Le notificaremos sobre cualquier cambio mediante:\n\n• La publicación de la nueva Política de Privacidad en esta página\n• La actualización de la fecha de \"Última actualización\"\n• El envío de una notificación por correo electrónico (para cambios materiales)\n\nLe recomendamos que revise esta Política de Privacidad periódicamente."
+      },
+      {
+        "heading": "Información de Contacto",
+        "content": "Si tiene preguntas o inquietudes sobre esta Política de Privacidad o nuestras prácticas de datos, contáctenos:\n\nBeyker Estrada\nEmail: contact@beykerestrada.com"
+      }
+    ]
   }
 }

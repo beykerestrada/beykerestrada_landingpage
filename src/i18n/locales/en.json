@@ -15,8 +15,8 @@
     "cta": "Book Your Audit"
   },
   "hero": {
-    "headline": "Custom Notion Solutions & Workflow Automation",
-    "subheadline": "Tailored templates, smart automation, and complete systems for growing teams.",
+    "headline": "Stop Losing 10+ Hours Per Week to Manual Work",
+    "subheadline": "I build Notion workspaces + n8n automation that eliminate busywork so your team can focus on growth, not data entry.",
     "valueProposition": "I help startups and agencies streamline operations with custom Notion templates, n8n automation, and complete business systems that fit your workflow—not the other way around.",
     "cta": {
       "primary": "Book $150 Systems Audit",
@@ -365,6 +365,7 @@
     "caseStudies": "Case Studies",
     "faq": "FAQ",
     "contact": "Contact",
+    "privacy": "Privacy Policy",
     "rights": "All rights reserved."
   },
   "notFound": {
@@ -1635,5 +1636,174 @@
       "button": "Book Your Systems Audit",
       "buttonLink": "https://cal.com/beykerestrada-consulting/systems-audit"
     }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: January 16, 2026",
+    "sections": [
+      {
+        "heading": "Introduction",
+        "content": "Beyker Estrada (\"we,\" \"our,\" or \"us\") operates beykerestrada.com (the \"Website\"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our Website or use our services.\n\nBy using our Website or services, you agree to the collection and use of information in accordance with this policy."
+      },
+      {
+        "heading": "Information We Collect",
+        "subsections": [
+          {
+            "subheading": "Personal Information You Provide",
+            "content": "We collect information that you voluntarily provide to us when you:\n\n• Book a consultation via Cal.com\n• Submit a service request form via Tally\n• Subscribe to our newsletter or download resources\n• Contact us via email or contact forms\n• Engage our services for Notion templates, workflow automation, or complete systems\n\nThis information may include:\n\n• Full name\n• Email address\n• Company name and role\n• Phone number (optional)\n• Project details and business information\n• Payment information (processed through PayPal)\n• Any other information you choose to provide"
+          },
+          {
+            "subheading": "Information Automatically Collected",
+            "content": "When you visit our Website, we automatically collect certain information about your device, including:\n\n• IP address\n• Browser type and version\n• Operating system\n• Referring URLs\n• Pages viewed and time spent on pages\n• Device type (desktop, mobile, tablet)\n\nWe use cookies and similar tracking technologies to collect this information. You can instruct your browser to refuse all cookies or indicate when a cookie is being sent."
+          }
+        ]
+      },
+      {
+        "heading": "How We Use Your Information",
+        "content": "We use the collected information for the following purposes:",
+        "list": [
+          {
+            "title": "Service Delivery",
+            "items": [
+              "Provide, operate, and maintain our consulting services",
+              "Process your service requests and project implementations",
+              "Communicate with you about your projects",
+              "Deliver Notion templates, automation workflows, and complete systems",
+              "Provide customer support"
+            ]
+          },
+          {
+            "title": "Business Operations",
+            "items": [
+              "Process payments via PayPal",
+              "Send you receipts and invoices",
+              "Schedule consultations via Cal.com",
+              "Manage project timelines and deliverables"
+            ]
+          },
+          {
+            "title": "Marketing and Communications",
+            "items": [
+              "Send you newsletters, automation tips, and educational content (with your consent)",
+              "Respond to your inquiries and requests",
+              "Send you updates about our services",
+              "Notify you about changes to our services or policies"
+            ]
+          },
+          {
+            "title": "Analytics and Improvement",
+            "items": [
+              "Understand how visitors use our Website",
+              "Improve our Website and services",
+              "Develop new features and offerings",
+              "Monitor and analyze usage patterns"
+            ]
+          }
+        ],
+        "note": "You can unsubscribe from marketing emails at any time by clicking the \"unsubscribe\" link in any email or by contacting us at unsubscribe@beykerestrada.com."
+      },
+      {
+        "heading": "How We Share Your Information",
+        "intro": "We do not sell, trade, or rent your personal information to third parties. We may share your information in the following circumstances:",
+        "subsections": [
+          {
+            "subheading": "Service Providers",
+            "content": "We work with third-party service providers who assist us in operating our Website and delivering our services:\n\n• Cal.com - Appointment scheduling\n• Tally - Form submissions and lead qualification\n• PayPal - Payment processing\n• ConvertKit/Mailchimp - Email marketing (if you subscribe)\n• Notion - Project management and delivery\n• Google Analytics - Website analytics (anonymized)\n\nThese providers have access to your personal information only to perform specific tasks on our behalf and are obligated to protect your information."
+          },
+          {
+            "subheading": "Legal Requirements",
+            "content": "We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., court orders, government agencies)."
+          },
+          {
+            "subheading": "Business Transfers",
+            "content": "In the event of a merger, acquisition, or sale of assets, your information may be transferred. We will provide notice before your information is transferred and becomes subject to a different privacy policy."
+          }
+        ]
+      },
+      {
+        "heading": "Data Security",
+        "content": "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.\n\nHowever, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee absolute security."
+      },
+      {
+        "heading": "Data Retention",
+        "content": "We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law.",
+        "list": [
+          "Contact information: Retained while you remain a client or subscriber",
+          "Project data: Retained for the duration of the project plus 2 years for reference",
+          "Payment records: Retained for 7 years for tax and accounting purposes",
+          "Analytics data: Anonymized and retained indefinitely"
+        ],
+        "note": "You can request deletion of your personal information at any time by contacting us at compliance@beykerestrada.com."
+      },
+      {
+        "heading": "Your Rights",
+        "intro": "Depending on your location, you may have the following rights regarding your personal information:",
+        "rights": [
+          {
+            "title": "Access and Portability",
+            "items": [
+              "Request access to the personal information we hold about you",
+              "Receive a copy of your information in a structured, machine-readable format"
+            ]
+          },
+          {
+            "title": "Correction and Deletion",
+            "items": [
+              "Request correction of inaccurate or incomplete information",
+              "Request deletion of your personal information"
+            ]
+          },
+          {
+            "title": "Objection and Restriction",
+            "items": [
+              "Object to the processing of your personal information",
+              "Request restriction of processing in certain circumstances"
+            ]
+          },
+          {
+            "title": "Withdrawal of Consent",
+            "items": [
+              "Withdraw your consent to marketing communications at any time"
+            ]
+          }
+        ],
+        "note": "To exercise any of these rights, please contact us at beyker@beykerestrada.com."
+      },
+      {
+        "heading": "Cookies Policy",
+        "content": "Our Website uses cookies to enhance your browsing experience. Cookies are small text files stored on your device.",
+        "subsections": [
+          {
+            "subheading": "Types of Cookies We Use",
+            "list": [
+              "Essential Cookies: Required for the Website to function properly",
+              "Analytics Cookies: Help us understand how visitors use our Website",
+              "Functional Cookies: Remember your preferences and settings"
+            ]
+          }
+        ],
+        "note": "You can control cookies through your browser settings. Note that disabling certain cookies may affect Website functionality."
+      },
+      {
+        "heading": "Third-Party Links",
+        "content": "Our Website may contain links to third-party websites (e.g., LinkedIn, YouTube, Upwork, Notion). We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies."
+      },
+      {
+        "heading": "Children's Privacy",
+        "content": "Our services are not directed to individuals under 18 years of age. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately."
+      },
+      {
+        "heading": "International Data Transfers",
+        "content": "We operate from Chile. If you are accessing our Website from outside Chile, please be aware that your information may be transferred to, stored, and processed in Chile or other countries where our service providers operate.\n\nBy using our services, you consent to the transfer of your information to countries outside your country of residence, which may have different data protection laws."
+      },
+      {
+        "heading": "Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by:\n\n• Posting the new Privacy Policy on this page\n• Updating the \"Last Updated\" date\n• Sending you an email notification (for material changes)\n\nWe encourage you to review this Privacy Policy periodically."
+      },
+      {
+        "heading": "Contact Information",
+        "content": "If you have questions or concerns about this Privacy Policy or our data practices, please contact us:\n\nBeyker Estrada\nEmail: contact@beykerestrada.com"
+      }
+    ]
   }
 }

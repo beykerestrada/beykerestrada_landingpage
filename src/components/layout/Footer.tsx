@@ -66,6 +66,11 @@ const Footer = () => {
                   {t('footer.contact')}
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy" className="hover:text-foreground transition-colors">
+                  {t('footer.privacy')}
+                </Link>
+              </li>
             </ul>
           </div>
 
