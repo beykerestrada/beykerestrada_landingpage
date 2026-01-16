@@ -34,18 +34,10 @@ const Hero = () => {
 
           {/* Subheadline */}
           <motion.p
-            className="text-xl sm:text-2xl md:text-3xl font-medium text-muted-foreground mb-6"
-            variants={fadeInUp}
-          >
-            {t('hero.subheadline')}
-          </motion.p>
-
-          {/* Value Proposition */}
-          <motion.p
             className="text-base md:text-lg lg:text-xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto"
             variants={fadeInUp}
           >
-            {t('hero.valueProposition')}
+            {t('hero.subheadline')}
           </motion.p>
 
           {/* CTA */}
