@@ -29,12 +29,6 @@ const Header = () => {
           <Link href="/case-studies" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.caseStudies')}
           </Link>
-          <Link href="/faq" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            {t('nav.faq')}
-          </Link>
-          <Link href="/contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            {t('nav.contact')}
-          </Link>
         </div>
 
         <div className="hidden md:flex md:items-center md:gap-x-2">
@@ -83,20 +77,6 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.caseStudies')}
-            </Link>
-            <Link
-              href="/faq"
-              className="block rounded-md px-4 py-3 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {t('nav.faq')}
-            </Link>
-            <Link
-              href="/contact"
-              className="block rounded-md px-4 py-3 text-base font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {t('nav.contact')}
             </Link>
             <div className="pt-4">
               <Button asChild className="w-full" size="default">
