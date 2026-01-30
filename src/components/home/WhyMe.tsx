@@ -28,16 +28,16 @@ const WhyMe = () => {
   ];
 
   return (
-    <section id="why-me" className="w-full py-16 md:py-24 bg-background">
+    <section id="why-me" className="w-full py-12 md:py-20 lg:py-24 bg-background">
       <div className="mx-auto max-w-content px-6 lg:px-8">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold" variants={fadeInUp}>
+          <motion.h2 className="mb-3 md:mb-4 text-3xl md:text-4xl lg:text-5xl font-bold" variants={fadeInUp}>
             {t('whyMe.headline')}
           </motion.h2>
           <motion.p
@@ -48,7 +48,7 @@ const WhyMe = () => {
           </motion.p>
         </motion.div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto mb-16">
+        <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto mb-10 md:mb-16">
           {differentiators.map((item, index) => (
             <motion.div
               key={index}
@@ -58,11 +58,11 @@ const WhyMe = () => {
               viewport={{ once: true }}
             >
               <Card className="h-full bg-white shadow-md hover:shadow-lg transition-shadow rounded-2xl border border-border">
-                <CardContent className="p-8 md:p-10">
-                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
-                    <item.icon className="h-7 w-7 text-primary" />
+                <CardContent className="p-6 md:p-8 lg:p-10">
+                  <div className="mb-4 md:mb-6 flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-full bg-primary/10">
+                    <item.icon className="h-6 w-6 md:h-7 md:w-7 text-primary" />
                   </div>
-                  <h3 className="mb-4 text-xl md:text-2xl font-bold">{item.title}</h3>
+                  <h3 className="mb-3 md:mb-4 text-lg md:text-xl lg:text-2xl font-bold">{item.title}</h3>
                   <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
                     {item.description}
                   </p>
@@ -80,28 +80,28 @@ const WhyMe = () => {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 text-center">
             <div>
-              <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2">
+              <div className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary mb-1 md:mb-2">
                 {t('whyMe.credibility.systems.value')}
               </div>
-              <div className="text-sm md:text-base text-muted-foreground">
+              <div className="text-xs md:text-sm lg:text-base text-muted-foreground">
                 {t('whyMe.credibility.systems.label')}
               </div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2">
+              <div className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary mb-1 md:mb-2">
                 {t('whyMe.credibility.experience.value')}
               </div>
-              <div className="text-sm md:text-base text-muted-foreground">
+              <div className="text-xs md:text-sm lg:text-base text-muted-foreground">
                 {t('whyMe.credibility.experience.label')}
               </div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2">
+              <div className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary mb-1 md:mb-2">
                 {t('whyMe.credibility.certified.value')}
               </div>
-              <div className="text-sm md:text-base text-muted-foreground">
+              <div className="text-xs md:text-sm lg:text-base text-muted-foreground">
                 {t('whyMe.credibility.certified.label')}
               </div>
             </div>
