@@ -88,7 +88,7 @@ const Clients = () => {
             variants={fadeInUp}
           >
             <p className="text-xs md:text-sm font-medium text-muted-foreground uppercase tracking-wider">
-              Trusted by Industry Leaders and Entrepreneurs
+              {t('clients.title')}
             </p>
           </motion.div>
 
@@ -129,13 +129,13 @@ const Clients = () => {
           variants={staggerContainer}
         >
           <motion.h2 className="mb-4" variants={fadeInUp}>
-            What My Clients Say
+            {t('clients.testimonials.title')}
           </motion.h2>
           <motion.p
             className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
             variants={fadeInUp}
           >
-            Organizations that transformed their operations with custom systems and automation.
+            {t('clients.subtitle')}
           </motion.p>
         </motion.div>
 
