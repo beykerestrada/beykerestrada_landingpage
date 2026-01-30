@@ -8,27 +8,27 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 99%;
-    --foreground: 220 13% 13%;
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 13% 13%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 13%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Primary: Professional blue for main actions */
-    --primary: 217 91% 60%;
+    /* Primary: Bright blue like reference */
+    --primary: 226 100% 68%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 9% 97%;
-    --secondary-foreground: 220 13% 18%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 220 9% 97%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    /* Accent: Success green for CTAs */
-    --accent: 142 71% 45%;
+    /* Accent: Same bright blue */
+    --accent: 226 100% 68%;
     --accent-foreground: 0 0% 100%;
 
     /* Success color for trust signals */
@@ -38,32 +38,25 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 220 13% 18%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 226 100% 68%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens for Notion-like design */
+    /* Custom tokens */
     --content-width: 1200px;
     --section-spacing: 6rem;
-    --card-hover: 220 9% 95%;
+    --card-hover: 0 0% 96%;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 226 100% 68%;
   }
 
   .dark {
@@ -136,5 +129,12 @@ All colors MUST be HSL.
 
   p {
     @apply leading-relaxed;
+  }
+}
+
+@layer utilities {
+  /* Simple utilities - no gradients */
+  .text-balance {
+    text-wrap: balance;
   }
 }

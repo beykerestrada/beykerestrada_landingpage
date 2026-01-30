@@ -71,7 +71,7 @@ const SystemsAuditPage = () => {
           variants={fadeInUp}
         >
           <h2 className="mb-6">{t('servicePages.systemsAudit.whoIsThisFor.title')}</h2>
-          <Card className="bg-muted/30">
+          <Card className="bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
             <CardContent className="p-8">
               <ul className="space-y-4">
                 {(t('servicePages.systemsAudit.whoIsThisFor.points', { returnObjects: true }) as string[]).map((point, index) => (
@@ -100,7 +100,7 @@ const SystemsAuditPage = () => {
           <div className="grid gap-6">
             {(t('servicePages.systemsAudit.whatYouGet.items', { returnObjects: true }) as any[]).map((item, index) => (
               <motion.div key={index} variants={fadeInUp}>
-                <Card className="hover:shadow-md transition-shadow">
+                <Card className="bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
                   <CardHeader>
                     <CardTitle className="text-base md:text-lg flex items-center gap-3">
                       <div className="p-2 bg-primary/10 rounded-lg">
@@ -163,7 +163,7 @@ const SystemsAuditPage = () => {
           variants={fadeInUp}
         >
           <h2 className="mb-6">{t('servicePages.systemsAudit.whatHappensAfter.title')}</h2>
-          <Card className="bg-muted/30 border-primary/20">
+          <Card className="bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
             <CardContent className="p-8">
               <p className="text-muted-foreground mb-6">
                 {t('servicePages.systemsAudit.whatHappensAfter.description')}
@@ -191,7 +191,7 @@ const SystemsAuditPage = () => {
           <h2 className="mb-8">{t('servicePages.systemsAudit.faq.title')}</h2>
           <div className="space-y-6">
             {(t('servicePages.systemsAudit.faq.items', { returnObjects: true }) as any[]).map((item, index) => (
-              <Card key={index}>
+              <Card key={index} className="bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
                 <CardContent className="p-6">
                   <h3 className="font-semibold mb-2">{item.question}</h3>
                   <p className="text-muted-foreground">{item.answer}</p>

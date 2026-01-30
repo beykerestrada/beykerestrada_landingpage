@@ -69,7 +69,7 @@ const CompleteSystemPage = () => {
           variants={fadeInUp}
         >
           <h2 className="mb-6">{t('servicePages.completeSystem.whoIsThisFor.title')}</h2>
-          <Card className="bg-muted/30 border-primary/20">
+          <Card className="bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
             <CardContent className="p-8">
               <ul className="space-y-4">
                 {(t('servicePages.completeSystem.whoIsThisFor.points', { returnObjects: true }) as string[]).map((point, index) => (
@@ -126,7 +126,7 @@ const CompleteSystemPage = () => {
             </Card>
           </div>
 
-          <Card className="bg-muted/30">
+          <Card className="bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
             <CardHeader>
               <CardTitle className="text-base md:text-lg">{t('servicePages.completeSystem.whatsIncluded.plus.title')}</CardTitle>
             </CardHeader>
@@ -181,7 +181,7 @@ const CompleteSystemPage = () => {
           <h2 className="mb-8">{t('servicePages.completeSystem.bestValue.title')}</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {(t('servicePages.completeSystem.bestValue.points', { returnObjects: true }) as any[]).map((point, index) => (
-              <Card key={index} className="bg-muted/30">
+              <Card key={index} className="bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="p-2 bg-primary/10 rounded-lg">
