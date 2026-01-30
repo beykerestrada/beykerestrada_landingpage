@@ -40,8 +40,7 @@ const Hero = () => {
             className="mb-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight"
             variants={fadeInUp}
           >
-            Stop Losing <span className="text-primary">10+ Hours Per Week</span>{" "}
-            to Manual Work
+            {t('hero.headline')}
           </motion.h1>
 
           {/* Subheadline */}

@@ -270,7 +270,7 @@ const Services = () => {
                 {/* Right side - Features */}
                 <div>
                   <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-slate-400">
-                    What you get:
+                    {t('howItWorks.systemsAudit.whatYouGetLabel')}
                   </h4>
                   <ul className="space-y-3">
                     {(t('howItWorks.systemsAudit.features', { returnObjects: true }) as string[]).map((item: string, index: number) => (
