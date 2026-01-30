@@ -27,12 +27,12 @@ export default function TestimonialsPage() {
     return names[0][0];
   };
 
-  // Subtle background colors for varied card styling
+  // Clean white card style with rounded corners
   const accentVariants = [
-    'bg-card border-border',
-    'bg-muted/20 border-border',
-    'bg-card border-border',
-    'bg-muted/20 border-border'
+    'bg-white border-border shadow-sm rounded-xl',
+    'bg-white border-border shadow-sm rounded-xl',
+    'bg-white border-border shadow-sm rounded-xl',
+    'bg-white border-border shadow-sm rounded-xl'
   ];
 
   // Bento grid pattern - define which cards should be larger

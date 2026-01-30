@@ -50,7 +50,7 @@ const IngeYang = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <Card className="p-8 bg-muted/30">
+            <Card className="p-8 bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
               <h2 className="mb-4 text-xl">{t('caseStudyDetail.keyMetrics')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -160,7 +160,7 @@ const IngeYang = () => {
           >
             <h2 className="mb-4">{t('caseStudyDetail.beforeAfter')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="p-6">
+              <Card className="p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
                 <h3 className="mb-3 text-lg font-semibold">{t('caseStudyDetail.before')}</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   {content.before.map((item: string, index: number) => (
@@ -168,7 +168,7 @@ const IngeYang = () => {
                   ))}
                 </ul>
               </Card>
-              <Card className="p-6">
+              <Card className="p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
                 <h3 className="mb-3 text-lg font-semibold">{t('caseStudyDetail.after')}</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   {content.after.map((item: string, index: number) => (

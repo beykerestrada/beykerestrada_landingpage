@@ -62,7 +62,7 @@ const WorkflowAutomationPage = () => {
           variants={fadeInUp}
         >
           <h2 className="mb-6">{t('servicePages.workflowAutomation.whoIsThisFor.title')}</h2>
-          <Card className="bg-muted/30">
+          <Card className="bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
             <CardContent className="p-8">
               <ul className="space-y-4">
                 {(t('servicePages.workflowAutomation.whoIsThisFor.points', { returnObjects: true }) as string[]).map((point, index) => (
@@ -91,7 +91,7 @@ const WorkflowAutomationPage = () => {
           <div className="grid gap-6">
             {(t('servicePages.workflowAutomation.whatYouGet.items', { returnObjects: true }) as any[]).map((item, index) => (
               <motion.div key={index} variants={fadeInUp}>
-                <Card className="hover:shadow-md transition-shadow">
+                <Card className="bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
                   <CardHeader>
                     <CardTitle className="text-base md:text-lg flex items-center gap-3">
                       <div className="p-2 bg-primary/10 rounded-lg">

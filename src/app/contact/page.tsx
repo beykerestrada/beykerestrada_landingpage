@@ -33,7 +33,7 @@ export default function ContactPage() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={fadeInUp}>
-            <Card className="p-8 h-full">
+            <Card className="p-8 h-full bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                 <Mail className="h-6 w-6 text-primary" />
               </div>
@@ -48,7 +48,7 @@ export default function ContactPage() {
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <Card className="p-8 h-full">
+            <Card className="p-8 h-full bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                 <Clock className="h-6 w-6 text-primary" />
               </div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUp}
         >
-          <Card className="p-8 md:p-12">
+          <Card className="p-8 md:p-12 bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
             <h2 className="mb-6 text-2xl">{t("contact.expectations.title")}</h2>
             <div className="space-y-6">
               <div>

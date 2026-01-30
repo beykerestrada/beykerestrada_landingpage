@@ -37,14 +37,6 @@ const Clients = () => {
     return names[0][0];
   };
 
-  // Clean white card style with rounded corners
-  const accentVariants = [
-    'bg-white border-border shadow-md rounded-xl',
-    'bg-white border-border shadow-md rounded-xl',
-    'bg-white border-border shadow-md rounded-xl',
-    'bg-white border-border shadow-md rounded-xl'
-  ];
-
   const nextTestimonial = () => {
     setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
   };
@@ -53,19 +45,19 @@ const Clients = () => {
     setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
-  // Auto-play functionality (desktop only)
+  // Auto-play functionality
   useEffect(() => {
     if (isHovering) return;
 
     const interval = setInterval(() => {
       nextTestimonial();
-    }, 6000); // Change every 6 seconds
+    }, 10000); // Change every 10 seconds
 
     return () => clearInterval(interval);
   }, [currentTestimonial, isHovering]);
 
   // Handle drag end for mobile swipe
-  const handleDragEnd = (event: any, info: any) => {
+  const handleDragEnd = (_: any, info: any) => {
     const swipeThreshold = 50;
     if (info.offset.x > swipeThreshold) {
       prevTestimonial();
@@ -77,45 +69,59 @@ const Clients = () => {
   return (
     <section className="w-full">
       {/* Client Logos Section */}
-      <div className="bg-white border-t border-b border-border py-16 md:py-20">
-        <div className="mx-auto max-w-content px-6 lg:px-8">
+      <div className="bg-white border-t border-b border-border py-12 md:py-16">
+        <div className="mx-auto max-w-content">
           {/* Header */}
           <motion.div
-            className="mb-12 text-center"
+            className="mb-8 md:mb-12 text-center px-6 lg:px-8"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
           >
             <p className="text-xs md:text-sm font-medium text-muted-foreground uppercase tracking-wider">
-              Trusted by Industry Leaders and Entrepreneurs
+              {t('clients.title')}
             </p>
           </motion.div>
 
-          {/* Client Logos */}
-          <motion.div
-            className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 md:gap-x-16 lg:gap-x-20"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            {clients.map((client, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                className="relative w-32 h-16 md:w-40 md:h-20 flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-              >
-                <Image
-                  src={client.logo}
-                  alt={`${client.name} logo`}
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 128px, 160px"
-                />
-              </motion.div>
-            ))}
-          </motion.div>
+          {/* Client Logos Carousel */}
+          <div className="relative overflow-hidden">
+            {/* Gradient overlays */}
+            <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+
+            {/* Infinite scroll animation */}
+            <motion.div
+              className="flex gap-12 md:gap-16 lg:gap-20"
+              animate={{
+                x: [0, -100 * clients.length],
+              }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 20,
+                  ease: "linear",
+                },
+              }}
+            >
+              {/* Duplicate clients array for seamless loop */}
+              {[...clients, ...clients].map((client, index) => (
+                <div
+                  key={index}
+                  className="relative w-32 h-16 md:w-40 md:h-20 flex items-center justify-center flex-shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                >
+                  <Image
+                    src={client.logo}
+                    alt={`${client.name} logo`}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 128px, 160px"
+                  />
+                </div>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </div>
 
@@ -128,14 +134,14 @@ const Clients = () => {
           viewport={{ once: true }}
           variants={staggerContainer}
         >
-          <motion.h2 className="mb-4" variants={fadeInUp}>
-            What My Clients Say
+          <motion.h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold" variants={fadeInUp}>
+            {t('clients.testimonials.title')}
           </motion.h2>
           <motion.p
             className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
             variants={fadeInUp}
           >
-            Organizations that transformed their operations with custom systems and automation.
+            {t('clients.subtitle')}
           </motion.p>
         </motion.div>
 
@@ -233,9 +239,16 @@ const Clients = () => {
             </div>
           </div>
 
-          {/* Mobile: Swipeable carousel with peek effect */}
-          <div className="relative md:hidden overflow-visible">
-            <div className="relative overflow-hidden">
+          {/* Mobile: Swipeable carousel */}
+          <div className="relative md:hidden">
+            {/* Swipe Hint */}
+            <div className="text-center mb-3">
+              <p className="text-xs text-muted-foreground">
+                Desliza para ver más →
+              </p>
+            </div>
+
+            <div className="relative">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentTestimonial}
@@ -247,33 +260,33 @@ const Clients = () => {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -100 }}
                   transition={{ duration: 0.3 }}
-                  className="cursor-grab active:cursor-grabbing"
+                  className="cursor-grab active:cursor-grabbing touch-pan-y"
                 >
-                  <Card className="p-8 mr-4 bg-white shadow-sm border border-border rounded-2xl">
-                    {/* Large Quote Icon */}
-                    <div className="mb-6">
-                      <svg width="40" height="40" viewBox="0 0 48 48" fill="none" className="text-primary/20">
+                  <Card className="p-6 bg-white shadow-sm border border-border rounded-2xl">
+                    {/* Quote Icon - Smaller on mobile */}
+                    <div className="mb-4">
+                      <svg width="32" height="32" viewBox="0 0 48 48" fill="none" className="text-primary/20">
                         <path d="M12 24C12 18.48 16.48 14 22 14V11C14.82 11 9 16.82 9 24C9 28.41 11.59 32.17 15.41 34.17C15.78 34.37 16.22 34.37 16.59 34.17C17.37 33.73 17.72 32.78 17.28 32C16.5 30.5 16 28.8 16 27C16 25.34 17.34 24 19 24H22V27C22 28.66 20.66 30 19 30C17.34 30 16 28.66 16 27V24H12ZM29 24C29 18.48 33.48 14 39 14V11C31.82 11 26 16.82 26 24C26 28.41 28.59 32.17 32.41 34.17C32.78 34.37 33.22 34.37 33.59 34.17C34.37 33.73 34.72 32.78 34.28 32C33.5 30.5 33 28.8 33 27C33 25.34 34.34 24 36 24H39V27C39 28.66 37.66 30 36 30C34.34 30 33 28.66 33 27V24H29Z" fill="currentColor"/>
                       </svg>
                     </div>
 
-                    {/* Testimonial Quote */}
-                    <p className="text-base text-foreground mb-6 leading-relaxed">
+                    {/* Testimonial Quote - Reduced margins */}
+                    <p className="text-sm leading-relaxed text-foreground mb-5">
                       &ldquo;{testimonials[currentTestimonial].shortQuote}&rdquo;
                     </p>
 
-                    {/* Author Info */}
+                    {/* Author Info - Compact */}
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-base font-semibold text-primary">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <span className="text-sm font-semibold text-primary">
                           {getInitials(testimonials[currentTestimonial].author)}
                         </span>
                       </div>
                       <div>
-                        <div className="font-semibold text-foreground">
+                        <div className="font-semibold text-sm text-foreground">
                           {testimonials[currentTestimonial].author}
                         </div>
-                        <div className="text-sm text-muted-foreground">
+                        <div className="text-xs text-muted-foreground">
                           {testimonials[currentTestimonial].role}
                           {testimonials[currentTestimonial].company && `, ${testimonials[currentTestimonial].company}`}
                         </div>
@@ -282,23 +295,18 @@ const Clients = () => {
                   </Card>
                 </motion.div>
               </AnimatePresence>
-
-              {/* Peek effect - show partial next card */}
-              <div className="absolute top-0 right-0 w-16 h-full pointer-events-none">
-                <div className="h-full bg-gradient-to-l from-background via-background/50 to-transparent" />
-              </div>
             </div>
 
-            {/* Mobile Dot Indicators */}
-            <div className="flex justify-center gap-2 mt-6">
+            {/* Mobile Dot Indicators - More accessible positioning */}
+            <div className="flex justify-center gap-2 mt-5">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentTestimonial(index)}
-                  className={`h-2 rounded-full transition-all ${
+                  className={`h-2.5 rounded-full transition-all ${
                     index === currentTestimonial
                       ? 'w-8 bg-primary'
-                      : 'w-2 bg-muted-foreground/30'
+                      : 'w-2.5 bg-muted-foreground/30'
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />

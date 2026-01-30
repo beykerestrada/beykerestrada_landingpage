@@ -41,7 +41,7 @@ const HowWeWorkPage = () => {
           <div className="space-y-12">
             {(t('howWeWork.steps', { returnObjects: true }) as any[]).map((step, index) => (
               <motion.div key={index} variants={fadeInUp}>
-                <Card className="hover:shadow-lg transition-shadow">
+                <Card className="bg-white shadow-sm hover:shadow-lg transition-shadow rounded-xl border border-border">
                   <CardContent className="p-8">
                     <div className="flex gap-6">
                       <div className="flex-shrink-0">
@@ -96,7 +96,7 @@ const HowWeWorkPage = () => {
           <h2 className="text-center mb-8">{t('howWeWork.principles.title')}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {(t('howWeWork.principles.items', { returnObjects: true }) as any[]).map((principle, index) => (
-              <Card key={index} className="bg-muted/30">
+              <Card key={index} className="bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
                 <CardContent className="p-6">
                   <h3 className="font-semibold mb-2">{principle.title}</h3>
                   <p className="text-sm text-muted-foreground">{principle.description}</p>

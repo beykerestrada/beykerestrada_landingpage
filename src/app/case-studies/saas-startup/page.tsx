@@ -43,7 +43,7 @@ export default function SaasStartupPage() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <Card className="p-8 bg-muted/30">
+            <Card className="p-8 bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
               <h2 className="mb-4 text-xl">Key Metrics</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
@@ -153,7 +153,7 @@ export default function SaasStartupPage() {
           >
             <h2 className="mb-4">Before / After</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="p-6">
+              <Card className="p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
                 <h3 className="mb-3 text-lg font-semibold">Before</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• 2 weeks average onboarding time</li>
@@ -163,7 +163,7 @@ export default function SaasStartupPage() {
                   <li>• Frequent delays and errors</li>
                 </ul>
               </Card>
-              <Card className="p-6">
+              <Card className="p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl border border-border">
                 <h3 className="mb-3 text-lg font-semibold">After</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• 2 days average onboarding time</li>

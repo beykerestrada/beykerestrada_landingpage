@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full min-h-[80vh] flex items-center py-24 md:py-32 lg:py-40 bg-background overflow-hidden">
+    <section className="relative w-full md:min-h-[80vh] flex items-center py-16 md:py-32 lg:py-40 bg-background overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
         <div
@@ -37,16 +37,15 @@ const Hero = () => {
         >
           {/* Main Headline */}
           <motion.h1
-            className="mb-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight"
+            className="mb-4 md:mb-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight"
             variants={fadeInUp}
           >
-            Stop Losing <span className="text-primary">10+ Hours Per Week</span>{" "}
-            to Manual Work
+            {t('hero.headline')}
           </motion.h1>
 
           {/* Subheadline */}
           <motion.p
-            className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto"
+            className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto"
             variants={fadeInUp}
           >
             {t('hero.subheadline')}
@@ -54,7 +53,7 @@ const Hero = () => {
 
           {/* CTA */}
           <motion.div
-            className="flex justify-center mb-12"
+            className="flex justify-center mb-8 md:mb-12"
             variants={fadeInUp}
           >
             <Button
@@ -71,20 +70,20 @@ const Hero = () => {
 
           {/* Credibility Bar */}
           <motion.div
-            className="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm text-muted-foreground"
+            className="flex flex-wrap items-center justify-center gap-4 md:gap-8 text-xs md:text-sm text-muted-foreground"
             variants={fadeInUp}
           >
             <div className="flex items-center gap-2">
-              <Award className="h-5 w-5 text-primary" />
-              <span>{t('hero.credibility.certified')}</span>
+              <Award className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
+              <span className="whitespace-nowrap">{t('hero.credibility.certified')}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Briefcase className="h-5 w-5 text-primary" />
-              <span>{t('hero.credibility.systems')}</span>
+              <Briefcase className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
+              <span className="whitespace-nowrap">{t('hero.credibility.systems')}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Users className="h-5 w-5 text-primary" />
-              <span>{t('hero.credibility.experience')}</span>
+              <Users className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
+              <span className="whitespace-nowrap">{t('hero.credibility.experience')}</span>
             </div>
           </motion.div>
         </motion.div>
