@@ -128,7 +128,7 @@ const Clients = () => {
           viewport={{ once: true }}
           variants={staggerContainer}
         >
-          <motion.h2 className="mb-4" variants={fadeInUp}>
+          <motion.h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold" variants={fadeInUp}>
             {t('clients.testimonials.title')}
           </motion.h2>
           <motion.p

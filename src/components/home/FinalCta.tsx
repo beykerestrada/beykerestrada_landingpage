@@ -20,7 +20,7 @@ const FinalCta = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.h2 className="mb-4" variants={fadeInUp}>
+          <motion.h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold" variants={fadeInUp}>
             {t('finalCta.headline')}
           </motion.h2>
 
