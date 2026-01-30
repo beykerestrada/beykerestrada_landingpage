@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Sparkles, ArrowRight } from "lucide-react";
+import { CheckCircle2, ArrowRight, Sparkles, Zap, Layers } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
@@ -12,17 +12,17 @@ const Services = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="services" className="relative w-full py-16 md:py-24 bg-muted/30">
+    <section id="services" className="relative w-full py-16 md:py-24 bg-gray-100">
       <div className="mx-auto max-w-content px-6 lg:px-8">
         {/* Services Section */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-16"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.h2 className="mb-4" variants={fadeInUp}>
+          <motion.h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold" variants={fadeInUp}>
             {t('howItWorks.headline')}
           </motion.h2>
           <motion.p
@@ -34,7 +34,7 @@ const Services = () => {
         </motion.div>
 
 
-        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
           {/* Service 1: Custom Notion Templates */}
           <motion.div
             variants={fadeInUp}
@@ -43,35 +43,39 @@ const Services = () => {
             viewport={{ once: true }}
             className="flex flex-col"
           >
-            <Card className="flex-grow flex flex-col">
-              <CardHeader className="pb-4">
-                <CardTitle className="text-base md:text-lg lg:text-xl mb-1">
+            <Card className="flex-grow flex flex-col bg-white shadow-md hover:shadow-lg transition-shadow rounded-2xl border border-border">
+              <CardHeader className="pb-6">
+                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10">
+                  <Sparkles className="h-7 w-7 text-primary" />
+                </div>
+                <CardTitle className="text-xl md:text-2xl mb-3 font-bold">
                   {t('howItWorks.notionTemplates.title')}
                 </CardTitle>
-                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-foreground mb-3">
                   {t('howItWorks.notionTemplates.price')}
                 </div>
-                <CardDescription className="text-sm">
+                <CardDescription className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {t('howItWorks.notionTemplates.description')}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex-grow pb-4 flex flex-col">
-                <ul className="space-y-2 mb-4">
+              <CardContent className="flex-grow pb-6 flex flex-col">
+                <ul className="space-y-3 mb-6">
                   {(t('howItWorks.notionTemplates.features', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-success shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <span className="text-sm">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs text-center text-muted-foreground mt-auto">
+                <p className="text-xs text-primary font-medium mt-auto">
                   {t('howItWorks.notionTemplates.note')}
                 </p>
               </CardContent>
-              <CardFooter className="pt-0 flex-col gap-3">
-                <Button asChild className="w-full" size="sm">
+              <CardFooter className="pt-0 pb-8 flex-col gap-3">
+                <Button asChild variant="outline" className="w-full" size="lg">
                   <Link href={t('howItWorks.notionTemplates.ctaLink')} target="_blank">
                     {t('howItWorks.notionTemplates.cta')}
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Link
@@ -93,41 +97,44 @@ const Services = () => {
             viewport={{ once: true }}
             className="flex flex-col"
           >
-            <Card className="flex-grow flex flex-col border-2 border-primary relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
-                  <Sparkles className="h-3 w-3" />
+            <Card className="flex-grow flex flex-col border-2 border-primary relative bg-white shadow-lg hover:shadow-xl transition-shadow rounded-2xl">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                <div className="bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wide">
                   {t('howItWorks.automation.badge')}
                 </div>
               </div>
-              <CardHeader className="pb-4 pt-6">
-                <CardTitle className="text-base md:text-lg lg:text-xl mb-1">
+              <CardHeader className="pb-6 pt-8">
+                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10">
+                  <Zap className="h-7 w-7 text-primary" />
+                </div>
+                <CardTitle className="text-xl md:text-2xl mb-3 font-bold">
                   {t('howItWorks.automation.title')}
                 </CardTitle>
-                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-foreground mb-3">
                   {t('howItWorks.automation.price')}
                 </div>
-                <CardDescription className="text-sm">
+                <CardDescription className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {t('howItWorks.automation.description')}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex-grow pb-4 flex flex-col">
-                <ul className="space-y-2 mb-4">
+              <CardContent className="flex-grow pb-6 flex flex-col">
+                <ul className="space-y-3 mb-6">
                   {(t('howItWorks.automation.features', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-success shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <span className="text-sm">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs text-center text-muted-foreground mt-auto">
+                <p className="text-xs text-primary font-medium mt-auto">
                   {t('howItWorks.automation.note')}
                 </p>
               </CardContent>
-              <CardFooter className="pt-0 flex-col gap-3">
-                <Button asChild className="w-full" size="sm">
+              <CardFooter className="pt-0 pb-8 flex-col gap-3">
+                <Button asChild className="w-full" size="lg">
                   <Link href={t('howItWorks.automation.ctaLink')} target="_blank">
                     {t('howItWorks.automation.cta')}
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Link
@@ -149,35 +156,39 @@ const Services = () => {
             viewport={{ once: true }}
             className="flex flex-col"
           >
-            <Card className="flex-grow flex flex-col">
-              <CardHeader className="pb-4">
-                <CardTitle className="text-base md:text-lg lg:text-xl mb-1">
+            <Card className="flex-grow flex flex-col bg-white shadow-md hover:shadow-lg transition-shadow rounded-2xl border border-border">
+              <CardHeader className="pb-6">
+                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10">
+                  <Layers className="h-7 w-7 text-primary" />
+                </div>
+                <CardTitle className="text-xl md:text-2xl mb-3 font-bold">
                   {t('howItWorks.completeSystem.title')}
                 </CardTitle>
-                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-foreground mb-3">
                   {t('howItWorks.completeSystem.price')}
                 </div>
-                <CardDescription className="text-sm">
+                <CardDescription className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {t('howItWorks.completeSystem.description')}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex-grow pb-4 flex flex-col">
-                <ul className="space-y-2 mb-4">
+              <CardContent className="flex-grow pb-6 flex flex-col">
+                <ul className="space-y-3 mb-6">
                   {(t('howItWorks.completeSystem.features', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-success shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <span className="text-sm">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs text-center text-muted-foreground mt-auto">
+                <p className="text-xs text-primary font-medium mt-auto">
                   {t('howItWorks.completeSystem.note')}
                 </p>
               </CardContent>
-              <CardFooter className="pt-0 flex-col gap-3">
-                <Button asChild className="w-full" size="sm">
+              <CardFooter className="pt-0 pb-8 flex-col gap-3">
+                <Button asChild variant="outline" className="w-full" size="lg">
                   <Link href={t('howItWorks.completeSystem.ctaLink')} target="_blank">
                     {t('howItWorks.completeSystem.cta')}
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Link

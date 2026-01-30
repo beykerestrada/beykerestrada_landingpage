@@ -35,27 +35,27 @@ const FaqPreview = () => {
   ];
 
   return (
-    <section className="w-full py-16 md:py-24 bg-muted/30">
+    <section className="w-full py-16 md:py-24 bg-gray-100">
       <div className="mx-auto max-w-content px-6 lg:px-8">
         <motion.div
-          className="mb-12 text-center"
+          className="mb-16 text-center"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <motion.h2 className="mb-4" variants={fadeInUp}>
+          <motion.h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold" variants={fadeInUp}>
             {t('faqPreview.headline')}
           </motion.h2>
           <motion.p
-            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+            className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
             variants={fadeInUp}
           >
             {t('faqPreview.subheadline')}
           </motion.p>
         </motion.div>
 
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-4xl">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -63,16 +63,20 @@ const FaqPreview = () => {
             variants={fadeInUp}
           >
             <Accordion
-              type="multiple"
-              defaultValue={["item-0", "item-1", "item-2"]}
-              className="w-full"
+              type="single"
+              collapsible
+              className="w-full space-y-4"
             >
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left font-semibold">
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="bg-white shadow-md hover:shadow-lg transition-shadow rounded-2xl border border-border px-6 md:px-8"
+                >
+                  <AccordionTrigger className="text-left font-semibold text-base md:text-lg py-6 hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                  <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

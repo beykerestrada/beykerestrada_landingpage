@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight, ArrowRight, BadgeCheck } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
@@ -37,12 +37,12 @@ const Clients = () => {
     return names[0][0];
   };
 
-  // Accent colors for varied card backgrounds
+  // Clean white card style with rounded corners
   const accentVariants = [
-    'bg-primary/5 border-primary/20',
-    'bg-accent/5 border-accent/20',
-    'bg-card border-border',
-    'bg-muted/30 border-border'
+    'bg-white border-border shadow-md rounded-xl',
+    'bg-white border-border shadow-md rounded-xl',
+    'bg-white border-border shadow-md rounded-xl',
+    'bg-white border-border shadow-md rounded-xl'
   ];
 
   const nextTestimonial = () => {
@@ -75,50 +75,68 @@ const Clients = () => {
   };
 
   return (
-    <section className="w-full py-16 md:py-24 bg-background">
-      <div className="mx-auto max-w-content px-6 lg:px-8">
-        {/* Header */}
+    <section className="w-full">
+      {/* Client Logos Section */}
+      <div className="bg-white border-t border-b border-border py-16 md:py-20">
+        <div className="mx-auto max-w-content px-6 lg:px-8">
+          {/* Header */}
+          <motion.div
+            className="mb-12 text-center"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <p className="text-xs md:text-sm font-medium text-muted-foreground uppercase tracking-wider">
+              Trusted by Industry Leaders and Entrepreneurs
+            </p>
+          </motion.div>
+
+          {/* Client Logos */}
+          <motion.div
+            className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 md:gap-x-16 lg:gap-x-20"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {clients.map((client, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                className="relative w-32 h-16 md:w-40 md:h-20 flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              >
+                <Image
+                  src={client.logo}
+                  alt={`${client.name} logo`}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 128px, 160px"
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Testimonials Section */}
+      <div className="mx-auto max-w-content px-6 lg:px-8 py-16 md:py-24 bg-background">
         <motion.div
           className="mb-12 text-center"
-          variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
+          variants={staggerContainer}
         >
           <motion.h2 className="mb-4" variants={fadeInUp}>
-            {t('clients.title')}
+            What My Clients Say
           </motion.h2>
           <motion.p
             className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
             variants={fadeInUp}
           >
-            {t('clients.subtitle')}
+            Organizations that transformed their operations with custom systems and automation.
           </motion.p>
-        </motion.div>
-
-        {/* Client Logos */}
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-12 items-center justify-items-center mb-20"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {clients.map((client, index) => (
-            <motion.div
-              key={index}
-              variants={fadeInUp}
-              className="relative w-full h-24 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
-            >
-              <Image
-                src={client.logo}
-                alt={`${client.name} logo`}
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </motion.div>
-          ))}
         </motion.div>
 
         {/* Testimonial Carousel */}
@@ -129,9 +147,6 @@ const Clients = () => {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <h3 className="text-xl md:text-2xl font-semibold text-center mb-8">
-            {t('clients.testimonials.title')}
-          </h3>
 
           {/* Desktop: Standard carousel with auto-play */}
           <div
@@ -139,7 +154,7 @@ const Clients = () => {
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
           >
-            <Card className={`p-8 md:p-12 border ${accentVariants[currentTestimonial % accentVariants.length]}`}>
+            <Card className="p-10 md:p-12 bg-white shadow-sm border border-border rounded-2xl">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentTestimonial}
@@ -148,33 +163,33 @@ const Clients = () => {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  {/* Avatar Circle with Initials */}
-                  <div className="mb-4">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-lg font-semibold text-primary">
-                        {getInitials(testimonials[currentTestimonial].author)}
-                      </span>
-                    </div>
+                  {/* Large Quote Icon */}
+                  <div className="mb-6">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="text-primary/20">
+                      <path d="M12 24C12 18.48 16.48 14 22 14V11C14.82 11 9 16.82 9 24C9 28.41 11.59 32.17 15.41 34.17C15.78 34.37 16.22 34.37 16.59 34.17C17.37 33.73 17.72 32.78 17.28 32C16.5 30.5 16 28.8 16 27C16 25.34 17.34 24 19 24H22V27C22 28.66 20.66 30 19 30C17.34 30 16 28.66 16 27V24H12ZM29 24C29 18.48 33.48 14 39 14V11C31.82 11 26 16.82 26 24C26 28.41 28.59 32.17 32.41 34.17C32.78 34.37 33.22 34.37 33.59 34.17C34.37 33.73 34.72 32.78 34.28 32C33.5 30.5 33 28.8 33 27C33 25.34 34.34 24 36 24H39V27C39 28.66 37.66 30 36 30C34.34 30 33 28.66 33 27V24H29Z" fill="currentColor"/>
+                    </svg>
                   </div>
 
                   {/* Testimonial Quote */}
-                  <p className="text-sm md:text-base text-muted-foreground italic mb-6 leading-relaxed">
+                  <p className="text-base md:text-lg text-foreground mb-8 leading-relaxed">
                     &ldquo;{testimonials[currentTestimonial].shortQuote}&rdquo;
                   </p>
 
-                  {/* Author Info with Badge */}
-                  <div className="flex items-start gap-2">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-1.5 mb-1">
-                        <span className="font-semibold text-foreground">
-                          {testimonials[currentTestimonial].author}
-                        </span>
-                        <BadgeCheck className="w-4 h-4 text-primary flex-shrink-0" />
+                  {/* Author Info */}
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <span className="text-base font-semibold text-primary">
+                        {getInitials(testimonials[currentTestimonial].author)}
+                      </span>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-foreground">
+                        {testimonials[currentTestimonial].author}
                       </div>
-                      <span className="text-sm text-muted-foreground">
+                      <div className="text-sm text-muted-foreground">
                         {testimonials[currentTestimonial].role}
                         {testimonials[currentTestimonial].company && `, ${testimonials[currentTestimonial].company}`}
-                      </span>
+                      </div>
                     </div>
                   </div>
                 </motion.div>
@@ -234,34 +249,34 @@ const Clients = () => {
                   transition={{ duration: 0.3 }}
                   className="cursor-grab active:cursor-grabbing"
                 >
-                  <Card className={`p-6 mr-4 border ${accentVariants[currentTestimonial % accentVariants.length]}`}>
-                    {/* Avatar Circle with Initials */}
-                    <div className="mb-4">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                        <span className="text-lg font-semibold text-primary">
-                          {getInitials(testimonials[currentTestimonial].author)}
-                        </span>
-                      </div>
+                  <Card className="p-8 mr-4 bg-white shadow-sm border border-border rounded-2xl">
+                    {/* Large Quote Icon */}
+                    <div className="mb-6">
+                      <svg width="40" height="40" viewBox="0 0 48 48" fill="none" className="text-primary/20">
+                        <path d="M12 24C12 18.48 16.48 14 22 14V11C14.82 11 9 16.82 9 24C9 28.41 11.59 32.17 15.41 34.17C15.78 34.37 16.22 34.37 16.59 34.17C17.37 33.73 17.72 32.78 17.28 32C16.5 30.5 16 28.8 16 27C16 25.34 17.34 24 19 24H22V27C22 28.66 20.66 30 19 30C17.34 30 16 28.66 16 27V24H12ZM29 24C29 18.48 33.48 14 39 14V11C31.82 11 26 16.82 26 24C26 28.41 28.59 32.17 32.41 34.17C32.78 34.37 33.22 34.37 33.59 34.17C34.37 33.73 34.72 32.78 34.28 32C33.5 30.5 33 28.8 33 27C33 25.34 34.34 24 36 24H39V27C39 28.66 37.66 30 36 30C34.34 30 33 28.66 33 27V24H29Z" fill="currentColor"/>
+                      </svg>
                     </div>
 
                     {/* Testimonial Quote */}
-                    <p className="text-sm text-muted-foreground italic mb-4 leading-relaxed">
+                    <p className="text-base text-foreground mb-6 leading-relaxed">
                       &ldquo;{testimonials[currentTestimonial].shortQuote}&rdquo;
                     </p>
 
-                    {/* Author Info with Badge */}
-                    <div className="flex items-start gap-2">
-                      <div className="flex-1">
-                        <div className="flex items-center gap-1.5 mb-1">
-                          <span className="font-semibold text-foreground">
-                            {testimonials[currentTestimonial].author}
-                          </span>
-                          <BadgeCheck className="w-4 h-4 text-primary flex-shrink-0" />
+                    {/* Author Info */}
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <span className="text-base font-semibold text-primary">
+                          {getInitials(testimonials[currentTestimonial].author)}
+                        </span>
+                      </div>
+                      <div>
+                        <div className="font-semibold text-foreground">
+                          {testimonials[currentTestimonial].author}
                         </div>
-                        <span className="text-sm text-muted-foreground">
+                        <div className="text-sm text-muted-foreground">
                           {testimonials[currentTestimonial].role}
                           {testimonials[currentTestimonial].company && `, ${testimonials[currentTestimonial].company}`}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </Card>
